@@ -1,0 +1,37 @@
+10
+
+dir
+8
+svn+ssh://spxep@blast/usr/local/svn/exosim/data
+svn+ssh://spxep@blast/usr/local/svn
+
+
+
+2014-12-09T13:39:31.377397Z
+7
+c1341133
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+c45ac112-a9a6-4b41-b830-c920e24904c9
+
+instrument
+dir
+
+star
+dir
+
+planetary
+dir
+

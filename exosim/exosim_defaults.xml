@@ -1,0 +1,59 @@
+<root> 
+  <common>
+    <exosym_path val='/mnt/blast/data0/home/spxep/exosim' comment='$root$'/>
+    <logbinres val="1000" units='None' comment="Resoving power for common spectral binnin. A linear binning wavelength integral is estimated as wl_min/R"/>
+    <wl_min val="1" units="micron" comment="Shortest wavelength in simularion used for binning input spectra"/>
+    <wl_max val="5" units="micron" comment="Shortest wavelength in simularion used for binning input spectra"/>
+  </common>
+  
+<planet>
+  <name val="gj1214b"/>
+  <radius val="0.254" units="Rjup"/>
+  <period val="1.5804" units="days" comment="revolution"/>
+  <semimajor_axis val="0.01411" units="AU"/>
+  <inclination val="88.17" units="deg"/>
+  <eccentricity val="0.27" units="deg"/>
+  <omega val="0.0" units="deg"/>
+  <contrast val="$root$/data/planetary/transmission/0400K_gj1214.dat" comment="planet/star contrast ratio"/>
+  <transit val="primary" comment="primary or secondary "/>
+</planet>
+
+<star>
+  <radius val="0.216" units="Rsun" comment=""/>
+  <period val="10" units="days" comment="rotation"/>
+  <distance val="13.0" units="pc" comment=""/>
+  <temperature val="3026" units="K" comment=""/>
+  <logg val="4.5" units="" comment=""/>
+  <F_H val = "0.0" units="" comment="[F/H]"/>
+  <data_path val="$root$/data/star" comment=""/>
+  <limb_darkening val="$root$/data/star/quadratic.dat" comment="Quadratic limb darkening coefficients from xxxx, x. et al., yyyy"/>
+</star>	
+
+<common_optics>
+  <effective_diameter val="0.9" units="m" comment="Effective diameter of collecting aperture"/>
+  <optical_surface type="mirror" transmission="$root$/data/instrument/mirror_reflectivity.csv"  emissivity="$root$/data/instrument/mirror_emissivity.csv" T="70" comment="M1"/>
+  <optical_surface type="mirror" transmission="$root$/data/instrument/mirror_reflectivity.csv"  emissivity="$root$/data/instrument/mirror_emissivity.csv" T="70" comment="M2"/>
+  <optical_surface type="mirror" transmission="$root$/data/instrument/mirror_reflectivity.csv"  emissivity="$root$/data/instrument/mirror_emissivity.csv" T="70" comment="M3"/>
+</common_optics>
+
+<channel val="SWIR" comment="SWIR">
+  <optical_surface type="dichroic" transmission="$root$/data/instrument/d0_re_v0.csv"  T="50" comment="D0"/>
+  <optical_surface type="grating" transmission="$root$/data/instrument/grating_swir_v0.csv"   T="50" comment=""/>  
+  <ld val="1.95 0.0002090249 10" units=""   comment="Wavelength solution (q, m, x_ref): wl = q + m(x - x_ref) where x is th pixel coordinate in units of micron"/>  
+  <array_geometry val="64 512" comment="pixel count"/>
+  <pixel_size val="18" units="micron" transmission="$root$/data/instrument/qe.dat" />
+  <wfno val="18.5" units="" transmission="The working f/#" />
+  
+</channel>
+
+<channel val="MWIR" comment="MWIR">
+  <optical_surface type="dichroic" transmission="$root$/data/instrument/d0_te_v0.csv"  emissivity="" T="50" comment="D0"/>
+  <optical_surface type="grating" transmission="$root$/data/instrument/grating_mwir_v0.csv"  emissivity="" T="50" comment=""/>  
+  <ld val="3.9 0.0004180499 10" units=""   comment="Wavelength solution (q, m, x_ref): wl = q + m(x - x_ref) where x is th pixel coordinate in units of micron"/>  
+  <array_geometry val="64 512" comment="pixel count"/>
+  <pixel_size val="18" units="micron" transmission="$root$/data/instrument/qe.dat" />
+  <wfno val="9.2" units="" transmission="The working f/#" />
+</channel>
+
+
+</root>
