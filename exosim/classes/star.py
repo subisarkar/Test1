@@ -1,9 +1,7 @@
 import numpy   as np
-import os, time, tables
-import pyfits
-from   classes import sed
-import matplotlib.pyplot as plt
-from   lib		import exolib
+import os, time, tables, pyfits
+from   ..classes import sed
+from   ..lib import exolib
 
 class Star(object):
   """

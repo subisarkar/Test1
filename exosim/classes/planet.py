@@ -1,8 +1,8 @@
 import os
 import numpy as np
-from classes import sed
-from lib import occultquad 
-from lib.exolib import exosim_error
+from ..classes import sed
+from ..lib import occultquad 
+from ..lib.exolib import exosim_error
 
 class Planet(object):
   """
@@ -153,5 +153,5 @@ class Planet(object):
     return self.z
     
   def get_light_curve(self, z, u1, u2, p0, primary_transit = True):
-    self.lc = occultquad.occultquad(z, u1, u2, p0)[0 if primary_transit else 1] 
+    self.lc = occultquad(z, u1, u2, p0)[0 if primary_transit else 1] 
     return self.lc

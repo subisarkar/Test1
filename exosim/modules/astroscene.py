@@ -1,6 +1,6 @@
-from   lib             import exolib
-from   classes.star    import Star
-from   classes.planet  import Planet
+from   ..lib             import exolib
+from   ..classes.star    import Star
+from   ..classes.planet  import Planet
 
 def run(opt):
   star = Star(opt.star_sed_path.val.replace('$root$', opt.common_exosym_path.val),

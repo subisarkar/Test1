@@ -1,1 +1,2 @@
-__all__ = ["astroscene", "instrument" ]
+from astroscene import *
+from instrument import *

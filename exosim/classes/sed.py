@@ -1,6 +1,6 @@
 import numpy as np
 import sys 
-from lib import exolib
+from ..lib import exolib
 
 
 class Sed(object):

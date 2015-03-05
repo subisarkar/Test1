@@ -1,7 +1,7 @@
 import numpy   as np
 import os
-from   classes import sed
-from   lib     import exolib
+from   ..classes import sed
+from   ..lib     import exolib
 
 class zodiacal_light(object):
   def __init__(self, wl, level=1.0):

@@ -1,12 +1,11 @@
-from   lib             import exolib
-from   classes.options import Options
-from   classes.zodi    import zodiacal_light
-from   modules         import astroscene, instrument
-from   lib		import exolib
+#from   lib             import exolib
+#from   classes.options import Options
+#from   classes.zodi    import zodiacal_light
+#from   modules         import astroscene, instrument
 import numpy           as     np
 import pylab           as     pl
 import sys, time
-
+import exosim
 # hello
 data = {}
 opt = 0 
@@ -15,25 +14,25 @@ def run_exosim(parameters=None):
   global opt
   
 
-  exolib.exosim_msg('Reading options from file ... \n')
-  opt = Options(parameters)
+  exosim.exolib.exosim_msg('Reading options from file ... \n')
+  opt = exosim.Options(parameters)
 
-  exolib.exosim_msg('Run astroscene ... ')
+  exosim.exolib.exosim_msg('Run astroscene ... ')
   st = time.clock()
-  star, planet = astroscene.run(opt)
-  exolib.exosim_msg(' - execution time: {:.0f} msec.\n'.format((time.clock()-st)*1000.0))
+  star, planet = exosim.modules.astroscene.run(opt)
+  exosim.exolib.exosim_msg(' - execution time: {:.0f} msec.\n'.format((time.clock()-st)*1000.0))
   
-  exolib.exosim_msg('Instantiate Zodi ... ')
+  exosim.exolib.exosim_msg('Instantiate Zodi ... ')
   st = time.clock()
-  zodi = zodiacal_light(opt.common_wl.val, level=1.0)
-  exolib.exosim_msg(' - execution time: {:.0f} msec.\n'.format((time.clock()-st)*1000.0))
+  zodi = exosim.classes.zodiacal_light(opt.common_wl.val, level=1.0)
+  exosim.exolib.exosim_msg(' - execution time: {:.0f} msec.\n'.format((time.clock()-st)*1000.0))
 
-  exolib.sed_propagation(star.sed, zodi.transmission)
+  exosim.exolib.sed_propagation(star.sed, zodi.transmission)
   
-  exolib.exosim_msg('Run instrument model ... ')
+  exosim.exolib.exosim_msg('Run instrument model ... ')
   st = time.clock()
-  channel = instrument.run(opt, star, planet, zodi)
-  exolib.exosim_msg(' - execution time: {:.0f} msec.\n'.format((time.clock()-st)*1000.0))
+  channel = exosim.modules.instrument.run(opt, star, planet, zodi)
+  exosim.exolib.exosim_msg(' - execution time: {:.0f} msec.\n'.format((time.clock()-st)*1000.0))
   
   data['qstar'], data['qplanet'], data['qzodi'], data['channel'] = star, planet, zodi, channel
   

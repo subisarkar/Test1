@@ -1,5 +1,5 @@
-from classes.sed import Sed
-from lib         import exolib
+from ..classes.sed import Sed
+from ..lib         import exolib
 import numpy     as     np
 import copy
 
