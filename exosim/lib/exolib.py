@@ -281,6 +281,161 @@ def kernal(pix_size,ovs):
     return kernal
 
 
+def jitter(obs_time,int_time,osr,rms,mode=2):
+    
+    """
+        Jitter
+        
+        Simulates 2 d jitter (pointing variation) as a timeline of positional offsets
+        Uses Herschel jitter timeline as basis.
+        
+        Inputs:
+        
+        1)  obs_time : total observation time in seconds
+        
+        2)  int_time : time for one integration (NDR)
+        
+        3)  osr : oversampling rate of the integration time (e.g 100 = time step of int_time/100)
+        
+        4)  rms : rms of the desired jitter in degrees
+        
+        5)  mode = 1 : one PSD used to obtain jitter in 2 dimensions
+        mode = 2 : two PSDs used - one for each orthogonal dimeension
+        
+        Output:
+        
+        1) RA jitter time series in radians (xt) in degrees
+        
+        2) Dec jitter time series in radians (yt) in degrees
+        
+        Requirements:
+        
+        1) jitter_file : file with known jitter timelines (e.g. Herschel data)
+        
+        """
+    
+    int_N = np.int(obs_time/int_time) # total number of full NDRs in the total obs time
+    new_N = int_N*int_time*osr
+    x = int(1+np.log(new_N)/np.log(2))
+    new_N = 2**x
+    new_dt = int_time/osr
+    new_time = np.arange(0,new_N*new_dt,new_dt)
+    new_fs=1/new_dt
+    new_df = new_fs/new_N
+    
+    jitter_file = "/Users/c1341133/Desktop/herschel_long_pointing.fits"
+    f = pyfits.open(jitter_file)  # open a FITS file
+    tbdata = f[1].data  # assume the first extension is a table
+    time = tbdata['Time']
+    ra_t = tbdata['RA']
+    dec_t = tbdata['Dec']
+    
+    if len(time)%2 != 0:  # timeline needs to be even number for real fft
+        time = time[0:-1]
+        ra_t = ra_t[0:-1]
+        dec_t = dec_t[0:-1]
+    
+    ra_t = (ra_t-np.mean(ra_t))*(np.cos(dec_t*np.pi/180))
+    dec_t = dec_t-np.mean(dec_t)
+
+    N = np.float(len(time))
+    dt = time[1]-time[0]
+    fs = 1.0/dt
+    df = fs/N
+    
+    freq = np.fft.rfftfreq(np.int(N),d=dt)
+    new_freq = np.fft.rfftfreq(np.int(new_N),d=new_dt)
+    new_df = new_freq[1]-new_freq[0]
+    
+    ra_f = np.fft.rfft(ra_t)/N
+    dec_f = np.fft.rfft(dec_t)/N
+    
+    ra_psd= 2*abs(ra_f)**2/df
+    dec_psd = 2*abs(dec_f)**2/df
+    
+    ra_psd[0]=1e-30
+    ra_psd[-1]=ra_psd[-1]/2
+    dec_psd[0]=1e-30
+    dec_psd[-1]=dec_psd[-1]/2
+    
+    # smooth the psd
+    
+    window_size = 10
+    window = np.ones(int(window_size))/float(window_size)
+    ra_psd = np.convolve(ra_psd, window, 'same')
+    dec_psd = np.convolve(dec_psd, window, 'same')
+    
+    # resample and 'zero pad' to new frequency grid and N
+    
+    f1 = interpolate.interp1d(freq, ra_psd,bounds_error=False,fill_value=1e-30, kind='linear')
+    f2 = interpolate.interp1d(freq, dec_psd,bounds_error=False,fill_value=1e-30, kind='linear')
+    
+    new_ra_psd = f1(new_freq)
+    new_dec_psd = f2(new_freq)
+    
+    psd = [new_ra_psd,new_dec_psd]
+    N = new_N
+    fs = new_fs
+    df = fs/N
+    
+    if mode == 1:
+        #new to work on how to scale this
+        
+        comb_t = np.sqrt(ra_t**2 + dec_t**2)
+        comb_f = np.fft.rfft(comb_t)/N
+        comb_psd = 2*abs(comb_f)**2/df
+        comb_psd[0]=1e-30
+        comb_psd[-1]=comb_psd[-1]/2
+        
+        phi_t = np.arctan2(dec_t,ra_t)
+        phi_f = np.fft.rfft(phi_t)/N
+        phi_psd = 2*abs(phi_f)**2/df
+        phi_psd[0]=1e-30
+        phi_psd[-1]=phi_psd[-1]/2
+        
+        psd1 = psd[0]
+        ps1 = psd1*df/2
+        amp = np.random.normal(0,np.sqrt(ps1),len(ps1))
+        phi = np.random.uniform(0,np.pi,len(ps1))
+        zf = amp*np.exp(phi*1j)
+        zt = np.fft.irfft(zf)*N
+        
+        psd2 = psd[1]
+        ps2 = psd2*df/2
+        amp = np.random.normal(0,np.sqrt(ps2),len(ps2))
+        phi = np.random.uniform(0,np.pi,len(ps2))
+        anglef = amp*np.exp(phi*1j)
+        anglet = np.fft.irfft(anglef)*N
+        
+        xt = zt*np.cos(anglet)
+        yt = zt*np.sin(anglet)
+
+
+    elif mode == 2:
+        
+        psd1 = psd[0]
+        ps = psd1*df/2
+        amp = np.random.normal(0,np.sqrt(ps),len(ps))
+        phi = np.random.uniform(0,np.pi,len(ps))
+        xf = amp*np.exp(phi*1j)
+        xt = np.fft.irfft(xf)*N
+        
+        psd2 = psd[1]
+        ps = psd2*df/2
+        amp = np.random.normal(0,np.sqrt(ps),len(ps))
+        phi = np.random.uniform(0,np.pi,len(ps))
+        yf = amp*np.exp(phi*1j)
+        yt = np.fft.irfft(yf)*N
+
+
+    else:
+        print "error: maximum of 2 psds can be used"
+    
+    xt = xt*(rms*(np.sqrt(2)/2)/np.std(xt))    
+    yt = yt*(rms*(np.sqrt(2)/2)/np.std(yt))
+    return xt,yt,new_time
+
+
 def congrid(a, newdims, method='linear', centre=False, minusone=False):
     '''Arbitrary resampling of source array to new dimension sizes.
     Currently only supports maintaining the same number of dimensions.

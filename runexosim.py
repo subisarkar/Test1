@@ -14,6 +14,7 @@ def run_exosim(parameters=None):
   global data 
   global opt
   
+  timeline = exosim.modules.timeline_generator.run()
 
   exosim.lib.exolib.exosim_msg('Reading options from file ... \n')
   opt = exosim.classes.options.Options(parameters)
