@@ -1,6 +1,6 @@
 <root> 
   <common>
-    <exosym_path val='/home/spxep/ExoSim/exosim' comment='$root$'/>
+    <exosym_path val='/Users/c1341133/Desktop/ExoSimSubi/exosim' comment='$root$'/>
     <logbinres val="1000" units='None' comment="Resoving power for common spectral binnin. A linear binning wavelength integral is estimated as wl_min/R"/>
     <wl_min val="1" units="micron" comment="Shortest wavelength in simularion used for binning input spectra"/>
     <wl_max val="5" units="micron" comment="Shortest wavelength in simularion used for binning input spectra"/>

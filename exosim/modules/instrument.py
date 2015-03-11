@@ -3,6 +3,9 @@ from ..lib         import exolib
 import numpy     as     np
 import copy
 
+import numpy     as     np
+import copy
+
 class Channel(object):
   planet       = None
   star         = None
@@ -10,7 +13,9 @@ class Channel(object):
   emission     = None
   transmission = None
   psf          = None
-  osf          = 3    # Oversample psf by this factor to ensure Nyquist
+  psf_osf      = 4    # Oversample psf by this factor to ensure Nyquist- use even
+  osf          = 21   # Oversample each pixel by this factor per axis
+  ad_ovs     = 5    # Oversample each pixel by this factor after osf and convolution with prf kernal
   fp           = 0    # focal plane
   fp_delta     = 0    # Focal plane sampling interval (equal for spatial -y- and spectral -x- directions)
   wl_solution  = 0    # this is the wavelength solution for the focal plane at its current sampling. 
@@ -55,41 +60,45 @@ def run(opt, star, planet, zodi):
 	  exolib.sed_propagation(channel[key].zodi, tr)
 	  exolib.sed_propagation(channel[key].emission, tr, emissivity=em, temperature=op.temperature)
 	  channel[key].transmission.sed = channel[key].transmission.sed*tr.sed
+      
+      channel[key].psf_osf      = 4    # Oversample psf by this factor to ensure Nyquist- use even
+      channel[key].osf          = 21   # Oversample each pixel by this factor per axis prior to pixel convolution
+      channel[key].ad_ovs     = 5    # Oversample each pixel again
+      
      
       ### create focal plane
-      #1# Obtain wavelength dispertion relation 
+      #1# Obtain wavelength dispersion relation
       ld  = np.fromstring(opt.channel[key]['ld'].val, 
 	  sep=' ', dtype=np.float64)
       #2# allocate focal plane with pixel oversampling such that Nyquist sampling is done correctly 
-      fpn = np.fromstring(opt.channel['SWIR']['array_geometry'].val, 
+      fpn = np.fromstring(opt.channel[key]['array_geometry'].val, 
 	  sep=' ', dtype=np.float64)
-      fp = np.zeros(fpn*channel[key].osf)
-      #2# This is the current sampling interval in the focal plane.  
+      fp = np.zeros(fpn*channel[key].osf)  
+      #3# This is the sampling interval in the oversampled focal plane.
       fp_delta = opt.channel[key]['pixel_size'].val/channel[key].osf
       
-      x_pix     = np.arange(fpn[1])  * opt.channel[key]['pixel_size'].val
+      pix_size = opt.channel[key]['pixel_size'].val
+      
+      x_pix     = np.arange(fpn[1]) * pix_size
       x_pix_osr = np.arange(fp.shape[1])  * fp_delta
       x_wav     = ld[0] + ld[1]*(x_pix-ld[2]) # wvalength on each x pixel
       x_wav_osr = ld[0] + ld[1]*(x_pix_osr-ld[2]) # wvalength on each x pixel
+                 
+            
+      psf = exolib.psf(x_wav, opt.channel[key]['wfno'].val,  fp_delta, shape='airy')      
+      psf = np.repeat(psf, channel[key].psf_osf, axis=2)
       
-      psf = exolib.Psf(x_wav, opt.channel[key]['wfno'].val,  fp_delta, shape='airy') 
-      psf = np.repeat(psf, channel[key].osf, axis=2)
-      
+      psf_delta = (1./channel[key].psf_osf)*channel[key].osf  
+          
       channel[key].fp_delta    = fp_delta
       channel[key].psf         = psf
       channel[key].fp          = fp
       channel[key].wl_solution = x_wav_osr
       
-      j0 = np.round(np.arange(fp.shape[1]) - psf.shape[1]/2).astype(np.int) 
-      j1 = j0 + psf.shape[1]
-      idx = np.where((j0>=0) & (j1 < fp.shape[1]))[0]
-      i0 = fp.shape[0]/2 - psf.shape[0]/2 
-      i1 = i0 + psf.shape[0]  
-      for k in idx: fp[i0:i1, j0[k]:j1[k]] += psf[...,k]
-      
-    
-    
-    
+      kernal = exolib.kernal(pix_size, channel[key].osf)
+      sed = np.ones((psf.shape[2]))
+
+      fpa, conv_fpa  = exolib.fpa(fp,psf,psf_delta,sed,kernal,channel[key].ad_ovs,pix_size)
     #return star, planet, zodi, instrument_emission, instrument_transmission
     return channel
 

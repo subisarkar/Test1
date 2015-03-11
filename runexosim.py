@@ -5,6 +5,7 @@
 import numpy           as     np
 import pylab           as     pl
 import sys, time
+#from exosim.lib import exolib
 import exosim
 # hello
 data = {}
@@ -14,25 +15,25 @@ def run_exosim(parameters=None):
   global opt
   
 
-  exosim.exolib.exosim_msg('Reading options from file ... \n')
-  opt = exosim.Options(parameters)
+  exosim.lib.exolib.exosim_msg('Reading options from file ... \n')
+  opt = exosim.classes.options.Options(parameters)
 
-  exosim.exolib.exosim_msg('Run astroscene ... ')
+  exosim.lib.exolib.exosim_msg('Run astroscene ... ')
   st = time.clock()
   star, planet = exosim.modules.astroscene.run(opt)
-  exosim.exolib.exosim_msg(' - execution time: {:.0f} msec.\n'.format((time.clock()-st)*1000.0))
+  exosim.lib.exolib.exosim_msg(' - execution time: {:.0f} msec.\n'.format((time.clock()-st)*1000.0))
   
-  exosim.exolib.exosim_msg('Instantiate Zodi ... ')
+  exosim.lib.exolib.exosim_msg('Instantiate Zodi ... ')
   st = time.clock()
   zodi = exosim.classes.zodiacal_light(opt.common_wl.val, level=1.0)
-  exosim.exolib.exosim_msg(' - execution time: {:.0f} msec.\n'.format((time.clock()-st)*1000.0))
+  exosim.lib.exolib.exosim_msg(' - execution time: {:.0f} msec.\n'.format((time.clock()-st)*1000.0))
 
-  exosim.exolib.sed_propagation(star.sed, zodi.transmission)
+  exosim.lib.exolib.sed_propagation(star.sed, zodi.transmission)
   
-  exosim.exolib.exosim_msg('Run instrument model ... ')
+  exosim.lib.exolib.exosim_msg('Run instrument model ... ')
   st = time.clock()
   channel = exosim.modules.instrument.run(opt, star, planet, zodi)
-  exosim.exolib.exosim_msg(' - execution time: {:.0f} msec.\n'.format((time.clock()-st)*1000.0))
+  exosim.lib.exolib.exosim_msg(' - execution time: {:.0f} msec.\n'.format((time.clock()-st)*1000.0))
   
   data['qstar'], data['qplanet'], data['qzodi'], data['channel'] = star, planet, zodi, channel
   
