@@ -187,6 +187,8 @@ def psf(wl, fnum, delta, nzero = 4, shape='airy'):
         Psf : ndarray
         three dimensional array. Each PSF normalised to unity
         '''
+    print "generating psf stack"    
+    
     Nx = np.round(special.jn_zeros(1, nzero)[-1]/(2.0*np.pi) * fnum*wl.max()/delta).astype(np.int)
   
     Ny = Nx
@@ -210,12 +212,16 @@ def psf(wl, fnum, delta, nzero = 4, shape='airy'):
       img = np.exp(-arg)
     
     norm = img.sum(axis=0).sum(axis=0)
-    return img/norm
-                                                                                
+    
     print "psf stack generated"
 
+    return img/norm
+                                                                                
 
-def fpa(fp,psf_stack,delta_psf,sed,kernal,ad_ovs,pix_size): # to be placed in exolib
+
+def fpa(fp,psf_stack,delta_psf,sed,kernal,ad_ovs,pix_size,QE): # to be placed in exolib
+
+    print "generating oversampled fpa"
     
     psf_position = np.arange(0,fp.shape[1]-psf_stack.shape[1],delta_psf) # psf spacings along x axis
     
@@ -227,6 +233,12 @@ def fpa(fp,psf_stack,delta_psf,sed,kernal,ad_ovs,pix_size): # to be placed in ex
     
     for k in idx: # coadds psfs onto fp array and multiplies by sed
         fp[i0:i1, j0[k]:j1[k]] += sed[k]*psf_stack[...,k]  #sed needs to be oversampled at rate ovs
+        
+    print "applying QE grid with variations"
+    
+    fp = fp*QE
+               
+    print "convolving fpa with pixel kernal"
 
     fp_crop = fp[i0-100:i1+100]
     
@@ -246,6 +258,9 @@ def fpa(fp,psf_stack,delta_psf,sed,kernal,ad_ovs,pix_size): # to be placed in ex
     cc1=cc1*corr
     
     print "kernal normalization correction applied:", corr
+    
+    print "applying additional oversampling factor to convolved fpa"
+
     
     xin = np.linspace(-1.0, 1.0, cc1.shape[0])
     yin = np.linspace(-1.0, 1.0, cc1.shape[1])
@@ -269,7 +284,7 @@ def convolution_normalization(kernal):
     corr = osf**2/np.sum(kernal)
     return corr   
 
-def kernal(pix_size,ovs):
+def kernal(pix_size,ovs):  #need to add edge
     ld = 1.7
     
     ax = np.linspace(-pix_size/2,pix_size/2,ovs)
@@ -430,7 +445,9 @@ def jitter(obs_time,int_time,osr,rms,mode=2):
 
     else:
         print "error: maximum of 2 psds can be used"
-    
+
+#    xt = xt   
+#    yt = yt 
     xt = xt*(rms*(np.sqrt(2)/2)/np.std(xt))    
     yt = yt*(rms*(np.sqrt(2)/2)/np.std(yt))
     return xt,yt,new_time

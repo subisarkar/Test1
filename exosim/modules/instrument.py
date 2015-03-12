@@ -48,7 +48,8 @@ def run(opt, star, planet, zodi):
     instrument_transmission.sed = instrument_transmission.sed*tr.sed
     
     channel = {}
-    for key in opt.channel.keys():
+    for key in ['SWIR']:
+#    for key in opt.channel.keys():
       channel[key] = Channel(star.sed, planet.cr, zodi.sed, instrument_emission, instrument_transmission)
       for op in opt.channel[key]['optical_surface']:
 	  dtmp=np.loadtxt(op.transmission.replace('$root$', opt.common_exosym_path.val), delimiter=',')
@@ -63,8 +64,11 @@ def run(opt, star, planet, zodi):
       
       channel[key].psf_osf      = 4    # Oversample psf by this factor to ensure Nyquist- use even
       channel[key].osf          = 21   # Oversample each pixel by this factor per axis prior to pixel convolution
-      channel[key].ad_ovs     = 5    # Oversample each pixel again
-      
+      channel[key].ad_osf     = 5    # Oversample each pixel again
+      channel[key].quantum_efficiency = 0.6
+      channel[key].quantum_efficiency_sd = 0.05
+
+      osf = channel[key].osf 
      
       ### create focal plane
       #1# Obtain wavelength dispersion relation
@@ -84,6 +88,7 @@ def run(opt, star, planet, zodi):
       x_wav     = ld[0] + ld[1]*(x_pix-ld[2]) # wvalength on each x pixel
       x_wav_osr = ld[0] + ld[1]*(x_pix_osr-ld[2]) # wvalength on each x pixel
                  
+      print "JJJJ", fpn
             
       psf = exolib.psf(x_wav, opt.channel[key]['wfno'].val,  fp_delta, shape='airy')      
       psf = np.repeat(psf, channel[key].psf_osf, axis=2)
@@ -95,10 +100,17 @@ def run(opt, star, planet, zodi):
       channel[key].fp          = fp
       channel[key].wl_solution = x_wav_osr
       
+      QE = np.random.normal(channel[key].quantum_efficiency,channel[key].quantum_efficiency_sd,fpn)
+      QE = np.repeat(QE,osf,axis=0)
+      QE = np.repeat(QE,osf,axis=1)
+     
       kernal = exolib.kernal(pix_size, channel[key].osf)
       sed = np.ones((psf.shape[2]))
 
-      fpa, conv_fpa  = exolib.fpa(fp,psf,psf_delta,sed,kernal,channel[key].ad_ovs,pix_size)
+      fpa, conv_fpa  = exolib.fpa(fp,psf,psf_delta,sed,kernal,channel[key].ad_osf,pix_size,QE)
+      
+      channel[key].fpa    = fpa
+      channel[key].conv_fpa = conv_fpa  
     #return star, planet, zodi, instrument_emission, instrument_transmission
     return channel
 
