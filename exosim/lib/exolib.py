@@ -223,32 +223,34 @@ def fpa(fp,psf_stack,delta_psf,sed,kernal,ad_ovs,pix_size,QE): # to be placed in
 
     print "generating oversampled fpa"
     
-    psf_position = np.arange(0,fp.shape[1]-psf_stack.shape[1],delta_psf) # psf spacings along x axis
+    fpa = fp*1 #nullify array copying effect
+    
+    psf_position = np.arange(0,fpa.shape[1]-psf_stack.shape[1],delta_psf) # psf spacings along x axis
     
     j0 =  psf_position #array of psf 'tiles' left most positions along x axis
     j1 = j0 + psf_stack.shape[1] #right position of psf 'tiles'
     idx = range(0,len(psf_position)) #index = no of psfs being coadded
-    i0 = (fp.shape[0]/2 - psf_stack.shape[0]/2) #upper edge of psf 'tiles'
+    i0 = (fpa.shape[0]/2 - psf_stack.shape[0]/2) #upper edge of psf 'tiles'
     i1 = i0 + psf_stack.shape[0] #lower edge of psf 'tiles'
-    
-    for k in idx: # coadds psfs onto fp array and multiplies by sed
-        fp[i0:i1, j0[k]:j1[k]] += sed[k]*psf_stack[...,k]  #sed needs to be oversampled at rate ovs
         
+    for k in idx: # coadds psfs onto fp array and multiplies by sed
+        fpa[i0:i1, j0[k]:j1[k]] += sed[k]*psf_stack[...,k]  #sed needs to be oversampled at rate ovs
+    
     print "applying QE grid with variations"
     
-    fp = fp*QE
-               
+    fpa = fpa*QE
+                   
     print "convolving fpa with pixel kernal"
 
-    fp_crop = fp[i0-100:i1+100]
-    
+    fpa_crop = fpa[i0-100:i1+100]
+        
     [U,S,V] = linalg.svd(kernal)
     s = S[0]
     v = U[:,0]
     v = v.reshape(len(v),1)*np.sqrt(s)
     h = V[0]*np.sqrt(s)
     h= np.array([h])
-    aa = signal.convolve2d(fp_crop,v,'same')
+    aa = signal.convolve2d(fpa_crop,v,'same')
     cc1 = signal.convolve2d(aa,h,'same')
     
     print "convolution done"
@@ -269,15 +271,34 @@ def fpa(fp,psf_stack,delta_psf,sed,kernal,ad_ovs,pix_size,QE): # to be placed in
     
     f = interpolate.RectBivariateSpline(xin, yin, cc1)
     cc2 = f(xout,yout)
+#    
+#    xin = np.linspace(-1.0, 1.0, fpa_crop.shape[0])
+#    yin = np.linspace(-1.0, 1.0, fpa_crop.shape[1])
+#    xout = np.linspace(-1.0, 1.0, fpa_crop.shape[0]*ad_ovs)
+#    yout = np.linspace(-1.0, 1.0, fpa_crop.shape[1]*ad_ovs)
+#    
+#    f = interpolate.RectBivariateSpline(xin, yin, fpa_crop)
+#    fpa_crop0 = f(xout,yout)/ad_ovs**2
+#    fpa_crop = fpa_crop0
+#    distortion_correction = (fpa.sum()/fpa_crop.sum())
+#    fpa_crop *= distortion_correction
+
             
-    conv_fp = np.zeros((fp.shape[0]*ad_ovs,fp.shape[1]*ad_ovs))
+    conv_fpa = np.zeros((fpa.shape[0]*ad_ovs,fpa.shape[1]*ad_ovs))
         
-    conv_fp = np.zeros((fp.shape[0]*ad_ovs,fp.shape[1]*ad_ovs)) 
-    conv_fp[(i0-100)*ad_ovs:(i0-100)*ad_ovs+cc2.shape[0],(j0[0])*ad_ovs:(j0[0])*ad_ovs+cc2.shape[1]] = cc2
+    conv_fpa = np.zeros((fpa.shape[0]*ad_ovs,fpa.shape[1]*ad_ovs)) 
+    conv_fpa[(i0-100)*ad_ovs:(i0-100)*ad_ovs+cc2.shape[0],(j0[0])*ad_ovs:(j0[0])*ad_ovs+cc2.shape[1]] = cc2
+    
+    osf = kernal.shape[0]*ad_ovs
+    pix_count = conv_fpa[int(osf/2)::osf, int(osf/2)::osf]*1
+            
+    conv_fpa = conv_fpa*(fpa.sum()/pix_count.sum())
+    
+    pix_count = conv_fpa[int(osf/2)::osf, int(osf/2)::osf]*1
     
     print "addition oversampling done"
     
-    return fp,conv_fp
+    return fpa,conv_fpa, fpa_crop
 
 def convolution_normalization(kernal):
     osf = kernal.shape[0]
@@ -554,3 +575,4 @@ def congrid(a, newdims, method='linear', centre=False, minusone=False):
               "Currently only \'neighbour\', \'nearest\',\'linear\',", \
               "and \'spline\' are supported."
         return None
+

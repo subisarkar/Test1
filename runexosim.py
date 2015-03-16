@@ -6,15 +6,17 @@ import numpy           as     np
 import pylab           as     pl
 import sys, time
 import exosim
+import matplotlib.pyplot as plt
 
 
 # hello
 data = {}
 opt = 0 
+channel = 0
 def run_exosim(parameters=None):
   global data 
   global opt
-  
+  global channel
 #  timeline = exosim.modules.timeline_generator.run()
 
   exosim.lib.exolib.exosim_msg('Reading options from file ... \n')
@@ -36,11 +38,17 @@ def run_exosim(parameters=None):
   st = time.clock()
   
   channel = exosim.modules.instrument.run(opt, star, planet, zodi)
-  exosim.lib.exolib.exosim_msg(' - execution time: {:.0f} msec.\n'.format((time.clock()-st)*1000.0))
   
   data['qstar'], data['qplanet'], data['qzodi'], data['channel'] = star, planet, zodi, channel
+      
+  exosim.lib.exolib.exosim_msg('Create jittered timeline ... ')
+  st = time.clock()
   
   timeline = exosim.modules.timeline_generator.run(opt, channel)
+  data['timeline'] = timeline
+  
+  exosim.lib.exolib.exosim_msg(' - execution time: {:.0f} msec.\n'.format((time.clock()-st)*1000.0))
+
   
 if __name__ == "__main__":
   
@@ -72,11 +80,23 @@ if __name__ == "__main__":
   pl.plot(data['channel']['SWIR'].transmission.wl, data['channel']['SWIR'].transmission.sed)
 #  pl.plot(data['channel']['MWIR'].transmission.wl, data['channel']['MWIR'].transmission.sed)
   pl.subplot(3,3,7)
-  pl.imshow(data['channel']['SWIR'].fp, 
+  pl.imshow(data['channel']['SWIR'].fpa, 
     extent=[data['channel']['SWIR'].wl_solution.min(),data['channel']['SWIR'].wl_solution.max(),0,1])
 #  pl.subplot(3,3,8)
 #  pl.imshow(data['channel']['MWIR'].fp, 
 #    extent=[data['channel']['MWIR'].wl_solution.min(),data['channel']['MWIR'].wl_solution.max(),0,1])
 
   
+
+  pix_sum = []  
+  for i in range(0,data['timeline'].shape[2]):
+      pix_sum.append(data['timeline'][...,i].sum())
+        
+  pl.figure(3)
+  pl.plot(pix_sum)
+      
   pl.show()
+
+plt.figure(878)
+for i in range (0,data['timeline'].shape[2]):
+    plt.plot(data['timeline'][32,...,i])

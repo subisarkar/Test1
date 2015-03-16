@@ -2,6 +2,9 @@ from ..classes.sed import Sed
 from ..lib         import exolib
 import numpy     as     np
 import copy
+import matplotlib.pyplot as plt
+from mpl_toolkits.mplot3d import Axes3D
+
 
 import numpy     as     np
 import copy
@@ -66,10 +69,11 @@ def run(opt, star, planet, zodi):
       channel[key].osf          = 21   # Oversample each pixel by this factor per axis prior to pixel convolution
       channel[key].ad_osf     = 5    # Oversample each pixel again
       channel[key].quantum_efficiency = 0.6
-      channel[key].quantum_efficiency_sd = 0.05
+      channel[key].quantum_efficiency_sd = 0.005
 
       osf = channel[key].osf 
-     
+      ad_osf = channel[key].ad_osf   
+
       ### create focal plane
       #1# Obtain wavelength dispersion relation
       ld  = np.fromstring(opt.channel[key]['ld'].val, 
@@ -87,30 +91,43 @@ def run(opt, star, planet, zodi):
       x_pix_osr = np.arange(fp.shape[1])  * fp_delta
       x_wav     = ld[0] + ld[1]*(x_pix-ld[2]) # wvalength on each x pixel
       x_wav_osr = ld[0] + ld[1]*(x_pix_osr-ld[2]) # wvalength on each x pixel
-                 
-      print "JJJJ", fpn
-            
+                             
       psf = exolib.psf(x_wav, opt.channel[key]['wfno'].val,  fp_delta, shape='airy')      
       psf = np.repeat(psf, channel[key].psf_osf, axis=2)
-      
+            
       psf_delta = (1./channel[key].psf_osf)*channel[key].osf  
           
       channel[key].fp_delta    = fp_delta
       channel[key].psf         = psf
       channel[key].fp          = fp
       channel[key].wl_solution = x_wav_osr
-      
-      QE = np.random.normal(channel[key].quantum_efficiency,channel[key].quantum_efficiency_sd,fpn)
+
+        
+      QE = np.random.normal(channel[key].quantum_efficiency,
+                            channel[key].quantum_efficiency_sd*channel[key].quantum_efficiency
+                            ,fpn)
       QE = np.repeat(QE,osf,axis=0)
       QE = np.repeat(QE,osf,axis=1)
      
       kernal = exolib.kernal(pix_size, channel[key].osf)
       sed = np.ones((psf.shape[2]))
+      sed = channel[key].star.sed[0:psf.shape[2]]
 
-      fpa, conv_fpa  = exolib.fpa(fp,psf,psf_delta,sed,kernal,channel[key].ad_osf,pix_size,QE)
       
+      fpa, conv_fpa, fpa_crop  = exolib.fpa(fp,psf,psf_delta,sed,kernal,ad_osf,pix_size,QE)
+            
       channel[key].fpa    = fpa
-      channel[key].conv_fpa = conv_fpa  
+      channel[key].conv_fpa = conv_fpa
+      channel[key].fpa_crop = fpa_crop
+      
+#    yy = np.arange(0,conv_fpa.shape[0],1)
+#    xx = np.arange(0,conv_fpa.shape[1],1)
+#    xx,yy = np.meshgrid(xx,yy)
+#
+#    fig1 = plt.figure(222)
+#    ax1 = fig1.add_subplot(111, projection='3d')
+#    ax1.plot_wireframe(xx, yy, conv_fpa, rstride=2000, cstride=2000)  
+
     #return star, planet, zodi, instrument_emission, instrument_transmission
     return channel
 
