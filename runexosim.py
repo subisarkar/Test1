@@ -97,6 +97,14 @@ if __name__ == "__main__":
       
   pl.show()
 
+tl = []
 plt.figure(878)
 for i in range (0,data['timeline'].shape[2]):
     plt.plot(data['timeline'][32,...,i])
+    tl.append(data['timeline'][...,i].sum())
+print "mean count", np.mean(tl)
+print "sd of count", np.std(tl)
+
+
+#exosim.lib.exolib.animate(data)
+

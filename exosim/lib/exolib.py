@@ -219,7 +219,7 @@ def psf(wl, fnum, delta, nzero = 4, shape='airy'):
                                                                                 
 
 
-def fpa(fp,psf_stack,delta_psf,sed,kernal,ad_ovs,pix_size,QE): # to be placed in exolib
+def fpa(fp,psf_stack,delta_psf,sed,kernal,ad_osf,pix_size,QE): # to be placed in exolib
 
     print "generating oversampled fpa"
     
@@ -262,43 +262,34 @@ def fpa(fp,psf_stack,delta_psf,sed,kernal,ad_ovs,pix_size,QE): # to be placed in
     print "kernal normalization correction applied:", corr
     
     print "applying additional oversampling factor to convolved fpa"
-
     
     xin = np.linspace(-1.0, 1.0, cc1.shape[0])
     yin = np.linspace(-1.0, 1.0, cc1.shape[1])
-    xout = np.linspace(-1.0, 1.0, cc1.shape[0]*ad_ovs)
-    yout = np.linspace(-1.0, 1.0, cc1.shape[1]*ad_ovs)
+    xout = np.linspace(-1.0, 1.0, cc1.shape[0]*ad_osf)
+    yout = np.linspace(-1.0, 1.0, cc1.shape[1]*ad_osf)
     
     f = interpolate.RectBivariateSpline(xin, yin, cc1)
     cc2 = f(xout,yout)
-#    
-#    xin = np.linspace(-1.0, 1.0, fpa_crop.shape[0])
-#    yin = np.linspace(-1.0, 1.0, fpa_crop.shape[1])
-#    xout = np.linspace(-1.0, 1.0, fpa_crop.shape[0]*ad_ovs)
-#    yout = np.linspace(-1.0, 1.0, fpa_crop.shape[1]*ad_ovs)
-#    
-#    f = interpolate.RectBivariateSpline(xin, yin, fpa_crop)
-#    fpa_crop0 = f(xout,yout)/ad_ovs**2
-#    fpa_crop = fpa_crop0
-#    distortion_correction = (fpa.sum()/fpa_crop.sum())
-#    fpa_crop *= distortion_correction
-
+    
             
-    conv_fpa = np.zeros((fpa.shape[0]*ad_ovs,fpa.shape[1]*ad_ovs))
+    conv_fpa = np.zeros((fpa.shape[0]*ad_osf,fpa.shape[1]*ad_osf))
         
-    conv_fpa = np.zeros((fpa.shape[0]*ad_ovs,fpa.shape[1]*ad_ovs)) 
-    conv_fpa[(i0-100)*ad_ovs:(i0-100)*ad_ovs+cc2.shape[0],(j0[0])*ad_ovs:(j0[0])*ad_ovs+cc2.shape[1]] = cc2
+    conv_fpa = np.zeros((fpa.shape[0]*ad_osf,fpa.shape[1]*ad_osf)) 
+    conv_fpa[(i0-100)*ad_osf:(i0-100)*ad_osf+cc2.shape[0],(j0[0])*ad_osf:(j0[0])*ad_osf+cc2.shape[1]] = cc2
     
-    osf = kernal.shape[0]*ad_ovs
+    osf = kernal.shape[0]*ad_osf
     pix_count = conv_fpa[int(osf/2)::osf, int(osf/2)::osf]*1
-            
+                
     conv_fpa = conv_fpa*(fpa.sum()/pix_count.sum())
-    
     pix_count = conv_fpa[int(osf/2)::osf, int(osf/2)::osf]*1
+    
     
     print "addition oversampling done"
     
-    return fpa,conv_fpa, fpa_crop
+
+
+    
+    return fpa,conv_fpa
 
 def convolution_normalization(kernal):
     osf = kernal.shape[0]
@@ -472,107 +463,91 @@ def jitter(obs_time,int_time,osr,rms,mode=2):
     xt = xt*(rms*(np.sqrt(2)/2)/np.std(xt))    
     yt = yt*(rms*(np.sqrt(2)/2)/np.std(yt))
     return xt,yt,new_time
-
-
-def congrid(a, newdims, method='linear', centre=False, minusone=False):
-    '''Arbitrary resampling of source array to new dimension sizes.
-    Currently only supports maintaining the same number of dimensions.
-    To use 1-D arrays, first promote them to shape (x,1).
     
-    Uses the same parameters and creates the same co-ordinate lookup points
-    as IDL''s congrid routine, which apparently originally came from a VAX/VMS
-    routine of the same name.
+def animate(data):
+    import matplotlib.pyplot as plt  
 
-    method:
-    neighbour - closest value from original data
-    nearest and linear - uses n x 1-D interpolations using
-                         scipy.interpolate.interp1d
-    (see Numerical Recipes for validity of use of n 1-D interpolations)
-    spline - uses ndimage.map_coordinates
+    fig = plt.figure()
+    ax = fig.add_subplot(111, projection='3d')
+    a = data['timeline']
+    wframe = None
+    
+    def anim(X,Y,Z):
+        return ax.plot_wireframe(X, Y, Z, rstride=5, cstride=5, color = 'blue')
+  
+    for i in range(0,a.shape[2]):
+        
+#            oldcol = wframe
+            ax.clear()
+            
+            
+            Z = a[...,i]
+            
+            
+            X = np.arange(0, Z.shape[1])
+            Y = np.arange(0, Z.shape[0])
+            X, Y = np.meshgrid(X, Y)
+            
+            anim(X,Y,Z)
+            
+            ax.set_zlim(0,a[...,0].max())
+#            ax.set_title(j)
+#            
+    
+            
+    
+        
+            # Remove old line collection before drawing
+#            if oldcol is not None:
+#                ax.collections.remove(oldcol)
+        
+            plt.pause(.01)
+            
+def animate2(data):
+    from matplotlib import animation    
+    from matplotlib import pyplot as plt
+    from mpl_toolkits.mplot3d.axes3d import Axes3D  #-- voor 3d assen
+    import time
 
-    centre:
-    True - interpolation points are at the centres of the bins
-    False - points are at the front edge of the bin
+    a = data['timeline']
+    Z = a[...,0]
 
-    minusone:
-    For example- inarray.shape = (i,j) & new dimensions = (x,y)
-    False - inarray is resampled by factors of (i/x) * (j/y)
-    True - inarray is resampled by(i-1)/(x-1) * (j-1)/(y-1)
-    This prevents extrapolation one element beyond bounds of input array.
-    '''
-    if not a.dtype in [n.float64, n.float32]:
-        a = n.cast[float](a)
+    X = np.arange(0, Z.shape[1])
+    Y = np.arange(0, Z.shape[0])
+    X, Y = np.meshgrid(X, Y)
 
-    m1 = n.cast[int](minusone)
-    ofs = n.cast[int](centre) * 0.5
-    old = n.array( a.shape )
-    ndims = len( a.shape )
-    if len( newdims ) != ndims:
-        print "[congrid] dimensions error. " \
-              "This routine currently only support " \
-              "rebinning to the same number of dimensions."
-        return None
-    newdims = n.asarray( newdims, dtype=float )
-    dimlist = []
+    def init_wave_profile(): 
+        Z = a[...,0]
 
-    if method == 'neighbour':
-        for i in range( ndims ):
-            base = n.indices(newdims)[i]
-            dimlist.append( (old[i] - m1) / (newdims[i] - m1) \
-                            * (base + ofs) - ofs )
-        cd = n.array( dimlist ).round().astype(int)
-        newa = a[list( cd )]
-        return newa
 
-    elif method in ['nearest','linear']:
-        # calculate new dims
-        for i in range( ndims ):
-            base = n.arange( newdims[i] )
-            dimlist.append( (old[i] - m1) / (newdims[i] - m1) \
-                            * (base + ofs) - ofs )
-        # specify old dims
-        olddims = [n.arange(i, dtype = n.float) for i in list( a.shape )]
+  # ----------------------------------------------
+    def update_wave_profile(i,Z,p1):
+  # ----------------------------------------------
+        Z = a[...,i]
 
-        # first interpolation - for ndims = any
-        mint = scipy.interpolate.interp1d( olddims[-1], a, kind=method )
-        newa = mint( dimlist[-1] )
 
-        trorder = [ndims - 1] + range( ndims - 1 )
-        for i in range( ndims - 2, -1, -1 ):
-            newa = newa.transpose( trorder )
 
-            mint = scipy.interpolate.interp1d( olddims[i], newa, kind=method )
-            newa = mint( dimlist[i] )
+  #-- define plot and initialize profile (flat)
+    fig = plt.figure(figsize=(6,6))
+    init_wave_profile()
+    ax = fig.add_subplot(1, 1, 1, projection='3d')
+    p1 = ax.plot_wireframe(X, Y, Z, rstride=10, cstride=10, color = 'blue')
+#  ax.set_xlim3d(-0.1,1.1);
+#  ax.set_ylim3d(-0.1, 1.1);
+#  ax.set_zlim3d(-0.5, 1.5);
 
-        if ndims > 1:
-            # need one more transpose to return to original dimensions
-            newa = newa.transpose( trorder )
+  #-- animate the profile  
+    i= np.arange(0,100) 
+    anim = animation.FuncAnimation(
+            fig         = fig,
+            func       = update_wave_profile,
+            init_func = init_wave_profile,
+            frames   = 10,
+            interval  = 200,
+            blit        = False,
+            fargs     = (i, Z, p1)
+            )
+    anim()
+    plt.show()
 
-        return newa
-    elif method in ['spline']:
-        oslices = [ slice(0,j) for j in old ]
-        oldcoords = n.ogrid[oslices]
-        nslices = [ slice(0,j) for j in list(newdims) ]
-        newcoords = n.mgrid[nslices]
-
-        newcoords_dims = range(n.rank(newcoords))
-        #make first index last
-        newcoords_dims.append(newcoords_dims.pop(0))
-        newcoords_tr = newcoords.transpose(newcoords_dims)
-        # makes a view that affects newcoords
-
-        newcoords_tr += ofs
-
-        deltas = (n.asarray(old) - m1) / (newdims - m1)
-        newcoords_tr *= deltas
-
-        newcoords_tr -= ofs
-
-        newa = scipy.ndimage.map_coordinates(a, newcoords)
-        return newa
-    else:
-        print "Congrid error: Unrecognized interpolation type.\n", \
-              "Currently only \'neighbour\', \'nearest\',\'linear\',", \
-              "and \'spline\' are supported."
-        return None
-
+    
