@@ -6,117 +6,162 @@ Created on Wed Mar 11 12:51:06 2015
 """
 
 import numpy as np
-import scipy
-import exosim
+from scipy import interpolate
+from ..lib import exolib
 import matplotlib.pyplot as plt
 
 #set observation parameters
 
 def run(opt,channel):
     
-    key = 'SWIR'
-      
-    int_time = 12.0 #enter intergration time in sec for one "exposure" = NDR
-    obs_time_hours = 6.0 #enter total observing time in hours
-    obs_time = obs_time_hours*60*60.0
-    time_osf = 100
- # no of osr samples per integration time
-    rms = 4.0e-4
-     
-    #Call Jitter function
-     
-    ra_jitter, dec_jitter, time = exosim.lib.exolib.jitter(obs_time,int_time,time_osf,rms,mode=2)
-    
-    focal_length = opt.channel[key]['wfno'].val
-    pixel_size = opt.channel[key]['pixel_size'].val
-    total_osf = channel[key].osf*channel[key].ad_osf
-    conv_fpa = channel[key].conv_fpa
-    fpn = np.fromstring(opt.channel[key]['array_geometry'].val, 
-	  sep=' ', dtype=np.float64)
-   
-    
-    pix_count = conv_fpa[int(total_osf/2)::total_osf, int(total_osf/2)::total_osf]*1
-            
-    plate_scale =  206265/focal_length #arcsec per metre
-    plate_scale /= 1e6 #arcsec per micron
-    plate_scale /= 60*60 #degrees per micron
-                
-    ra_jitter /= plate_scale  # convert jitter from degrees to microns
-    dec_jitter /= plate_scale
-
-    print "std ra_jitter in microns", np.std(ra_jitter)
-    print "std dec_jitter in microns", np.std(dec_jitter)
+    for key in ['SWIR']:  #opt.channel.keys():
         
-    ra_jitter *= total_osf/pixel_size  # convert jitter to no of osf 'units'
-    dec_jitter *= total_osf/pixel_size 
+        focal_length = opt.channel[key]['wfno'].val
+        pixel_size = opt.channel[key]['pixel_size'].val
+        osf = channel[key].osf 
+        fpn = np.fromstring(opt.channel[key]['array_geometry'].val, 
+    	  sep=' ', dtype=np.float64)
+        fp = channel[key].fp
     
-    print "maximum jitter in osf units", abs(ra_jitter).max(), abs(dec_jitter).max()
-    print "minimum jitter in osf units", abs(ra_jitter).min(), abs(dec_jitter).min()
-
+             
+        ndr_number = 13 # the number of ndrs per exposure
+        exp_number = 10 # the total number of exposures
+        ndr_time = 7.0 #enter intergration time in sec for one "exposure" = NDR
+        exp_time = ndr_time *ndr_number
+        ndr_osf = 100  # no of osr samples per ndr
     
-    pad_y = total_osf*(np.round(ra_jitter.max()/total_osf))*2
-    pad_x= total_osf*(np.round(dec_jitter.max()/total_osf))*2
+        N = exp_number * ndr_number  # number of ndrs in total
         
-#    conv_fpa0 = conv_fpa
-    XX = pad_x*2 + conv_fpa.shape[1]  
-    YY = pad_y*2 + conv_fpa.shape[0] 
-    
-    y_pixels = fpn[0]
-    x_pixels = fpn[1]
-    
-    pad = np.zeros((YY,XX))    
-    pad[pad_y:pad_y+conv_fpa.shape[0],pad_x:pad_x+conv_fpa.shape[1]] = conv_fpa
-    
-    conv_fpa = pad
-    
-    pix_count = conv_fpa[int(total_osf/2)::total_osf, int(total_osf/2)::total_osf]*1
-           
-    pix_count = np.zeros((y_pixels,x_pixels))
-                                          
-    N = 100
-    pca = np.zeros((pix_count.shape[0],pix_count.shape[1],N))
-    j = 0
-    ct = 0
+        obs_time_hours = 6.0 #enter total observing time in hours
+        obs_time = obs_time_hours*60*60.0
+        rms = 4.0e-5
         
-    
-    for i in range(0,N*time_osf):
-        ct += 1
-        offset_y = ra_jitter[i]
-        offset_x = dec_jitter[i]
-        
-
-        count = conv_fpa[int(total_osf/2)+pad_y+offset_y: int(total_osf/2)+pad_y + offset_y+ y_pixels*total_osf: total_osf, 
-                int(total_osf/2)+pad_x+offset_x: int(total_osf/2)+pad_x + offset_x+ x_pixels*total_osf: total_osf]
+        ad_osf = 7
+        QE = 0.6
+        QEsd = 0.05
          
-#        print count.sum()                                  
-        pix_count += count                                   
-        if  count.sum() > 2000:    
-       
-             print count.sum(),i,"!!!!!"
+        #Call Jitter function
+         
+        ra_jitter, dec_jitter, time = exolib.jitter(obs_time,ndr_time,ndr_osf,rms,mode=2)
     
-                                   
-        if ct == time_osf:
-            ct = 0
-            pca[...,j] = pix_count
-            j += 1
-            pix_count *= 0
-            
+        plate_scale =  206265/ focal_length #arcsec per metre
         
+        ra_jitter = (ra_jitter/((plate_scale/1e6)/3600))/pixel_size
+        dec_jitter = (dec_jitter/((plate_scale/1e6)/3600))/pixel_size
     
-
-    return pca
+        # Apply quantum efficiency variations 
+       
+        QE_array = np.random.normal(QE,QEsd*QE,fpn)
+        QE_array = np.repeat(QE_array,osf,axis=0)
+        QE_array = np.repeat(QE_array,osf,axis=1)  
+       
+        fp = fp*QE_array
      
-    plt.figure(1)
-    plt.clf()
-    plt.subplot(2,1,1)
-    plt.plot(time,ra_jitter,'ro',markersize=0.6)
-    plt.subplot(2,1,2)
-    plt.plot(time,dec_jitter,'ro',markersize=0.6)
-
-
-
-
-
+        # Apply additional oversampling
+       
+        fp_count = fp[int(osf/2) :int(osf/2) + fpn[0]*osf :osf, \
+                      int(osf/2) :int(osf/2) + fpn[1]*osf :osf]
+            
+        xin = np.linspace(-1,1,fp.shape[1])
+        xout = np.linspace(-1,1,fp.shape[1]*ad_osf)
+        yin = np.linspace(-1,1,fp.shape[0])
+        yout = np.linspace(-1,1,fp.shape[0]*ad_osf)
     
+        fn = interpolate.RectBivariateSpline(yin,xin,fp)
+        
+        new_fp = fn(yout, xout)
+        new_osf = osf*ad_osf   
+            
+        count = new_fp[int(new_osf/2):int(new_osf/2)+fpn[0]*new_osf:new_osf, \
+                       int(new_osf/2):int(new_osf/2) +fpn[1]*new_osf:new_osf]
+        
+        print""               
+        print "fp_count, unmodified count", fp_count.sum(),count.sum() 
+                       
+        new_fp  = new_fp * fp_count.sum()/count.sum() 
+        #this compensates for increased count caused by the oversampling               
+        
+        count = new_fp[int(new_osf/2):int(new_osf/2)+fpn[0]*new_osf:new_osf, \
+                       int(new_osf/2):int(new_osf/2) +fpn[1]*new_osf:new_osf]  
+        
+        new_fp0 = new_fp*1
+                      
+        print "modified  count", count.sum()   
+           
+           
+        # convert jitter from pixel units to new_osf units   
+        
+        
+        jitter_x = ra_jitter*new_osf
+        jitter_y = dec_jitter*new_osf
+                
+        # Apply a zeropad to allow for jitter beyond the size of the fp array    
+    
+        zeropad_x = round(jitter_x.max())*2
+        zeropad_y = round(jitter_y.max())*2
+        
+        pad = np.zeros((zeropad_y*2 + new_fp.shape[0], zeropad_x*2 + new_fp.shape[1]))
+    
+        pad[zeropad_y:zeropad_y + new_fp.shape[0], zeropad_x:zeropad_x + new_fp.shape[1]] = new_fp
+    
+        new_fp = pad  
+                
+    # Generate focal plane jitter
+    #  - RPE simulated by ndr_osf loops where fp jitters and pixel count accumulates            
+    #  - At end of each ndr, the accumulated count is stored as one 2d array in pca data cube
+    #  - At end of each ndr, the RPE jitter standard deviation for each pixel 
+    #         is stored in the pna data cube 
+                
+        pca = np.zeros((fpn[0],fpn[1],N))
+        pna = np.zeros((fpn[0],fpn[1],N))
+        
+        nda = np.zeros((fpn[0],fpn[1],ndr_osf))
+        
+        count = np.zeros((fpn[0],fpn[1]))
+        
+        for i in range(N):
+            
+            nda = np.zeros((fpn[0],fpn[1],ndr_osf))
+    
+            for j in range(ndr_osf):
+                
+                ofx = jitter_x[i*ndr_osf +j]
+                ofy = jitter_y[i*ndr_osf +j]
+            
+                start_x = int(new_osf/2)+zeropad_x
+                start_y = int(new_osf/2)+zeropad_y
+                
+                start_x = start_x + round(ofx)
+                start_y = start_y + round(ofy)
+            
+                nda[...,j] = new_fp[start_y:start_y +fpn[0]*new_osf:new_osf, \
+                                     start_x:start_x +fpn[1]*new_osf:new_osf] 
+        
+            pca[...,i] = np.sum(nda, axis =2, dtype=np.float64)
+            pna[...,i] = np.std(nda, axis =2, dtype=np.float64)         
+             
+        return pca
+        
+            
+            ###
+            
+    #        start_x = int(new_osf/2)
+    #        start_y = int(new_osf/2)
+    #        
+    #        start_x = start_x + round(ofx)
+    #        start_y = start_y + round(ofy)
+    #    
+    #        count0 = new_fp0[start_y:start_y +fpn[0]*new_osf:new_osf, \
+    #                   start_x:start_x +fpn[1]*new_osf:new_osf]     
+    #        
+    #        print count.sum(), count0.sum(), ofx, ofy
+            
+            ####
+            
+    #        C.append(count.sum())
+    #    print 'mean', np.mean(C), 'std', np.std(C), len(C)
+
+
+
     
     

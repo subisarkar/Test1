@@ -10,8 +10,7 @@
 #__all__ = ["classes", "modules", "lib"]
 #from classes import *
 #from lib import *
-import lib
-from .classes import *
-from .modules import *
-from .lib import *
+from classes import *
+from modules import *
+from lib import *
 __root__ = "."

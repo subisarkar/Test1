@@ -77,7 +77,7 @@ class Options(object):
     """
     
     """
-    if filename == None: filename = EXOSIM_DEFAULTS   
+    if filename == None: filename = EXOSIM_DEFAULTS
     tree = ET.parse(filename)
     root = tree.getroot()
     self.root = root

@@ -1,11 +1,12 @@
 import numpy as np
-from scipy import signal,interpolate,special,linalg
+from scipy import signal
+from scipy import interpolate
 import sys, os, pyfits
 
 fd = sys.stderr.fileno()
 
 def exosim_error(error_msg):
-    sys.stderr.write("Non valid option or physical units given - error code {:s}\n".format(error_msg))
+    sys.stderr.write("Error code: {:s}\n".format(error_msg))
     sys.exit(0)
     
 def exosim_msg(msg):
@@ -41,7 +42,7 @@ def logbin(x, a,  R, xmin=None, xmax=None):
   return bins[:-1], mean[:-1]
 
 
-def rebin(x, xp, fp):
+def rebin_old(x, xp, fp):
   ''' Resample a function fp(xp) over the new grid x, rebinning if necessary, 
     otherwise interpolates
     Parameters
@@ -81,7 +82,95 @@ def rebin(x, xp, fp):
     #print test_integral_of_input, test_integral_of_output
     
     return x, s[:-1]
+
+def rebin(x, xp, fp):
+  ''' Resample a function fp(xp) over the new grid x, rebinning if necessary, 
+    otherwise interpolates
+    Parameters
+    ----------
+    x	: 	array like
+	New coordinates
+    fp 	:	array like
+	y-coordinates to be resampled
+    xp 	:	array like
+	x-coordinates at which fp are sampled
+	
+    Returns
+    -------
+    out	: 	array like
+	new samples
+  
+  '''
+  idx = np.where(np.logical_and(xp > 0.9*x.min(), xp < 1.1*x.max()))[0]
+  xp = xp[idx]
+  fp = fp[idx]
+  new_x = np.arange(xp.min(), xp.max(), np.diff(xp).min())
+  new_f = np.interp(new_x, xp, fp, left=0.0, right=0.0)
+  
+  c = np.cumsum(new_f, dtype=np.float64)[1:] *np.diff(new_x)
+  x = np.hstack( (np.array(x[0] - (x[1]-x[0])), x) )
+  fr = np.interp(x, new_x[1:], c)
+  
+  fr = np.diff(fr) /np.diff(x)
     
+  return x[1:], fr
+  
+def fast_convolution(im, delta_im, ker, delta_ker):
+  """ fast_convolution.
+    Convolve an image with a kernel. Image and kernel can be sampled on different
+      grids defined.
+    
+    Parameters
+    __________
+      im : 			array like
+				the image to be convolved
+      delta_im :		scalar
+				image sampling interval
+      ker : 			array like
+				the convolution kernel
+      delta_ker :		scalar
+				Kernel sampling interval
+    Returns
+    -------
+      spectrum:			array like
+				the image convolved with the kernel.
+  """
+  fc_debug = False
+  # Fourier transform the kernel
+  kerf = (np.fft.rfft2(ker))
+  ker_k = [ np.fft.fftfreq(ker.shape[0], d=delta_ker),
+	   np.fft.rfftfreq(ker.shape[1], d=delta_ker) ]
+  ker_k[0] = np.fft.fftshift(ker_k[0])
+  kerf     = np.fft.fftshift(kerf, axes=0)
+  
+  # Fourier transform the image
+  imf  = np.fft.rfft2(im)
+  im_k = [ np.fft.fftfreq(im.shape[0], d=delta_im),
+	   np.fft.rfftfreq(im.shape[1], d=delta_im) ]
+  im_k[0] = np.fft.fftshift(im_k[0])
+  imf     = np.fft.fftshift(imf, axes=0)
+  
+  # Interpolate kernel 
+  kerf_r = interpolate.RectBivariateSpline(ker_k[0], ker_k[1],
+					   kerf.real)
+  kerf_i = interpolate.RectBivariateSpline(ker_k[0], ker_k[1],
+					   kerf.imag)
+  if (fc_debug):
+    pl.plot(ker_k[0], kerf[:, 0].real,'.r')
+    pl.plot(ker_k[0], kerf[:, 0].imag,'.g')
+    pl.plot(im_k[0], kerf_r(im_k[0], im_k[1])[:, 0],'-r')
+    pl.plot(im_k[0], np.abs(imf[:, 0]),'-b')
+
+  # Convolve
+  imf = imf * (kerf_r(im_k[0], im_k[1]) + 1j*kerf_i(im_k[0], im_k[1])) 
+  
+  if (fc_debug):
+    pl.plot(im_k[0], np.abs(imf[:, 0]),'-y')
+
+  imf = np.fft.ifftshift(imf, axes=0)
+  
+  return np.fft.irfft2(imf)*(delta_ker/delta_im)**2
+
    
 def planck(wl, T):
   """ Planck function. 
@@ -115,197 +204,293 @@ def sed_propagation(sed, transmission, emissivity=None, temperature = None):
     sed.sed = sed.sed + emissivity.sed*planck(sed.wl, temperature)
 
   return sed
-
-
   
-def psf_stack(zfile, delta_pix, wav_range):
-    '''
-        PSF Interpolation
-        Parametes
-        ---------
+def Psf_Interp(zfile, delta_pix, WavRange):
+    ''' 
+    PSF Interpolation
+    Parametes
+    ---------
         zfile : string
-        input PSF fits file
+            input PSF fits file
         Delta : scalar
-        Sampling interval in micron
+            Sampling interval in micron
         WavRange : ndarray
-        array of wavelengths in micron
-        
-        Returns
-        -------
+            array of wavelengths in micron
+    
+    Returns
+    -------
         PSF interpolated data cube. Area normalised to unity.
         
-        '''
-    zfile = "/Users/c1341133/Desktop/zgrid7.fits" # file containing core psfs
-    
-    hdulist = pyfits.open(zfile)
+    '''
+    hdulist = pyfits.open(zfile)    
     NAXIS1, NAXIS2 = hdulist[0].header['NAXIS1'], hdulist[0].header['NAXIS2']
-    
-    pix_size0 = hdulist[0].header['CDELT1'] # size of the original pixel in micron
-    ad_ovs = pix_size0/delta_pix
-    
+    in_ph_size_x, in_ph_size_y = hdulist[0].header['CDELT1']*NAXIS1, hdulist[0].header['CDELT2']*NAXIS2
+    num_pix_x, num_pix_y = np.trunc(in_ph_size_x/delta_pix).astype(np.int), np.trunc(in_ph_size_y/delta_pix).astype(np.int)
+               
     inwl   = np.zeros(len(hdulist))
-    redata = np.zeros((NAXIS1*ad_ovs, NAXIS2*ad_ovs, len(hdulist)))
-    
+    redata = np.zeros((num_pix_y, num_pix_x, len(hdulist)))
+
     xin = np.linspace(-1.0, 1.0, NAXIS1)
     yin = np.linspace(-1.0, 1.0, NAXIS2)
-    
-    xout = np.linspace(-1.0, 1.0, NAXIS1*ad_ovs)
-    yout = np.linspace(-1.0, 1.0, NAXIS2*ad_ovs)
-    
+
+    xout = np.linspace(-1.0, 1.0, num_pix_x)
+    yout = np.linspace(-1.0, 1.0, num_pix_y)
+
     for i, hdu in enumerate(hdulist):
-        inwl[i]   = np.float64(hdu.header['WAV'])
+        inwl[i]   = np.float64(hdu.header['WAV'])        
         f = interpolate.RectBivariateSpline(xin, yin, hdu.data)
-        redata[..., i] = f(xout,yout)
+	redata[..., i] = f(xout,yout)
+
         redata[..., i] /= redata[..., i].sum()
+    return interpolate.interp1d(inwl, redata, axis=2, bounds_error=False, fill_value=0.0, kind='quadratic')(WavRange)
+
+
+def Psf(wl, fnum, delta, nzero = 4, shape='airy'):
+  '''
+  Calculates an Airy Point Spread Function arranged as a data-cube. The spatial axies are 
+  0 and 1. The wavelength axis is 2. Each PSF area is normalised to unity.
+  
+  Parameters
+  ----------
+  wl	: ndarray [physical dimension of length]
+    array of wavelengths at which to calculate the PSF
+  fnum : scalar
+    Instrument f/number
+  delta : scalar
+    the increment to use [physical units of length]
+  nzero : scalar
+    number of Airy zeros. The PSF kernel will be this big. Calculated at wl.max()
+  shape : string
+    Set to 'airy' for a Airy function,to 'gauss' for a Gaussian
+  
+  Returns
+  ------
+  Psf : ndarray
+    three dimensional array. Each PSF normalised to unity
+  '''
+  Nx = np.round(scipy.special.jn_zeros(1, nzero)[-1]/(2.0*np.pi) * fnum*wl.max()/delta).astype(np.int)
+  
+  Ny = Nx
+  
+  if shape=='airy':
+    d = 1.0/(fnum*wl)
+  elif shape=='gauss':
+    sigma = 1.029*fnum*wl/np.sqrt(8.0*np.log(2.0))
+    d     = 0.5/sigma**2
     
-    outdata = interpolate.interp1d(inwl, redata, axis=2, bounds_error=False, fill_value=0.0, kind='quadratic')(wav_range)
-    psf_stack = outdata
+  x = np.linspace(-Nx*delta, Nx*delta, 2*Nx+1)
+  y = np.linspace(-Ny*delta, Ny*delta, 2*Ny+1)
+  
+  yy, xx = np.meshgrid(y, x)
+  
+  if shape=='airy':
+    arg = 1.0e-20+np.pi*np.multiply.outer(np.sqrt(yy**2 + xx**2), d)
+    img   = (scipy.special.j1(arg)/arg)**2
+  elif shape=='gauss':
+    arg = np.multiply.outer(yy**2 + xx**2, d)
+    img = np.exp(-arg)
+    
+  norm = img.sum(axis=0).sum(axis=0)
+  return img/norm
 
-    return psf_stack
+  
+  
+  
+def PixelResponseFunction(psf_shape, psf_delta, osf, delta, lx = 1.7, ipd = 0.0):
+  '''
+  Estimate the detector pixel response function with the prescription of 
+  Barron et al., PASP, 119, 466-475 (2007).
+  
+  Parameters
+  ----------
+  psf_shape	: touple of scalars 
+		  (ny, nx) defining the PSF size	
+  psf_delta     : scalar
+		  plate scale of PSF in microns/sample
+  osf		: scalar
+		  number of samples in each resolving element. The 
+		  final shape of the response function would be shape*osf
+  delta 	: scalar
+		  Phisical size of the detector pixel in microns
+  lx		: scalar
+		  diffusion length in microns
+  ipd           : scalar
+		  distance between two adjacent detector pixels 
+		  in microns
+		 
+  Returns
+  -------
+  kernel	: 2D array
+		  the kernel image
+  kernel_delta  : scalar
+                  the kernel sampling interval in microns
+  '''
+  kernel = np.zeros( (psf_shape[0]*osf, psf_shape[1]*osf) )
+  kernel_delta = delta/osf
+  yc, xc = np.array(kernel.shape)//2
+  yy = (np.arange(kernel.shape[0]) - yc) * kernel_delta
+  xx = (np.arange(kernel.shape[1]) - xc) * kernel_delta
+  mask_xx = np.where(np.abs(xx) > 0.5*(delta-ipd))
+  mask_yy = np.where(np.abs(yy) > 0.5*(delta-ipd))
+  xx, yy = np.meshgrid(xx, yy)
+  
+  kernel = np.arctan(np.tanh( 0.5*( 0.5*delta - xx)/lx )) - \
+	   np.arctan(np.tanh( 0.5*(-0.5*delta - xx)/lx ))
+	 
+	 
+  kernel*= np.arctan(np.tanh( 0.5*( 0.5*delta - yy)/lx )) - \
+  	   np.arctan(np.tanh( 0.5*(-0.5*delta - yy)/lx )) 
+  
+  kernel[mask_yy, ...] = 0.0
+  kernel[..., mask_xx] = 0.0
+
+  # Normalise the kernel such that the pixel has QE=1
+  kernel *= osf**2/kernel.sum()
+  kernel = np.roll(kernel, -xc, axis=1)
+  kernel = np.roll(kernel, -yc, axis=0)
+  
+  return kernel, kernel_delta
+	  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  import numpy as n
+import scipy.interpolate
+import scipy.ndimage
 
 
-def psf(wl, fnum, delta, nzero = 4, shape='airy'):
+
+
+
+
+
+
+def congrid(a, newdims, method='linear', centre=False, minusone=False):
+    '''Arbitrary resampling of source array to new dimension sizes.
+    Currently only supports maintaining the same number of dimensions.
+    To use 1-D arrays, first promote them to shape (x,1).
+    
+    Uses the same parameters and creates the same co-ordinate lookup points
+    as IDL''s congrid routine, which apparently originally came from a VAX/VMS
+    routine of the same name.
+
+    method:
+    neighbour - closest value from original data
+    nearest and linear - uses n x 1-D interpolations using
+                         scipy.interpolate.interp1d
+    (see Numerical Recipes for validity of use of n 1-D interpolations)
+    spline - uses ndimage.map_coordinates
+
+    centre:
+    True - interpolation points are at the centres of the bins
+    False - points are at the front edge of the bin
+
+    minusone:
+    For example- inarray.shape = (i,j) & new dimensions = (x,y)
+    False - inarray is resampled by factors of (i/x) * (j/y)
+    True - inarray is resampled by(i-1)/(x-1) * (j-1)/(y-1)
+    This prevents extrapolation one element beyond bounds of input array.
     '''
-        Calculates an Airy Point Spread Function arranged as a data-cube. The spatial axies are
-        0 and 1. The wavelength axis is 2. Each PSF area is normalised to unity.
-        
-        Parameters
-        ----------
-        wl	: ndarray [physical dimension of length]
-        array of wavelengths at which to calculate the PSF
-        fnum : scalar
-        Instrument f/number
-        delta : scalar
-        the increment to use [physical units of length]
-        nzero : scalar
-        number of Airy zeros. The PSF kernel will be this big. Calculated at wl.max()
-        shape : string
-        Set to 'airy' for a Airy function,to 'gauss' for a Gaussian
-        
-        Returns
-        ------
-        Psf : ndarray
-        three dimensional array. Each PSF normalised to unity
-        '''
-    print "generating psf stack"    
-    
-    Nx = np.round(special.jn_zeros(1, nzero)[-1]/(2.0*np.pi) * fnum*wl.max()/delta).astype(np.int)
-  
-    Ny = Nx
-  
-    if shape=='airy':
-      d = 1.0/(fnum*wl)
-    elif shape=='gauss':
-      sigma = 1.029*fnum*wl/np.sqrt(8.0*np.log(2.0))
-      d     = 0.5/sigma**2
-    
-    x = np.linspace(-Nx*delta, Nx*delta, 2*Nx+1)
-    y = np.linspace(-Ny*delta, Ny*delta, 2*Ny+1)
-  
-    yy, xx = np.meshgrid(y, x)
-  
-    if shape=='airy':
-      arg = 1.0e-20+np.pi*np.multiply.outer(np.sqrt(yy**2 + xx**2), d)
-      img   = (special.j1(arg)/arg)**2
-    elif shape=='gauss':
-      arg = np.multiply.outer(yy**2 + xx**2, d)
-      img = np.exp(-arg)
-    
-    norm = img.sum(axis=0).sum(axis=0)
-    
-    print "psf stack generated"
+    if not a.dtype in [n.float64, n.float32]:
+        a = n.cast[float](a)
 
-    return img/norm
-                                                                                
+    m1 = n.cast[int](minusone)
+    ofs = n.cast[int](centre) * 0.5
+    old = n.array( a.shape )
+    ndims = len( a.shape )
+    if len( newdims ) != ndims:
+        print "[congrid] dimensions error. " \
+              "This routine currently only support " \
+              "rebinning to the same number of dimensions."
+        return None
+    newdims = n.asarray( newdims, dtype=float )
+    dimlist = []
 
+    if method == 'neighbour':
+        for i in range( ndims ):
+            base = n.indices(newdims)[i]
+            dimlist.append( (old[i] - m1) / (newdims[i] - m1) \
+                            * (base + ofs) - ofs )
+        cd = n.array( dimlist ).round().astype(int)
+        newa = a[list( cd )]
+        return newa
 
-def fpa(fp,psf_stack,delta_psf,sed,kernal,ad_osf,pix_size,QE): # to be placed in exolib
+    elif method in ['nearest','linear']:
+        # calculate new dims
+        for i in range( ndims ):
+            base = n.arange( newdims[i] )
+            dimlist.append( (old[i] - m1) / (newdims[i] - m1) \
+                            * (base + ofs) - ofs )
+        # specify old dims
+        olddims = [n.arange(i, dtype = n.float) for i in list( a.shape )]
 
-    print "generating oversampled fpa"
-    
-    fpa = fp*1 #nullify array copying effect
-    
-    psf_position = np.arange(0,fpa.shape[1]-psf_stack.shape[1],delta_psf) # psf spacings along x axis
-    
-    j0 =  psf_position #array of psf 'tiles' left most positions along x axis
-    j1 = j0 + psf_stack.shape[1] #right position of psf 'tiles'
-    idx = range(0,len(psf_position)) #index = no of psfs being coadded
-    i0 = (fpa.shape[0]/2 - psf_stack.shape[0]/2) #upper edge of psf 'tiles'
-    i1 = i0 + psf_stack.shape[0] #lower edge of psf 'tiles'
-        
-    for k in idx: # coadds psfs onto fp array and multiplies by sed
-        fpa[i0:i1, j0[k]:j1[k]] += sed[k]*psf_stack[...,k]  #sed needs to be oversampled at rate ovs
-    
-    print "applying QE grid with variations"
-    
-    fpa = fpa*QE
-                   
-    print "convolving fpa with pixel kernal"
+        # first interpolation - for ndims = any
+        mint = scipy.interpolate.interp1d( olddims[-1], a, kind=method )
+        newa = mint( dimlist[-1] )
 
-    fpa_crop = fpa[i0-100:i1+100]
-        
-    [U,S,V] = linalg.svd(kernal)
-    s = S[0]
-    v = U[:,0]
-    v = v.reshape(len(v),1)*np.sqrt(s)
-    h = V[0]*np.sqrt(s)
-    h= np.array([h])
-    aa = signal.convolve2d(fpa_crop,v,'same')
-    cc1 = signal.convolve2d(aa,h,'same')
-    
-    print "convolution done"
-    
-    corr = convolution_normalization(kernal) 
-    
-    cc1=cc1*corr
-    
-    print "kernal normalization correction applied:", corr
-    
-    print "applying additional oversampling factor to convolved fpa"
-    
-    xin = np.linspace(-1.0, 1.0, cc1.shape[0])
-    yin = np.linspace(-1.0, 1.0, cc1.shape[1])
-    xout = np.linspace(-1.0, 1.0, cc1.shape[0]*ad_osf)
-    yout = np.linspace(-1.0, 1.0, cc1.shape[1]*ad_osf)
-    
-    f = interpolate.RectBivariateSpline(xin, yin, cc1)
-    cc2 = f(xout,yout)
-    
-            
-    conv_fpa = np.zeros((fpa.shape[0]*ad_osf,fpa.shape[1]*ad_osf))
-        
-    conv_fpa = np.zeros((fpa.shape[0]*ad_osf,fpa.shape[1]*ad_osf)) 
-    conv_fpa[(i0-100)*ad_osf:(i0-100)*ad_osf+cc2.shape[0],(j0[0])*ad_osf:(j0[0])*ad_osf+cc2.shape[1]] = cc2
-    
-    osf = kernal.shape[0]*ad_osf
-    pix_count = conv_fpa[int(osf/2)::osf, int(osf/2)::osf]*1
-                
-    conv_fpa = conv_fpa*(fpa.sum()/pix_count.sum())
-    pix_count = conv_fpa[int(osf/2)::osf, int(osf/2)::osf]*1
-    
-    
-    print "addition oversampling done"
-    
+        trorder = [ndims - 1] + range( ndims - 1 )
+        for i in range( ndims - 2, -1, -1 ):
+            newa = newa.transpose( trorder )
+
+            mint = scipy.interpolate.interp1d( olddims[i], newa, kind=method )
+            newa = mint( dimlist[i] )
+
+        if ndims > 1:
+            # need one more transpose to return to original dimensions
+            newa = newa.transpose( trorder )
+
+        return newa
+    elif method in ['spline']:
+        oslices = [ slice(0,j) for j in old ]
+        oldcoords = n.ogrid[oslices]
+        nslices = [ slice(0,j) for j in list(newdims) ]
+        newcoords = n.mgrid[nslices]
+
+        newcoords_dims = range(n.rank(newcoords))
+        #make first index last
+        newcoords_dims.append(newcoords_dims.pop(0))
+        newcoords_tr = newcoords.transpose(newcoords_dims)
+        # makes a view that affects newcoords
+
+        newcoords_tr += ofs
+
+        deltas = (n.asarray(old) - m1) / (newdims - m1)
+        newcoords_tr *= deltas
+
+        newcoords_tr -= ofs
+
+        newa = scipy.ndimage.map_coordinates(a, newcoords)
+        return newa
+    else:
+        print "Congrid error: Unrecognized interpolation type.\n", \
+              "Currently only \'neighbour\', \'nearest\',\'linear\',", \
+              "and \'spline\' are supported."
+        return None
 
 
-    
-    return fpa,conv_fpa
 
-def convolution_normalization(kernal):
-    osf = kernal.shape[0]
-    corr = osf**2/np.sum(kernal)
-    return corr   
 
-def kernal(pix_size,ovs):  #need to add edge
-    ld = 1.7
-    
-    ax = np.linspace(-pix_size/2,pix_size/2,ovs)
-    ay = np.linspace(-pix_size/2,pix_size/2,ovs)
-    ax,ay = np.meshgrid(ax,ay)
-    resp = (np.arctan(np.tanh(0.5*( 0.5*pix_size-ax)/ld))-np.arctan(np.tanh(0.5*(-0.5*pix_size-ax)/ld)))*(np.arctan(np.tanh(0.5*( 0.5*pix_size-ay)/ld))-np.arctan(np.tanh(0.5*(-0.5*pix_size-ay)/ld)))
-    kernal = resp
-    
-    return kernal
+
 
 
 def jitter(obs_time,int_time,osr,rms,mode=2):
@@ -439,7 +624,7 @@ def jitter(obs_time,int_time,osr,rms,mode=2):
 
 
     elif mode == 2:
-        
+    
         psd1 = psd[0]
         ps = psd1*df/2
         amp = np.random.normal(0,np.sqrt(ps),len(ps))
@@ -453,101 +638,14 @@ def jitter(obs_time,int_time,osr,rms,mode=2):
         phi = np.random.uniform(0,np.pi,len(ps))
         yf = amp*np.exp(phi*1j)
         yt = np.fft.irfft(yf)*N
-
-
+    
+    
     else:
         print "error: maximum of 2 psds can be used"
 
-#    xt = xt   
-#    yt = yt 
-    xt = xt*(rms*(np.sqrt(2)/2)/np.std(xt))    
+#    xt = xt
+#    yt = yt
+    xt = xt*(rms*(np.sqrt(2)/2)/np.std(xt))
     yt = yt*(rms*(np.sqrt(2)/2)/np.std(yt))
     return xt,yt,new_time
-    
-def animate(data):
-    import matplotlib.pyplot as plt  
 
-    fig = plt.figure()
-    ax = fig.add_subplot(111, projection='3d')
-    a = data['timeline']
-    wframe = None
-    
-    def anim(X,Y,Z):
-        return ax.plot_wireframe(X, Y, Z, rstride=5, cstride=5, color = 'blue')
-  
-    for i in range(0,a.shape[2]):
-        
-#            oldcol = wframe
-            ax.clear()
-            
-            
-            Z = a[...,i]
-            
-            
-            X = np.arange(0, Z.shape[1])
-            Y = np.arange(0, Z.shape[0])
-            X, Y = np.meshgrid(X, Y)
-            
-            anim(X,Y,Z)
-            
-            ax.set_zlim(0,a[...,0].max())
-#            ax.set_title(j)
-#            
-    
-            
-    
-        
-            # Remove old line collection before drawing
-#            if oldcol is not None:
-#                ax.collections.remove(oldcol)
-        
-            plt.pause(.01)
-            
-def animate2(data):
-    from matplotlib import animation    
-    from matplotlib import pyplot as plt
-    from mpl_toolkits.mplot3d.axes3d import Axes3D  #-- voor 3d assen
-    import time
-
-    a = data['timeline']
-    Z = a[...,0]
-
-    X = np.arange(0, Z.shape[1])
-    Y = np.arange(0, Z.shape[0])
-    X, Y = np.meshgrid(X, Y)
-
-    def init_wave_profile(): 
-        Z = a[...,0]
-
-
-  # ----------------------------------------------
-    def update_wave_profile(i,Z,p1):
-  # ----------------------------------------------
-        Z = a[...,i]
-
-
-
-  #-- define plot and initialize profile (flat)
-    fig = plt.figure(figsize=(6,6))
-    init_wave_profile()
-    ax = fig.add_subplot(1, 1, 1, projection='3d')
-    p1 = ax.plot_wireframe(X, Y, Z, rstride=10, cstride=10, color = 'blue')
-#  ax.set_xlim3d(-0.1,1.1);
-#  ax.set_ylim3d(-0.1, 1.1);
-#  ax.set_zlim3d(-0.5, 1.5);
-
-  #-- animate the profile  
-    i= np.arange(0,100) 
-    anim = animation.FuncAnimation(
-            fig         = fig,
-            func       = update_wave_profile,
-            init_func = init_wave_profile,
-            frames   = 10,
-            interval  = 200,
-            blit        = False,
-            fargs     = (i, Z, p1)
-            )
-    anim()
-    plt.show()
-
-    

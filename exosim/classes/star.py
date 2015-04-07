@@ -70,6 +70,23 @@ class Star(object):
       
 				
     """
+    
+    ### This block reads BT-Settl text files 
+    
+    #wl_filename  = os.path.join(path,"lte{:03.0f}-{:01.1f}-{:01.1f}a+0.0.BT-Settl.spec.7.bz2".format(
+      #np.round(star_temperature/100.0), star_logg, star_f_h))
+    #import string
+    #rule = string.maketrans('D', 'E')
+    #raw_data = np.loadtxt(wl_filename, usecols=(0,1),
+			  #converters={1:lambda val: float(val.translate(rule))})
+    #wl  = raw_data[...,0]
+    #sed = raw_data[...,1]
+    ## Unit conversion
+    #wl *= 1.0e-4 # [um]
+    #sed = 10**(sed + 8.0 - 15.0) # [W m^-2 mu^-1]
+    
+    
+
 
 ####################### USING PHOENIX FITS FILES 
     
@@ -91,33 +108,12 @@ class Star(object):
 #    sed        *= 1.0e-7 # [W m^-2 mu^-1]
 #    radius     *= 1.0e-2 # [m]
       
-####################### USING PHOENIX SPECTRA TEXT FILES (7)
-    
-#    wl_filename  = os.path.join(path,"lte{:03.0f}-{:01.1f}-{:01.1f}a+0.0.BT-Settl.7".format(np.round(star_temperature/100.0), star_logg, star_f_h))
-#    f = open(wl_filename,'r') # files have D instead of E for exponent
-#    filedata = f.read()
-#    f.close()
-#    newdata = filedata.replace("D","E")
-#    f = open(wl_filename,'w')
-#    f.write(newdata)
-#    f.close()
-#
-#    a = np.loadtxt(wl_filename)
-#    wl = a[:,0]
-#    sed = a[:,1]
-#    wl, sed = zip(*sorted(zip(wl, sed)))
-#    wl = np.array(wl)
-#    sed = np.array(sed) 
-#    
-#    # Unit conversion
-#    wl *= 1.0e-4 # [um]
-#    sed = (10**sed * 1e8)*1e-15 # [W m^-2 mu^-1]
-       
 ####################### USING PHOENIX BIN_SPECTRA BINARY FILES (h5)
 
     wl_filename = os.path.join(path,"lte{:03.0f}-{:01.1f}-{:01.1f}a+0.0.BT-Settl.h5".format(np.round(star_temperature/100.0), star_logg, star_f_h))
     
     f = tables.openFile(wl_filename, mode = "r")
+    
     w1 = np.array(f.root.Spectrum.cmtdis)
     w2 = np.array(f.root.Spectrum.cmtber)
 

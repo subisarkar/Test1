@@ -20,7 +20,7 @@ class Planet(object):
   z   = None
   lc  = None
 
-  def __init__(self, contrast_path):
+  def __init__(self, contrast_path=None):
     """
     Initialize a new Planet class 
     
@@ -29,11 +29,13 @@ class Planet(object):
     contrast_path		string
 				path name of file containg the planet-star contrast spectrum
     """
-
-    pl_wl, pl_sed = self.read_planet_spectrum(contrast_path)
-    idx = np.argsort(pl_wl)      
-    self.cr = sed.Sed(pl_wl[idx], pl_sed[idx], units='')  
-    
+    if contrast_path:
+      pl_wl, pl_sed = self.read_planet_spectrum(contrast_path)
+      idx = np.argsort(pl_wl)      
+      self.cr = sed.Sed(pl_wl[idx], pl_sed[idx], units='')  
+    else:
+      self.cr = None
+      
   def get_t14(self, inc, a, period, planet_radius, star_radius):
     """ t14
     Calculates the transit time 
@@ -69,8 +71,8 @@ class Planet(object):
 	    star_radius/a * \
 	    np.sqrt(dtmp**2 - impact_parameter**2)
     else:
-      print "WARNING: planet not transiting"
-      self.t14 = 0.0
+      #print "WARNING: planet not transiting"
+      self.t14 = np.nan
     return self.t14
     
   def read_planet_spectrum(self, contrast_path):

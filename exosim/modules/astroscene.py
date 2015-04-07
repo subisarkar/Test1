@@ -3,7 +3,8 @@ from   ..classes.star    import Star
 from   ..classes.planet  import Planet
 
 def run(opt):
-  star = Star(opt.star_sed_path.val.replace('$root$', opt.common_exosym_path.val),
+  star = Star(opt.star_sed_path.val.replace('$root$', 
+	      opt.common_exosym_path.val),
               opt.star_distance.val,
               opt.star_temperature.val,
               opt.star_logg.val, 
