@@ -10,7 +10,7 @@ pc2m			= constants.parsec
 au2m			= constants.au
 days2s			= constants.day
 
-EXOSIM_DEFAULTS        = 'exosim_defaults_2.xml'
+EXOSIM_DEFAULTS        = 'exosim_defaults.xml'
 WRONGUNITS = -1
 FIELDNOTFOUND = -2
 

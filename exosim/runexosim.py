@@ -60,39 +60,42 @@ if __name__ == "__main__":
   print 'Star luminosity {:.2e} [w]'.format(data['qstar'].luminosity)
   
   data['qplanet'].get_light_curve(data['qplanet'].z, 0.0, 0.0, 0.1, primary_transit = False)
+    
+
   
   pl.figure(2)
   pl.subplot(3,3,1)
   pl.plot(data['qstar'].ph_sed.wl,data['qstar'].ph_sed.sed)
   pl.plot(data['qstar'].sed.wl, data['qstar'].sed.sed)
-  pl.plot(data['channel']['SWIR'].star.wl, data['channel']['SWIR'].star.sed)
-  pl.plot(data['channel']['MWIR'].star.wl, data['channel']['MWIR'].star.sed)
   pl.subplot(3,3,2)
   pl.plot(data['qplanet'].cr.wl, data['qplanet'].cr.sed)
   pl.subplot(3,3,3)
-  pl.plot(data['qplanet'].phi, data['qplanet'].lc, 'r')
+  pl.plot(data['qplanet'].phi, data['qplanet'].lc, 'r') 
   pl.subplot(3,3,4)
   pl.plot(data['qzodi'].sed.wl, data['qzodi'].sed.sed, 'r')
-  pl.plot(data['channel']['SWIR'].zodi.wl, data['channel']['SWIR'].zodi.sed)
-  pl.plot(data['channel']['MWIR'].zodi.wl, data['channel']['MWIR'].zodi.sed)
-  pl.subplot(3,3,5)
-  pl.plot(data['channel']['SWIR'].emission.wl, data['channel']['SWIR'].emission.sed)
-  pl.plot(data['channel']['MWIR'].emission.wl, data['channel']['MWIR'].emission.sed)
-  pl.subplot(3,3,6)
-  pl.plot(data['channel']['SWIR'].transmission.wl, data['channel']['SWIR'].transmission.sed)
-  pl.plot(data['channel']['MWIR'].transmission.wl, data['channel']['MWIR'].transmission.sed)
-  pl.subplot(3,3,7)
-  pl.imshow(data['channel']['SWIR'].fp, 
-    extent=[data['channel']['SWIR'].wl_solution.min(),data['channel']['SWIR'].wl_solution.max(),0,1])
-  pl.subplot(3,3,8)
-  pl.imshow(data['channel']['MWIR'].fp, 
-    extent=[data['channel']['MWIR'].wl_solution.min(),data['channel']['MWIR'].wl_solution.max(),0,1])
-
+  pl.subplot(3,3,4)
+  pl.plot(data['qzodi'].sed.wl, data['qzodi'].sed.sed, 'r')
   
-
+  i=0
+  for key in opt.channel.keys():
+      i += 1
+  
+      pl.figure(2)
+      pl.subplot(3,3,1)
+      pl.plot(data['channel'][key].star.wl, data['channel'][key].star.sed)
+      pl.subplot(3,3,4)
+      pl.plot(data['channel'][key].zodi.wl, data['channel'][key].zodi.sed)
+      pl.subplot(3,3,5)
+      pl.plot(data['channel'][key].emission.wl, data['channel'][key].emission.sed)
+      pl.subplot(3,3,6)
+      pl.plot(data['channel'][key].transmission.wl, data['channel'][key].transmission.sed)
+      pl.subplot(3,3,6+i)
+      pl.imshow(data['channel'][key].fp, 
+        extent=[data['channel'][key].wl_solution.min(),data['channel'][key].wl_solution.max(),0,1])
+    
  
-  plt.figure(45)
-  plt.plot(channel['SWIR'].fp[32*channel['SWIR'].osf])
+#  plt.figure(45)
+#  plt.plot(channel['WFC3IR'].fp[32*channel['WFC3IR'].osf])
       
   pl.show()
 
@@ -105,7 +108,7 @@ if __name__ == "__main__":
 #print "sd of count", np.std(tl)
 
 
-exosim.lib.exolib.animate(data['channel']['SWIR'].timeline)
+exosim.lib.exolib.animate(data['channel'][opt.channel.keys()[0]].timeline)
 
 
 #  need to animate, check why only short section illumimated, generalize for MWIR
