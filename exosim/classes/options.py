@@ -159,6 +159,11 @@ class Options(object):
       self.channel[tk.val]['pixel_size'] = Token(ch, 'pixel_size')
       self.channel[tk.val]['pixel_size'].units_conversion('micron', 'micron', 1.0)
       self.channel[tk.val]['wfno'] = Token(ch, 'wfno')
+      self.channel[tk.val]['osf'] = Token(ch, 'osf')
+      self.channel[tk.val]['kernel_osf'] = Token(ch, 'kernel_osf')
+      self.channel[tk.val]['psf_osf'] = Token(ch, 'psf_osf')
+      self.channel[tk.val]['ad_osf'] = Token(ch, 'ad_osf')
+
       
  	
   def error(self, err_code):

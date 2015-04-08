@@ -43,7 +43,11 @@
   <array_geometry val="64 512" comment="pixel count"/>
   <pixel_size val="18" units="micron" transmission="$root$/data/instrument/qe.dat" />
   <wfno val="18.5" units="" transmission="The working f/#" />
-  
+  <osf val="3.0" />
+  <kernel_osf val = "21.0"/>
+  <psf_osf val = "3.0"/>
+  <ad_osf val = "7.0"/>
+      
 </channel>
 
 <channel val="MWIR" comment="MWIR">
@@ -53,6 +57,11 @@
   <array_geometry val="64 512" comment="pixel count"/>
   <pixel_size val="18" units="micron" transmission="$root$/data/instrument/qe.dat" />
   <wfno val="9.2" units="" transmission="The working f/#" />
+  <osf val="3.0" />
+  <kernel_osf val = "21.0" />
+  <psf_osf val = "3.0"/>
+  <ad_osf val = "7.0"/>
+  
 </channel>
 
 

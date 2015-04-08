@@ -26,7 +26,6 @@ def run(opt,channel):
     obs_time = obs_time_hours*60*60.0
     rms = 4.0e-5
     
-    ad_osf = 1
     QE = 0.6
     QEsd = 0.05
      
@@ -36,6 +35,12 @@ def run(opt,channel):
         
         
     for key in opt.channel.keys():
+        
+        ad_osf = opt.channel[key]['ad_osf'].val
+        ad_osf = 1
+               
+        print""
+        print"Jittered timeline in %s channel being created"%(key)
         
         focal_length = opt.channel[key]['wfno'].val
         pixel_size = opt.channel[key]['pixel_size'].val
@@ -75,8 +80,8 @@ def run(opt,channel):
         count = new_fp[int(new_osf/2):int(new_osf/2)+fpn[0]*new_osf:new_osf, \
                        int(new_osf/2):int(new_osf/2) +fpn[1]*new_osf:new_osf]
         
-        print""               
-        print "fp_count, unmodified count", fp_count.sum(),count.sum() 
+#        print""               
+#        print "fp_count, unmodified count", fp_count.sum(),count.sum() 
                        
         new_fp  = new_fp * fp_count.sum()/count.sum() 
         #this compensates for increased count caused by the oversampling               
@@ -86,7 +91,7 @@ def run(opt,channel):
         
         new_fp0 = new_fp*1
                       
-        print "modified  count", count.sum()   
+#        print "modified  count", count.sum()   
            
            
         # convert jitter from pixel units to new_osf units   
@@ -113,9 +118,7 @@ def run(opt,channel):
     #         is stored in the pna data cube 
                 
         pca = np.zeros((fpn[0],fpn[1],N))
-        
-        print new_fp.sum()
-                
+                        
         for i in range(N):
             
             accum = np.zeros((fpn[0],fpn[1]))

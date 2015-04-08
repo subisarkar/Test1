@@ -13,10 +13,6 @@ class Channel(object):
   emission     = None
   transmission = None
   psf          = None
-  osf          = 3.    # Oversample psf by this factor to 
-		      #   ensure Nyquist
-  kernel_osf   = 21.   # Oversample kernel to ensure Nyquist sampling
-  psf_osf       = 3.
 
   
   def __init__(self, star, planet, zodi, emission, transmission):
@@ -70,7 +66,11 @@ def run(opt, star, planet, zodi):
 	    channel[key].transmission.sed*tr.sed
      
       ### create focal plane
-     
+           
+      channel[key].osf          = opt.channel[key]['osf'].val    # Oversample psf by this factor to #   ensure Nyquist
+      channel[key].kernel_osf   = opt.channel[key]['kernel_osf'].val   # Oversample kernel to ensure Nyquist sampling
+      channel[key].psf_osf      = opt.channel[key]['psf_osf'].val
+           
       #1# Obtain wavelength dispertion relation 
       ld  = np.fromstring(opt.channel[key]['ld'].val, 
 	  sep=' ', dtype=np.float64)
@@ -125,7 +125,7 @@ def run(opt, star, planet, zodi):
       i0 = fp.shape[0]/2 - psf.shape[0]/2 
       i1 = i0 + psf.shape[0]
       for k in idx: 
-         fp[i0:i1, j0[k]:j1[k]] += psf[...,k]  #*channel[key].star.sed[k]
+         fp[i0:i1, j0[k]:j1[k]] += psf[...,k]*channel[key].star.sed[k]
          
          
 
