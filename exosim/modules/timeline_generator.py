@@ -13,8 +13,29 @@ import matplotlib.pyplot as plt
 #set observation parameters
 
 def run(opt,channel):
+                
+    ndr_number = 13 # the number of ndrs per exposure
+    exp_number = 100 # the total number of exposures
+    ndr_time = 7.0 #enter intergration time in sec for one "exposure" = NDR
+    exp_time = ndr_time *ndr_number
+    ndr_osf = 100  # no of osr samples per ndr
+
+    N = exp_number * ndr_number  # number of ndrs in total
     
-    for key in ['SWIR']:  #opt.channel.keys():
+    obs_time_hours = 6.0 #enter total observing time in hours
+    obs_time = obs_time_hours*60*60.0
+    rms = 4.0e-5
+    
+    ad_osf = 1
+    QE = 0.6
+    QEsd = 0.05
+     
+    #Call Jitter function
+     
+    ra_jitter, dec_jitter, time = exolib.jitter(obs_time,ndr_time,ndr_osf,rms,mode=2)
+        
+        
+    for key in opt.channel.keys():
         
         focal_length = opt.channel[key]['wfno'].val
         pixel_size = opt.channel[key]['pixel_size'].val
@@ -23,31 +44,10 @@ def run(opt,channel):
     	  sep=' ', dtype=np.float64)
         fp = channel[key].fp
     
-             
-        ndr_number = 13 # the number of ndrs per exposure
-        exp_number = 10 # the total number of exposures
-        ndr_time = 7.0 #enter intergration time in sec for one "exposure" = NDR
-        exp_time = ndr_time *ndr_number
-        ndr_osf = 100  # no of osr samples per ndr
-    
-        N = exp_number * ndr_number  # number of ndrs in total
-        
-        obs_time_hours = 6.0 #enter total observing time in hours
-        obs_time = obs_time_hours*60*60.0
-        rms = 4.0e-5
-        
-        ad_osf = 7
-        QE = 0.6
-        QEsd = 0.05
-         
-        #Call Jitter function
-         
-        ra_jitter, dec_jitter, time = exolib.jitter(obs_time,ndr_time,ndr_osf,rms,mode=2)
-    
         plate_scale =  206265/ focal_length #arcsec per metre
         
-        ra_jitter = (ra_jitter/((plate_scale/1e6)/3600))/pixel_size
-        dec_jitter = (dec_jitter/((plate_scale/1e6)/3600))/pixel_size
+        jitter_x = (ra_jitter/((plate_scale/1e6)/3600))/pixel_size
+        jitter_y = (dec_jitter/((plate_scale/1e6)/3600))/pixel_size
     
         # Apply quantum efficiency variations 
        
@@ -92,8 +92,8 @@ def run(opt,channel):
         # convert jitter from pixel units to new_osf units   
         
         
-        jitter_x = ra_jitter*new_osf
-        jitter_y = dec_jitter*new_osf
+        jitter_x = jitter_x*new_osf
+        jitter_y = jitter_y*new_osf
                 
         # Apply a zeropad to allow for jitter beyond the size of the fp array    
     
@@ -113,15 +113,12 @@ def run(opt,channel):
     #         is stored in the pna data cube 
                 
         pca = np.zeros((fpn[0],fpn[1],N))
-        pna = np.zeros((fpn[0],fpn[1],N))
         
-        nda = np.zeros((fpn[0],fpn[1],ndr_osf))
-        
-        count = np.zeros((fpn[0],fpn[1]))
-        
+        print new_fp.sum()
+                
         for i in range(N):
             
-            nda = np.zeros((fpn[0],fpn[1],ndr_osf))
+            accum = np.zeros((fpn[0],fpn[1]))
     
             for j in range(ndr_osf):
                 
@@ -134,13 +131,19 @@ def run(opt,channel):
                 start_x = start_x + round(ofx)
                 start_y = start_y + round(ofy)
             
-                nda[...,j] = new_fp[start_y:start_y +fpn[0]*new_osf:new_osf, \
-                                     start_x:start_x +fpn[1]*new_osf:new_osf] 
+                accum += new_fp[start_y:start_y +fpn[0]*new_osf:new_osf, \
+                                     start_x:start_x +fpn[1]*new_osf:new_osf]
+                                                   
         
-            pca[...,i] = np.sum(nda, axis =2, dtype=np.float64)
-            pna[...,i] = np.std(nda, axis =2, dtype=np.float64)         
-             
-        return pca
+            pca[...,i] = accum
+            
+    
+        channel[key].timeline = pca 
+        
+        #pca is an array of NDRs
+        
+    return channel    
+
         
             
             ###

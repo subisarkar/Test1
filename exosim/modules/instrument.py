@@ -54,7 +54,7 @@ def run(opt, star, planet, zodi):
     instrument_transmission.sed = instrument_transmission.sed*tr.sed
     
     channel = {}
-    for key in ['SWIR']:  #opt.channel.keys():
+    for key in opt.channel.keys():
       channel[key] = Channel(star.sed, planet.cr, zodi.sed, instrument_emission, instrument_transmission)
       for op in opt.channel[key]['optical_surface']:
 	  dtmp=np.loadtxt(op.transmission.replace('$root$', opt.common_exosym_path.val), delimiter=',')
@@ -96,7 +96,7 @@ def run(opt, star, planet, zodi):
                    
 
       
-      #5# Generate PSFs, one in each detector pixel along spectral axis
+      #5# Generate PSFs, one for each detector pixel along spectral axis
       psf = exolib.Psf(x_wav, opt.channel[key]['wfno'].val, fp_delta, shape='airy') 
       
       #6# Repeate same PSF on each pixel
@@ -108,8 +108,8 @@ def run(opt, star, planet, zodi):
       channel[key].fp          = fp
       channel[key].wl_solution = x_wav_osf
       
-#      channel[key].planet.sed  *= channel[key].star.sed
-#      channel[key].planet.units = channel[key].star.units
+      channel[key].planet.sed  *= channel[key].star.sed
+      channel[key].planet.units = channel[key].star.units
       
       channel[key].star.rebin(channel[key].wl_solution)
       channel[key].planet.rebin(channel[key].wl_solution)
@@ -125,7 +125,9 @@ def run(opt, star, planet, zodi):
       i0 = fp.shape[0]/2 - psf.shape[0]/2 
       i1 = i0 + psf.shape[0]
       for k in idx: 
-         fp[i0:i1, j0[k]:j1[k]] += psf[...,k]*channel[key].star.sed[k]
+         fp[i0:i1, j0[k]:j1[k]] += psf[...,k]  #*channel[key].star.sed[k]
+         
+         
 
                 
       #10# Allocate pixel response function

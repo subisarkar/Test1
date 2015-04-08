@@ -649,3 +649,43 @@ def jitter(obs_time,int_time,osr,rms,mode=2):
     yt = yt*(rms*(np.sqrt(2)/2)/np.std(yt))
     return xt,yt,new_time
 
+
+
+def animate(Data):
+    
+    from mpl_toolkits.mplot3d import Axes3D
+    import matplotlib.pyplot as plt
+
+#    Data = data['channel']['SWIR'].timeline
+
+    fig = plt.figure()
+    ax = fig.add_subplot(111, projection='3d')
+    wframe = None
+    
+    for j in range(0,Data.shape[2]):
+    
+            oldcol = wframe
+
+            X = np.arange(0, Data.shape[1])
+            Y = np.arange(0, Data.shape[0])
+            X, Y = np.meshgrid(X, Y)
+            
+           
+        
+            Z = Data[...,j]
+            print Z.sum()
+            
+            wframe = ax.plot_wireframe(X, Y, Z, rstride=5, cstride=5)
+            
+#            ax.set_zlim(0,20000)
+#            ax.set_title(j)
+#            
+     
+        
+
+    
+        # Remove old line collection before drawing
+            if oldcol is not None:
+                ax.collections.remove(oldcol)
+    
+            plt.pause(.01)
