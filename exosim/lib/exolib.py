@@ -493,7 +493,7 @@ def congrid(a, newdims, method='linear', centre=False, minusone=False):
 
 
 
-def jitter(obs_time,int_time,osr,rms,mode=2):
+def jitter(opt, obs_time,int_time,osr,rms,mode=2):
     
     """
         Jitter
@@ -535,7 +535,7 @@ def jitter(obs_time,int_time,osr,rms,mode=2):
     new_fs=1/new_dt
     new_df = new_fs/new_N
     
-    jitter_file = "/Users/c1341133/Desktop/herschel_long_pointing.fits"
+    jitter_file = opt.common_exosym_path.val+"/data/instrument/herschel_long_pointing.fits"
     f = pyfits.open(jitter_file)  # open a FITS file
     tbdata = f[1].data  # assume the first extension is a table
     time = tbdata['Time']

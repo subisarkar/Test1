@@ -15,7 +15,7 @@ import matplotlib.pyplot as plt
 def run(opt,channel):
                 
     ndr_number = 13 # the number of ndrs per exposure
-    exp_number = 100 # the total number of exposures
+    exp_number = 10 # the total number of exposures
     ndr_time = 7.0 #enter intergration time in sec for one "exposure" = NDR
     exp_time = ndr_time *ndr_number
     ndr_osf = 100  # no of osr samples per ndr
@@ -31,13 +31,15 @@ def run(opt,channel):
      
     #Call Jitter function
      
-    ra_jitter, dec_jitter, time = exolib.jitter(obs_time,ndr_time,ndr_osf,rms,mode=2)
+    ra_jitter, dec_jitter, time = exolib.jitter(opt,obs_time,ndr_time,ndr_osf,rms,mode=2)
         
         
     for key in opt.channel.keys():
         
+        osf = opt.channel[key]['osf'].val
         ad_osf = opt.channel[key]['ad_osf'].val
-        ad_osf = 1
+        ad_osf = 3
+        new_osf =  ad_osf * osf
                
         print""
         print"Jittered timeline in %s channel being created"%(key)
@@ -63,36 +65,39 @@ def run(opt,channel):
         fp = fp*QE_array
      
         # Apply additional oversampling
-       
-        fp_count = fp[int(osf/2) :int(osf/2) + fpn[0]*osf :osf, \
-                      int(osf/2) :int(osf/2) + fpn[1]*osf :osf]
-            
-        xin = np.linspace(-1,1,fp.shape[1])
-        xout = np.linspace(-1,1,fp.shape[1]*ad_osf)
-        yin = np.linspace(-1,1,fp.shape[0])
-        yout = np.linspace(-1,1,fp.shape[0]*ad_osf)
-    
-        fn = interpolate.RectBivariateSpline(yin,xin,fp)
+     
+
+
+        fp_count = fp[int(osf/2) :int(osf/2) + fp.shape[0]:osf, \
+                     int(osf/2) :int(osf/2) + fp.shape[1]:osf]
+                     
         
-        new_fp = fn(yout, xout)
-        new_osf = osf*ad_osf   
-            
-        count = new_fp[int(new_osf/2):int(new_osf/2)+fpn[0]*new_osf:new_osf, \
-                       int(new_osf/2):int(new_osf/2) +fpn[1]*new_osf:new_osf]
+        xin = np.linspace(0,fp.shape[1]-1,fp.shape[1])
+        yin = np.linspace(0,fp.shape[0]-1,fp.shape[0])
+                
+        x_step =  abs(xin[1]) - abs(xin[0])
+        y_step =  abs(yin[1]) - abs(yin[0])
+                
+        x_step = np.float(x_step/ad_osf)
+        y_step = np.float(y_step/ad_osf)
         
-#        print""               
-#        print "fp_count, unmodified count", fp_count.sum(),count.sum() 
-                       
-        new_fp  = new_fp * fp_count.sum()/count.sum() 
-        #this compensates for increased count caused by the oversampling               
+        xout = np.arange(0,fp.shape[1],x_step)
+        yout = np.arange(0,fp.shape[0],y_step)
+
+
+        fn = interpolate.RectBivariateSpline(yin,xin, fp)
+
+        new_fp = fn(yout,xout)
+
+        start = ad_osf
+
+        new_fp_count = new_fp[start: start + fpn[0]*new_osf :new_osf, \
+                              start: start + fpn[1]*new_osf :new_osf]
+
+
+        print "fp", fp_count.sum(), fp.shape
+        print "new _fp", new_fp_count.sum(), new_fp.shape, new_fp_count.shape
         
-        count = new_fp[int(new_osf/2):int(new_osf/2)+fpn[0]*new_osf:new_osf, \
-                       int(new_osf/2):int(new_osf/2) +fpn[1]*new_osf:new_osf]  
-        
-        new_fp0 = new_fp*1
-                      
-#        print "modified  count", count.sum()   
-           
            
         # convert jitter from pixel units to new_osf units   
         
@@ -110,7 +115,15 @@ def run(opt,channel):
         pad[zeropad_y:zeropad_y + new_fp.shape[0], zeropad_x:zeropad_x + new_fp.shape[1]] = new_fp
     
         new_fp = pad  
+        
+        start_y = zeropad_y + ad_osf
+        start_x = zeropad_x + ad_osf
+        
+        new_fp_count = new_fp[start_y : start_y + fpn[0]*new_osf :new_osf, \
+                              start_x : start_x + fpn[1]*new_osf :new_osf]
                 
+        print "new _fp", new_fp_count.sum(), new_fp.shape, new_fp_count.shape
+
     # Generate focal plane jitter
     #  - RPE simulated by ndr_osf loops where fp jitters and pixel count accumulates            
     #  - At end of each ndr, the accumulated count is stored as one 2d array in pca data cube
@@ -124,22 +137,18 @@ def run(opt,channel):
             accum = np.zeros((fpn[0],fpn[1]))
     
             for j in range(ndr_osf):
-                
-                ofx = jitter_x[i*ndr_osf +j]
-                ofy = jitter_y[i*ndr_osf +j]
+                                
+                ofx =  -jitter_x[i*ndr_osf +j]
+                ofy =  -jitter_y[i*ndr_osf +j]
             
-                start_x = int(new_osf/2)+zeropad_x
-                start_y = int(new_osf/2)+zeropad_y
-                
-                start_x = start_x + round(ofx)
-                start_y = start_y + round(ofy)
-            
-                accum += new_fp[start_y:start_y +fpn[0]*new_osf:new_osf, \
-                                     start_x:start_x +fpn[1]*new_osf:new_osf]
+                start_x = ad_osf +zeropad_x + round(ofx)
+                start_y = ad_osf +zeropad_y + round(ofy)
+                            
+                accum += new_fp[start_y : start_y + fpn[0]*new_osf :new_osf, \
+                               start_x : start_x + fpn[1]*new_osf :new_osf]
                                                    
         
-            pca[...,i] = accum
-            
+            pca[...,i] = accum            
     
         channel[key].timeline = pca 
         
@@ -148,24 +157,6 @@ def run(opt,channel):
     return channel    
 
         
-            
-            ###
-            
-    #        start_x = int(new_osf/2)
-    #        start_y = int(new_osf/2)
-    #        
-    #        start_x = start_x + round(ofx)
-    #        start_y = start_y + round(ofy)
-    #    
-    #        count0 = new_fp0[start_y:start_y +fpn[0]*new_osf:new_osf, \
-    #                   start_x:start_x +fpn[1]*new_osf:new_osf]     
-    #        
-    #        print count.sum(), count0.sum(), ofx, ofy
-            
-            ####
-            
-    #        C.append(count.sum())
-    #    print 'mean', np.mean(C), 'std', np.std(C), len(C)
 
 
 

@@ -108,7 +108,7 @@ if __name__ == "__main__":
 #print "sd of count", np.std(tl)
 
 
-exosim.lib.exolib.animate(data['channel'][opt.channel.keys()[0]].timeline)
+exosim.lib.exolib.animate(data['channel'][opt.channel.keys()[1]].timeline)
 
 
 #  need to animate, check why only short section illumimated, generalize for MWIR

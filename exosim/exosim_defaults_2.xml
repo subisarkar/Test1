@@ -1,7 +1,7 @@
 
 <root>
   <common>
-    <exosym_path val='/Users/c1341133/Desktop/ExoSim-master/exosim' comment='$root$'/>
+    <exosym_path val='/Users/c1341133/Desktop/ExoSimSubi/exosim' comment='$root$'/>
     <logbinres val="1000" units='None' comment="Resoving power for common spectral binnin. A linear binning wavelength integral is estimated as wl_min/R"/>
     <wl_min val="0.9" units="micron" comment="Shortest wavelength in simularion used for binning input spectra"/>
     <wl_max val="1.7" units="micron" comment="Shortest wavelength in simularion used for binning input spectra"/>
@@ -43,14 +43,14 @@
     
     
   <optical_surface type="dichroic" transmission="$root$/data/instrument/d0_re_v0.csv"  T="50" comment="D0"/>
-  <optical_surface type="grating" transmission="$root$/data/instrument/grating_swir_v0.csv"   T="50" comment=""/>
+  <optical_surface type="grating" transmission="$root$/data/instrument/g141"   T="50" comment=""/>
   
   
   <ld val="0.9 0.00025 10" units=""   comment="Wavelength solution (q, m, x_ref): wl = q + m(x - x_ref) where x and x ref are in microns" />
   <array_geometry val="256 256" comment="pixel count"/>
   
-  <pixel_size val="18" units="micron" transmission="$root$/data/instrument/qe.dat" />
-  <wfno val="28.56" units="m" />
+  <pixel_size val="18.0" units="micron" transmission="$root$/data/instrument/qe.dat" />
+  <wfno val="28.96" units="m" />
   
   <osf val="3.0" />
   <kernel_osf val = "21.0"/>
@@ -65,7 +65,7 @@
       
       
     <optical_surface type="dichroic" transmission="$root$/data/instrument/d0_re_v0.csv"  T="50" comment="D0"/>
-    <optical_surface type="grating" transmission="$root$/data/instrument/grating_swir_v0.csv"   T="50" comment=""/>
+    <optical_surface type="grating" transmission="$root$/data/instrument/g141_grism.csv"   T="50" comment=""/>
       
       
     <ld val="0.9 0.00025 10" units=""   comment="Wavelength solution (q, m, x_ref): wl = q + m(x - x_ref) where x and x ref are in microns" />
