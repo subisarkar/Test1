@@ -55,17 +55,17 @@ def run(opt, star, planet, zodi):
       channel[key] = Channel(star.sed, planet.cr, zodi.sed, instrument_emission, instrument_transmission)
       
       for op in opt.channel[key]['optical_surface']:
-	  dtmp=np.loadtxt(op.transmission.replace('$root$', opt.common_exosym_path.val), delimiter=',') 
-    	  tr = Sed(dtmp[:,0],dtmp[:,1])
-    	  tr.rebin(opt.common_wl.val)
-    	  em = Sed(dtmp[:,0],dtmp[:,2])
-    	  em.rebin(opt.common_wl.val)
-    	  exolib.sed_propagation(channel[key].star, tr)
-    	  exolib.sed_propagation(channel[key].zodi, tr)
-    	  exolib.sed_propagation(channel[key].emission, tr, \
-    	    emissivity=em, temperature=op.temperature)
-    	  channel[key].transmission.sed = \
-    	    channel[key].transmission.sed*tr.sed
+          print op.transmission.replace('$root$', opt.common_exosym_path.val)
+
+          dtmp=np.loadtxt(op.transmission.replace('$root$', opt.common_exosym_path.val), delimiter=',')
+          tr = Sed(dtmp[:,0],dtmp[:,1])
+          tr.rebin(opt.common_wl.val)
+          em = Sed(dtmp[:,0],dtmp[:,2])	  
+          em.rebin(opt.common_wl.val)
+          exolib.sed_propagation(channel[key].star, tr)
+          exolib.sed_propagation(channel[key].zodi, tr)
+          exolib.sed_propagation(channel[key].emission, tr, emissivity=em, temperature=op.temperature)
+          channel[key].transmission.sed = channel[key].transmission.sed*tr.sed
      
       ### create focal plane
            

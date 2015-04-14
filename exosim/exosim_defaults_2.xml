@@ -41,17 +41,16 @@
 
 <channel val="WFC3IR" comment="WFC3IR">
     
-    
-  <optical_surface type="dichroic" transmission="$root$/data/instrument/d0_re_v0.csv"  T="50" comment="D0"/>
-  <optical_surface type="grating" transmission="$root$/data/instrument/g141"   T="50" comment=""/>
-  
-  
+  <optical_surface type="grating" transmission="$root$/data/instrument/WFC3/g141_grism.csv" />
+
   <ld val="0.9 0.00025 10" units=""   comment="Wavelength solution (q, m, x_ref): wl = q + m(x - x_ref) where x and x ref are in microns" />
   <array_geometry val="256 256" comment="pixel count"/>
   
   <pixel_size val="18.0" units="micron" transmission="$root$/data/instrument/qe.dat" />
   <wfno val="28.96" units="m" />
-  
+  <plate_scale val="0.00722" />
+
+
   <osf val="3.0" />
   <kernel_osf val = "21.0"/>
   <psf_osf val = "3.0"/>
@@ -60,25 +59,6 @@
 </channel>
 
   
-  
-<channel val="WFC3IR" comment="WFC3IR">
-      
-      
-    <optical_surface type="dichroic" transmission="$root$/data/instrument/d0_re_v0.csv"  T="50" comment="D0"/>
-    <optical_surface type="grating" transmission="$root$/data/instrument/g141_grism.csv"   T="50" comment=""/>
-      
-      
-    <ld val="0.9 0.00025 10" units=""   comment="Wavelength solution (q, m, x_ref): wl = q + m(x - x_ref) where x and x ref are in microns" />
-    <array_geometry val="256 256" comment="pixel count"/>
-      
-    <pixel_size val="18" units="micron" transmission="$root$/data/instrument/qe.dat" />
-    <wfno val="28.56" units="m" />
-      
-    <osf val="3.0" />
-    <kernel_osf val = "21.0"/>
-    <psf_osf val = "3.0"/>
-    <ad_osf val = "7.0"/>
-</channel>
 
 
 </root>

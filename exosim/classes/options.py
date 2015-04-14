@@ -10,7 +10,7 @@ pc2m			= constants.parsec
 au2m			= constants.au
 days2s			= constants.day
 
-EXOSIM_DEFAULTS        = 'exosim_defaults.xml'
+EXOSIM_DEFAULTS        = 'exosim_defaults_2.xml'
 WRONGUNITS = -1
 FIELDNOTFOUND = -2
 
@@ -159,6 +159,7 @@ class Options(object):
       self.channel[tk.val]['pixel_size'] = Token(ch, 'pixel_size')
       self.channel[tk.val]['pixel_size'].units_conversion('micron', 'micron', 1.0)
       self.channel[tk.val]['wfno'] = Token(ch, 'wfno')
+      self.channel[tk.val]['plate_scale'] = Token(ch, 'plate_scale')
       self.channel[tk.val]['osf'] = Token(ch, 'osf')
       self.channel[tk.val]['kernel_osf'] = Token(ch, 'kernel_osf')
       self.channel[tk.val]['psf_osf'] = Token(ch, 'psf_osf')

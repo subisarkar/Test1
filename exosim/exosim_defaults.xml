@@ -43,6 +43,7 @@
   <array_geometry val="64 512" comment="pixel count"/>
   <pixel_size val="18" units="micron" transmission="$root$/data/instrument/qe.dat" />
   <wfno val="18.5" units="" transmission="The working f/#" />
+  <plate_scale val="0.00558627" units="arcsec/micron" />
   <osf val="3.0" />
   <kernel_osf val = "21.0"/>
   <psf_osf val = "3.0"/>
@@ -57,6 +58,7 @@
   <array_geometry val="64 512" comment="pixel count"/>
   <pixel_size val="18" units="micron" transmission="$root$/data/instrument/qe.dat" />
   <wfno val="9.2" units="" transmission="The working f/#" />
+  <plate_scale val="0.0058627" units="arcsec/micron" />
   <osf val="3.0" />
   <kernel_osf val = "21.0" />
   <psf_osf val = "3.0"/>

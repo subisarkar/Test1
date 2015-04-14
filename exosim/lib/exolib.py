@@ -493,7 +493,7 @@ def congrid(a, newdims, method='linear', centre=False, minusone=False):
 
 
 
-def jitter(opt, obs_time,int_time,osr,rms,mode=2):
+def jitter(jitter_file, obs_time,int_time,osr,rms,mode=2):
     
     """
         Jitter
@@ -535,7 +535,6 @@ def jitter(opt, obs_time,int_time,osr,rms,mode=2):
     new_fs=1/new_dt
     new_df = new_fs/new_N
     
-    jitter_file = opt.common_exosym_path.val+"/data/instrument/herschel_long_pointing.fits"
     f = pyfits.open(jitter_file)  # open a FITS file
     tbdata = f[1].data  # assume the first extension is a table
     time = tbdata['Time']
@@ -675,7 +674,7 @@ def animate(Data):
             Z = Data[...,j]
             print Z.sum()
             
-            wframe = ax.plot_wireframe(X, Y, Z, rstride=5, cstride=5)
+            wframe = ax.plot_wireframe(X, Y, Z, rstride=2, cstride=2)
             
 #            ax.set_zlim(0,20000)
 #            ax.set_title(j)
