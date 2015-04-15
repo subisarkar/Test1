@@ -14,12 +14,14 @@ np.set_printoptions(threshold=np.nan)
 #set observation parameters
 
 def run(opt,channel):
+    
+    #  for WFC3 : ndr_number = 12, ndr_time = 7.3465 sec, exp_number = 67
                 
-    ndr_number = 13 # the number of ndrs per exposure
-    exp_number = 50 # the total number of exposures
-    ndr_time = 7.0 #enter intergration time in sec for one "exposure" = NDR
+    ndr_number = 12 # the number of ndrs per exposure
+    exp_number = 67 # the total number of exposures
+    ndr_time = 7.3465 #enter intergration time in sec for one "exposure" = NDR
     exp_time = ndr_time *ndr_number
-    ndr_osf = 1  # no of osr samples per ndr
+    ndr_osf = 10  # no of osr samples per ndr
 
     N = exp_number * ndr_number  # number of ndrs in total
     N = 100
@@ -28,13 +30,11 @@ def run(opt,channel):
     obs_time = obs_time_hours*60*60.0
     rms = 4.0e-5
     
-    QE = 0.6
-    QEsd = 0.05
+ 
      
     #Call Jitter function
     
     jitter_file = opt.common_exosym_path.val+"/data/instrument/herschel_long_pointing.fits"
-
     ra_jitter, dec_jitter, time = exolib.jitter(jitter_file,obs_time,ndr_time,ndr_osf,rms,mode=2)
         
         
@@ -59,14 +59,7 @@ def run(opt,channel):
         jitter_x = (ra_jitter/((plate_scale)/3600))/pixel_size
         jitter_y = (dec_jitter/((plate_scale)/3600))/pixel_size
             
-    
-        # Apply quantum efficiency variations 
-       
-        QE_array = np.random.normal(QE,QEsd*QE,fpn)
-        QE_array = np.repeat(QE_array,osf,axis=0)
-        QE_array = np.repeat(QE_array,osf,axis=1)  
-       
-        fp = fp*QE_array
+
      
         # Apply additional oversampling
      
@@ -159,16 +152,22 @@ def run(opt,channel):
                 count = new_fp[start_y : start_y + fpn[0]*new_osf :new_osf, \
                                 start_x : start_x + fpn[1]*new_osf :new_osf]
                 accum += count * ndr_time/ndr_osf
-                
-                print count.sum(), accum.sum()
-                                                   
-        
+                                                                           
             pca[...,i] = accum            
-    
-        channel[key].timeline = pca 
+
+    channel[key].timeline = pca 
         
         #pca is an array of NDRs
-        
+    
+
+    T = pca[...,0:12].sum(axis=2)
+    C = T.sum(axis=0)
+    
+    print "NDR 1-12 total summed count in electrons", C.sum()
+
+    plt.figure(111)
+    plt.plot(C)
+    
     return channel    
 
         

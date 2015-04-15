@@ -672,7 +672,7 @@ def animate(Data):
            
         
             Z = Data[...,j]
-            print Z.sum()
+#            print Z.sum()
             
             wframe = ax.plot_wireframe(X, Y, Z, rstride=2, cstride=2)
             

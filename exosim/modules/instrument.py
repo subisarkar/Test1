@@ -35,7 +35,7 @@ def run(opt, star, planet, zodi):
   instrument_transmission   = Sed(star.sed.wl, np.ones(star.sed.wl.size, dtype=np.float64))
   
   for op in opt.common_optic['optical_surface']:
-
+     
     dtmp=np.loadtxt(op.transmission.replace('$root$', opt.common_exosym_path.val), delimiter=',')
     tr = Sed(dtmp[:,0],dtmp[:,1])
     tr.rebin(opt.common_wl.val)
@@ -55,7 +55,6 @@ def run(opt, star, planet, zodi):
       channel[key] = Channel(star.sed, planet.cr, zodi.sed, instrument_emission, instrument_transmission)
       
       for op in opt.channel[key]['optical_surface']:
-          print op.transmission.replace('$root$', opt.common_exosym_path.val)
 
           dtmp=np.loadtxt(op.transmission.replace('$root$', opt.common_exosym_path.val), delimiter=',')
           tr = Sed(dtmp[:,0],dtmp[:,1])
@@ -69,6 +68,7 @@ def run(opt, star, planet, zodi):
      
       ### create focal plane
            
+
       channel[key].osf          = opt.channel[key]['osf'].val    # Oversample psf by this factor to #   ensure Nyquist
       channel[key].kernel_osf   = opt.channel[key]['kernel_osf'].val   # Oversample kernel to ensure Nyquist sampling
       channel[key].psf_osf      = opt.channel[key]['psf_osf'].val
@@ -85,7 +85,7 @@ def run(opt, star, planet, zodi):
       #3# This is the current sampling interval in the focal plane.  
       fp_delta = opt.channel[key]['pixel_size'].val/channel[key].osf
       
-      x_dist = np.arange(opt.channel[key]['pixel_size'].val /2,  
+      x_dist = np.arange(opt.channel[key]['pixel_size'].val/2,  
                          opt.channel[key]['pixel_size'].val/2 + fpn[1] *opt.channel[key]['pixel_size'].val, 
                          opt.channel[key]['pixel_size'].val) 
       x_wav =  ld[0] + ld[1]*(x_dist-ld[2])
@@ -95,9 +95,8 @@ def run(opt, star, planet, zodi):
                          fp_delta) 
                          
       x_wav_osf = ld[0] + ld[1]*(x_dist_osf-ld[2]) # wvalength on each x pixel
-                   
-
       
+                                  
       #5# Generate PSFs, one for each detector pixel along spectral axis
       psf = exolib.Psf(x_wav, opt.channel[key]['wfno'].val, fp_delta, shape='airy') 
       
@@ -117,6 +116,13 @@ def run(opt, star, planet, zodi):
       channel[key].planet.rebin(channel[key].wl_solution)
 #      print channel[key].wl_solution.size, channel[key].planet.sed.size
       
+      
+      #parameters needed to obtain photon count per wavelength from sed
+       
+      delta_wav = x_wav_osf[1]- x_wav_osf[0]
+      ap_area = np.pi*(opt.common_optic['diameter'].val/2)**2
+      photon_E = 6.62606957e-34* 299792458/(x_wav_osf*1e-6)
+                        
       #8# Populate the point source focal plane
  
       psf_delta = (1/channel[key].psf_osf) *channel[key].osf
@@ -127,10 +133,21 @@ def run(opt, star, planet, zodi):
       i0 = fp.shape[0]/2 - psf.shape[0]/2 
       i1 = i0 + psf.shape[0]
       for k in idx: 
-         fp[i0:i1, j0[k]:j1[k]] += psf[...,k]*channel[key].star.sed[k]
-         
-         
+         fp[i0:i1, j0[k]:j1[k]] += psf[...,k]*channel[key].star.sed[k]*ap_area*delta_wav/photon_E[k]
 
+
+      # apply quantum effiicency and variations
+        
+      QE = 0.6  # to be replaced with file
+      QEsd = 0.05
+            
+      QE_array = np.random.normal(QE,QEsd*QE,fpn)
+      QE_array = np.repeat(QE_array,channel[key].osf,axis=0)
+      QE_array = np.repeat(QE_array,channel[key].osf,axis=1)  
+       
+      fp *= QE_array         
+
+        
                 
       #10# Allocate pixel response function
        

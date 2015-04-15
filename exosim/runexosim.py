@@ -73,8 +73,7 @@ if __name__ == "__main__":
   pl.plot(data['qplanet'].phi, data['qplanet'].lc, 'r') 
   pl.subplot(3,3,4)
   pl.plot(data['qzodi'].sed.wl, data['qzodi'].sed.sed, 'r')
-  pl.subplot(3,3,4)
-  pl.plot(data['qzodi'].sed.wl, data['qzodi'].sed.sed, 'r')
+
   
   i=0
   for key in opt.channel.keys():
@@ -108,7 +107,7 @@ if __name__ == "__main__":
 #print "sd of count", np.std(tl)
 
 
-exosim.lib.exolib.animate(data['channel'][opt.channel.keys()[0]].timeline)
+#exosim.lib.exolib.animate(data['channel'][opt.channel.keys()[0]].timeline)
 
 
 #  need to animate, check why only short section illumimated, generalize for MWIR

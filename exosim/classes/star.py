@@ -2,6 +2,7 @@ import numpy   as np
 import os, time, tables, pyfits
 from   ..classes import sed
 from   ..lib import exolib
+import matplotlib.pyplot as plt
 
 class Star(object):
   """
@@ -39,6 +40,7 @@ class Star(object):
     self.distance, self.temperature, self.logg, self.f_h, self.radius = star_distance, star_temperature, star_logg, star_f_h, star_radius
 
     ph_wl, ph_sed, ph_L = self.read_phenix_spectrum(star_sed_path, star_distance, star_temperature, star_logg, star_f_h, star_radius)
+        
     self.ph_luminosity = ph_L
     self.ph_sed   = sed.Sed(ph_wl, ph_sed, units='W m**-2 micron**-1')
     self.sed = sed.Sed(ph_wl, ph_sed, units='W m**-2 micron**-1')
@@ -131,12 +133,15 @@ class Star(object):
     wl *= 1.0e-4 # [um]
     sed *= 1e-7 # [W m^-2 mu^-1]        
 
-########################    
-    
+########################   
+
     # Calculate Luinosity for consistency check
     bolometric_flux        =  np.trapz(sed, x = wl) 			      # [W m**-2]
     bolometric_luminosity  =  4*np.pi * star_radius**2 * bolometric_flux 	# [W]
     sed                   *=  (star_radius/star_distance)**2 		      # [W/m^2/mu]
+    
+    plt.figure(97)
+    plt.plot(wl,sed)
     
     return wl, sed, bolometric_luminosity
     
