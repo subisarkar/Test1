@@ -1,0 +1,24 @@
+<system>
+	<name>KOI-4399</name>
+	<rightascension>18 48 30</rightascension>
+	<declination>+44 18 11</declination>
+	<distance>519.16</distance>
+	<star>
+		<name>KOI-4399</name>
+		<temperature errorminus="193.00" errorplus="193.00">5654.00</temperature>
+		<radius errorminus="1.1350" errorplus="1.1350">1.9460</radius>
+		<metallicity errorminus="0.3800" errorplus="0.3800">-0.7400</metallicity>
+		<planet>
+			<name>KOI-4399 b</name>
+			<name>KOI-4399 01</name>
+			<radius errorminus="0.10936" errorplus="0.10936">0.27430</radius>
+			<period errorminus="8.1850000e-05" errorplus="8.1850000e-05">42.100401370000</period>
+			<transittime errorminus="0.0015700" errorplus="0.0015700">2454976.0271100</transittime>
+			<semimajoraxis errorminus="2.95e-07" errorplus="2.95e-07">0.2276760</semimajoraxis>
+			<temperature errorminus="214.0" errorplus="214.0">729.0</temperature>
+			<list>Kepler Objects of Interest</list>
+			<description>This is a Kepler Object of Interest from the Q1-Q12 dataset. It has been flagged as a possible transit event but has not been confirmed to be a planet yet.</description>
+			<istransiting>1</istransiting>
+		</planet>
+	</star>
+</system>

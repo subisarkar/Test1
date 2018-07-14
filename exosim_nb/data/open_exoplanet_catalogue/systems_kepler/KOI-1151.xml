@@ -1,0 +1,76 @@
+<system>
+	<name>KOI-1151</name>
+	<rightascension>18 52 00</rightascension>
+	<declination>+44 17 03</declination>
+	<distance>520.85</distance>
+	<star>
+		<magJ errorminus="0.022" errorplus="0.022">12.198</magJ>
+		<magH errorminus="0.019" errorplus="0.019">11.819</magH>
+		<magK errorminus="0.021" errorplus="0.021">11.745</magK>
+		<name>KOI-1151</name>
+		<temperature errorminus="70.00" errorplus="70.00">5759.00</temperature>
+		<radius errorminus="0.3500" errorplus="0.3500">0.9700</radius>
+		<mass errorminus="0.0590" errorplus="0.0590">0.9250</mass>
+		<age errorminus="3.0000" errorplus="3.0000">7.1000</age>
+		<planet>
+			<name>KOI-1151 b</name>
+			<name>KOI-1151 01</name>
+			<radius errorminus="0.04739" errorplus="0.04739">0.13305</radius>
+			<period errorminus="1.0000000e-04" errorplus="1.0000000e-04">10.435490000000</period>
+			<transittime errorminus="0.0038000" errorplus="0.0038000">2454967.8210000</transittime>
+			<semimajoraxis>0.0910000</semimajoraxis>
+			<temperature>830.0</temperature>
+			<list>Kepler Objects of Interest</list>
+			<description>This is a Kepler Object of Interest from the Q1-Q12 dataset. It has been flagged as a possible transit event but has not been confirmed to be a planet yet.</description>
+			<istransiting>1</istransiting>
+		</planet>
+		<planet>
+			<name>KOI-1151 c</name>
+			<name>KOI-1151 02</name>
+			<radius errorminus="0.03736" errorplus="0.03736">0.10480</radius>
+			<period errorminus="9.5000000e-05" errorplus="9.5000000e-05">7.411038000000</period>
+			<transittime errorminus="0.0047000" errorplus="0.0047000">2454968.7439000</transittime>
+			<semimajoraxis>0.0720000</semimajoraxis>
+			<temperature>933.0</temperature>
+			<list>Kepler Objects of Interest</list>
+			<description>This is a Kepler Object of Interest from the Q1-Q12 dataset. It has been flagged as a possible transit event but has not been confirmed to be a planet yet.</description>
+			<istransiting>1</istransiting>
+		</planet>
+		<planet>
+			<name>KOI-1151 d</name>
+			<name>KOI-1151 03</name>
+			<radius errorminus="0.02369" errorplus="0.02369">0.06379</radius>
+			<period errorminus="1.6000000e-04" errorplus="1.6000000e-04">5.249480000000</period>
+			<transittime errorminus="0.0110000" errorplus="0.0110000">2454968.4830000</transittime>
+			<semimajoraxis>0.0580000</semimajoraxis>
+			<temperature>1039.0</temperature>
+			<list>Kepler Objects of Interest</list>
+			<description>This is a Kepler Object of Interest from the Q1-Q12 dataset. It has been flagged as a possible transit event but has not been confirmed to be a planet yet.</description>
+			<istransiting>1</istransiting>
+		</planet>
+		<planet>
+			<name>KOI-1151 e</name>
+			<name>KOI-1151 04</name>
+			<radius errorminus="0.06589" errorplus="0.06589">0.07965</radius>
+			<period errorminus="1.8370000e-04" errorplus="1.8370000e-04">17.453304600000</period>
+			<transittime errorminus="0.0085000" errorplus="0.0085000">2454979.6575200</transittime>
+			<semimajoraxis errorminus="8.65e-07" errorplus="8.65e-07">0.1232620</semimajoraxis>
+			<temperature errorminus="54.5" errorplus="54.5">655.7</temperature>
+			<list>Kepler Objects of Interest</list>
+			<description>This is a Kepler Object of Interest from the Q1-Q12 dataset. It has been flagged as a possible transit event but has not been confirmed to be a planet yet.</description>
+			<istransiting>1</istransiting>
+		</planet>
+		<planet>
+			<name>KOI-1151 f</name>
+			<name>KOI-1151 05</name>
+			<radius errorminus="0.08749" errorplus="0.08749">0.08885</radius>
+			<period errorminus="2.1020000e-04" errorplus="2.1020000e-04">21.720316700000</period>
+			<transittime errorminus="0.0076800" errorplus="0.0076800">2454967.7818700</transittime>
+			<semimajoraxis errorminus="9.20e-07" errorplus="9.20e-07">0.1426120</semimajoraxis>
+			<temperature errorminus="50.6" errorplus="50.6">609.6</temperature>
+			<list>Kepler Objects of Interest</list>
+			<description>This is a Kepler Object of Interest from the Q1-Q12 dataset. It has been flagged as a possible transit event but has not been confirmed to be a planet yet.</description>
+			<istransiting>1</istransiting>
+		</planet>
+	</star>
+</system>

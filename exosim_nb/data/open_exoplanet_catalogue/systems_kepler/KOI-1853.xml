@@ -1,0 +1,28 @@
+<system>
+	<name>KOI-1853</name>
+	<rightascension>19 00 24</rightascension>
+	<declination>+45 00 29</declination>
+	<distance>643.68</distance>
+	<star>
+		<magJ errorminus="0.022" errorplus="0.022">12.456</magJ>
+		<magH errorminus="0.019" errorplus="0.019">12.156</magH>
+		<magK errorminus="0.021" errorplus="0.021">12.169</magK>
+		<name>KOI-1853</name>
+		<temperature errorminus="70.00" errorplus="70.00">6206.00</temperature>
+		<radius errorminus="0.4700" errorplus="0.4700">1.0200</radius>
+		<mass errorminus="0.1100" errorplus="0.1100">1.1000</mass>
+		<age errorminus="1.3000" errorplus="1.3000">0.3000</age>
+		<planet>
+			<name>KOI-1853 b</name>
+			<name>KOI-1853 01</name>
+			<radius errorminus="0.08931" errorplus="0.08931">0.19320</radius>
+			<period errorminus="6.4000000e-04" errorplus="6.4000000e-04">60.085560000000</period>
+			<transittime errorminus="0.0038000" errorplus="0.0038000">2454986.2564000</transittime>
+			<semimajoraxis>0.3100000</semimajoraxis>
+			<temperature>496.0</temperature>
+			<list>Kepler Objects of Interest</list>
+			<description>This is a Kepler Object of Interest from the Q1-Q12 dataset. It has been flagged as a possible transit event but has not been confirmed to be a planet yet.</description>
+			<istransiting>1</istransiting>
+		</planet>
+	</star>
+</system>

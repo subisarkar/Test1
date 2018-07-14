@@ -1,0 +1,25 @@
+<system>
+	<name>KOI-2508</name>
+	<rightascension>19 51 37</rightascension>
+	<declination>+45 01 56</declination>
+	<distance>864.15</distance>
+	<star>
+		<name>KOI-2508</name>
+		<temperature errorminus="82.00" errorplus="82.00">5481.00</temperature>
+		<radius errorminus="0.2600" errorplus="0.2600">0.7900</radius>
+		<mass errorminus="0.0420" errorplus="0.0420">0.8920</mass>
+		<age errorminus="4.0000" errorplus="4.0000">0.6000</age>
+		<planet>
+			<name>KOI-2508 b</name>
+			<name>KOI-2508 01</name>
+			<radius errorminus="0.08931" errorplus="0.08931">0.17497</radius>
+			<period errorminus="3.3000000e-05" errorplus="3.3000000e-05">7.103958000000</period>
+			<transittime errorminus="0.0033000" errorplus="0.0033000">2454969.3323000</transittime>
+			<semimajoraxis>0.0700000</semimajoraxis>
+			<temperature>811.0</temperature>
+			<list>Kepler Objects of Interest</list>
+			<description>This is a Kepler Object of Interest from the Q1-Q12 dataset. It has been flagged as a possible transit event but has not been confirmed to be a planet yet.</description>
+			<istransiting>1</istransiting>
+		</planet>
+	</star>
+</system>

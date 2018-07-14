@@ -1,0 +1,28 @@
+<system>
+	<name>KOI-2491</name>
+	<rightascension>19 44 18</rightascension>
+	<declination>+45 37 37</declination>
+	<distance>1252.27</distance>
+	<star>
+		<magJ errorminus="0.024" errorplus="0.024">14.289</magJ>
+		<magH errorminus="0.03" errorplus="0.03">13.85</magH>
+		<magK errorminus="0.04" errorplus="0.04">13.85</magK>
+		<name>KOI-2491</name>
+		<temperature errorminus="126.00" errorplus="126.00">5782.00</temperature>
+		<radius errorminus="0.3800" errorplus="0.3800">0.8600</radius>
+		<mass errorminus="0.0900" errorplus="0.0900">0.9690</mass>
+		<age errorminus="3.4000" errorplus="3.4000">0.4000</age>
+		<planet>
+			<name>KOI-2491 b</name>
+			<name>KOI-2491 01</name>
+			<radius errorminus="0.05923" errorplus="0.05923">0.13123</radius>
+			<period errorminus="3.7000000e-05" errorplus="3.7000000e-05">2.668362000000</period>
+			<transittime errorminus="0.0043000" errorplus="0.0043000">2454964.6823000</transittime>
+			<semimajoraxis>0.0370000</semimajoraxis>
+			<temperature>1230.0</temperature>
+			<list>Kepler Objects of Interest</list>
+			<description>This is a Kepler Object of Interest from the Q1-Q12 dataset. It has been flagged as a possible transit event but has not been confirmed to be a planet yet.</description>
+			<istransiting>1</istransiting>
+		</planet>
+	</star>
+</system>

@@ -1,0 +1,28 @@
+<system>
+	<name>KOI-2354</name>
+	<rightascension>19 44 15</rightascension>
+	<declination>+42 46 05</declination>
+	<distance>985.93</distance>
+	<star>
+		<magJ errorminus="0.026" errorplus="0.026">13.339</magJ>
+		<magH errorminus="0.026" errorplus="0.026">13.042</magH>
+		<magK errorminus="0.027" errorplus="0.027">12.949</magK>
+		<name>KOI-2354</name>
+		<temperature errorminus="97.00" errorplus="97.00">6098.00</temperature>
+		<radius errorminus="0.3800" errorplus="0.3800">0.9800</radius>
+		<mass errorminus="0.0870" errorplus="0.0870">1.0660</mass>
+		<age errorminus="1.7000" errorplus="1.7000">0.5000</age>
+		<planet>
+			<name>KOI-2354 b</name>
+			<name>KOI-2354 01</name>
+			<radius errorminus="0.06106" errorplus="0.06106">0.14490</radius>
+			<period errorminus="7.5000000e-06" errorplus="7.5000000e-06">1.151239300000</period>
+			<transittime errorminus="0.0008900" errorplus="0.0008900">2454965.6484400</transittime>
+			<semimajoraxis>0.0220000</semimajoraxis>
+			<temperature>1793.0</temperature>
+			<list>Kepler Objects of Interest</list>
+			<description>This is a Kepler Object of Interest from the Q1-Q12 dataset. It has been flagged as a possible transit event but has not been confirmed to be a planet yet.</description>
+			<istransiting>1</istransiting>
+		</planet>
+	</star>
+</system>

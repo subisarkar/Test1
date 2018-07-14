@@ -1,0 +1,40 @@
+<system>
+	<name>KOI-1534</name>
+	<rightascension>19 20 21</rightascension>
+	<declination>+39 49 01</declination>
+	<distance>765.88</distance>
+	<star>
+		<magJ errorminus="0.023" errorplus="0.023">12.539</magJ>
+		<magH errorminus="0.021" errorplus="0.021">12.270</magH>
+		<magK errorminus="0.023" errorplus="0.023">12.241</magK>
+		<name>KOI-1534</name>
+		<temperature errorminus="93.00" errorplus="93.00">6401.00</temperature>
+		<radius errorminus="0.4200" errorplus="0.4200">1.1200</radius>
+		<mass errorminus="0.1200" errorplus="0.1200">1.1600</mass>
+		<age errorminus="0.7100" errorplus="0.7100">0.8500</age>
+		<planet>
+			<name>KOI-1534 b</name>
+			<name>KOI-1534 01</name>
+			<radius errorminus="0.05559" errorplus="0.05559">0.14945</radius>
+			<period errorminus="2.2000000e-04" errorplus="2.2000000e-04">20.422260000000</period>
+			<transittime errorminus="0.0054000" errorplus="0.0054000">2454979.9846000</transittime>
+			<semimajoraxis>0.1540000</semimajoraxis>
+			<temperature>762.0</temperature>
+			<list>Kepler Objects of Interest</list>
+			<description>This is a Kepler Object of Interest from the Q1-Q12 dataset. It has been flagged as a possible transit event but has not been confirmed to be a planet yet.</description>
+			<istransiting>1</istransiting>
+		</planet>
+		<planet>
+			<name>KOI-1534 c</name>
+			<name>KOI-1534 02</name>
+			<radius errorminus="0.03281" errorplus="0.03281">0.08657</radius>
+			<period errorminus="1.5000000e-04" errorplus="1.5000000e-04">7.638610000000</period>
+			<transittime errorminus="0.0092000" errorplus="0.0092000">2454971.2340000</transittime>
+			<semimajoraxis>0.0800000</semimajoraxis>
+			<temperature>1058.0</temperature>
+			<list>Kepler Objects of Interest</list>
+			<description>This is a Kepler Object of Interest from the Q1-Q12 dataset. It has been flagged as a possible transit event but has not been confirmed to be a planet yet.</description>
+			<istransiting>1</istransiting>
+		</planet>
+	</star>
+</system>

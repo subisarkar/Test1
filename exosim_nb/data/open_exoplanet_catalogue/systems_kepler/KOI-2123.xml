@@ -1,0 +1,28 @@
+<system>
+	<name>KOI-2123</name>
+	<rightascension>20 06 10</rightascension>
+	<declination>+44 36 20</declination>
+	<distance>879.79</distance>
+	<star>
+		<magJ errorminus="0.021" errorplus="0.021">13.216</magJ>
+		<magH errorminus="0.023" errorplus="0.023">12.901</magH>
+		<magK errorminus="0.023" errorplus="0.023">12.809</magK>
+		<name>KOI-2123</name>
+		<temperature errorminus="100.00" errorplus="100.00">6034.00</temperature>
+		<radius errorminus="0.5100" errorplus="0.5100">0.9500</radius>
+		<mass errorminus="0.1200" errorplus="0.1200">1.0400</mass>
+		<age errorminus="2.1000" errorplus="2.1000">0.4000</age>
+		<planet>
+			<name>KOI-2123 b</name>
+			<name>KOI-2123 01</name>
+			<radius errorminus="0.12758" errorplus="0.12758">0.20960</radius>
+			<period errorminus="4.3000000e-04" errorplus="4.3000000e-04">29.455600000000</period>
+			<transittime errorminus="0.0057000" errorplus="0.0057000">2454987.1718000</transittime>
+			<semimajoraxis>0.1890000</semimajoraxis>
+			<temperature>596.0</temperature>
+			<list>Kepler Objects of Interest</list>
+			<description>This is a Kepler Object of Interest from the Q1-Q12 dataset. It has been flagged as a possible transit event but has not been confirmed to be a planet yet.</description>
+			<istransiting>1</istransiting>
+		</planet>
+	</star>
+</system>

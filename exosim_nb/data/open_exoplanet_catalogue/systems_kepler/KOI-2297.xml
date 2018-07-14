@@ -1,0 +1,28 @@
+<system>
+	<name>KOI-2297</name>
+	<rightascension>18 57 18</rightascension>
+	<declination>+40 34 08</declination>
+	<distance>1013.34</distance>
+	<star>
+		<magJ errorminus="0.021" errorplus="0.021">13.199</magJ>
+		<magH errorminus="0.022" errorplus="0.022">12.903</magH>
+		<magK errorminus="0.025" errorplus="0.025">12.829</magK>
+		<name>KOI-2297</name>
+		<temperature errorminus="98.00" errorplus="98.00">6029.00</temperature>
+		<radius errorminus="0.4400" errorplus="0.4400">1.1200</radius>
+		<mass errorminus="0.1000" errorplus="0.1000">1.0200</mass>
+		<age errorminus="1.9000" errorplus="1.9000">5.4000</age>
+		<planet>
+			<name>KOI-2297 b</name>
+			<name>KOI-2297 01</name>
+			<radius errorminus="0.05468" errorplus="0.05468">0.14034</radius>
+			<period errorminus="8.4000000e-05" errorplus="8.4000000e-05">4.644880000000</period>
+			<transittime errorminus="0.0062000" errorplus="0.0062000">2454969.0259000</transittime>
+			<semimajoraxis>0.0550000</semimajoraxis>
+			<temperature>1200.0</temperature>
+			<list>Kepler Objects of Interest</list>
+			<description>This is a Kepler Object of Interest from the Q1-Q12 dataset. It has been flagged as a possible transit event but has not been confirmed to be a planet yet.</description>
+			<istransiting>1</istransiting>
+		</planet>
+	</star>
+</system>

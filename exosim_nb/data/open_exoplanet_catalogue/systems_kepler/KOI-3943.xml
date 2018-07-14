@@ -1,0 +1,24 @@
+<system>
+	<name>KOI-3943</name>
+	<rightascension>19 23 29</rightascension>
+	<declination>+43 19 58</declination>
+	<distance>665.69</distance>
+	<star>
+		<name>KOI-3943</name>
+		<temperature errorminus="224.00" errorplus="224.00">6478.00</temperature>
+		<radius errorminus="0.7460" errorplus="0.7460">1.4020</radius>
+		<metallicity errorminus="0.3400" errorplus="0.3400">-0.2800</metallicity>
+		<planet>
+			<name>KOI-3943 b</name>
+			<name>KOI-3943 01</name>
+			<radius errorminus="0.01422" errorplus="0.01422">0.22874</radius>
+			<period errorminus="1.8340000e-04" errorplus="1.8340000e-04">38.576127000000</period>
+			<transittime errorminus="0.0040900" errorplus="0.0040900">2455000.8604800</transittime>
+			<semimajoraxis errorminus="7.36e-07" errorplus="7.36e-07">0.2321360</semimajoraxis>
+			<temperature errorminus="188.0" errorplus="188.0">702.0</temperature>
+			<list>Kepler Objects of Interest</list>
+			<description>This is a Kepler Object of Interest from the Q1-Q12 dataset. It has been flagged as a possible transit event but has not been confirmed to be a planet yet.</description>
+			<istransiting>1</istransiting>
+		</planet>
+	</star>
+</system>

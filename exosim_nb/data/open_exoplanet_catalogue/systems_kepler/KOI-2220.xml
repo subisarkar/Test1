@@ -1,0 +1,76 @@
+<system>
+	<name>KOI-2220</name>
+	<rightascension>19 36 33</rightascension>
+	<declination>+42 22 13</declination>
+	<distance>1027.78</distance>
+	<star>
+		<magJ errorminus="0.021" errorplus="0.021">13.503</magJ>
+		<magH errorminus="0.026" errorplus="0.026">13.181</magH>
+		<magK errorminus="0.03" errorplus="0.03">13.14</magK>
+		<name>KOI-2220</name>
+		<temperature errorminus="101.00" errorplus="101.00">6022.00</temperature>
+		<radius errorminus="0.4600" errorplus="0.4600">0.9700</radius>
+		<mass errorminus="0.1100" errorplus="0.1100">1.0300</mass>
+		<age errorminus="2.0000" errorplus="2.0000">1.5000</age>
+		<planet>
+			<name>KOI-2220 b</name>
+			<name>KOI-2220 01</name>
+			<radius errorminus="0.05194" errorplus="0.05194">0.10845</radius>
+			<period errorminus="2.1000000e-05" errorplus="2.1000000e-05">3.282784000000</period>
+			<transittime errorminus="0.0033000" errorplus="0.0033000">2454964.9020000</transittime>
+			<semimajoraxis>0.0440000</semimajoraxis>
+			<temperature>1245.0</temperature>
+			<list>Kepler Objects of Interest</list>
+			<description>This is a Kepler Object of Interest from the Q1-Q12 dataset. It has been flagged as a possible transit event but has not been confirmed to be a planet yet.</description>
+			<istransiting>1</istransiting>
+		</planet>
+		<planet>
+			<name>KOI-2220 c</name>
+			<name>KOI-2220 02</name>
+			<radius errorminus="0.06106" errorplus="0.06106">0.12576</radius>
+			<period errorminus="3.2000000e-05" errorplus="3.2000000e-05">5.028239000000</period>
+			<transittime errorminus="0.0037000" errorplus="0.0037000">2454967.1044000</transittime>
+			<semimajoraxis>0.0580000</semimajoraxis>
+			<temperature>1085.0</temperature>
+			<list>Kepler Objects of Interest</list>
+			<description>This is a Kepler Object of Interest from the Q1-Q12 dataset. It has been flagged as a possible transit event but has not been confirmed to be a planet yet.</description>
+			<istransiting>1</istransiting>
+		</planet>
+		<planet>
+			<name>KOI-2220 d</name>
+			<name>KOI-2220 03</name>
+			<radius errorminus="0.05103" errorplus="0.05103">0.10571</radius>
+			<period errorminus="1.1000000e-05" errorplus="1.1000000e-05">1.897828000000</period>
+			<transittime errorminus="0.0023000" errorplus="0.0023000">2454965.6781000</transittime>
+			<semimajoraxis>0.0300000</semimajoraxis>
+			<temperature>1508.0</temperature>
+			<list>Kepler Objects of Interest</list>
+			<description>This is a Kepler Object of Interest from the Q1-Q12 dataset. It has been flagged as a possible transit event but has not been confirmed to be a planet yet.</description>
+			<istransiting>1</istransiting>
+		</planet>
+		<planet>
+			<name>KOI-2220 e</name>
+			<name>KOI-2220 04</name>
+			<radius errorminus="0.10024" errorplus="0.10024">0.08749</radius>
+			<period errorminus="7.8750000e-05" errorplus="7.8750000e-05">7.664798640000</period>
+			<transittime errorminus="0.0081100" errorplus="0.0081100">2454970.3667900</transittime>
+			<semimajoraxis errorminus="5.02e-07" errorplus="5.02e-07">0.0732587</semimajoraxis>
+			<temperature errorminus="246.0" errorplus="246.0">924.0</temperature>
+			<list>Kepler Objects of Interest</list>
+			<description>This is a Kepler Object of Interest from the Q1-Q12 dataset. It has been flagged as a possible transit event but has not been confirmed to be a planet yet.</description>
+			<istransiting>1</istransiting>
+		</planet>
+		<planet>
+			<name>KOI-2220 f</name>
+			<name>KOI-2220 05</name>
+			<radius errorminus="0.17315" errorplus="0.17315">0.09478</radius>
+			<period errorminus="1.2580000e-04" errorplus="1.2580000e-04">11.929273800000</period>
+			<transittime errorminus="0.0086800" errorplus="0.0086800">2454966.7510800</transittime>
+			<semimajoraxis errorminus="6.92e-07" errorplus="6.92e-07">0.0983863</semimajoraxis>
+			<temperature errorminus="212.0" errorplus="212.0">797.0</temperature>
+			<list>Kepler Objects of Interest</list>
+			<description>This is a Kepler Object of Interest from the Q1-Q12 dataset. It has been flagged as a possible transit event but has not been confirmed to be a planet yet.</description>
+			<istransiting>1</istransiting>
+		</planet>
+	</star>
+</system>

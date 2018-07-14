@@ -1,0 +1,25 @@
+<system>
+	<name>KOI-2913</name>
+	<rightascension>18 50 31</rightascension>
+	<declination>+46 28 51</declination>
+	<distance>352.48</distance>
+	<star>
+		<name>KOI-2913</name>
+		<temperature errorminus="62.00" errorplus="62.00">5739.00</temperature>
+		<radius errorminus="0.3800" errorplus="0.3800">0.8500</radius>
+		<mass errorminus="0.0700" errorplus="0.0700">0.9630</mass>
+		<age errorminus="3.6000" errorplus="3.6000">0.4000</age>
+		<planet>
+			<name>KOI-2913 b</name>
+			<name>KOI-2913 01</name>
+			<radius errorminus="0.02916" errorplus="0.02916">0.05103</radius>
+			<period errorminus="1.7000000e-05" errorplus="1.7000000e-05">2.888796000000</period>
+			<transittime errorminus="0.0034000" errorplus="0.0034000">2454965.3311000</transittime>
+			<semimajoraxis>0.0390000</semimajoraxis>
+			<temperature>1185.0</temperature>
+			<list>Kepler Objects of Interest</list>
+			<description>This is a Kepler Object of Interest from the Q1-Q12 dataset. It has been flagged as a possible transit event but has not been confirmed to be a planet yet.</description>
+			<istransiting>1</istransiting>
+		</planet>
+	</star>
+</system>

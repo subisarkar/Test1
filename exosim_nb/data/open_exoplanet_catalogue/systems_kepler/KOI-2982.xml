@@ -1,0 +1,25 @@
+<system>
+	<name>KOI-2982</name>
+	<rightascension>19 20 10</rightascension>
+	<declination>+44 22 14</declination>
+	<distance>598.04</distance>
+	<star>
+		<name>KOI-2982</name>
+		<temperature errorminus="72.00" errorplus="72.00">5506.00</temperature>
+		<radius errorminus="0.3200" errorplus="0.3200">0.8200</radius>
+		<mass errorminus="0.0500" errorplus="0.0500">0.8810</mass>
+		<age errorminus="4.0000" errorplus="4.0000">3.7000</age>
+		<planet>
+			<name>KOI-2982 b</name>
+			<name>KOI-2982 01</name>
+			<radius errorminus="0.07564" errorplus="0.07564">0.15036</radius>
+			<period errorminus="1.3000000e-05" errorplus="1.3000000e-05">4.022294000000</period>
+			<transittime errorminus="0.0022000" errorplus="0.0022000">2454968.1749000</transittime>
+			<semimajoraxis>0.0470000</semimajoraxis>
+			<temperature>1014.0</temperature>
+			<list>Kepler Objects of Interest</list>
+			<description>This is a Kepler Object of Interest from the Q1-Q12 dataset. It has been flagged as a possible transit event but has not been confirmed to be a planet yet.</description>
+			<istransiting>1</istransiting>
+		</planet>
+	</star>
+</system>

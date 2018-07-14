@@ -1,0 +1,36 @@
+<system>
+	<name>KOI-2972</name>
+	<rightascension>19 22 56</rightascension>
+	<declination>+45 17 52</declination>
+	<distance>1121.05</distance>
+	<star>
+		<name>KOI-2972</name>
+		<temperature errorminus="200.00" errorplus="200.00">5679.00</temperature>
+		<radius errorminus="0.3000" errorplus="0.3000">0.9900</radius>
+		<mass errorminus="0.3000" errorplus="0.3000">1.0600</mass>
+		<planet>
+			<name>KOI-2972 b</name>
+			<name>KOI-2972 01</name>
+			<radius errorminus="0.08475" errorplus="0.08475">0.14854</radius>
+			<period errorminus="2.2000000e-04" errorplus="2.2000000e-04">13.251630000000</period>
+			<transittime errorminus="0.0130000" errorplus="0.0130000">2454974.1410000</transittime>
+			<semimajoraxis>0.1120000</semimajoraxis>
+			<temperature>746.0</temperature>
+			<list>Kepler Objects of Interest</list>
+			<description>This is a Kepler Object of Interest from the Q1-Q12 dataset. It has been flagged as a possible transit event but has not been confirmed to be a planet yet.</description>
+			<istransiting>1</istransiting>
+		</planet>
+		<planet>
+			<name>KOI-2972 c</name>
+			<name>KOI-2972 02</name>
+			<radius errorminus="0.10024" errorplus="0.10024">0.17588</radius>
+			<period errorminus="9.0310000e-04" errorplus="9.0310000e-04">42.027881500000</period>
+			<transittime errorminus="0.0184000" errorplus="0.0184000">2454971.8251000</transittime>
+			<semimajoraxis errorminus="3.41e-06" errorplus="3.41e-06">0.2378790</semimajoraxis>
+			<temperature errorminus="162.0" errorplus="162.0">531.0</temperature>
+			<list>Kepler Objects of Interest</list>
+			<description>This is a Kepler Object of Interest from the Q1-Q12 dataset. It has been flagged as a possible transit event but has not been confirmed to be a planet yet.</description>
+			<istransiting>1</istransiting>
+		</planet>
+	</star>
+</system>

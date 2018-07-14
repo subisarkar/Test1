@@ -1,0 +1,25 @@
+<system>
+	<name>KOI-3039</name>
+	<rightascension>19 23 47</rightascension>
+	<declination>+40 36 18</declination>
+	<distance>749.91</distance>
+	<star>
+		<name>KOI-3039</name>
+		<temperature errorminus="91.00" errorplus="91.00">5963.00</temperature>
+		<radius errorminus="0.4800" errorplus="0.4800">1.0300</radius>
+		<mass errorminus="0.1100" errorplus="0.1100">0.9900</mass>
+		<age errorminus="1.9000" errorplus="1.9000">4.8000</age>
+		<planet>
+			<name>KOI-3039 b</name>
+			<name>KOI-3039 01</name>
+			<radius errorminus="0.05832" errorplus="0.05832">0.09569</radius>
+			<period errorminus="3.4000000e-04" errorplus="3.4000000e-04">20.350450000000</period>
+			<transittime errorminus="0.0120000" errorplus="0.0120000">2454975.7570000</transittime>
+			<semimajoraxis>0.1460000</semimajoraxis>
+			<temperature>700.0</temperature>
+			<list>Kepler Objects of Interest</list>
+			<description>This is a Kepler Object of Interest from the Q1-Q12 dataset. It has been flagged as a possible transit event but has not been confirmed to be a planet yet.</description>
+			<istransiting>1</istransiting>
+		</planet>
+	</star>
+</system>

@@ -1,0 +1,28 @@
+<system>
+	<name>KOI-2035</name>
+	<rightascension>19 55 27</rightascension>
+	<declination>+46 30 08</declination>
+	<distance>478.50</distance>
+	<star>
+		<magJ errorminus="0.025" errorplus="0.025">11.783</magJ>
+		<magH errorminus="0.029" errorplus="0.029">11.403</magH>
+		<magK errorminus="0.020" errorplus="0.020">11.362</magK>
+		<name>KOI-2035</name>
+		<temperature errorminus="74.00" errorplus="74.00">5654.00</temperature>
+		<radius errorminus="0.3900" errorplus="0.3900">1.1100</radius>
+		<mass errorminus="0.0950" errorplus="0.0950">0.8850</mass>
+		<age errorminus="3.0000" errorplus="3.0000">12.7000</age>
+		<planet>
+			<name>KOI-2035 b</name>
+			<name>KOI-2035 01</name>
+			<radius errorminus="0.08657" errorplus="0.08657">0.24058</radius>
+			<period errorminus="7.3000000e-06" errorplus="7.3000000e-06">1.931563500000</period>
+			<transittime errorminus="0.0009100" errorplus="0.0009100">2454964.7646900</transittime>
+			<semimajoraxis>0.0290000</semimajoraxis>
+			<temperature>1543.0</temperature>
+			<list>Kepler Objects of Interest</list>
+			<description>This is a Kepler Object of Interest from the Q1-Q12 dataset. It has been flagged as a possible transit event but has not been confirmed to be a planet yet.</description>
+			<istransiting>1</istransiting>
+		</planet>
+	</star>
+</system>

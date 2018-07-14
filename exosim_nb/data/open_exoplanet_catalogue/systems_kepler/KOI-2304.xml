@@ -1,0 +1,28 @@
+<system>
+	<name>KOI-2304</name>
+	<rightascension>19 45 13</rightascension>
+	<declination>+43 49 16</declination>
+	<distance>1246.21</distance>
+	<star>
+		<magJ errorminus="0.028" errorplus="0.028">14.110</magJ>
+		<magH errorminus="0.03" errorplus="0.03">13.77</magH>
+		<magK errorminus="0.04" errorplus="0.04">13.67</magK>
+		<name>KOI-2304</name>
+		<temperature errorminus="110.00" errorplus="110.00">5900.00</temperature>
+		<radius errorminus="0.3400" errorplus="0.3400">0.9000</radius>
+		<mass errorminus="0.0670" errorplus="0.0670">1.0060</mass>
+		<age errorminus="2.9000" errorplus="2.9000">0.4000</age>
+		<planet>
+			<name>KOI-2304 b</name>
+			<name>KOI-2304 01</name>
+			<radius errorminus="0.06197" errorplus="0.06197">0.14125</radius>
+			<period errorminus="2.4000000e-04" errorplus="2.4000000e-04">11.173600000000</period>
+			<transittime errorminus="0.0082000" errorplus="0.0082000">2454967.7156000</transittime>
+			<semimajoraxis>0.0980000</semimajoraxis>
+			<temperature>790.0</temperature>
+			<list>Kepler Objects of Interest</list>
+			<description>This is a Kepler Object of Interest from the Q1-Q12 dataset. It has been flagged as a possible transit event but has not been confirmed to be a planet yet.</description>
+			<istransiting>1</istransiting>
+		</planet>
+	</star>
+</system>

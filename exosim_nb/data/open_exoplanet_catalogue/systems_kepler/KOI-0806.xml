@@ -1,0 +1,55 @@
+<system>
+	<name>KOI-0806</name>
+	<rightascension>19 01 08</rightascension>
+	<declination>+38 56 50</declination>
+	<distance>1139.51</distance>
+	<star>
+		<magB errorminus="0.42" errorplus="0.42">16.50</magB>
+		<magR errorminus="0.25" errorplus="0.25">15.95</magR>
+		<magI errorminus="0.44" errorplus="0.44">14.55</magI>
+		<magJ errorminus="0.03" errorplus="0.03">14.00</magJ>
+		<magH errorminus="0.039" errorplus="0.039">13.618</magH>
+		<magK errorminus="0.048" errorplus="0.048">13.581</magK>
+		<name>KOI-0806</name>
+		<temperature errorminus="92.00" errorplus="92.00">5461.00</temperature>
+		<radius errorminus="0.0900" errorplus="0.0900">0.9400</radius>
+		<mass errorminus="0.0350" errorplus="0.0350">0.9690</mass>
+		<age errorminus="3.5000" errorplus="3.5000">4.8000</age>
+		<planet>
+			<name>KOI-0806 b</name>
+			<name>KOI-0806 01</name>
+			<radius errorminus="0.08202" errorplus="0.08202">0.85389</radius>
+			<period errorminus="8.3000000e-04" errorplus="8.3000000e-04">143.215150000000</period>
+			<transittime errorminus="0.0015000" errorplus="0.0015000">2454987.2089000</transittime>
+			<semimajoraxis>0.5300000</semimajoraxis>
+			<temperature>321.0</temperature>
+			<list>Kepler Objects of Interest</list>
+			<description>This is a Kepler Object of Interest from the Q1-Q12 dataset. It has been flagged as a possible transit event but has not been confirmed to be a planet yet.</description>
+			<istransiting>1</istransiting>
+		</planet>
+		<planet>
+			<name>KOI-0806 c</name>
+			<name>KOI-0806 02</name>
+			<radius errorminus="0.11847" errorplus="0.11847">1.27582</radius>
+			<period errorminus="1.0000000e-04" errorplus="1.0000000e-04">60.322921000000</period>
+			<transittime errorminus="0.0004900" errorplus="0.0004900">2455076.9062800</transittime>
+			<semimajoraxis>0.2980000</semimajoraxis>
+			<temperature>428.0</temperature>
+			<list>Kepler Objects of Interest</list>
+			<description>This is a Kepler Object of Interest from the Q1-Q12 dataset. It has been flagged as a possible transit event but has not been confirmed to be a planet yet.</description>
+			<istransiting>1</istransiting>
+		</planet>
+		<planet>
+			<name>KOI-0806 d</name>
+			<name>KOI-0806 03</name>
+			<radius errorminus="0.02461" errorplus="0.02461">0.12485</radius>
+			<period errorminus="2.4000000e-03" errorplus="2.4000000e-03">29.164700000000</period>
+			<transittime errorminus="0.0300000" errorplus="0.0300000">2454983.6920000</transittime>
+			<semimajoraxis>0.1840000</semimajoraxis>
+			<temperature>544.0</temperature>
+			<list>Kepler Objects of Interest</list>
+			<description>This is a Kepler Object of Interest from the Q1-Q12 dataset. It has been flagged as a possible transit event but has not been confirmed to be a planet yet.</description>
+			<istransiting>1</istransiting>
+		</planet>
+	</star>
+</system>

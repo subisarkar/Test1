@@ -1,0 +1,28 @@
+<system>
+	<name>KOI-2058</name>
+	<rightascension>19 10 00</rightascension>
+	<declination>+47 28 09</declination>
+	<distance>333.58</distance>
+	<star>
+		<magJ errorminus="0.022" errorplus="0.022">13.217</magJ>
+		<magH errorminus="0.018" errorplus="0.018">12.555</magH>
+		<magK errorminus="0.016" errorplus="0.016">12.415</magK>
+		<name>KOI-2058</name>
+		<temperature errorminus="51.00" errorplus="51.00">4048.00</temperature>
+		<radius errorminus="0.0070" errorplus="0.0070">0.5220</radius>
+		<mass errorminus="0.0096" errorplus="0.0096">0.5460</mass>
+		<age errorminus="3.4000" errorplus="3.4000">13.8000</age>
+		<planet>
+			<name>KOI-2058 b</name>
+			<name>KOI-2058 01</name>
+			<radius errorminus="0.01276" errorplus="0.01276">0.10115</radius>
+			<period errorminus="1.2000000e-05" errorplus="1.2000000e-05">1.523732000000</period>
+			<transittime errorminus="0.0016000" errorplus="0.0016000">2454964.6184000</transittime>
+			<semimajoraxis>0.0210000</semimajoraxis>
+			<temperature>890.0</temperature>
+			<list>Kepler Objects of Interest</list>
+			<description>This is a Kepler Object of Interest from the Q1-Q12 dataset. It has been flagged as a possible transit event but has not been confirmed to be a planet yet.</description>
+			<istransiting>1</istransiting>
+		</planet>
+	</star>
+</system>

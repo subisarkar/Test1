@@ -1,0 +1,39 @@
+<system>
+	<name>KOI-3057</name>
+	<rightascension>19 25 38</rightascension>
+	<declination>+38 20 24</declination>
+	<distance>1292.65</distance>
+	<star>
+		<magJ errorminus="0.030" errorplus="0.030">14.543</magJ>
+		<magH errorminus="0.039" errorplus="0.039">14.172</magH>
+		<magK errorminus="0.067" errorplus="0.067">14.056</magK>
+		<name>KOI-3057</name>
+		<temperature errorminus="200.00" errorplus="200.00">5578.00</temperature>
+		<radius errorminus="0.3000" errorplus="0.3000">0.8300</radius>
+		<mass errorminus="0.3000" errorplus="0.3000">1.0200</mass>
+		<planet>
+			<name>KOI-3057 b</name>
+			<name>KOI-3057 01</name>
+			<radius errorminus="0.15492" errorplus="0.15492">0.24605</radius>
+			<period errorminus="2.9000000e-04" errorplus="2.9000000e-04">29.726820000000</period>
+			<transittime errorminus="0.0078000" errorplus="0.0078000">2454967.6621000</transittime>
+			<semimajoraxis>0.1890000</semimajoraxis>
+			<temperature>515.0</temperature>
+			<list>Kepler Objects of Interest</list>
+			<description>This is a Kepler Object of Interest from the Q1-Q12 dataset. It has been flagged as a possible transit event but has not been confirmed to be a planet yet.</description>
+			<istransiting>1</istransiting>
+		</planet>
+		<planet>
+			<name>KOI-3057 c</name>
+			<name>KOI-3057 02</name>
+			<radius errorminus="0.11847" errorplus="0.11847">0.19137</radius>
+			<period errorminus="1.0000000e-04" errorplus="1.0000000e-04">10.613660000000</period>
+			<transittime errorminus="0.0075000" errorplus="0.0075000">2454973.8521000</transittime>
+			<semimajoraxis>0.0950000</semimajoraxis>
+			<temperature>726.0</temperature>
+			<list>Kepler Objects of Interest</list>
+			<description>This is a Kepler Object of Interest from the Q1-Q12 dataset. It has been flagged as a possible transit event but has not been confirmed to be a planet yet.</description>
+			<istransiting>1</istransiting>
+		</planet>
+	</star>
+</system>

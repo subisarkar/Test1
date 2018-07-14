@@ -1,0 +1,36 @@
+<system>
+	<name>KOI-3437</name>
+	<rightascension>19 15 31</rightascension>
+	<declination>+39 44 40</declination>
+	<distance>939.90</distance>
+	<star>
+		<name>KOI-3437</name>
+		<temperature errorminus="177.00" errorplus="177.00">6033.00</temperature>
+		<radius errorminus="0.4510" errorplus="0.4510">0.9170</radius>
+		<metallicity errorminus="0.3200" errorplus="0.3200">-0.6400</metallicity>
+		<planet>
+			<name>KOI-3437 b</name>
+			<name>KOI-3437 01</name>
+			<radius errorminus="0.03563" errorplus="0.03563">0.11519</radius>
+			<period errorminus="1.4480000e-04" errorplus="1.4480000e-04">15.032897700000</period>
+			<transittime errorminus="0.0078000" errorplus="0.0078000">2454964.9080900</transittime>
+			<semimajoraxis errorminus="7.22e-07" errorplus="7.22e-07">0.1123670</semimajoraxis>
+			<temperature errorminus="188.0" errorplus="188.0">760.0</temperature>
+			<list>Kepler Objects of Interest</list>
+			<description>This is a Kepler Object of Interest from the Q1-Q12 dataset. It has been flagged as a possible transit event but has not been confirmed to be a planet yet.</description>
+			<istransiting>1</istransiting>
+		</planet>
+		<planet>
+			<name>KOI-3437 c</name>
+			<name>KOI-3437 02</name>
+			<radius errorminus="0.10024" errorplus="0.10024">0.14034</radius>
+			<period errorminus="2.6940000e-04" errorplus="2.6940000e-04">34.748538500000</period>
+			<transittime errorminus="0.0058500" errorplus="0.0058500">2454991.7072300</transittime>
+			<semimajoraxis errorminus="1.02e-06" errorplus="1.02e-06">0.1964420</semimajoraxis>
+			<temperature errorminus="142.0" errorplus="142.0">575.0</temperature>
+			<list>Kepler Objects of Interest</list>
+			<description>This is a Kepler Object of Interest from the Q1-Q12 dataset. It has been flagged as a possible transit event but has not been confirmed to be a planet yet.</description>
+			<istransiting>1</istransiting>
+		</planet>
+	</star>
+</system>

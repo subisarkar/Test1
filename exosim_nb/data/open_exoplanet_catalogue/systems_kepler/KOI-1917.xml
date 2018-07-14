@@ -1,0 +1,28 @@
+<system>
+	<name>KOI-1917</name>
+	<rightascension>19 26 08</rightascension>
+	<declination>+47 02 32</declination>
+	<distance>789.43</distance>
+	<star>
+		<magJ errorminus="0.023" errorplus="0.023">12.592</magJ>
+		<magH errorminus="0.020" errorplus="0.020">12.313</magH>
+		<magK errorminus="0.020" errorplus="0.020">12.259</magK>
+		<name>KOI-1917</name>
+		<temperature errorminus="84.00" errorplus="84.00">6358.00</temperature>
+		<radius errorminus="0.3400" errorplus="0.3400">1.0900</radius>
+		<mass errorminus="0.0940" errorplus="0.0940">1.1520</mass>
+		<age errorminus="0.7900" errorplus="0.7900">0.6000</age>
+		<planet>
+			<name>KOI-1917 b</name>
+			<name>KOI-1917 01</name>
+			<radius errorminus="0.10936" errorplus="0.10936">0.24605</radius>
+			<period errorminus="2.6000000e-04" errorplus="2.6000000e-04">35.011980000000</period>
+			<transittime errorminus="0.0028000" errorplus="0.0028000">2454983.3699000</transittime>
+			<semimajoraxis>0.2200000</semimajoraxis>
+			<temperature>625.0</temperature>
+			<list>Kepler Objects of Interest</list>
+			<description>This is a Kepler Object of Interest from the Q1-Q12 dataset. It has been flagged as a possible transit event but has not been confirmed to be a planet yet.</description>
+			<istransiting>1</istransiting>
+		</planet>
+	</star>
+</system>

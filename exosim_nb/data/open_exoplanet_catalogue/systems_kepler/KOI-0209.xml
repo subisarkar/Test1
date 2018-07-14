@@ -1,0 +1,44 @@
+<system>
+	<name>KOI-0209</name>
+	<rightascension>19 15 10</rightascension>
+	<declination>+48 02 24</declination>
+	<distance>1136.95</distance>
+	<star>
+		<magB errorminus="0.24" errorplus="0.24">14.93</magB>
+		<magV errorminus="0.18" errorplus="0.18">14.29</magV>
+		<magR errorminus="0.14" errorplus="0.14">14.58</magR>
+		<magI errorminus="0.21" errorplus="0.21">13.69</magI>
+		<magJ errorminus="0.026" errorplus="0.026">13.324</magJ>
+		<magH errorminus="0.03" errorplus="0.03">12.99</magH>
+		<magK errorminus="0.03" errorplus="0.03">13.01</magK>
+		<name>KOI-0209</name>
+		<temperature errorminus="104.00" errorplus="104.00">6438.00</temperature>
+		<radius errorminus="0.0530" errorplus="0.0530">1.1350</radius>
+		<mass errorminus="0.0077" errorplus="0.0077">1.1790</mass>
+		<age errorminus="0.2200" errorplus="0.2200">0.6800</age>
+		<planet>
+			<name>KOI-0209 b</name>
+			<name>KOI-0209 01</name>
+			<radius errorminus="0.03736" errorplus="0.03736">0.79739</radius>
+			<period errorminus="7.0000000e-05" errorplus="7.0000000e-05">50.790563000000</period>
+			<transittime errorminus="0.0005400" errorplus="0.0005400">2454968.6303500</transittime>
+			<semimajoraxis>0.2840000</semimajoraxis>
+			<temperature>568.0</temperature>
+			<list>Kepler Objects of Interest</list>
+			<description>This is a Kepler Object of Interest from the Q1-Q12 dataset. It has been flagged as a possible transit event but has not been confirmed to be a planet yet.</description>
+			<istransiting>1</istransiting>
+		</planet>
+		<planet>
+			<name>KOI-0209 c</name>
+			<name>KOI-0209 02</name>
+			<radius errorminus="0.02461" errorplus="0.02461">0.52309</radius>
+			<period errorminus="4.0000000e-05" errorplus="4.0000000e-05">18.795909000000</period>
+			<transittime errorminus="0.0007800" errorplus="0.0007800">2454978.8208500</transittime>
+			<semimajoraxis>0.1460000</semimajoraxis>
+			<temperature>792.0</temperature>
+			<list>Kepler Objects of Interest</list>
+			<description>This is a Kepler Object of Interest from the Q1-Q12 dataset. It has been flagged as a possible transit event but has not been confirmed to be a planet yet.</description>
+			<istransiting>1</istransiting>
+		</planet>
+	</star>
+</system>

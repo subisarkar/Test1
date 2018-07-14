@@ -1,0 +1,27 @@
+<system>
+	<name>KOI-1481</name>
+	<rightascension>19 42 18</rightascension>
+	<declination>+46 15 17</declination>
+	<distance>1301.83</distance>
+	<star>
+		<magJ errorminus="0.027" errorplus="0.027">14.129</magJ>
+		<magH errorminus="0.028" errorplus="0.028">13.838</magH>
+		<magK errorminus="0.04" errorplus="0.04">13.75</magK>
+		<name>KOI-1481</name>
+		<temperature errorminus="200.00" errorplus="200.00">5620.00</temperature>
+		<radius errorminus="0.3000" errorplus="0.3000">0.9900</radius>
+		<mass errorminus="0.3000" errorplus="0.3000">1.0500</mass>
+		<planet>
+			<name>KOI-1481 b</name>
+			<name>KOI-1481 01</name>
+			<radius errorminus="0.09113" errorplus="0.09113">0.29162</radius>
+			<period errorminus="4.7000000e-05" errorplus="4.7000000e-05">5.101370000000</period>
+			<transittime errorminus="0.0022000" errorplus="0.0022000">2455190.4816000</transittime>
+			<semimajoraxis>0.0590000</semimajoraxis>
+			<temperature>1013.0</temperature>
+			<list>Kepler Objects of Interest</list>
+			<description>This is a Kepler Object of Interest from the Q1-Q12 dataset. It has been flagged as a possible transit event but has not been confirmed to be a planet yet.</description>
+			<istransiting>1</istransiting>
+		</planet>
+	</star>
+</system>

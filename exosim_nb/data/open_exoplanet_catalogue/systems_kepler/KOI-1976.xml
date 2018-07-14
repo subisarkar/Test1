@@ -1,0 +1,28 @@
+<system>
+	<name>KOI-1976</name>
+	<rightascension>19 04 27</rightascension>
+	<declination>+37 58 01</declination>
+	<distance>744.04</distance>
+	<star>
+		<magJ errorminus="0.025" errorplus="0.025">13.719</magJ>
+		<magH errorminus="0.026" errorplus="0.026">13.252</magH>
+		<magK errorminus="0.03" errorplus="0.03">13.16</magK>
+		<name>KOI-1976</name>
+		<temperature errorminus="84.00" errorplus="84.00">5240.00</temperature>
+		<radius errorminus="0.5400" errorplus="0.5400">0.7700</radius>
+		<mass errorminus="0.0920" errorplus="0.0920">0.8000</mass>
+		<age errorminus="3.8000" errorplus="3.8000">8.0000</age>
+		<planet>
+			<name>KOI-1976 b</name>
+			<name>KOI-1976 01</name>
+			<radius errorminus="0.14581" errorplus="0.14581">0.19137</radius>
+			<period errorminus="1.2000000e-04" errorplus="1.2000000e-04">12.124000000000</period>
+			<transittime errorminus="0.0036000" errorplus="0.0036000">2454967.9536000</transittime>
+			<semimajoraxis>0.0960000</semimajoraxis>
+			<temperature>655.0</temperature>
+			<list>Kepler Objects of Interest</list>
+			<description>This is a Kepler Object of Interest from the Q1-Q12 dataset. It has been flagged as a possible transit event but has not been confirmed to be a planet yet.</description>
+			<istransiting>1</istransiting>
+		</planet>
+	</star>
+</system>

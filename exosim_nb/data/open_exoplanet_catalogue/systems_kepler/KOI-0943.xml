@@ -1,0 +1,28 @@
+<system>
+	<name>KOI-0943</name>
+	<rightascension>19 01 33</rightascension>
+	<declination>+46 10 51</declination>
+	<distance>973.63</distance>
+	<star>
+		<magJ errorminus="0.029" errorplus="0.029">14.385</magJ>
+		<magH errorminus="0.04" errorplus="0.04">14.02</magH>
+		<magK errorminus="0.05" errorplus="0.05">13.82</magK>
+		<name>KOI-0943</name>
+		<temperature errorminus="86.00" errorplus="86.00">5273.00</temperature>
+		<radius errorminus="0.3900" errorplus="0.3900">0.7400</radius>
+		<mass errorminus="0.0660" errorplus="0.0660">0.8400</mass>
+		<age errorminus="4.1000" errorplus="4.1000">0.6000</age>
+		<planet>
+			<name>KOI-0943 b</name>
+			<name>KOI-0943 01</name>
+			<radius errorminus="0.10024" errorplus="0.10024">0.19137</radius>
+			<period errorminus="1.8000000e-05" errorplus="1.8000000e-05">3.601449000000</period>
+			<transittime errorminus="0.0015000" errorplus="0.0015000">2455004.9918000</transittime>
+			<semimajoraxis>0.0430000</semimajoraxis>
+			<temperature>963.0</temperature>
+			<list>Kepler Objects of Interest</list>
+			<description>This is a Kepler Object of Interest from the Q1-Q12 dataset. It has been flagged as a possible transit event but has not been confirmed to be a planet yet.</description>
+			<istransiting>1</istransiting>
+		</planet>
+	</star>
+</system>

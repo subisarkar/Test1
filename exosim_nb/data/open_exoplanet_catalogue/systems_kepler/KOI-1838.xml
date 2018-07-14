@@ -1,0 +1,28 @@
+<system>
+	<name>KOI-1838</name>
+	<rightascension>19 18 30</rightascension>
+	<declination>+40 42 31</declination>
+	<distance>390.95</distance>
+	<star>
+		<magJ errorminus="0.023" errorplus="0.023">12.980</magJ>
+		<magH errorminus="0.023" errorplus="0.023">12.355</magH>
+		<magK errorminus="0.022" errorplus="0.022">12.215</magK>
+		<name>KOI-1838</name>
+		<temperature errorminus="62.00" errorplus="62.00">4562.00</temperature>
+		<radius errorminus="0.0130" errorplus="0.0130">0.6140</radius>
+		<mass errorminus="0.0150" errorplus="0.0150">0.6420</mass>
+		<age errorminus="3.7000" errorplus="3.7000">13.9000</age>
+		<planet>
+			<name>KOI-1838 b</name>
+			<name>KOI-1838 01</name>
+			<radius errorminus="0.10024" errorplus="0.10024">0.21871</radius>
+			<period errorminus="8.5000000e-05" errorplus="8.5000000e-05">16.736955000000</period>
+			<transittime errorminus="0.0018000" errorplus="0.0018000">2454976.1234000</transittime>
+			<semimajoraxis>0.1110000</semimajoraxis>
+			<temperature>473.0</temperature>
+			<list>Kepler Objects of Interest</list>
+			<description>This is a Kepler Object of Interest from the Q1-Q12 dataset. It has been flagged as a possible transit event but has not been confirmed to be a planet yet.</description>
+			<istransiting>1</istransiting>
+		</planet>
+	</star>
+</system>

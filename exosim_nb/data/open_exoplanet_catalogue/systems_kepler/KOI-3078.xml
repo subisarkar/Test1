@@ -1,0 +1,25 @@
+<system>
+	<name>KOI-3078</name>
+	<rightascension>19 27 32</rightascension>
+	<declination>+44 28 44</declination>
+	<distance>1469.82</distance>
+	<star>
+		<name>KOI-3078</name>
+		<temperature errorminus="134.00" errorplus="134.00">6146.00</temperature>
+		<radius errorminus="0.4300" errorplus="0.4300">0.9900</radius>
+		<mass errorminus="0.1200" errorplus="0.1200">1.0800</mass>
+		<age errorminus="1.5000" errorplus="1.5000">0.4000</age>
+		<planet>
+			<name>KOI-3078 b</name>
+			<name>KOI-3078 01</name>
+			<radius errorminus="0.06653" errorplus="0.06653">0.10389</radius>
+			<period errorminus="2.7000000e-05" errorplus="2.7000000e-05">2.986172000000</period>
+			<transittime errorminus="0.0060000" errorplus="0.0060000">2454966.4782000</transittime>
+			<semimajoraxis>0.0420000</semimajoraxis>
+			<temperature>1316.0</temperature>
+			<list>Kepler Objects of Interest</list>
+			<description>This is a Kepler Object of Interest from the Q1-Q12 dataset. It has been flagged as a possible transit event but has not been confirmed to be a planet yet.</description>
+			<istransiting>1</istransiting>
+		</planet>
+	</star>
+</system>

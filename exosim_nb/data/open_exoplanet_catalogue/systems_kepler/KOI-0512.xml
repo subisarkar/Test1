@@ -1,0 +1,28 @@
+<system>
+	<name>KOI-0512</name>
+	<rightascension>18 48 26</rightascension>
+	<declination>+42 21 16</declination>
+	<distance>898.66</distance>
+	<star>
+		<magJ errorminus="0.021" errorplus="0.021">13.533</magJ>
+		<magH errorminus="0.025" errorplus="0.025">13.179</magH>
+		<magK errorminus="0.029" errorplus="0.029">13.090</magK>
+		<name>KOI-0512</name>
+		<temperature errorminus="106.00" errorplus="106.00">5482.00</temperature>
+		<radius errorminus="0.4600" errorplus="0.4600">0.9600</radius>
+		<mass errorminus="0.0840" errorplus="0.0840">0.8340</mass>
+		<age errorminus="3.5000" errorplus="3.5000">13.7000</age>
+		<planet>
+			<name>KOI-0512 b</name>
+			<name>KOI-0512 01</name>
+			<radius errorminus="0.10936" errorplus="0.10936">0.22783</radius>
+			<period errorminus="5.1000000e-05" errorplus="5.1000000e-05">6.510036000000</period>
+			<transittime errorminus="0.0026000" errorplus="0.0026000">2455005.9150000</transittime>
+			<semimajoraxis>0.0640000</semimajoraxis>
+			<temperature>935.0</temperature>
+			<list>Kepler Objects of Interest</list>
+			<description>This is a Kepler Object of Interest from the Q1-Q12 dataset. It has been flagged as a possible transit event but has not been confirmed to be a planet yet.</description>
+			<istransiting>1</istransiting>
+		</planet>
+	</star>
+</system>

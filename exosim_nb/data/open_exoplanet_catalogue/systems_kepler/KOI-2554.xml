@@ -1,0 +1,40 @@
+<system>
+	<name>KOI-2554</name>
+	<rightascension>19 29 31</rightascension>
+	<declination>+47 38 40</declination>
+	<distance>527.66</distance>
+	<star>
+		<magJ errorminus="0.025" errorplus="0.025">13.729</magJ>
+		<magH errorminus="0.023" errorplus="0.023">13.159</magH>
+		<magK errorminus="0.04" errorplus="0.04">13.04</magK>
+		<name>KOI-2554</name>
+		<temperature errorminus="60.00" errorplus="60.00">4575.00</temperature>
+		<radius errorminus="0.0140" errorplus="0.0140">0.6100</radius>
+		<mass errorminus="0.0160" errorplus="0.0160">0.6510</mass>
+		<age errorminus="3.8000" errorplus="3.8000">10.6000</age>
+		<planet>
+			<name>KOI-2554 b</name>
+			<name>KOI-2554 01</name>
+			<radius errorminus="0.03645" errorplus="0.03645">0.20413</radius>
+			<period errorminus="5.3000000e-04" errorplus="5.3000000e-04">39.757190000000</period>
+			<transittime errorminus="0.0049000" errorplus="0.0049000">2454983.5952000</transittime>
+			<semimajoraxis>0.1980000</semimajoraxis>
+			<temperature>354.0</temperature>
+			<list>Kepler Objects of Interest</list>
+			<description>This is a Kepler Object of Interest from the Q1-Q12 dataset. It has been flagged as a possible transit event but has not been confirmed to be a planet yet.</description>
+			<istransiting>1</istransiting>
+		</planet>
+		<planet>
+			<name>KOI-2554 c</name>
+			<name>KOI-2554 02</name>
+			<radius errorminus="0.01367" errorplus="0.01367">0.09386</radius>
+			<period errorminus="2.3000000e-04" errorplus="2.3000000e-04">10.271520000000</period>
+			<transittime errorminus="0.0078000" errorplus="0.0078000">2454968.1674000</transittime>
+			<semimajoraxis>0.0800000</semimajoraxis>
+			<temperature>557.0</temperature>
+			<list>Kepler Objects of Interest</list>
+			<description>This is a Kepler Object of Interest from the Q1-Q12 dataset. It has been flagged as a possible transit event but has not been confirmed to be a planet yet.</description>
+			<istransiting>1</istransiting>
+		</planet>
+	</star>
+</system>

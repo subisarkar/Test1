@@ -1,0 +1,25 @@
+<system>
+	<name>KOI-2509</name>
+	<rightascension>19 05 56</rightascension>
+	<declination>+46 45 09</declination>
+	<distance>728.09</distance>
+	<star>
+		<name>KOI-2509</name>
+		<temperature errorminus="89.00" errorplus="89.00">5284.00</temperature>
+		<radius errorminus="0.3400" errorplus="0.3400">0.7600</radius>
+		<mass errorminus="0.0580" errorplus="0.0580">0.8240</mass>
+		<age errorminus="4.0000" errorplus="4.0000">4.5000</age>
+		<planet>
+			<name>KOI-2509 b</name>
+			<name>KOI-2509 01</name>
+			<radius errorminus="0.04374" errorplus="0.04374">0.09386</radius>
+			<period errorminus="7.7000000e-05" errorplus="7.7000000e-05">4.551433000000</period>
+			<transittime errorminus="0.0058000" errorplus="0.0058000">2454966.0547000</transittime>
+			<semimajoraxis>0.0500000</semimajoraxis>
+			<temperature>909.0</temperature>
+			<list>Kepler Objects of Interest</list>
+			<description>This is a Kepler Object of Interest from the Q1-Q12 dataset. It has been flagged as a possible transit event but has not been confirmed to be a planet yet.</description>
+			<istransiting>1</istransiting>
+		</planet>
+	</star>
+</system>

@@ -1,0 +1,24 @@
+<system>
+	<name>KOI-4467</name>
+	<rightascension>19 14 54</rightascension>
+	<declination>+40 31 53</declination>
+	<distance>1240.76</distance>
+	<star>
+		<name>KOI-4467</name>
+		<temperature errorminus="214.00" errorplus="214.00">5436.00</temperature>
+		<radius errorminus="0.4500" errorplus="0.4500">0.8190</radius>
+		<metallicity errorminus="0.3000" errorplus="0.3000">0.0000</metallicity>
+		<planet>
+			<name>KOI-4467 b</name>
+			<name>KOI-4467 01</name>
+			<radius errorminus="0.12758" errorplus="0.12758">0.12849</radius>
+			<period errorminus="1.2520000e-05" errorplus="1.2520000e-05">2.942448010000</period>
+			<transittime errorminus="0.0027500" errorplus="0.0027500">2454966.8564800</transittime>
+			<semimajoraxis errorminus="1.11e-07" errorplus="1.11e-07">0.0390264</semimajoraxis>
+			<temperature errorminus="305.0" errorplus="305.0">1099.0</temperature>
+			<list>Kepler Objects of Interest</list>
+			<description>This is a Kepler Object of Interest from the Q1-Q12 dataset. It has been flagged as a possible transit event but has not been confirmed to be a planet yet.</description>
+			<istransiting>1</istransiting>
+		</planet>
+	</star>
+</system>

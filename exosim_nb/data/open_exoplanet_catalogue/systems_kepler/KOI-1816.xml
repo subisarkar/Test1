@@ -1,0 +1,28 @@
+<system>
+	<name>KOI-1816</name>
+	<rightascension>19 26 43</rightascension>
+	<declination>+44 45 05</declination>
+	<distance>972.25</distance>
+	<star>
+		<magJ errorminus="0.027" errorplus="0.027">13.957</magJ>
+		<magH errorminus="0.028" errorplus="0.028">13.450</magH>
+		<magK errorminus="0.04" errorplus="0.04">13.34</magK>
+		<name>KOI-1816</name>
+		<temperature errorminus="98.00" errorplus="98.00">5362.00</temperature>
+		<radius errorminus="0.4900" errorplus="0.4900">0.8300</radius>
+		<mass errorminus="0.0800" errorplus="0.0800">0.8200</mass>
+		<age errorminus="3.6000" errorplus="3.6000">9.6000</age>
+		<planet>
+			<name>KOI-1816 b</name>
+			<name>KOI-1816 01</name>
+			<radius errorminus="0.31896" errorplus="0.31896">0.51944</radius>
+			<period errorminus="1.9000000e-05" errorplus="1.9000000e-05">10.240605000000</period>
+			<transittime errorminus="0.0006700" errorplus="0.0006700">2454964.6674900</transittime>
+			<semimajoraxis>0.0860000</semimajoraxis>
+			<temperature>733.0</temperature>
+			<list>Kepler Objects of Interest</list>
+			<description>This is a Kepler Object of Interest from the Q1-Q12 dataset. It has been flagged as a possible transit event but has not been confirmed to be a planet yet.</description>
+			<istransiting>1</istransiting>
+		</planet>
+	</star>
+</system>

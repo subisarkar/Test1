@@ -1,0 +1,28 @@
+<system>
+	<name>KOI-1227</name>
+	<rightascension>19 50 49</rightascension>
+	<declination>+42 02 50</declination>
+	<distance>575.31</distance>
+	<star>
+		<magJ errorminus="0.025" errorplus="0.025">12.746</magJ>
+		<magH errorminus="0.019" errorplus="0.019">12.431</magH>
+		<magK errorminus="0.022" errorplus="0.022">12.355</magK>
+		<name>KOI-1227</name>
+		<temperature errorminus="69.00" errorplus="69.00">5674.00</temperature>
+		<radius errorminus="0.2300" errorplus="0.2300">0.8400</radius>
+		<mass errorminus="0.0380" errorplus="0.0380">0.9440</mass>
+		<age errorminus="3.7000" errorplus="3.7000">0.4000</age>
+		<planet>
+			<name>KOI-1227 b</name>
+			<name>KOI-1227 01</name>
+			<radius errorminus="1.18469" errorplus="1.18469">2.55165</radius>
+			<period errorminus="6.6000000e-07" errorplus="6.6000000e-07">2.155277700000</period>
+			<transittime errorminus="0.0000890" errorplus="0.0000890">2454966.5755600</transittime>
+			<semimajoraxis>0.0320000</semimajoraxis>
+			<temperature>1279.0</temperature>
+			<list>Kepler Objects of Interest</list>
+			<description>This is a Kepler Object of Interest from the Q1-Q12 dataset. It has been flagged as a possible transit event but has not been confirmed to be a planet yet.</description>
+			<istransiting>1</istransiting>
+		</planet>
+	</star>
+</system>

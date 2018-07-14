@@ -1,0 +1,25 @@
+<system>
+	<name>KOI-3020</name>
+	<rightascension>19 38 09</rightascension>
+	<declination>+44 11 27</declination>
+	<distance>838.05</distance>
+	<star>
+		<name>KOI-3020</name>
+		<temperature errorminus="93.00" errorplus="93.00">6196.00</temperature>
+		<radius errorminus="0.3100" errorplus="0.3100">1.2700</radius>
+		<mass errorminus="0.0780" errorplus="0.0780">1.1020</mass>
+		<age errorminus="0.6900" errorplus="0.6900">4.1800</age>
+		<planet>
+			<name>KOI-3020 b</name>
+			<name>KOI-3020 01</name>
+			<radius errorminus="0.05194" errorplus="0.05194">0.12849</radius>
+			<period errorminus="1.0000000e-04" errorplus="1.0000000e-04">10.919190000000</period>
+			<transittime errorminus="0.0066000" errorplus="0.0066000">2454967.2701000</transittime>
+			<semimajoraxis>0.1000000</semimajoraxis>
+			<temperature>974.0</temperature>
+			<list>Kepler Objects of Interest</list>
+			<description>This is a Kepler Object of Interest from the Q1-Q12 dataset. It has been flagged as a possible transit event but has not been confirmed to be a planet yet.</description>
+			<istransiting>1</istransiting>
+		</planet>
+	</star>
+</system>

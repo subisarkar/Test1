@@ -1,0 +1,40 @@
+<system>
+	<name>KOI-2675</name>
+	<rightascension>19 31 53</rightascension>
+	<declination>+41 02 08</declination>
+	<distance>282.74</distance>
+	<star>
+		<magJ errorminus="0.021" errorplus="0.021">11.323</magJ>
+		<magH errorminus="0.022" errorplus="0.022">10.947</magH>
+		<magK errorminus="0.019" errorplus="0.019">10.907</magK>
+		<name>KOI-2675</name>
+		<temperature errorminus="59.00" errorplus="59.00">5706.00</temperature>
+		<radius errorminus="0.1700" errorplus="0.1700">0.8400</radius>
+		<mass errorminus="0.0280" errorplus="0.0280">0.9510</mass>
+		<age errorminus="3.7000" errorplus="3.7000">0.4000</age>
+		<planet>
+			<name>KOI-2675 b</name>
+			<name>KOI-2675 01</name>
+			<radius errorminus="0.08749" errorplus="0.08749">0.19684</radius>
+			<period errorminus="9.6000000e-06" errorplus="9.6000000e-06">5.448324700000</period>
+			<transittime errorminus="0.0012000" errorplus="0.0012000">2454965.4893000</transittime>
+			<semimajoraxis>0.0600000</semimajoraxis>
+			<temperature>943.0</temperature>
+			<list>Kepler Objects of Interest</list>
+			<description>This is a Kepler Object of Interest from the Q1-Q12 dataset. It has been flagged as a possible transit event but has not been confirmed to be a planet yet.</description>
+			<istransiting>1</istransiting>
+		</planet>
+		<planet>
+			<name>KOI-2675 c</name>
+			<name>KOI-2675 02</name>
+			<radius errorminus="0.04283" errorplus="0.04283">0.08475</radius>
+			<period errorminus="2.8000000e-06" errorplus="2.8000000e-06">1.116131900000</period>
+			<transittime errorminus="0.0014000" errorplus="0.0014000">2454964.8456000</transittime>
+			<semimajoraxis>0.0210000</semimajoraxis>
+			<temperature>1595.0</temperature>
+			<list>Kepler Objects of Interest</list>
+			<description>This is a Kepler Object of Interest from the Q1-Q12 dataset. It has been flagged as a possible transit event but has not been confirmed to be a planet yet.</description>
+			<istransiting>1</istransiting>
+		</planet>
+	</star>
+</system>

@@ -1,0 +1,28 @@
+<system>
+	<name>KOI-0924</name>
+	<rightascension>19 24 49</rightascension>
+	<declination>+45 14 39</declination>
+	<distance>1473.90</distance>
+	<star>
+		<magJ errorminus="0.03" errorplus="0.03">14.06</magJ>
+		<magH errorminus="0.04" errorplus="0.04">13.77</magH>
+		<magK errorminus="0.04" errorplus="0.04">13.71</magK>
+		<name>KOI-0924</name>
+		<temperature errorminus="122.00" errorplus="122.00">6206.00</temperature>
+		<radius errorminus="0.4100" errorplus="0.4100">1.0200</radius>
+		<mass errorminus="0.1100" errorplus="0.1100">1.1000</mass>
+		<age errorminus="1.4000" errorplus="1.4000">0.3000</age>
+		<planet>
+			<name>KOI-0924 b</name>
+			<name>KOI-0924 01</name>
+			<radius errorminus="0.14581" errorplus="0.14581">0.35541</radius>
+			<period errorminus="4.3000000e-04" errorplus="4.3000000e-04">39.475850000000</period>
+			<transittime errorminus="0.0035000" errorplus="0.0035000">2455006.3114000</transittime>
+			<semimajoraxis>0.2350000</semimajoraxis>
+			<temperature>569.0</temperature>
+			<list>Kepler Objects of Interest</list>
+			<description>This is a Kepler Object of Interest from the Q1-Q12 dataset. It has been flagged as a possible transit event but has not been confirmed to be a planet yet.</description>
+			<istransiting>1</istransiting>
+		</planet>
+	</star>
+</system>

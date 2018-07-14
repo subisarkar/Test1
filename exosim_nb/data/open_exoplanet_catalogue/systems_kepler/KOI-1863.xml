@@ -1,0 +1,28 @@
+<system>
+	<name>KOI-1863</name>
+	<rightascension>19 02 40</rightascension>
+	<declination>+48 43 10</declination>
+	<distance>695.13</distance>
+	<star>
+		<magJ errorminus="0.025" errorplus="0.025">12.593</magJ>
+		<magH errorminus="0.026" errorplus="0.026">12.369</magH>
+		<magK errorminus="0.028" errorplus="0.028">12.315</magK>
+		<name>KOI-1863</name>
+		<temperature errorminus="83.00" errorplus="83.00">6188.00</temperature>
+		<radius errorminus="0.4100" errorplus="0.4100">1.0100</radius>
+		<mass errorminus="0.1000" errorplus="0.1000">1.1000</mass>
+		<age errorminus="1.4000" errorplus="1.4000">0.3000</age>
+		<planet>
+			<name>KOI-1863 b</name>
+			<name>KOI-1863 01</name>
+			<radius errorminus="0.09113" errorplus="0.09113">0.22783</radius>
+			<period errorminus="3.0000000e-04" errorplus="3.0000000e-04">33.788820000000</period>
+			<transittime errorminus="0.0028000" errorplus="0.0028000">2454986.6533000</transittime>
+			<semimajoraxis>0.2110000</semimajoraxis>
+			<temperature>597.0</temperature>
+			<list>Kepler Objects of Interest</list>
+			<description>This is a Kepler Object of Interest from the Q1-Q12 dataset. It has been flagged as a possible transit event but has not been confirmed to be a planet yet.</description>
+			<istransiting>1</istransiting>
+		</planet>
+	</star>
+</system>

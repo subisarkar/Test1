@@ -1,0 +1,28 @@
+<system>
+	<name>KOI-1053</name>
+	<rightascension>19 22 25</rightascension>
+	<declination>+41 12 03</declination>
+	<distance>1006.71</distance>
+	<star>
+		<magJ errorminus="0.025" errorplus="0.025">14.128</magJ>
+		<magH errorminus="0.026" errorplus="0.026">13.656</magH>
+		<magK errorminus="0.04" errorplus="0.04">13.54</magK>
+		<name>KOI-1053</name>
+		<temperature errorminus="96.00" errorplus="96.00">5564.00</temperature>
+		<radius errorminus="0.3200" errorplus="0.3200">0.8100</radius>
+		<mass errorminus="0.0510" errorplus="0.0510">0.9120</mass>
+		<age errorminus="4.1000" errorplus="4.1000">1.0000</age>
+		<planet>
+			<name>KOI-1053 b</name>
+			<name>KOI-1053 01</name>
+			<radius errorminus="0.04557" errorplus="0.04557">0.11574</radius>
+			<period errorminus="1.5000000e-05" errorplus="1.5000000e-05">1.224862000000</period>
+			<transittime errorminus="0.0024000" errorplus="0.0024000">2454966.2078000</transittime>
+			<semimajoraxis>0.0220000</semimajoraxis>
+			<temperature>1494.0</temperature>
+			<list>Kepler Objects of Interest</list>
+			<description>This is a Kepler Object of Interest from the Q1-Q12 dataset. It has been flagged as a possible transit event but has not been confirmed to be a planet yet.</description>
+			<istransiting>1</istransiting>
+		</planet>
+	</star>
+</system>

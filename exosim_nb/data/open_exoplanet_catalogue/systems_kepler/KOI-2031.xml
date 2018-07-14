@@ -1,0 +1,28 @@
+<system>
+	<name>KOI-2031</name>
+	<rightascension>18 55 35</rightascension>
+	<declination>+41 13 17</declination>
+	<distance>359.26</distance>
+	<star>
+		<magJ errorminus="0.023" errorplus="0.023">13.025</magJ>
+		<magH errorminus="0.022" errorplus="0.022">12.444</magH>
+		<magK errorminus="0.023" errorplus="0.023">12.333</magK>
+		<name>KOI-2031</name>
+		<temperature errorminus="63.00" errorplus="63.00">4451.00</temperature>
+		<radius errorminus="0.0130" errorplus="0.0130">0.5900</radius>
+		<mass errorminus="0.0150" errorplus="0.0150">0.6200</mass>
+		<age errorminus="3.8000" errorplus="3.8000">13.8000</age>
+		<planet>
+			<name>KOI-2031 b</name>
+			<name>KOI-2031 01</name>
+			<radius errorminus="0.04010" errorplus="0.04010">0.14399</radius>
+			<period errorminus="6.4000000e-05" errorplus="6.4000000e-05">9.304236000000</period>
+			<transittime errorminus="0.0026000" errorplus="0.0026000">2454973.3348000</transittime>
+			<semimajoraxis>0.0740000</semimajoraxis>
+			<temperature>554.0</temperature>
+			<list>Kepler Objects of Interest</list>
+			<description>This is a Kepler Object of Interest from the Q1-Q12 dataset. It has been flagged as a possible transit event but has not been confirmed to be a planet yet.</description>
+			<istransiting>1</istransiting>
+		</planet>
+	</star>
+</system>

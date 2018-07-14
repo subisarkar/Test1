@@ -1,0 +1,28 @@
+<system>
+	<name>KOI-2755</name>
+	<rightascension>19 26 17</rightascension>
+	<declination>+38 39 21</declination>
+	<distance>319.63</distance>
+	<star>
+		<magJ errorminus="0.021" errorplus="0.021">11.065</magJ>
+		<magH errorminus="0.018" errorplus="0.018">10.782</magH>
+		<magK errorminus="0.019" errorplus="0.019">10.706</magK>
+		<name>KOI-2755</name>
+		<temperature errorminus="64.00" errorplus="64.00">5995.00</temperature>
+		<radius errorminus="0.3800" errorplus="0.3800">0.9800</radius>
+		<mass errorminus="0.0740" errorplus="0.0740">1.0170</mass>
+		<age errorminus="2.0000" errorplus="2.0000">2.5000</age>
+		<planet>
+			<name>KOI-2755 b</name>
+			<name>KOI-2755 01</name>
+			<radius errorminus="0.04101" errorplus="0.04101">0.08111</radius>
+			<period errorminus="3.7000000e-05" errorplus="3.7000000e-05">8.482949000000</period>
+			<transittime errorminus="0.0029000" errorplus="0.0029000">2454965.9684000</transittime>
+			<semimajoraxis>0.0820000</semimajoraxis>
+			<temperature>914.0</temperature>
+			<list>Kepler Objects of Interest</list>
+			<description>This is a Kepler Object of Interest from the Q1-Q12 dataset. It has been flagged as a possible transit event but has not been confirmed to be a planet yet.</description>
+			<istransiting>1</istransiting>
+		</planet>
+	</star>
+</system>

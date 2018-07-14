@@ -1,0 +1,24 @@
+<system>
+	<name>KOI-2822</name>
+	<rightascension>20 02 55</rightascension>
+	<declination>+44 06 25</declination>
+	<distance>988.74</distance>
+	<star>
+		<name>KOI-2822</name>
+		<temperature errorminus="200.00" errorplus="200.00">5673.00</temperature>
+		<radius errorminus="0.3000" errorplus="0.3000">0.7600</radius>
+		<mass errorminus="0.3000" errorplus="0.3000">1.0200</mass>
+		<planet>
+			<name>KOI-2822 b</name>
+			<name>KOI-2822 01</name>
+			<radius errorminus="0.10024" errorplus="0.10024">0.15492</radius>
+			<period errorminus="3.1000000e-05" errorplus="3.1000000e-05">4.445911000000</period>
+			<transittime errorminus="0.0053000" errorplus="0.0053000">2454964.7415000</transittime>
+			<semimajoraxis>0.0530000</semimajoraxis>
+			<temperature>949.0</temperature>
+			<list>Kepler Objects of Interest</list>
+			<description>This is a Kepler Object of Interest from the Q1-Q12 dataset. It has been flagged as a possible transit event but has not been confirmed to be a planet yet.</description>
+			<istransiting>1</istransiting>
+		</planet>
+	</star>
+</system>

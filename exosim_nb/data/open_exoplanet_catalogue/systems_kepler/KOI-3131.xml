@@ -1,0 +1,25 @@
+<system>
+	<name>KOI-3131</name>
+	<rightascension>19 27 27</rightascension>
+	<declination>+49 19 33</declination>
+	<distance>1292.32</distance>
+	<star>
+		<name>KOI-3131</name>
+		<temperature errorminus="98.00" errorplus="98.00">5789.00</temperature>
+		<radius errorminus="0.3500" errorplus="0.3500">0.8700</radius>
+		<mass errorminus="0.0650" errorplus="0.0650">0.9750</mass>
+		<age errorminus="3.4000" errorplus="3.4000">0.4000</age>
+		<planet>
+			<name>KOI-3131 b</name>
+			<name>KOI-3131 01</name>
+			<radius errorminus="0.06926" errorplus="0.06926">0.13852</radius>
+			<period errorminus="1.7000000e-04" errorplus="1.7000000e-04">10.929440000000</period>
+			<transittime errorminus="0.0110000" errorplus="0.0110000">2454974.5060000</transittime>
+			<semimajoraxis>0.0960000</semimajoraxis>
+			<temperature>767.0</temperature>
+			<list>Kepler Objects of Interest</list>
+			<description>This is a Kepler Object of Interest from the Q1-Q12 dataset. It has been flagged as a possible transit event but has not been confirmed to be a planet yet.</description>
+			<istransiting>1</istransiting>
+		</planet>
+	</star>
+</system>

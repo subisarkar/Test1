@@ -1,0 +1,24 @@
+<system>
+	<name>KOI-4706</name>
+	<rightascension>19 49 05</rightascension>
+	<declination>+46 55 42</declination>
+	<distance>739.72</distance>
+	<star>
+		<name>KOI-4706</name>
+		<temperature errorminus="231.00" errorplus="231.00">6210.00</temperature>
+		<radius errorminus="0.7070" errorplus="0.7070">1.0540</radius>
+		<metallicity errorminus="0.3200" errorplus="0.3200">-0.1800</metallicity>
+		<planet>
+			<name>KOI-4706 b</name>
+			<name>KOI-4706 01</name>
+			<radius errorminus="0.28250" errorplus="0.28250">0.12758</radius>
+			<period errorminus="1.2010000e-03" errorplus="1.2010000e-03">101.952441000000</period>
+			<transittime errorminus="0.0085300" errorplus="0.0085300">2455039.3482600</transittime>
+			<semimajoraxis errorminus="3.39e-06" errorplus="3.39e-06">0.4320390</semimajoraxis>
+			<temperature errorminus="144.0" errorplus="144.0">428.0</temperature>
+			<list>Kepler Objects of Interest</list>
+			<description>This is a Kepler Object of Interest from the Q1-Q12 dataset. It has been flagged as a possible transit event but has not been confirmed to be a planet yet.</description>
+			<istransiting>1</istransiting>
+		</planet>
+	</star>
+</system>

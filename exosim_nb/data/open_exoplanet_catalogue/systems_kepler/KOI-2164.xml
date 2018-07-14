@@ -1,0 +1,28 @@
+<system>
+	<name>KOI-2164</name>
+	<rightascension>19 32 52</rightascension>
+	<declination>+42 43 14</declination>
+	<distance>906.01</distance>
+	<star>
+		<magJ errorminus="0.023" errorplus="0.023">13.861</magJ>
+		<magH errorminus="0.03" errorplus="0.03">13.51</magH>
+		<magK errorminus="0.05" errorplus="0.05">13.46</magK>
+		<name>KOI-2164</name>
+		<temperature errorminus="74.00" errorplus="74.00">5545.00</temperature>
+		<radius errorminus="0.1700" errorplus="0.1700">0.8100</radius>
+		<mass errorminus="0.0300" errorplus="0.0300">0.9110</mass>
+		<age errorminus="3.8000" errorplus="3.8000">0.5000</age>
+		<planet>
+			<name>KOI-2164 b</name>
+			<name>KOI-2164 01</name>
+			<radius errorminus="0.02643" errorplus="0.02643">0.12120</radius>
+			<period errorminus="7.2000000e-05" errorplus="7.2000000e-05">5.123338000000</period>
+			<transittime errorminus="0.0049000" errorplus="0.0049000">2454965.0842000</transittime>
+			<semimajoraxis>0.0560000</semimajoraxis>
+			<temperature>927.0</temperature>
+			<list>Kepler Objects of Interest</list>
+			<description>This is a Kepler Object of Interest from the Q1-Q12 dataset. It has been flagged as a possible transit event but has not been confirmed to be a planet yet.</description>
+			<istransiting>1</istransiting>
+		</planet>
+	</star>
+</system>

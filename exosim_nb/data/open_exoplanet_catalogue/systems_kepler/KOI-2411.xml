@@ -1,0 +1,28 @@
+<system>
+	<name>KOI-2411</name>
+	<rightascension>18 41 15</rightascension>
+	<declination>+43 59 08</declination>
+	<distance>1393.99</distance>
+	<star>
+		<magJ errorminus="0.027" errorplus="0.027">14.189</magJ>
+		<magH errorminus="0.04" errorplus="0.04">13.84</magH>
+		<magK errorminus="0.05" errorplus="0.05">13.84</magK>
+		<name>KOI-2411</name>
+		<temperature errorminus="95.00" errorplus="95.00">5913.00</temperature>
+		<radius errorminus="0.4100" errorplus="0.4100">1.0000</radius>
+		<mass errorminus="0.0860" errorplus="0.0860">0.9790</mass>
+		<age errorminus="2.4000" errorplus="2.4000">4.8000</age>
+		<planet>
+			<name>KOI-2411 b</name>
+			<name>KOI-2411 01</name>
+			<radius errorminus="0.11847" errorplus="0.11847">0.24605</radius>
+			<period errorminus="8.7000000e-04" errorplus="8.7000000e-04">11.967120000000</period>
+			<transittime errorminus="0.0094000" errorplus="0.0094000">2454966.1162000</transittime>
+			<semimajoraxis>0.1020000</semimajoraxis>
+			<temperature>816.0</temperature>
+			<list>Kepler Objects of Interest</list>
+			<description>This is a Kepler Object of Interest from the Q1-Q12 dataset. It has been flagged as a possible transit event but has not been confirmed to be a planet yet.</description>
+			<istransiting>1</istransiting>
+		</planet>
+	</star>
+</system>

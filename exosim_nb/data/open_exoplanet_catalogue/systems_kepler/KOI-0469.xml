@@ -1,0 +1,28 @@
+<system>
+	<name>KOI-0469</name>
+	<rightascension>19 14 33</rightascension>
+	<declination>+46 25 17</declination>
+	<distance>1167.09</distance>
+	<star>
+		<magJ errorminus="0.023" errorplus="0.023">13.665</magJ>
+		<magH errorminus="0.023" errorplus="0.023">13.373</magH>
+		<magK errorminus="0.03" errorplus="0.03">13.25</magK>
+		<name>KOI-0469</name>
+		<temperature errorminus="96.00" errorplus="96.00">6222.00</temperature>
+		<radius errorminus="0.5500" errorplus="0.5500">1.0200</radius>
+		<mass errorminus="0.1400" errorplus="0.1400">1.1100</mass>
+		<age errorminus="1.3000" errorplus="1.3000">0.3000</age>
+		<planet>
+			<name>KOI-0469 b</name>
+			<name>KOI-0469 01</name>
+			<radius errorminus="0.29162" errorplus="0.29162">0.53767</radius>
+			<period errorminus="1.6000000e-05" errorplus="1.6000000e-05">10.329080000000</period>
+			<transittime errorminus="0.0005000" errorplus="0.0005000">2455007.6070200</transittime>
+			<semimajoraxis>0.0960000</semimajoraxis>
+			<temperature>894.0</temperature>
+			<list>Kepler Objects of Interest</list>
+			<description>This is a Kepler Object of Interest from the Q1-Q12 dataset. It has been flagged as a possible transit event but has not been confirmed to be a planet yet.</description>
+			<istransiting>1</istransiting>
+		</planet>
+	</star>
+</system>

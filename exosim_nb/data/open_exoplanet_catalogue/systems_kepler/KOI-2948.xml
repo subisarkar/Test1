@@ -1,0 +1,30 @@
+<system>
+	<name>KOI-2948</name>
+	<rightascension>19 17 34</rightascension>
+	<declination>+41 46 56</declination>
+	<distance>403.54</distance>
+	<star>
+		<magB errorminus="0.36" errorplus="0.36">13.05</magB>
+		<magV errorminus="0.21" errorplus="0.21">12.10</magV>
+		<magJ errorminus="0.018" errorplus="0.018">10.703</magJ>
+		<magH errorminus="0.016" errorplus="0.016">10.388</magH>
+		<magK errorminus="0.018" errorplus="0.018">10.322</magK>
+		<name>KOI-2948</name>
+		<temperature errorminus="90.00" errorplus="90.00">5582.00</temperature>
+		<radius errorminus="0.3600" errorplus="0.3600">1.5800</radius>
+		<mass errorminus="0.1200" errorplus="0.1200">0.9600</mass>
+		<age errorminus="3.0000" errorplus="3.0000">11.3000</age>
+		<planet>
+			<name>KOI-2948 b</name>
+			<name>KOI-2948 01</name>
+			<radius errorminus="0.04557" errorplus="0.04557">0.11938</radius>
+			<period errorminus="1.3000000e-04" errorplus="1.3000000e-04">11.391530000000</period>
+			<transittime errorminus="0.0082000" errorplus="0.0082000">2454974.5678000</transittime>
+			<semimajoraxis>0.0980000</semimajoraxis>
+			<temperature>990.0</temperature>
+			<list>Kepler Objects of Interest</list>
+			<description>This is a Kepler Object of Interest from the Q1-Q12 dataset. It has been flagged as a possible transit event but has not been confirmed to be a planet yet.</description>
+			<istransiting>1</istransiting>
+		</planet>
+	</star>
+</system>

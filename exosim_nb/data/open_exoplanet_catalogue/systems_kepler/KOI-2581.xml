@@ -1,0 +1,25 @@
+<system>
+	<name>KOI-2581</name>
+	<rightascension>19 37 24</rightascension>
+	<declination>+50 04 51</declination>
+	<distance>428.25</distance>
+	<star>
+		<name>KOI-2581</name>
+		<temperature errorminus="90.00" errorplus="90.00">5603.00</temperature>
+		<radius errorminus="0.3400" errorplus="0.3400">0.8200</radius>
+		<mass errorminus="0.0650" errorplus="0.0650">0.9250</mass>
+		<age errorminus="4.0000" errorplus="4.0000">0.4000</age>
+		<planet>
+			<name>KOI-2581 b</name>
+			<name>KOI-2581 01</name>
+			<radius errorminus="0.03463" errorplus="0.03463">0.08019</radius>
+			<period errorminus="2.9000000e-04" errorplus="2.9000000e-04">12.736720000000</period>
+			<transittime errorminus="0.0086000" errorplus="0.0086000">2454969.0334000</transittime>
+			<semimajoraxis>0.1040000</semimajoraxis>
+			<temperature>693.0</temperature>
+			<list>Kepler Objects of Interest</list>
+			<description>This is a Kepler Object of Interest from the Q1-Q12 dataset. It has been flagged as a possible transit event but has not been confirmed to be a planet yet.</description>
+			<istransiting>1</istransiting>
+		</planet>
+	</star>
+</system>

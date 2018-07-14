@@ -1,0 +1,27 @@
+<system>
+	<name>KOI-3455</name>
+	<rightascension>19 26 01</rightascension>
+	<declination>+42 25 47</declination>
+	<distance>1437.59</distance>
+	<star>
+		<magJ errorminus="0.023" errorplus="0.023">13.513</magJ>
+		<magH errorminus="0.022" errorplus="0.022">13.159</magH>
+		<magK errorminus="0.024" errorplus="0.024">13.105</magK>
+		<name>KOI-3455</name>
+		<temperature errorminus="192.00" errorplus="192.00">5783.00</temperature>
+		<radius errorminus="0.5080" errorplus="0.5080">0.8800</radius>
+		<metallicity errorminus="0.2600" errorplus="0.2600">-0.0800</metallicity>
+		<planet>
+			<name>KOI-3455 b</name>
+			<name>KOI-3455 01</name>
+			<radius errorminus="0.14581" errorplus="0.14581">0.15219</radius>
+			<period errorminus="1.5290000e-04" errorplus="1.5290000e-04">14.054648500000</period>
+			<transittime errorminus="0.0099300" errorplus="0.0099300">2454966.0937300</transittime>
+			<semimajoraxis errorminus="8.20e-07" errorplus="8.20e-07">0.1131270</semimajoraxis>
+			<temperature errorminus="207.0" errorplus="207.0">712.0</temperature>
+			<list>Kepler Objects of Interest</list>
+			<description>This is a Kepler Object of Interest from the Q1-Q12 dataset. It has been flagged as a possible transit event but has not been confirmed to be a planet yet.</description>
+			<istransiting>1</istransiting>
+		</planet>
+	</star>
+</system>

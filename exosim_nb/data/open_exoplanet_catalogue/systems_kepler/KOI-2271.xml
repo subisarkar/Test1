@@ -1,0 +1,28 @@
+<system>
+	<name>KOI-2271</name>
+	<rightascension>19 09 11</rightascension>
+	<declination>+47 27 19</declination>
+	<distance>850.42</distance>
+	<star>
+		<magJ errorminus="0.027" errorplus="0.027">14.146</magJ>
+		<magH errorminus="0.03" errorplus="0.03">13.77</magH>
+		<magK errorminus="0.04" errorplus="0.04">13.69</magK>
+		<name>KOI-2271</name>
+		<temperature errorminus="73.00" errorplus="73.00">5159.00</temperature>
+		<radius errorminus="0.2200" errorplus="0.2200">0.7100</radius>
+		<mass errorminus="0.0370" errorplus="0.0370">0.8110</mass>
+		<age errorminus="4.0000" errorplus="4.0000">0.6000</age>
+		<planet>
+			<name>KOI-2271 b</name>
+			<name>KOI-2271 01</name>
+			<radius errorminus="0.11847" errorplus="0.11847">0.20049</radius>
+			<period errorminus="1.5000000e-03" errorplus="1.5000000e-03">55.822800000000</period>
+			<transittime errorminus="0.0100000" errorplus="0.0100000">2455002.0350000</transittime>
+			<semimajoraxis>0.2670000</semimajoraxis>
+			<temperature>371.0</temperature>
+			<list>Kepler Objects of Interest</list>
+			<description>This is a Kepler Object of Interest from the Q1-Q12 dataset. It has been flagged as a possible transit event but has not been confirmed to be a planet yet.</description>
+			<istransiting>1</istransiting>
+		</planet>
+	</star>
+</system>

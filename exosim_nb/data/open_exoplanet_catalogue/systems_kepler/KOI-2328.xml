@@ -1,0 +1,28 @@
+<system>
+	<name>KOI-2328</name>
+	<rightascension>18 48 33</rightascension>
+	<declination>+43 53 47</declination>
+	<distance>1352.14</distance>
+	<star>
+		<magJ errorminus="0.029" errorplus="0.029">14.493</magJ>
+		<magH errorminus="0.04" errorplus="0.04">14.10</magH>
+		<magK errorminus="0.05" errorplus="0.05">13.92</magK>
+		<name>KOI-2328</name>
+		<temperature errorminus="103.00" errorplus="103.00">5796.00</temperature>
+		<radius errorminus="0.4700" errorplus="0.4700">0.8700</radius>
+		<mass errorminus="0.1000" errorplus="0.1000">0.9800</mass>
+		<age errorminus="3.3000" errorplus="3.3000">0.4000</age>
+		<planet>
+			<name>KOI-2328 b</name>
+			<name>KOI-2328 01</name>
+			<radius errorminus="0.11847" errorplus="0.11847">0.20049</radius>
+			<period errorminus="3.9000000e-04" errorplus="3.9000000e-04">25.203300000000</period>
+			<transittime errorminus="0.0058000" errorplus="0.0058000">2454970.5663000</transittime>
+			<semimajoraxis>0.1670000</semimajoraxis>
+			<temperature>583.0</temperature>
+			<list>Kepler Objects of Interest</list>
+			<description>This is a Kepler Object of Interest from the Q1-Q12 dataset. It has been flagged as a possible transit event but has not been confirmed to be a planet yet.</description>
+			<istransiting>1</istransiting>
+		</planet>
+	</star>
+</system>

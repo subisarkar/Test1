@@ -1,0 +1,27 @@
+<system>
+	<name>KOI-3471</name>
+	<rightascension>19 48 40</rightascension>
+	<declination>+50 08 50</declination>
+	<distance>809.90</distance>
+	<star>
+		<magJ errorminus="0.022" errorplus="0.022">11.683</magJ>
+		<magH errorminus="0.018" errorplus="0.018">11.175</magH>
+		<magK errorminus="0.021" errorplus="0.021">11.024</magK>
+		<name>KOI-3471</name>
+		<temperature errorminus="128.00" errorplus="128.00">4847.00</temperature>
+		<radius errorminus="2.2650" errorplus="2.2650">2.1910</radius>
+		<metallicity errorminus="0.2300" errorplus="0.2300">0.0700</metallicity>
+		<planet>
+			<name>KOI-3471 b</name>
+			<name>KOI-3471 01</name>
+			<radius errorminus="0.20049" errorplus="0.20049">2.64825</radius>
+			<period errorminus="6.5210000e-05" errorplus="6.5210000e-05">67.451182160000</period>
+			<transittime errorminus="0.0007150" errorplus="0.0007150">2454984.9655200</transittime>
+			<semimajoraxis errorminus="2.04e-07" errorplus="2.04e-07">0.3168000</semimajoraxis>
+			<temperature errorminus="291.0" errorplus="291.0">562.0</temperature>
+			<list>Kepler Objects of Interest</list>
+			<description>This is a Kepler Object of Interest from the Q1-Q12 dataset. It has been flagged as a possible transit event but has not been confirmed to be a planet yet.</description>
+			<istransiting>1</istransiting>
+		</planet>
+	</star>
+</system>

@@ -1,0 +1,24 @@
+<system>
+	<name>KOI-3361</name>
+	<rightascension>19 42 18</rightascension>
+	<declination>+42 01 24</declination>
+	<distance>1461.53</distance>
+	<star>
+		<name>KOI-3361</name>
+		<temperature errorminus="227.00" errorplus="227.00">5982.00</temperature>
+		<radius errorminus="0.4900" errorplus="0.4900">0.9600</radius>
+		<metallicity errorminus="0.3400" errorplus="0.3400">-0.0400</metallicity>
+		<planet>
+			<name>KOI-3361 b</name>
+			<name>KOI-3361 01</name>
+			<radius errorminus="0.10936" errorplus="0.10936">0.22783</radius>
+			<period errorminus="6.9180000e-04" errorplus="6.9180000e-04">65.941385900000</period>
+			<transittime errorminus="0.0084700" errorplus="0.0084700">2454999.0233500</transittime>
+			<semimajoraxis errorminus="2.27e-06" errorplus="2.27e-06">0.3243270</semimajoraxis>
+			<temperature errorminus="117.0" errorplus="117.0">454.0</temperature>
+			<list>Kepler Objects of Interest</list>
+			<description>This is a Kepler Object of Interest from the Q1-Q12 dataset. It has been flagged as a possible transit event but has not been confirmed to be a planet yet.</description>
+			<istransiting>1</istransiting>
+		</planet>
+	</star>
+</system>

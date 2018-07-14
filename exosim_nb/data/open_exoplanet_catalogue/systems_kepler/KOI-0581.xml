@@ -1,0 +1,40 @@
+<system>
+	<name>KOI-0581</name>
+	<rightascension>19 32 41</rightascension>
+	<declination>+45 03 56</declination>
+	<distance>821.11</distance>
+	<star>
+		<magJ errorminus="0.022" errorplus="0.022">13.601</magJ>
+		<magH errorminus="0.026" errorplus="0.026">13.306</magH>
+		<magK errorminus="0.05" errorplus="0.05">13.27</magK>
+		<name>KOI-0581</name>
+		<temperature errorminus="83.00" errorplus="83.00">5659.00</temperature>
+		<radius errorminus="0.2300" errorplus="0.2300">0.8300</radius>
+		<mass errorminus="0.0390" errorplus="0.0390">0.9390</mass>
+		<age errorminus="3.7000" errorplus="3.7000">0.4000</age>
+		<planet>
+			<name>KOI-0581 b</name>
+			<name>KOI-0581 01</name>
+			<radius errorminus="0.07928" errorplus="0.07928">0.27886</radius>
+			<period errorminus="1.2000000e-05" errorplus="1.2000000e-05">6.996922000000</period>
+			<transittime errorminus="0.0007700" errorplus="0.0007700">2455008.9136400</transittime>
+			<semimajoraxis>0.0700000</semimajoraxis>
+			<temperature>860.0</temperature>
+			<list>Kepler Objects of Interest</list>
+			<description>This is a Kepler Object of Interest from the Q1-Q12 dataset. It has been flagged as a possible transit event but has not been confirmed to be a planet yet.</description>
+			<istransiting>1</istransiting>
+		</planet>
+		<planet>
+			<name>KOI-0581 c</name>
+			<name>KOI-0581 02</name>
+			<radius errorminus="0.05559" errorplus="0.05559">0.19502</radius>
+			<period errorminus="2.5000000e-03" errorplus="2.5000000e-03">151.865400000000</period>
+			<transittime errorminus="0.0075000" errorplus="0.0075000">2454976.3100000</transittime>
+			<semimajoraxis>0.5460000</semimajoraxis>
+			<temperature>308.0</temperature>
+			<list>Kepler Objects of Interest</list>
+			<description>This is a Kepler Object of Interest from the Q1-Q12 dataset. It has been flagged as a possible transit event but has not been confirmed to be a planet yet.</description>
+			<istransiting>1</istransiting>
+		</planet>
+	</star>
+</system>

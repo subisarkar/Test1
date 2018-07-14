@@ -1,0 +1,40 @@
+<system>
+	<name>KOI-0780</name>
+	<rightascension>19 35 19</rightascension>
+	<declination>+50 13 49</declination>
+	<distance>649.84</distance>
+	<star>
+		<magJ errorminus="0.022" errorplus="0.022">13.810</magJ>
+		<magH errorminus="0.023" errorplus="0.023">13.300</magH>
+		<magK errorminus="0.04" errorplus="0.04">13.20</magK>
+		<name>KOI-0780</name>
+		<temperature errorminus="76.00" errorplus="76.00">4963.00</temperature>
+		<radius errorminus="0.3200" errorplus="0.3200">0.6700</radius>
+		<mass errorminus="0.0500" errorplus="0.0500">0.7600</mass>
+		<age errorminus="3.8000" errorplus="3.8000">1.8000</age>
+		<planet>
+			<name>KOI-0780 b</name>
+			<name>KOI-0780 01</name>
+			<radius errorminus="0.09022" errorplus="0.09022">0.18499</radius>
+			<period errorminus="5.6000000e-06" errorplus="5.6000000e-06">2.337455100000</period>
+			<transittime errorminus="0.0007800" errorplus="0.0007800">2455004.7587600</transittime>
+			<semimajoraxis>0.0310000</semimajoraxis>
+			<temperature>1020.0</temperature>
+			<list>Kepler Objects of Interest</list>
+			<description>This is a Kepler Object of Interest from the Q1-Q12 dataset. It has been flagged as a possible transit event but has not been confirmed to be a planet yet.</description>
+			<istransiting>1</istransiting>
+		</planet>
+		<planet>
+			<name>KOI-0780 c</name>
+			<name>KOI-0780 02</name>
+			<radius errorminus="0.10024" errorplus="0.10024">0.19137</radius>
+			<period errorminus="4.9000000e-05" errorplus="4.9000000e-05">7.240680000000</period>
+			<transittime errorminus="0.0030000" errorplus="0.0030000">2454970.7560000</transittime>
+			<semimajoraxis>0.0670000</semimajoraxis>
+			<temperature>694.0</temperature>
+			<list>Kepler Objects of Interest</list>
+			<description>This is a Kepler Object of Interest from the Q1-Q12 dataset. It has been flagged as a possible transit event but has not been confirmed to be a planet yet.</description>
+			<istransiting>1</istransiting>
+		</planet>
+	</star>
+</system>

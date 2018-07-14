@@ -1,0 +1,27 @@
+<system>
+	<name>KOI-1946</name>
+	<rightascension>18 53 22</rightascension>
+	<declination>+48 13 26</declination>
+	<distance>795.23</distance>
+	<star>
+		<magJ errorminus="0.028" errorplus="0.028">13.155</magJ>
+		<magH errorminus="0.024" errorplus="0.024">12.769</magH>
+		<magK errorminus="0.029" errorplus="0.029">12.765</magK>
+		<name>KOI-1946</name>
+		<temperature errorminus="200.00" errorplus="200.00">5540.00</temperature>
+		<radius errorminus="0.3000" errorplus="0.3000">0.9800</radius>
+		<mass errorminus="0.3000" errorplus="0.3000">1.0400</mass>
+		<planet>
+			<name>KOI-1946 b</name>
+			<name>KOI-1946 01</name>
+			<radius errorminus="0.07108" errorplus="0.07108">0.21142</radius>
+			<period errorminus="8.7000000e-05" errorplus="8.7000000e-05">8.294769000000</period>
+			<transittime errorminus="0.0046000" errorplus="0.0046000">2454966.5048000</transittime>
+			<semimajoraxis>0.0810000</semimajoraxis>
+			<temperature>848.0</temperature>
+			<list>Kepler Objects of Interest</list>
+			<description>This is a Kepler Object of Interest from the Q1-Q12 dataset. It has been flagged as a possible transit event but has not been confirmed to be a planet yet.</description>
+			<istransiting>1</istransiting>
+		</planet>
+	</star>
+</system>

@@ -1,0 +1,24 @@
+<system>
+	<name>KOI-4347</name>
+	<rightascension>19 35 24</rightascension>
+	<declination>+38 23 51</declination>
+	<distance>926.39</distance>
+	<star>
+		<name>KOI-4347</name>
+		<temperature errorminus="172.00" errorplus="172.00">6020.00</temperature>
+		<radius errorminus="0.4310" errorplus="0.4310">0.8290</radius>
+		<metallicity errorminus="0.3000" errorplus="0.3000">-0.4800</metallicity>
+		<planet>
+			<name>KOI-4347 b</name>
+			<name>KOI-4347 01</name>
+			<radius errorminus="0.04721" errorplus="0.04721">0.10161</radius>
+			<period errorminus="1.8030000e-05" errorplus="1.8030000e-05">3.057082230000</period>
+			<transittime errorminus="0.0036100" errorplus="0.0036100">2454967.5024900</transittime>
+			<semimajoraxis errorminus="1.57e-07" errorplus="1.57e-07">0.0400195</semimajoraxis>
+			<temperature errorminus="316.0" errorplus="316.0">1209.0</temperature>
+			<list>Kepler Objects of Interest</list>
+			<description>This is a Kepler Object of Interest from the Q1-Q12 dataset. It has been flagged as a possible transit event but has not been confirmed to be a planet yet.</description>
+			<istransiting>1</istransiting>
+		</planet>
+	</star>
+</system>

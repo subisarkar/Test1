@@ -1,0 +1,25 @@
+<system>
+	<name>KOI-2550</name>
+	<rightascension>19 48 57</rightascension>
+	<declination>+49 37 00</declination>
+	<distance>1334.62</distance>
+	<star>
+		<name>KOI-2550</name>
+		<temperature errorminus="108.00" errorplus="108.00">5952.00</temperature>
+		<radius errorminus="0.3200" errorplus="0.3200">0.9200</radius>
+		<mass errorminus="0.0660" errorplus="0.0660">1.0210</mass>
+		<age errorminus="2.6000" errorplus="2.6000">0.3000</age>
+		<planet>
+			<name>KOI-2550 b</name>
+			<name>KOI-2550 01</name>
+			<radius errorminus="0.06835" errorplus="0.06835">0.17041</radius>
+			<period errorminus="3.7000000e-04" errorplus="3.7000000e-04">18.024470000000</period>
+			<transittime errorminus="0.0077000" errorplus="0.0077000">2454977.2763000</transittime>
+			<semimajoraxis>0.1360000</semimajoraxis>
+			<temperature>681.0</temperature>
+			<list>Kepler Objects of Interest</list>
+			<description>This is a Kepler Object of Interest from the Q1-Q12 dataset. It has been flagged as a possible transit event but has not been confirmed to be a planet yet.</description>
+			<istransiting>1</istransiting>
+		</planet>
+	</star>
+</system>

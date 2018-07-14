@@ -1,0 +1,28 @@
+<system>
+	<name>KOI-2002</name>
+	<rightascension>19 47 01</rightascension>
+	<declination>+46 59 53</declination>
+	<distance>511.66</distance>
+	<star>
+		<magJ errorminus="0.021" errorplus="0.021">12.123</magJ>
+		<magH errorminus="0.018" errorplus="0.018">11.829</magH>
+		<magK errorminus="0.018" errorplus="0.018">11.730</magK>
+		<name>KOI-2002</name>
+		<temperature errorminus="114.00" errorplus="114.00">5990.00</temperature>
+		<radius errorminus="0.5400" errorplus="0.5400">0.9300</radius>
+		<mass errorminus="0.1300" errorplus="0.1300">1.0300</mass>
+		<age errorminus="2.2000" errorplus="2.2000">0.5000</age>
+		<planet>
+			<name>KOI-2002 b</name>
+			<name>KOI-2002 01</name>
+			<radius errorminus="0.07290" errorplus="0.07290">0.12667</radius>
+			<period errorminus="1.4000000e-04" errorplus="1.4000000e-04">14.375170000000</period>
+			<transittime errorminus="0.0036000" errorplus="0.0036000">2454972.0549000</transittime>
+			<semimajoraxis>0.1170000</semimajoraxis>
+			<temperature>747.0</temperature>
+			<list>Kepler Objects of Interest</list>
+			<description>This is a Kepler Object of Interest from the Q1-Q12 dataset. It has been flagged as a possible transit event but has not been confirmed to be a planet yet.</description>
+			<istransiting>1</istransiting>
+		</planet>
+	</star>
+</system>

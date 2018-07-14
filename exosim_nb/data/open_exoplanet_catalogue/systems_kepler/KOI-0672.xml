@@ -1,0 +1,40 @@
+<system>
+	<name>KOI-0672</name>
+	<rightascension>19 24 40</rightascension>
+	<declination>+42 38 26</declination>
+	<distance>649.46</distance>
+	<star>
+		<magJ errorminus="0.022" errorplus="0.022">12.797</magJ>
+		<magH errorminus="0.017" errorplus="0.017">12.432</magH>
+		<magK errorminus="0.021" errorplus="0.021">12.362</magK>
+		<name>KOI-0672</name>
+		<temperature errorminus="50.00" errorplus="50.00">5524.00</temperature>
+		<radius errorminus="0.1000" errorplus="0.1000">1.0000</radius>
+		<mass errorminus="0.0320" errorplus="0.0320">0.9310</mass>
+		<age errorminus="3.4000" errorplus="3.4000">9.3000</age>
+		<planet>
+			<name>KOI-0672 b</name>
+			<name>KOI-0672 01</name>
+			<radius errorminus="0.03190" errorplus="0.03190">0.30255</radius>
+			<period errorminus="6.3000000e-05" errorplus="6.3000000e-05">16.087836000000</period>
+			<transittime errorminus="0.0018000" errorplus="0.0018000">2455005.8128000</transittime>
+			<semimajoraxis>0.1220000</semimajoraxis>
+			<temperature>697.0</temperature>
+			<list>Kepler Objects of Interest</list>
+			<description>This is a Kepler Object of Interest from the Q1-Q12 dataset. It has been flagged as a possible transit event but has not been confirmed to be a planet yet.</description>
+			<istransiting>1</istransiting>
+		</planet>
+		<planet>
+			<name>KOI-0672 c</name>
+			<name>KOI-0672 02</name>
+			<radius errorminus="0.03736" errorplus="0.03736">0.36726</radius>
+			<period errorminus="1.7000000e-04" errorplus="1.7000000e-04">41.749990000000</period>
+			<transittime errorminus="0.0021000" errorplus="0.0021000">2454986.8387000</transittime>
+			<semimajoraxis>0.2300000</semimajoraxis>
+			<temperature>507.0</temperature>
+			<list>Kepler Objects of Interest</list>
+			<description>This is a Kepler Object of Interest from the Q1-Q12 dataset. It has been flagged as a possible transit event but has not been confirmed to be a planet yet.</description>
+			<istransiting>1</istransiting>
+		</planet>
+	</star>
+</system>

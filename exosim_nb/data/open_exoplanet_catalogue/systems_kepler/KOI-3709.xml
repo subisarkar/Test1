@@ -1,0 +1,24 @@
+<system>
+	<name>KOI-3709</name>
+	<rightascension>19 26 05</rightascension>
+	<declination>+37 53 15</declination>
+	<distance>1386.11</distance>
+	<star>
+		<name>KOI-3709</name>
+		<temperature errorminus="248.00" errorplus="248.00">6328.00</temperature>
+		<radius errorminus="0.5350" errorplus="0.5350">0.9150</radius>
+		<metallicity errorminus="0.2800" errorplus="0.2800">-0.5000</metallicity>
+		<planet>
+			<name>KOI-3709 b</name>
+			<name>KOI-3709 01</name>
+			<radius errorminus="0.20960" errorplus="0.20960">1.90371</radius>
+			<period errorminus="1.5860000e-04" errorplus="1.5860000e-04">205.583305900000</period>
+			<transittime errorminus="0.0005950" errorplus="0.0005950">2455067.7461620</transittime>
+			<semimajoraxis errorminus="3.51e-07" errorplus="3.51e-07">0.6822910</semimajoraxis>
+			<temperature errorminus="95.4" errorplus="95.4">323.3</temperature>
+			<list>Kepler Objects of Interest</list>
+			<description>This is a Kepler Object of Interest from the Q1-Q12 dataset. It has been flagged as a possible transit event but has not been confirmed to be a planet yet.</description>
+			<istransiting>1</istransiting>
+		</planet>
+	</star>
+</system>

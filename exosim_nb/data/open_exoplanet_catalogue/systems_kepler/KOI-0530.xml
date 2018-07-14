@@ -1,0 +1,28 @@
+<system>
+	<name>KOI-0530</name>
+	<rightascension>19 14 40</rightascension>
+	<declination>+47 23 56</declination>
+	<distance>901.39</distance>
+	<star>
+		<magJ errorminus="0.026" errorplus="0.026">13.689</magJ>
+		<magH errorminus="0.021" errorplus="0.021">13.302</magH>
+		<magK errorminus="0.027" errorplus="0.027">13.250</magK>
+		<name>KOI-0530</name>
+		<temperature errorminus="87.00" errorplus="87.00">5723.00</temperature>
+		<radius errorminus="0.3500" errorplus="0.3500">0.8500</radius>
+		<mass errorminus="0.0690" errorplus="0.0690">0.9570</mass>
+		<age errorminus="3.6000" errorplus="3.6000">0.4000</age>
+		<planet>
+			<name>KOI-0530 b</name>
+			<name>KOI-0530 01</name>
+			<radius errorminus="0.09113" errorplus="0.09113">0.19137</radius>
+			<period errorminus="7.9000000e-05" errorplus="7.9000000e-05">10.940266000000</period>
+			<transittime errorminus="0.0025000" errorplus="0.0025000">2455003.3063000</transittime>
+			<semimajoraxis>0.0950000</semimajoraxis>
+			<temperature>755.0</temperature>
+			<list>Kepler Objects of Interest</list>
+			<description>This is a Kepler Object of Interest from the Q1-Q12 dataset. It has been flagged as a possible transit event but has not been confirmed to be a planet yet.</description>
+			<istransiting>1</istransiting>
+		</planet>
+	</star>
+</system>

@@ -1,0 +1,28 @@
+<system>
+	<name>KOI-1720</name>
+	<rightascension>19 34 34</rightascension>
+	<declination>+46 59 23</declination>
+	<distance>1074.42</distance>
+	<star>
+		<magJ errorminus="0.027" errorplus="0.027">14.402</magJ>
+		<magH errorminus="0.03" errorplus="0.03">13.89</magH>
+		<magK errorminus="0.04" errorplus="0.04">13.79</magK>
+		<name>KOI-1720</name>
+		<temperature errorminus="77.00" errorplus="77.00">5419.00</temperature>
+		<radius errorminus="0.3000" errorplus="0.3000">0.7700</radius>
+		<mass errorminus="0.0580" errorplus="0.0580">0.8760</mass>
+		<age errorminus="3.8000" errorplus="3.8000">0.6000</age>
+		<planet>
+			<name>KOI-1720 b</name>
+			<name>KOI-1720 01</name>
+			<radius errorminus="0.10936" errorplus="0.10936">0.23694</radius>
+			<period errorminus="1.2000000e-03" errorplus="1.2000000e-03">59.662600000000</period>
+			<transittime errorminus="0.0071000" errorplus="0.0071000">2455001.0608000</transittime>
+			<semimajoraxis>0.2860000</semimajoraxis>
+			<temperature>393.0</temperature>
+			<list>Kepler Objects of Interest</list>
+			<description>This is a Kepler Object of Interest from the Q1-Q12 dataset. It has been flagged as a possible transit event but has not been confirmed to be a planet yet.</description>
+			<istransiting>1</istransiting>
+		</planet>
+	</star>
+</system>

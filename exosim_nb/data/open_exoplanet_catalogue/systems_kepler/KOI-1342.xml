@@ -1,0 +1,28 @@
+<system>
+	<name>KOI-1342</name>
+	<rightascension>19 39 04</rightascension>
+	<declination>+39 23 54</declination>
+	<distance>1010.58</distance>
+	<star>
+		<magJ errorminus="0.024" errorplus="0.024">13.069</magJ>
+		<magH errorminus="0.03" errorplus="0.03">12.73</magH>
+		<magK errorminus="0.03" errorplus="0.03">12.67</magK>
+		<name>KOI-1342</name>
+		<temperature errorminus="109.00" errorplus="109.00">6290.00</temperature>
+		<radius errorminus="0.4000" errorplus="0.4000">1.0900</radius>
+		<mass errorminus="0.1100" errorplus="0.1100">1.1200</mass>
+		<age errorminus="0.9300" errorplus="0.9300">1.3500</age>
+		<planet>
+			<name>KOI-1342 c</name>
+			<name>KOI-1342 02</name>
+			<radius errorminus="0.07199" errorplus="0.07199">0.19502</radius>
+			<period errorminus="7.2000000e-05" errorplus="7.2000000e-05">8.181943000000</period>
+			<transittime errorminus="0.0031000" errorplus="0.0031000">2454967.8101000</transittime>
+			<semimajoraxis>0.0830000</semimajoraxis>
+			<temperature>1007.0</temperature>
+			<list>Kepler Objects of Interest</list>
+			<description>This is a Kepler Object of Interest from the Q1-Q12 dataset. It has been flagged as a possible transit event but has not been confirmed to be a planet yet.</description>
+			<istransiting>1</istransiting>
+		</planet>
+	</star>
+</system>

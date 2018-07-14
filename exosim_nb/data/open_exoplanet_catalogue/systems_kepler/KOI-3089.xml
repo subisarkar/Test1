@@ -1,0 +1,24 @@
+<system>
+	<name>KOI-3089</name>
+	<rightascension>19 04 35</rightascension>
+	<declination>+43 22 09</declination>
+	<distance>895.70</distance>
+	<star>
+		<name>KOI-3089</name>
+		<temperature errorminus="200.00" errorplus="200.00">5073.00</temperature>
+		<radius errorminus="0.3000" errorplus="0.3000">0.9200</radius>
+		<mass errorminus="0.3000" errorplus="0.3000">0.9500</mass>
+		<planet>
+			<name>KOI-3089 b</name>
+			<name>KOI-3089 01</name>
+			<radius errorminus="0.04739" errorplus="0.04739">0.08931</radius>
+			<period errorminus="3.5000000e-06" errorplus="3.5000000e-06">0.858548000000</period>
+			<transittime errorminus="0.0022000" errorplus="0.0022000">2454965.1436000</transittime>
+			<semimajoraxis>0.0170000</semimajoraxis>
+			<temperature>1642.0</temperature>
+			<list>Kepler Objects of Interest</list>
+			<description>This is a Kepler Object of Interest from the Q1-Q12 dataset. It has been flagged as a possible transit event but has not been confirmed to be a planet yet.</description>
+			<istransiting>1</istransiting>
+		</planet>
+	</star>
+</system>

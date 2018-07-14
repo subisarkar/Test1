@@ -1,0 +1,25 @@
+<system>
+	<name>KOI-3050</name>
+	<rightascension>19 53 47</rightascension>
+	<declination>+40 37 29</declination>
+	<distance>934.17</distance>
+	<star>
+		<name>KOI-3050</name>
+		<temperature errorminus="103.00" errorplus="103.00">5485.00</temperature>
+		<radius errorminus="0.2500" errorplus="0.2500">0.7900</radius>
+		<mass errorminus="0.0560" errorplus="0.0560">0.8960</mass>
+		<age errorminus="4.0000" errorplus="4.0000">0.5000</age>
+		<planet>
+			<name>KOI-3050 b</name>
+			<name>KOI-3050 01</name>
+			<radius errorminus="0.06106" errorplus="0.06106">0.10389</radius>
+			<period errorminus="5.6000000e-06" errorplus="5.6000000e-06">1.242640800000</period>
+			<transittime errorminus="0.0027000" errorplus="0.0027000">2454964.8797000</transittime>
+			<semimajoraxis>0.0220000</semimajoraxis>
+			<temperature>1450.0</temperature>
+			<list>Kepler Objects of Interest</list>
+			<description>This is a Kepler Object of Interest from the Q1-Q12 dataset. It has been flagged as a possible transit event but has not been confirmed to be a planet yet.</description>
+			<istransiting>1</istransiting>
+		</planet>
+	</star>
+</system>

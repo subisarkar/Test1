@@ -1,0 +1,28 @@
+<system>
+	<name>KOI-2318</name>
+	<rightascension>18 59 59</rightascension>
+	<declination>+49 28 47</declination>
+	<distance>376.73</distance>
+	<star>
+		<magJ errorminus="0.025" errorplus="0.025">12.862</magJ>
+		<magH errorminus="0.020" errorplus="0.020">12.295</magH>
+		<magK errorminus="0.025" errorplus="0.025">12.212</magK>
+		<name>KOI-2318</name>
+		<temperature errorminus="65.00" errorplus="65.00">4698.00</temperature>
+		<radius errorminus="0.0160" errorplus="0.0160">0.6450</radius>
+		<mass errorminus="0.0170" errorplus="0.0170">0.6700</mass>
+		<age errorminus="3.8000" errorplus="3.8000">13.7000</age>
+		<planet>
+			<name>KOI-2318 b</name>
+			<name>KOI-2318 01</name>
+			<radius errorminus="0.03190" errorplus="0.03190">0.11847</radius>
+			<period errorminus="1.5000000e-04" errorplus="1.5000000e-04">10.458540000000</period>
+			<transittime errorminus="0.0047000" errorplus="0.0047000">2454970.6520000</transittime>
+			<semimajoraxis>0.0820000</semimajoraxis>
+			<temperature>581.0</temperature>
+			<list>Kepler Objects of Interest</list>
+			<description>This is a Kepler Object of Interest from the Q1-Q12 dataset. It has been flagged as a possible transit event but has not been confirmed to be a planet yet.</description>
+			<istransiting>1</istransiting>
+		</planet>
+	</star>
+</system>

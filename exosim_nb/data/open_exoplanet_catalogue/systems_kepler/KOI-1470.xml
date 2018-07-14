@@ -1,0 +1,27 @@
+<system>
+	<name>KOI-1470</name>
+	<rightascension>19 49 24</rightascension>
+	<declination>+46 05 45</declination>
+	<distance>1174.90</distance>
+	<star>
+		<magJ errorminus="0.028" errorplus="0.028">14.492</magJ>
+		<magH errorminus="0.04" errorplus="0.04">14.10</magH>
+		<magK errorminus="0.06" errorplus="0.06">14.01</magK>
+		<name>KOI-1470</name>
+		<temperature errorminus="200.00" errorplus="200.00">5645.00</temperature>
+		<radius errorminus="0.3000" errorplus="0.3000">0.7900</radius>
+		<mass errorminus="0.3000" errorplus="0.3000">1.0200</mass>
+		<planet>
+			<name>KOI-1470 b</name>
+			<name>KOI-1470 01</name>
+			<radius errorminus="0.12758" errorplus="0.12758">0.31896</radius>
+			<period errorminus="1.6000000e-04" errorplus="1.6000000e-04">15.434100000000</period>
+			<transittime errorminus="0.0023000" errorplus="0.0023000">2455196.2925000</transittime>
+			<semimajoraxis>0.1220000</semimajoraxis>
+			<temperature>634.0</temperature>
+			<list>Kepler Objects of Interest</list>
+			<description>This is a Kepler Object of Interest from the Q1-Q12 dataset. It has been flagged as a possible transit event but has not been confirmed to be a planet yet.</description>
+			<istransiting>1</istransiting>
+		</planet>
+	</star>
+</system>

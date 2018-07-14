@@ -1,0 +1,25 @@
+<system>
+	<name>KOI-2835</name>
+	<rightascension>19 11 18</rightascension>
+	<declination>+40 41 47</declination>
+	<distance>644.66</distance>
+	<star>
+		<name>KOI-2835</name>
+		<temperature errorminus="61.00" errorplus="61.00">4545.00</temperature>
+		<radius errorminus="0.0130" errorplus="0.0130">0.6090</radius>
+		<mass errorminus="0.0150" errorplus="0.0150">0.6390</mass>
+		<age errorminus="3.7000" errorplus="3.7000">13.6000</age>
+		<planet>
+			<name>KOI-2835 b</name>
+			<name>KOI-2835 01</name>
+			<radius errorminus="0.05650" errorplus="0.05650">0.15583</radius>
+			<period errorminus="1.9000000e-05" errorplus="1.9000000e-05">6.309229000000</period>
+			<transittime errorminus="0.0022000" errorplus="0.0022000">2454966.9941000</transittime>
+			<semimajoraxis>0.0580000</semimajoraxis>
+			<temperature>650.0</temperature>
+			<list>Kepler Objects of Interest</list>
+			<description>This is a Kepler Object of Interest from the Q1-Q12 dataset. It has been flagged as a possible transit event but has not been confirmed to be a planet yet.</description>
+			<istransiting>1</istransiting>
+		</planet>
+	</star>
+</system>

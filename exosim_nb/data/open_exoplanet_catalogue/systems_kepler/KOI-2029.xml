@@ -1,0 +1,64 @@
+<system>
+	<name>KOI-2029</name>
+	<rightascension>19 59 35</rightascension>
+	<declination>+46 03 07</declination>
+	<distance>261.03</distance>
+	<star>
+		<magJ errorminus="0.023" errorplus="0.023">11.610</magJ>
+		<magH errorminus="0.03" errorplus="0.03">11.18</magH>
+		<magK errorminus="0.022" errorplus="0.022">11.132</magK>
+		<name>KOI-2029</name>
+		<temperature errorminus="65.00" errorplus="65.00">5227.00</temperature>
+		<radius errorminus="0.0380" errorplus="0.0380">0.7250</radius>
+		<mass errorminus="0.0210" errorplus="0.0210">0.8270</mass>
+		<age errorminus="3.8000" errorplus="3.8000">0.6000</age>
+		<planet>
+			<name>KOI-2029 b</name>
+			<name>KOI-2029 01</name>
+			<radius errorminus="0.01185" errorplus="0.01185">0.12120</radius>
+			<period errorminus="1.5000000e-04" errorplus="1.5000000e-04">16.332790000000</period>
+			<transittime errorminus="0.0035000" errorplus="0.0035000">2454969.9052000</transittime>
+			<semimajoraxis>0.1180000</semimajoraxis>
+			<temperature>572.0</temperature>
+			<list>Kepler Objects of Interest</list>
+			<description>This is a Kepler Object of Interest from the Q1-Q12 dataset. It has been flagged as a possible transit event but has not been confirmed to be a planet yet.</description>
+			<istransiting>1</istransiting>
+		</planet>
+		<planet>
+			<name>KOI-2029 c</name>
+			<name>KOI-2029 02</name>
+			<radius errorminus="0.00729" errorplus="0.00729">0.07655</radius>
+			<period errorminus="1.5000000e-04" errorplus="1.5000000e-04">10.055480000000</period>
+			<transittime errorminus="0.0053000" errorplus="0.0053000">2455006.2246000</transittime>
+			<semimajoraxis>0.0860000</semimajoraxis>
+			<temperature>669.0</temperature>
+			<list>Kepler Objects of Interest</list>
+			<description>This is a Kepler Object of Interest from the Q1-Q12 dataset. It has been flagged as a possible transit event but has not been confirmed to be a planet yet.</description>
+			<istransiting>1</istransiting>
+		</planet>
+		<planet>
+			<name>KOI-2029 d</name>
+			<name>KOI-2029 03</name>
+			<radius errorminus="0.04329" errorplus="0.04329">0.06124</radius>
+			<period errorminus="3.2280000e-05" errorplus="3.2280000e-05">6.887264890000</period>
+			<transittime errorminus="0.0035200" errorplus="0.0035200">2454965.0721200</transittime>
+			<semimajoraxis errorminus="2.08e-07" errorplus="2.08e-07">0.0665080</semimajoraxis>
+			<temperature errorminus="106.0" errorplus="106.0">777.0</temperature>
+			<list>Kepler Objects of Interest</list>
+			<description>This is a Kepler Object of Interest from the Q1-Q12 dataset. It has been flagged as a possible transit event but has not been confirmed to be a planet yet.</description>
+			<istransiting>1</istransiting>
+		</planet>
+		<planet>
+			<name>KOI-2029 e</name>
+			<name>KOI-2029 04</name>
+			<radius errorminus="0.05030" errorplus="0.05030">0.05778</radius>
+			<period errorminus="2.0460000e-05" errorplus="2.0460000e-05">4.788446570000</period>
+			<transittime errorminus="0.0029100" errorplus="0.0029100">2454968.4657600</transittime>
+			<semimajoraxis errorminus="1.49e-07" errorplus="1.49e-07">0.0521962</semimajoraxis>
+			<temperature errorminus="120.0" errorplus="120.0">877.0</temperature>
+			<list>Kepler Objects of Interest</list>
+			<description>This is a Kepler Object of Interest from the Q1-Q12 dataset. It has been flagged as a possible transit event but has not been confirmed to be a planet yet.</description>
+			<istransiting>1</istransiting>
+		</planet>
+	</star>
+</system>

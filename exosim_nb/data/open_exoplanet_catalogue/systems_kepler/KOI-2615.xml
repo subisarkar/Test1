@@ -1,0 +1,25 @@
+<system>
+	<name>KOI-2615</name>
+	<rightascension>19 22 44</rightascension>
+	<declination>+43 51 34</declination>
+	<distance>1535.45</distance>
+	<star>
+		<name>KOI-2615</name>
+		<temperature errorminus="117.00" errorplus="117.00">5969.00</temperature>
+		<radius errorminus="0.3800" errorplus="0.3800">0.9200</radius>
+		<mass errorminus="0.0810" errorplus="0.0810">1.0270</mass>
+		<age errorminus="2.6000" errorplus="2.6000">0.3000</age>
+		<planet>
+			<name>KOI-2615 b</name>
+			<name>KOI-2615 01</name>
+			<radius errorminus="0.06470" errorplus="0.06470">0.15036</radius>
+			<period errorminus="8.8000000e-05" errorplus="8.8000000e-05">4.695153000000</period>
+			<transittime errorminus="0.0063000" errorplus="0.0063000">2454966.9317000</transittime>
+			<semimajoraxis>0.0550000</semimajoraxis>
+			<temperature>1079.0</temperature>
+			<list>Kepler Objects of Interest</list>
+			<description>This is a Kepler Object of Interest from the Q1-Q12 dataset. It has been flagged as a possible transit event but has not been confirmed to be a planet yet.</description>
+			<istransiting>1</istransiting>
+		</planet>
+	</star>
+</system>

@@ -1,0 +1,52 @@
+<system>
+	<name>KOI-2135</name>
+	<rightascension>19 47 12</rightascension>
+	<declination>+46 44 28</declination>
+	<distance>860.05</distance>
+	<star>
+		<magJ errorminus="0.022" errorplus="0.022">12.526</magJ>
+		<magH errorminus="0.017" errorplus="0.017">12.275</magH>
+		<magK errorminus="0.020" errorplus="0.020">12.198</magK>
+		<name>KOI-2135</name>
+		<temperature errorminus="97.00" errorplus="97.00">6321.00</temperature>
+		<radius errorminus="0.4100" errorplus="0.4100">1.2300</radius>
+		<mass errorminus="0.1100" errorplus="0.1100">1.1400</mass>
+		<age errorminus="0.8000" errorplus="0.8000">2.9500</age>
+		<planet>
+			<name>KOI-2135 b</name>
+			<name>KOI-2135 01</name>
+			<radius errorminus="0.07746" errorplus="0.07746">0.23238</radius>
+			<period errorminus="6.4000000e-04" errorplus="6.4000000e-04">55.188150000000</period>
+			<transittime errorminus="0.0056000" errorplus="0.0056000">2455013.7501000</transittime>
+			<semimajoraxis>0.2960000</semimajoraxis>
+			<temperature>568.0</temperature>
+			<list>Kepler Objects of Interest</list>
+			<description>This is a Kepler Object of Interest from the Q1-Q12 dataset. It has been flagged as a possible transit event but has not been confirmed to be a planet yet.</description>
+			<istransiting>1</istransiting>
+		</planet>
+		<planet>
+			<name>KOI-2135 c</name>
+			<name>KOI-2135 02</name>
+			<radius errorminus="0.15492" errorplus="0.15492">0.10662</radius>
+			<period errorminus="2.3940000e-04" errorplus="2.3940000e-04">20.188951600000</period>
+			<transittime errorminus="0.0089800" errorplus="0.0089800">2454975.1919700</transittime>
+			<semimajoraxis errorminus="1.17e-06" errorplus="1.17e-06">0.1484110</semimajoraxis>
+			<temperature errorminus="299.0" errorplus="299.0">785.0</temperature>
+			<list>Kepler Objects of Interest</list>
+			<description>This is a Kepler Object of Interest from the Q1-Q12 dataset. It has been flagged as a possible transit event but has not been confirmed to be a planet yet.</description>
+			<istransiting>1</istransiting>
+		</planet>
+		<planet>
+			<name>KOI-2135 d</name>
+			<name>KOI-2135 03</name>
+			<radius errorminus="0.02816" errorplus="0.02816">0.13105</radius>
+			<period errorminus="4.6050000e-05" errorplus="4.6050000e-05">8.486514290000</period>
+			<transittime errorminus="0.0040600" errorplus="0.0040600">2454971.0177100</transittime>
+			<semimajoraxis errorminus="3.01e-07" errorplus="3.01e-07">0.0832802</semimajoraxis>
+			<temperature errorminus="399.0" errorplus="399.0">1048.0</temperature>
+			<list>Kepler Objects of Interest</list>
+			<description>This is a Kepler Object of Interest from the Q1-Q12 dataset. It has been flagged as a possible transit event but has not been confirmed to be a planet yet.</description>
+			<istransiting>1</istransiting>
+		</planet>
+	</star>
+</system>

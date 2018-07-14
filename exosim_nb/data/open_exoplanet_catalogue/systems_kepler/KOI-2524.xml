@@ -1,0 +1,25 @@
+<system>
+	<name>KOI-2524</name>
+	<rightascension>19 11 21</rightascension>
+	<declination>+43 09 11</declination>
+	<distance>1659.72</distance>
+	<star>
+		<name>KOI-2524</name>
+		<temperature errorminus="123.00" errorplus="123.00">6337.00</temperature>
+		<radius errorminus="0.4300" errorplus="0.4300">1.0800</radius>
+		<mass errorminus="0.1200" errorplus="0.1200">1.1500</mass>
+		<age errorminus="0.9000" errorplus="0.9000">0.5700</age>
+		<planet>
+			<name>KOI-2524 b</name>
+			<name>KOI-2524 01</name>
+			<radius errorminus="0.07017" errorplus="0.07017">0.17224</radius>
+			<period errorminus="1.4000000e-03" errorplus="1.4000000e-03">40.989000000000</period>
+			<transittime errorminus="0.0130000" errorplus="0.0130000">2454965.4240000</transittime>
+			<semimajoraxis>0.2440000</semimajoraxis>
+			<temperature>589.0</temperature>
+			<list>Kepler Objects of Interest</list>
+			<description>This is a Kepler Object of Interest from the Q1-Q12 dataset. It has been flagged as a possible transit event but has not been confirmed to be a planet yet.</description>
+			<istransiting>1</istransiting>
+		</planet>
+	</star>
+</system>

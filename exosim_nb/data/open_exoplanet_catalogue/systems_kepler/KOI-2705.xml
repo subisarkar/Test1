@@ -1,0 +1,24 @@
+<system>
+	<name>KOI-2705</name>
+	<rightascension>19 23 49</rightascension>
+	<declination>+49 21 59</declination>
+	<distance>84.00</distance>
+	<star>
+		<name>KOI-2705</name>
+		<temperature>3240.00</temperature>
+		<radius>0.2700</radius>
+		<mass>0.2100</mass>
+		<planet>
+			<name>KOI-2705 b</name>
+			<name>KOI-2705 01</name>
+			<radius>0.12849</radius>
+			<period errorminus="4.5000000e-06" errorplus="4.5000000e-06">2.886762700000</period>
+			<transittime errorminus="0.0013000" errorplus="0.0013000">2454964.6652000</transittime>
+			<semimajoraxis>0.0240000</semimajoraxis>
+			<temperature>479.0</temperature>
+			<list>Kepler Objects of Interest</list>
+			<description>This is a Kepler Object of Interest from the Q1-Q12 dataset. It has been flagged as a possible transit event but has not been confirmed to be a planet yet.</description>
+			<istransiting>1</istransiting>
+		</planet>
+	</star>
+</system>

@@ -1,0 +1,25 @@
+<system>
+	<name>KOI-3009</name>
+	<rightascension>19 20 20</rightascension>
+	<declination>+51 12 30</declination>
+	<distance>775.36</distance>
+	<star>
+		<name>KOI-3009</name>
+		<temperature errorminus="88.00" errorplus="88.00">5187.00</temperature>
+		<radius errorminus="0.4500" errorplus="0.4500">0.7900</radius>
+		<mass errorminus="0.0680" errorplus="0.0680">0.7700</mass>
+		<age errorminus="3.9000" errorplus="3.9000">13.8000</age>
+		<planet>
+			<name>KOI-3009 b</name>
+			<name>KOI-3009 01</name>
+			<radius errorminus="0.06561" errorplus="0.06561">0.09569</radius>
+			<period errorminus="2.5000000e-06" errorplus="2.5000000e-06">0.764865100000</period>
+			<transittime errorminus="0.0017000" errorplus="0.0017000">2454965.1304000</transittime>
+			<semimajoraxis>0.0150000</semimajoraxis>
+			<temperature>1665.0</temperature>
+			<list>Kepler Objects of Interest</list>
+			<description>This is a Kepler Object of Interest from the Q1-Q12 dataset. It has been flagged as a possible transit event but has not been confirmed to be a planet yet.</description>
+			<istransiting>1</istransiting>
+		</planet>
+	</star>
+</system>

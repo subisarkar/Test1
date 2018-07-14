@@ -1,0 +1,28 @@
+<system>
+	<name>KOI-1937</name>
+	<rightascension>18 54 52</rightascension>
+	<declination>+47 12 16</declination>
+	<distance>192.83</distance>
+	<star>
+		<magJ errorminus="0.022" errorplus="0.022">11.767</magJ>
+		<magH errorminus="0.019" errorplus="0.019">11.166</magH>
+		<magK errorminus="0.017" errorplus="0.017">11.003</magK>
+		<name>KOI-1937</name>
+		<temperature errorminus="62.00" errorplus="62.00">4368.00</temperature>
+		<radius errorminus="0.0110" errorplus="0.0110">0.5730</radius>
+		<mass errorminus="0.0140" errorplus="0.0140">0.6050</mass>
+		<age errorminus="3.6000" errorplus="3.6000">13.6000</age>
+		<planet>
+			<name>KOI-1937 b</name>
+			<name>KOI-1937 01</name>
+			<radius errorminus="0.00547" errorplus="0.00547">0.11847</radius>
+			<period errorminus="3.5000000e-06" errorplus="3.5000000e-06">1.411226500000</period>
+			<transittime errorminus="0.0005000" errorplus="0.0005000">2454965.6417700</transittime>
+			<semimajoraxis>0.0210000</semimajoraxis>
+			<temperature>1006.0</temperature>
+			<list>Kepler Objects of Interest</list>
+			<description>This is a Kepler Object of Interest from the Q1-Q12 dataset. It has been flagged as a possible transit event but has not been confirmed to be a planet yet.</description>
+			<istransiting>1</istransiting>
+		</planet>
+	</star>
+</system>

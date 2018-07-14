@@ -1,0 +1,25 @@
+<system>
+	<name>KOI-3060</name>
+	<rightascension>19 06 19</rightascension>
+	<declination>+48 32 39</declination>
+	<distance>623.43</distance>
+	<star>
+		<name>KOI-3060</name>
+		<temperature errorminus="80.00" errorplus="80.00">6528.00</temperature>
+		<radius errorminus="0.5500" errorplus="0.5500">1.2000</radius>
+		<mass errorminus="0.1500" errorplus="0.1500">1.2100</mass>
+		<age errorminus="0.7700" errorplus="0.7700">0.9500</age>
+		<planet>
+			<name>KOI-3060 b</name>
+			<name>KOI-3060 01</name>
+			<radius errorminus="0.04374" errorplus="0.04374">0.06470</radius>
+			<period errorminus="7.8000000e-05" errorplus="7.8000000e-05">6.913110000000</period>
+			<transittime errorminus="0.0072000" errorplus="0.0072000">2454971.4245000</transittime>
+			<semimajoraxis>0.0760000</semimajoraxis>
+			<temperature>1142.0</temperature>
+			<list>Kepler Objects of Interest</list>
+			<description>This is a Kepler Object of Interest from the Q1-Q12 dataset. It has been flagged as a possible transit event but has not been confirmed to be a planet yet.</description>
+			<istransiting>1</istransiting>
+		</planet>
+	</star>
+</system>

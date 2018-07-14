@@ -1,0 +1,28 @@
+<system>
+	<name>KOI-0801</name>
+	<rightascension>19 35 29</rightascension>
+	<declination>+38 25 22</declination>
+	<distance>1053.21</distance>
+	<star>
+		<magJ errorminus="0.026" errorplus="0.026">13.656</magJ>
+		<magH errorminus="0.029" errorplus="0.029">13.355</magH>
+		<magK errorminus="0.04" errorplus="0.04">13.31</magK>
+		<name>KOI-0801</name>
+		<temperature errorminus="129.00" errorplus="129.00">5612.00</temperature>
+		<radius errorminus="0.5300" errorplus="0.5300">0.9900</radius>
+		<mass errorminus="0.1300" errorplus="0.1300">0.8700</mass>
+		<age errorminus="3.5000" errorplus="3.5000">11.3000</age>
+		<planet>
+			<name>KOI-0801 b</name>
+			<name>KOI-0801 01</name>
+			<radius errorminus="0.42831" errorplus="0.42831">0.79283</radius>
+			<period errorminus="6.2000000e-07" errorplus="6.2000000e-07">1.625523430000</period>
+			<transittime errorminus="0.0000880" errorplus="0.0000880">2455003.8256880</transittime>
+			<semimajoraxis>0.0260000</semimajoraxis>
+			<temperature>1524.0</temperature>
+			<list>Kepler Objects of Interest</list>
+			<description>This is a Kepler Object of Interest from the Q1-Q12 dataset. It has been flagged as a possible transit event but has not been confirmed to be a planet yet.</description>
+			<istransiting>1</istransiting>
+		</planet>
+	</star>
+</system>

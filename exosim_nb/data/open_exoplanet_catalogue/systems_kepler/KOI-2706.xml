@@ -1,0 +1,30 @@
+<system>
+	<name>KOI-2706</name>
+	<rightascension>19 00 18</rightascension>
+	<declination>+46 25 10</declination>
+	<distance>251.07</distance>
+	<star>
+		<magB errorminus="0.05" errorplus="0.05">10.80</magB>
+		<magV errorminus="0.04" errorplus="0.04">10.28</magV>
+		<magJ errorminus="0.021" errorplus="0.021">9.381</magJ>
+		<magH errorminus="0.015" errorplus="0.015">9.181</magH>
+		<magK errorminus="0.019" errorplus="0.019">9.109</magK>
+		<name>KOI-2706</name>
+		<temperature errorminus="69.00" errorplus="69.00">6491.00</temperature>
+		<radius errorminus="0.7300" errorplus="0.7300">1.5600</radius>
+		<mass errorminus="0.1800" errorplus="0.1800">1.2700</mass>
+		<age errorminus="0.7100" errorplus="0.7100">2.9400</age>
+		<planet>
+			<name>KOI-2706 b</name>
+			<name>KOI-2706 01</name>
+			<radius errorminus="0.07746" errorplus="0.07746">0.13214</radius>
+			<period errorminus="9.8000000e-06" errorplus="9.8000000e-06">3.097588700000</period>
+			<transittime errorminus="0.0022000" errorplus="0.0022000">2454964.5558000</transittime>
+			<semimajoraxis>0.0450000</semimajoraxis>
+			<temperature>1687.0</temperature>
+			<list>Kepler Objects of Interest</list>
+			<description>This is a Kepler Object of Interest from the Q1-Q12 dataset. It has been flagged as a possible transit event but has not been confirmed to be a planet yet.</description>
+			<istransiting>1</istransiting>
+		</planet>
+	</star>
+</system>

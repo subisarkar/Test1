@@ -1,0 +1,25 @@
+<system>
+	<name>KOI-2647</name>
+	<rightascension>19 23 57</rightascension>
+	<declination>+50 18 29</declination>
+	<distance>818.20</distance>
+	<star>
+		<name>KOI-2647</name>
+		<temperature errorminus="92.00" errorplus="92.00">5278.00</temperature>
+		<radius errorminus="0.5800" errorplus="0.5800">0.8300</radius>
+		<mass errorminus="0.1100" errorplus="0.1100">0.7900</mass>
+		<age errorminus="3.2000" errorplus="3.2000">13.7000</age>
+		<planet>
+			<name>KOI-2647 b</name>
+			<name>KOI-2647 01</name>
+			<radius errorminus="0.09113" errorplus="0.09113">0.12758</radius>
+			<period errorminus="1.5000000e-04" errorplus="1.5000000e-04">8.839150000000</period>
+			<transittime errorminus="0.0060000" errorplus="0.0060000">2454968.5501000</transittime>
+			<semimajoraxis>0.0770000</semimajoraxis>
+			<temperature>766.0</temperature>
+			<list>Kepler Objects of Interest</list>
+			<description>This is a Kepler Object of Interest from the Q1-Q12 dataset. It has been flagged as a possible transit event but has not been confirmed to be a planet yet.</description>
+			<istransiting>1</istransiting>
+		</planet>
+	</star>
+</system>

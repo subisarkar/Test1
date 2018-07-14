@@ -1,0 +1,27 @@
+<system>
+	<name>KOI-3049</name>
+	<rightascension>18 51 59</rightascension>
+	<declination>+41 40 42</declination>
+	<distance>461.03</distance>
+	<star>
+		<magJ>13.407</magJ>
+		<magK>12.755</magK>
+		<name>KOI-3049</name>
+		<temperature errorminus="59.00" errorplus="59.00">4672.00</temperature>
+		<radius errorminus="0.0140" errorplus="0.0140">0.6150</radius>
+		<mass errorminus="0.0160" errorplus="0.0160">0.6930</mass>
+		<age errorminus="3.7000" errorplus="3.7000">1.8000</age>
+		<planet>
+			<name>KOI-3049 b</name>
+			<name>KOI-3049 01</name>
+			<radius errorminus="0.06015" errorplus="0.06015">0.12576</radius>
+			<period errorminus="2.2000000e-04" errorplus="2.2000000e-04">22.476970000000</period>
+			<transittime errorminus="0.0069000" errorplus="0.0069000">2454969.8163000</transittime>
+			<semimajoraxis>0.1380000</semimajoraxis>
+			<temperature>435.0</temperature>
+			<list>Kepler Objects of Interest</list>
+			<description>This is a Kepler Object of Interest from the Q1-Q12 dataset. It has been flagged as a possible transit event but has not been confirmed to be a planet yet.</description>
+			<istransiting>1</istransiting>
+		</planet>
+	</star>
+</system>

@@ -1,0 +1,66 @@
+<system>
+	<name>KOI-0701</name>
+	<rightascension>18 52 51</rightascension>
+	<declination>+45 20 59</declination>
+	<distance>260.66</distance>
+	<star>
+		<magB>14.4</magB>
+		<magV>13.8</magV>
+		<magJ errorminus="0.022" errorplus="0.022">12.256</magJ>
+		<magH errorminus="0.019" errorplus="0.019">11.739</magH>
+		<magK errorminus="0.021" errorplus="0.021">11.659</magK>
+		<name>KOI-0701</name>
+		<temperature errorminus="50.00" errorplus="50.00">4807.00</temperature>
+		<radius errorminus="0.0180" errorplus="0.0180">0.6010</radius>
+		<mass errorminus="0.0180" errorplus="0.0180">0.6460</mass>
+		<age errorminus="3.7000" errorplus="3.7000">9.8000</age>
+		<planet>
+			<name>KOI-0701 b</name>
+			<name>KOI-0701 01</name>
+			<radius errorminus="0.00820" errorplus="0.00820">0.17406</radius>
+			<period errorminus="2.9000000e-05" errorplus="2.9000000e-05">18.164064000000</period>
+			<transittime errorminus="0.0008500" errorplus="0.0008500">2455013.8116900</transittime>
+			<semimajoraxis>0.1170000</semimajoraxis>
+			<temperature>481.0</temperature>
+			<list>Kepler Objects of Interest</list>
+			<description>This is a Kepler Object of Interest from the Q1-Q12 dataset. It has been flagged as a possible transit event but has not been confirmed to be a planet yet.</description>
+			<istransiting>1</istransiting>
+		</planet>
+		<planet>
+			<name>KOI-0701 c</name>
+			<name>KOI-0701 02</name>
+			<radius errorminus="0.00456" errorplus="0.00456">0.11209</radius>
+			<period errorminus="1.1000000e-05" errorplus="1.1000000e-05">5.714932000000</period>
+			<transittime errorminus="0.0009800" errorplus="0.0009800">2455003.9188700</transittime>
+			<semimajoraxis>0.0540000</semimajoraxis>
+			<temperature>707.0</temperature>
+			<list>Kepler Objects of Interest</list>
+			<description>This is a Kepler Object of Interest from the Q1-Q12 dataset. It has been flagged as a possible transit event but has not been confirmed to be a planet yet.</description>
+			<istransiting>1</istransiting>
+		</planet>
+		<planet>
+			<name>KOI-0701 d</name>
+			<name>KOI-0701 03</name>
+			<radius errorminus="0.00638" errorplus="0.00638">0.14034</radius>
+			<period errorminus="7.7000000e-04" errorplus="7.7000000e-04">122.387420000000</period>
+			<transittime errorminus="0.0032000" errorplus="0.0032000">2454983.4041000</transittime>
+			<semimajoraxis>0.4170000</semimajoraxis>
+			<temperature>255.0</temperature>
+			<list>Kepler Objects of Interest</list>
+			<description>This is a Kepler Object of Interest from the Q1-Q12 dataset. It has been flagged as a possible transit event but has not been confirmed to be a planet yet.</description>
+			<istransiting>1</istransiting>
+		</planet>
+		<planet>
+			<name>KOI-0701 f</name>
+			<name>KOI-0701 05</name>
+			<radius errorminus="0.04356" errorplus="0.04356">0.06425</radius>
+			<period errorminus="1.2600000e-04" errorplus="1.2600000e-04">12.441687100000</period>
+			<transittime errorminus="0.0079800" errorplus="0.0079800">2454967.6580400</transittime>
+			<semimajoraxis errorminus="6.11e-07" errorplus="6.11e-07">0.0904119</semimajoraxis>
+			<temperature errorminus="21.6" errorplus="21.6">568.7</temperature>
+			<list>Kepler Objects of Interest</list>
+			<description>This is a Kepler Object of Interest from the Q1-Q12 dataset. It has been flagged as a possible transit event but has not been confirmed to be a planet yet.</description>
+			<istransiting>1</istransiting>
+		</planet>
+	</star>
+</system>

@@ -1,0 +1,54 @@
+<system>
+	<name>KOI-0279</name>
+	<rightascension>19 41 56</rightascension>
+	<declination>+51 00 48</declination>
+	<distance>395.65</distance>
+	<star>
+		<magB errorminus="0.12" errorplus="0.12">11.99</magB>
+		<magV errorminus="0.19" errorplus="0.19">11.99</magV>
+		<magJ errorminus="0.019" errorplus="0.019">10.708</magJ>
+		<magH errorminus="0.018" errorplus="0.018">10.472</magH>
+		<magK errorminus="0.017" errorplus="0.017">10.429</magK>
+		<name>KOI-0279</name>
+		<temperature errorminus="66.00" errorplus="66.00">6418.00</temperature>
+		<radius errorminus="0.4000" errorplus="0.4000">1.3100</radius>
+		<mass errorminus="0.1100" errorplus="0.1100">1.1800</mass>
+		<age errorminus="0.6200" errorplus="0.6200">2.8700</age>
+		<planet>
+			<name>KOI-0279 b</name>
+			<name>KOI-0279 01</name>
+			<radius errorminus="0.14581" errorplus="0.14581">0.46476</radius>
+			<period errorminus="1.8000000e-05" errorplus="1.8000000e-05">28.454899000000</period>
+			<transittime errorminus="0.0004100" errorplus="0.0004100">2455009.7055500</transittime>
+			<semimajoraxis>0.1930000</semimajoraxis>
+			<temperature>737.0</temperature>
+			<list>Kepler Objects of Interest</list>
+			<description>This is a Kepler Object of Interest from the Q1-Q12 dataset. It has been flagged as a possible transit event but has not been confirmed to be a planet yet.</description>
+			<istransiting>1</istransiting>
+		</planet>
+		<planet>
+			<name>KOI-0279 c</name>
+			<name>KOI-0279 02</name>
+			<radius errorminus="0.07017" errorplus="0.07017">0.22783</radius>
+			<period errorminus="4.1000000e-05" errorplus="4.1000000e-05">15.413121000000</period>
+			<transittime errorminus="0.0019000" errorplus="0.0019000">2454969.9402000</transittime>
+			<semimajoraxis>0.1280000</semimajoraxis>
+			<temperature>905.0</temperature>
+			<list>Kepler Objects of Interest</list>
+			<description>This is a Kepler Object of Interest from the Q1-Q12 dataset. It has been flagged as a possible transit event but has not been confirmed to be a planet yet.</description>
+			<istransiting>1</istransiting>
+		</planet>
+		<planet>
+			<name>KOI-0279 d</name>
+			<name>KOI-0279 03</name>
+			<radius errorminus="0.08566" errorplus="0.08566">0.07108</radius>
+			<period errorminus="8.6000000e-05" errorplus="8.6000000e-05">7.514646000000</period>
+			<transittime errorminus="0.0064000" errorplus="0.0064000">2454969.1570000</transittime>
+			<semimajoraxis errorminus="6.00e-07" errorplus="6.00e-07">0.0792781</semimajoraxis>
+			<temperature errorminus="174.0" errorplus="174.0">1150.0</temperature>
+			<list>Kepler Objects of Interest</list>
+			<description>This is a Kepler Object of Interest from the Q1-Q12 dataset. It has been flagged as a possible transit event but has not been confirmed to be a planet yet.</description>
+			<istransiting>1</istransiting>
+		</planet>
+	</star>
+</system>

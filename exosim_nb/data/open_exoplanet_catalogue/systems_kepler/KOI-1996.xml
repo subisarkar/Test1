@@ -1,0 +1,27 @@
+<system>
+	<name>KOI-1996</name>
+	<rightascension>19 14 40</rightascension>
+	<declination>+39 49 26</declination>
+	<distance>789.14</distance>
+	<star>
+		<magJ errorminus="0.023" errorplus="0.023">14.022</magJ>
+		<magH errorminus="0.027" errorplus="0.027">13.440</magH>
+		<magK errorminus="0.04" errorplus="0.04">13.37</magK>
+		<name>KOI-1996</name>
+		<temperature errorminus="200.00" errorplus="200.00">4619.00</temperature>
+		<radius errorminus="0.3000" errorplus="0.3000">0.8200</radius>
+		<mass errorminus="0.3000" errorplus="0.3000">0.8000</mass>
+		<planet>
+			<name>KOI-1996 b</name>
+			<name>KOI-1996 01</name>
+			<radius errorminus="0.08657" errorplus="0.08657">0.21962</radius>
+			<period errorminus="1.3000000e-04" errorplus="1.3000000e-04">10.131950000000</period>
+			<transittime errorminus="0.0058000" errorplus="0.0058000">2454965.9127000</transittime>
+			<semimajoraxis>0.0850000</semimajoraxis>
+			<temperature>634.0</temperature>
+			<list>Kepler Objects of Interest</list>
+			<description>This is a Kepler Object of Interest from the Q1-Q12 dataset. It has been flagged as a possible transit event but has not been confirmed to be a planet yet.</description>
+			<istransiting>1</istransiting>
+		</planet>
+	</star>
+</system>

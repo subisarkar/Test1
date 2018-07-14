@@ -1,0 +1,28 @@
+<system>
+	<name>KOI-2023</name>
+	<rightascension>19 51 48</rightascension>
+	<declination>+44 40 02</declination>
+	<distance>917.39</distance>
+	<star>
+		<magJ errorminus="0.021" errorplus="0.021">13.715</magJ>
+		<magH errorminus="0.023" errorplus="0.023">13.379</magH>
+		<magK errorminus="0.029" errorplus="0.029">13.244</magK>
+		<name>KOI-2023</name>
+		<temperature errorminus="103.00" errorplus="103.00">5368.00</temperature>
+		<radius errorminus="0.3700" errorplus="0.3700">0.8800</radius>
+		<mass errorminus="0.0580" errorplus="0.0580">0.8070</mass>
+		<age errorminus="4.0000" errorplus="4.0000">13.8000</age>
+		<planet>
+			<name>KOI-2023 b</name>
+			<name>KOI-2023 01</name>
+			<radius errorminus="0.08657" errorplus="0.08657">0.20049</radius>
+			<period errorminus="1.4000000e-04" errorplus="1.4000000e-04">13.590530000000</period>
+			<transittime errorminus="0.0040000" errorplus="0.0040000">2454966.0717000</transittime>
+			<semimajoraxis>0.1040000</semimajoraxis>
+			<temperature>690.0</temperature>
+			<list>Kepler Objects of Interest</list>
+			<description>This is a Kepler Object of Interest from the Q1-Q12 dataset. It has been flagged as a possible transit event but has not been confirmed to be a planet yet.</description>
+			<istransiting>1</istransiting>
+		</planet>
+	</star>
+</system>

@@ -1,0 +1,25 @@
+<system>
+	<name>KOI-2520</name>
+	<rightascension>18 58 20</rightascension>
+	<declination>+47 04 46</declination>
+	<distance>650.02</distance>
+	<star>
+		<name>KOI-2520</name>
+		<temperature errorminus="69.00" errorplus="69.00">4727.00</temperature>
+		<radius errorminus="0.0170" errorplus="0.0170">0.6530</radius>
+		<mass errorminus="0.0180" errorplus="0.0180">0.6760</mass>
+		<age errorminus="3.7000" errorplus="3.7000">13.8000</age>
+		<planet>
+			<name>KOI-2520 b</name>
+			<name>KOI-2520 01</name>
+			<radius errorminus="0.03919" errorplus="0.03919">0.11847</radius>
+			<period errorminus="9.9000000e-05" errorplus="9.9000000e-05">6.494474000000</period>
+			<transittime errorminus="0.0055000" errorplus="0.0055000">2454965.2452000</transittime>
+			<semimajoraxis>0.0600000</semimajoraxis>
+			<temperature>688.0</temperature>
+			<list>Kepler Objects of Interest</list>
+			<description>This is a Kepler Object of Interest from the Q1-Q12 dataset. It has been flagged as a possible transit event but has not been confirmed to be a planet yet.</description>
+			<istransiting>1</istransiting>
+		</planet>
+	</star>
+</system>

@@ -1,0 +1,40 @@
+<system>
+	<name>KOI-1970</name>
+	<rightascension>19 29 59</rightascension>
+	<declination>+46 19 27</declination>
+	<distance>1276.30</distance>
+	<star>
+		<magJ errorminus="0.025" errorplus="0.025">14.082</magJ>
+		<magH errorminus="0.03" errorplus="0.03">13.71</magH>
+		<magK errorminus="0.05" errorplus="0.05">13.66</magK>
+		<name>KOI-1970</name>
+		<temperature errorminus="107.00" errorplus="107.00">5752.00</temperature>
+		<radius errorminus="0.7200" errorplus="0.7200">0.9600</radius>
+		<mass errorminus="0.2000" errorplus="0.2000">0.9300</mass>
+		<age errorminus="3.2000" errorplus="3.2000">6.6000</age>
+		<planet>
+			<name>KOI-1970 b</name>
+			<name>KOI-1970 01</name>
+			<radius errorminus="0.20960" errorplus="0.20960">0.27339</radius>
+			<period errorminus="2.2000000e-04" errorplus="2.2000000e-04">21.963940000000</period>
+			<transittime errorminus="0.0037000" errorplus="0.0037000">2454966.0368000</transittime>
+			<semimajoraxis>0.1500000</semimajoraxis>
+			<temperature>641.0</temperature>
+			<list>Kepler Objects of Interest</list>
+			<description>This is a Kepler Object of Interest from the Q1-Q12 dataset. It has been flagged as a possible transit event but has not been confirmed to be a planet yet.</description>
+			<istransiting>1</istransiting>
+		</planet>
+		<planet>
+			<name>KOI-1970 c</name>
+			<name>KOI-1970 02</name>
+			<radius errorminus="0.21871" errorplus="0.21871">0.28250</radius>
+			<period errorminus="3.2000000e-03" errorplus="3.2000000e-03">125.596300000000</period>
+			<transittime errorminus="0.0080000" errorplus="0.0080000">2455048.4434000</transittime>
+			<semimajoraxis>0.4790000</semimajoraxis>
+			<temperature>359.0</temperature>
+			<list>Kepler Objects of Interest</list>
+			<description>This is a Kepler Object of Interest from the Q1-Q12 dataset. It has been flagged as a possible transit event but has not been confirmed to be a planet yet.</description>
+			<istransiting>1</istransiting>
+		</planet>
+	</star>
+</system>

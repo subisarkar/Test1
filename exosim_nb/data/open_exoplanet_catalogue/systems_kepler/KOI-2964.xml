@@ -1,0 +1,25 @@
+<system>
+	<name>KOI-2964</name>
+	<rightascension>19 58 42</rightascension>
+	<declination>+47 04 33</declination>
+	<distance>750.68</distance>
+	<star>
+		<name>KOI-2964</name>
+		<temperature errorminus="91.00" errorplus="91.00">5905.00</temperature>
+		<radius errorminus="0.4100" errorplus="0.4100">0.9700</radius>
+		<mass errorminus="0.0840" errorplus="0.0840">0.9820</mass>
+		<age errorminus="2.4000" errorplus="2.4000">4.0000</age>
+		<planet>
+			<name>KOI-2964 b</name>
+			<name>KOI-2964 01</name>
+			<radius errorminus="0.08293" errorplus="0.08293">0.14399</radius>
+			<period errorminus="8.0000000e-04" errorplus="8.0000000e-04">47.449490000000</period>
+			<transittime errorminus="0.0120000" errorplus="0.0120000">2455006.4550000</transittime>
+			<semimajoraxis>0.2550000</semimajoraxis>
+			<temperature>509.0</temperature>
+			<list>Kepler Objects of Interest</list>
+			<description>This is a Kepler Object of Interest from the Q1-Q12 dataset. It has been flagged as a possible transit event but has not been confirmed to be a planet yet.</description>
+			<istransiting>1</istransiting>
+		</planet>
+	</star>
+</system>

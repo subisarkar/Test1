@@ -1,0 +1,52 @@
+<system>
+	<name>KOI-1426</name>
+	<rightascension>18 52 50</rightascension>
+	<declination>+48 46 39</declination>
+	<distance>928.82</distance>
+	<star>
+		<magJ errorminus="0.025" errorplus="0.025">13.122</magJ>
+		<magH errorminus="0.023" errorplus="0.023">12.785</magH>
+		<magK errorminus="0.03" errorplus="0.03">12.78</magK>
+		<name>KOI-1426</name>
+		<temperature errorminus="95.00" errorplus="95.00">6138.00</temperature>
+		<radius errorminus="0.4400" errorplus="0.4400">1.0400</radius>
+		<mass errorminus="0.1100" errorplus="0.1100">1.0700</mass>
+		<age errorminus="1.4000" errorplus="1.4000">1.9000</age>
+		<planet>
+			<name>KOI-1426 b</name>
+			<name>KOI-1426 01</name>
+			<radius errorminus="0.12758" errorplus="0.12758">0.29162</radius>
+			<period errorminus="1.2000000e-04" errorplus="1.2000000e-04">38.871350000000</period>
+			<transittime errorminus="0.0020000" errorplus="0.0020000">2455004.2913000</transittime>
+			<semimajoraxis>0.2300000</semimajoraxis>
+			<temperature>575.0</temperature>
+			<list>Kepler Objects of Interest</list>
+			<description>This is a Kepler Object of Interest from the Q1-Q12 dataset. It has been flagged as a possible transit event but has not been confirmed to be a planet yet.</description>
+			<istransiting>1</istransiting>
+		</planet>
+		<planet>
+			<name>KOI-1426 c</name>
+			<name>KOI-1426 02</name>
+			<radius errorminus="0.29162" errorplus="0.29162">0.70170</radius>
+			<period errorminus="9.0000000e-05" errorplus="9.0000000e-05">74.920119000000</period>
+			<transittime errorminus="0.0008900" errorplus="0.0008900">2454958.0371500</transittime>
+			<semimajoraxis>0.3550000</semimajoraxis>
+			<temperature>463.0</temperature>
+			<list>Kepler Objects of Interest</list>
+			<description>This is a Kepler Object of Interest from the Q1-Q12 dataset. It has been flagged as a possible transit event but has not been confirmed to be a planet yet.</description>
+			<istransiting>1</istransiting>
+		</planet>
+		<planet>
+			<name>KOI-1426 d</name>
+			<name>KOI-1426 03</name>
+			<radius errorminus="0.66525" errorplus="0.66525">1.33962</radius>
+			<period errorminus="2.6000000e-04" errorplus="2.6000000e-04">150.019100000000</period>
+			<transittime errorminus="0.0010000" errorplus="0.0010000">2455057.6858000</transittime>
+			<semimajoraxis>0.5650000</semimajoraxis>
+			<temperature>367.0</temperature>
+			<list>Kepler Objects of Interest</list>
+			<description>This is a Kepler Object of Interest from the Q1-Q12 dataset. It has been flagged as a possible transit event but has not been confirmed to be a planet yet.</description>
+			<istransiting>1</istransiting>
+		</planet>
+	</star>
+</system>

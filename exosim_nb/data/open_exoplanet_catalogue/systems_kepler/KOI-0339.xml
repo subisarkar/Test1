@@ -1,0 +1,40 @@
+<system>
+	<name>KOI-0339</name>
+	<rightascension>19 03 33</rightascension>
+	<declination>+47 52 49</declination>
+	<distance>782.93</distance>
+	<star>
+		<magJ errorminus="0.021" errorplus="0.021">12.786</magJ>
+		<magH errorminus="0.022" errorplus="0.022">12.466</magH>
+		<magK errorminus="0.018" errorplus="0.018">12.418</magK>
+		<name>KOI-0339</name>
+		<temperature errorminus="73.00" errorplus="73.00">6278.00</temperature>
+		<radius errorminus="0.3000" errorplus="0.3000">1.0400</radius>
+		<mass errorminus="0.0750" errorplus="0.0750">1.1280</mass>
+		<age errorminus="1.0000" errorplus="1.0000">0.2000</age>
+		<planet>
+			<name>KOI-0339 b</name>
+			<name>KOI-0339 01</name>
+			<radius errorminus="0.05103" errorplus="0.05103">0.17497</radius>
+			<period errorminus="8.6000000e-06" errorplus="8.6000000e-06">1.980361900000</period>
+			<transittime errorminus="0.0011000" errorplus="0.0011000">2455003.1381000</transittime>
+			<semimajoraxis>0.0320000</semimajoraxis>
+			<temperature>1582.0</temperature>
+			<list>Kepler Objects of Interest</list>
+			<description>This is a Kepler Object of Interest from the Q1-Q12 dataset. It has been flagged as a possible transit event but has not been confirmed to be a planet yet.</description>
+			<istransiting>1</istransiting>
+		</planet>
+		<planet>
+			<name>KOI-0339 c</name>
+			<name>KOI-0339 02</name>
+			<radius errorminus="0.05468" errorplus="0.05468">0.18773</radius>
+			<period errorminus="1.3000000e-04" errorplus="1.3000000e-04">12.834040000000</period>
+			<transittime errorminus="0.0034000" errorplus="0.0034000">2454971.3331000</transittime>
+			<semimajoraxis>0.1120000</semimajoraxis>
+			<temperature>845.0</temperature>
+			<list>Kepler Objects of Interest</list>
+			<description>This is a Kepler Object of Interest from the Q1-Q12 dataset. It has been flagged as a possible transit event but has not been confirmed to be a planet yet.</description>
+			<istransiting>1</istransiting>
+		</planet>
+	</star>
+</system>

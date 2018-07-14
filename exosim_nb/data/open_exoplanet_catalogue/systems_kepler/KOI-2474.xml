@@ -1,0 +1,28 @@
+<system>
+	<name>KOI-2474</name>
+	<rightascension>19 37 35</rightascension>
+	<declination>+44 07 27</declination>
+	<distance>564.90</distance>
+	<star>
+		<magJ errorminus="0.021" errorplus="0.021">12.913</magJ>
+		<magH errorminus="0.018" errorplus="0.018">12.485</magH>
+		<magK errorminus="0.019" errorplus="0.019">12.424</magK>
+		<name>KOI-2474</name>
+		<temperature errorminus="71.00" errorplus="71.00">5521.00</temperature>
+		<radius errorminus="0.2900" errorplus="0.2900">0.8000</radius>
+		<mass errorminus="0.0520" errorplus="0.0520">0.9040</mass>
+		<age errorminus="4.1000" errorplus="4.1000">0.5000</age>
+		<planet>
+			<name>KOI-2474 b</name>
+			<name>KOI-2474 01</name>
+			<radius errorminus="0.07837" errorplus="0.07837">0.15128</radius>
+			<period errorminus="8.8000000e-03" errorplus="8.8000000e-03">176.830400000000</period>
+			<transittime errorminus="0.0120000" errorplus="0.0120000">2455030.3000000</transittime>
+			<semimajoraxis>0.5970000</semimajoraxis>
+			<temperature>282.0</temperature>
+			<list>Kepler Objects of Interest</list>
+			<description>This is a Kepler Object of Interest from the Q1-Q12 dataset. It has been flagged as a possible transit event but has not been confirmed to be a planet yet.</description>
+			<istransiting>1</istransiting>
+		</planet>
+	</star>
+</system>

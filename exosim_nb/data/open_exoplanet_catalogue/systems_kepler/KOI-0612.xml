@@ -1,0 +1,52 @@
+<system>
+	<name>KOI-0612</name>
+	<rightascension>18 59 52</rightascension>
+	<declination>+42 04 45</declination>
+	<distance>520.11</distance>
+	<star>
+		<magJ errorminus="0.022" errorplus="0.022">12.752</magJ>
+		<magH errorminus="0.019" errorplus="0.019">12.300</magH>
+		<magK errorminus="0.023" errorplus="0.023">12.235</magK>
+		<name>KOI-0612</name>
+		<temperature errorminus="99.00" errorplus="99.00">5231.00</temperature>
+		<radius errorminus="0.5400" errorplus="0.5400">0.8300</radius>
+		<mass errorminus="0.0910" errorplus="0.0910">0.7830</mass>
+		<age errorminus="3.1000" errorplus="3.1000">14.0000</age>
+		<planet>
+			<name>KOI-0612 b</name>
+			<name>KOI-0612 01</name>
+			<radius errorminus="0.12758" errorplus="0.12758">0.19137</radius>
+			<period errorminus="1.3000000e-04" errorplus="1.3000000e-04">20.740110000000</period>
+			<transittime errorminus="0.0022000" errorplus="0.0022000">2455006.2166000</transittime>
+			<semimajoraxis>0.1360000</semimajoraxis>
+			<temperature>569.0</temperature>
+			<list>Kepler Objects of Interest</list>
+			<description>This is a Kepler Object of Interest from the Q1-Q12 dataset. It has been flagged as a possible transit event but has not been confirmed to be a planet yet.</description>
+			<istransiting>1</istransiting>
+		</planet>
+		<planet>
+			<name>KOI-0612 c</name>
+			<name>KOI-0612 02</name>
+			<radius errorminus="0.13670" errorplus="0.13670">0.20960</radius>
+			<period errorminus="4.3000000e-04" errorplus="4.3000000e-04">47.426930000000</period>
+			<transittime errorminus="0.0031000" errorplus="0.0031000">2455049.5606000</transittime>
+			<semimajoraxis>0.2360000</semimajoraxis>
+			<temperature>432.0</temperature>
+			<list>Kepler Objects of Interest</list>
+			<description>This is a Kepler Object of Interest from the Q1-Q12 dataset. It has been flagged as a possible transit event but has not been confirmed to be a planet yet.</description>
+			<istransiting>1</istransiting>
+		</planet>
+		<planet>
+			<name>KOI-0612 d</name>
+			<name>KOI-0612 03</name>
+			<radius errorminus="0.45565" errorplus="0.45565">0.39459</radius>
+			<period errorminus="4.2220000e-04" errorplus="4.2220000e-04">122.079897700000</period>
+			<transittime errorminus="0.0031100" errorplus="0.0031100">2454988.0272400</transittime>
+			<semimajoraxis errorminus="1.08e-06" errorplus="1.08e-06">0.4695840</semimajoraxis>
+			<temperature errorminus="94.0" errorplus="94.0">419.1</temperature>
+			<list>Kepler Objects of Interest</list>
+			<description>This is a Kepler Object of Interest from the Q1-Q12 dataset. It has been flagged as a possible transit event but has not been confirmed to be a planet yet.</description>
+			<istransiting>1</istransiting>
+		</planet>
+	</star>
+</system>

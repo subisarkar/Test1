@@ -1,0 +1,25 @@
+<system>
+	<name>KOI-2958</name>
+	<rightascension>19 23 42</rightascension>
+	<declination>+47 53 14</declination>
+	<distance>1313.24</distance>
+	<star>
+		<name>KOI-2958</name>
+		<temperature errorminus="104.00" errorplus="104.00">6348.00</temperature>
+		<radius errorminus="0.4100" errorplus="0.4100">1.0800</radius>
+		<mass errorminus="0.1100" errorplus="0.1100">1.1500</mass>
+		<age errorminus="0.8400" errorplus="0.8400">0.3600</age>
+		<planet>
+			<name>KOI-2958 b</name>
+			<name>KOI-2958 01</name>
+			<radius errorminus="0.10936" errorplus="0.10936">0.19137</radius>
+			<period errorminus="2.5000000e-04" errorplus="2.5000000e-04">31.608540000000</period>
+			<transittime errorminus="0.0058000" errorplus="0.0058000">2454967.6808000</transittime>
+			<semimajoraxis>0.2050000</semimajoraxis>
+			<temperature>643.0</temperature>
+			<list>Kepler Objects of Interest</list>
+			<description>This is a Kepler Object of Interest from the Q1-Q12 dataset. It has been flagged as a possible transit event but has not been confirmed to be a planet yet.</description>
+			<istransiting>1</istransiting>
+		</planet>
+	</star>
+</system>

@@ -1,0 +1,25 @@
+<system>
+	<name>KOI-2900</name>
+	<rightascension>19 39 22</rightascension>
+	<declination>+39 55 07</declination>
+	<distance>845.54</distance>
+	<star>
+		<name>KOI-2900</name>
+		<temperature errorminus="87.00" errorplus="87.00">5230.00</temperature>
+		<radius errorminus="0.5700" errorplus="0.5700">0.8100</radius>
+		<mass errorminus="0.0980" errorplus="0.0980">0.7780</mass>
+		<age errorminus="3.5000" errorplus="3.5000">13.9000</age>
+		<planet>
+			<name>KOI-2900 b</name>
+			<name>KOI-2900 01</name>
+			<radius errorminus="0.17315" errorplus="0.17315">0.25516</radius>
+			<period errorminus="5.3000000e-04" errorplus="5.3000000e-04">46.151030000000</period>
+			<transittime errorminus="0.0073000" errorplus="0.0073000">2454980.8162000</transittime>
+			<semimajoraxis>0.2320000</semimajoraxis>
+			<temperature>432.0</temperature>
+			<list>Kepler Objects of Interest</list>
+			<description>This is a Kepler Object of Interest from the Q1-Q12 dataset. It has been flagged as a possible transit event but has not been confirmed to be a planet yet.</description>
+			<istransiting>1</istransiting>
+		</planet>
+	</star>
+</system>

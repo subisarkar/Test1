@@ -1,0 +1,28 @@
+<system>
+	<name>KOI-1339</name>
+	<rightascension>18 58 19</rightascension>
+	<declination>+39 13 12</declination>
+	<distance>959.79</distance>
+	<star>
+		<magJ errorminus="0.025" errorplus="0.025">13.619</magJ>
+		<magH errorminus="0.028" errorplus="0.028">13.246</magH>
+		<magK errorminus="0.03" errorplus="0.03">13.19</magK>
+		<name>KOI-1339</name>
+		<temperature errorminus="144.00" errorplus="144.00">5554.00</temperature>
+		<radius errorminus="0.5800" errorplus="0.5800">1.0100</radius>
+		<mass errorminus="0.1600" errorplus="0.1600">0.8500</mass>
+		<age errorminus="3.4000" errorplus="3.4000">13.5000</age>
+		<planet>
+			<name>KOI-1339 b</name>
+			<name>KOI-1339 01</name>
+			<radius errorminus="0.08749" errorplus="0.08749">0.15036</radius>
+			<period errorminus="5.5000000e-05" errorplus="5.5000000e-05">4.168078000000</period>
+			<transittime errorminus="0.0045000" errorplus="0.0045000">2454967.8999000</transittime>
+			<semimajoraxis>0.0480000</semimajoraxis>
+			<temperature>1123.0</temperature>
+			<list>Kepler Objects of Interest</list>
+			<description>This is a Kepler Object of Interest from the Q1-Q12 dataset. It has been flagged as a possible transit event but has not been confirmed to be a planet yet.</description>
+			<istransiting>1</istransiting>
+		</planet>
+	</star>
+</system>

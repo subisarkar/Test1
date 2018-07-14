@@ -1,0 +1,28 @@
+<system>
+	<name>KOI-0525</name>
+	<rightascension>20 03 37</rightascension>
+	<declination>+45 27 28</declination>
+	<distance>1024.16</distance>
+	<star>
+		<magJ errorminus="0.022" errorplus="0.022">13.229</magJ>
+		<magH errorminus="0.022" errorplus="0.022">12.903</magH>
+		<magK errorminus="0.027" errorplus="0.027">12.795</magK>
+		<name>KOI-0525</name>
+		<temperature errorminus="108.00" errorplus="108.00">5736.00</temperature>
+		<radius errorminus="0.4000" errorplus="0.4000">1.1400</radius>
+		<mass errorminus="0.1000" errorplus="0.1000">0.9200</mass>
+		<age errorminus="2.5000" errorplus="2.5000">11.0000</age>
+		<planet>
+			<name>KOI-0525 b</name>
+			<name>KOI-0525 01</name>
+			<radius errorminus="0.16403" errorplus="0.16403">0.45565</radius>
+			<period errorminus="4.9000000e-05" errorplus="4.9000000e-05">11.531837000000</period>
+			<transittime errorminus="0.0014000" errorplus="0.0014000">2455006.6833000</transittime>
+			<semimajoraxis>0.0970000</semimajoraxis>
+			<temperature>865.0</temperature>
+			<list>Kepler Objects of Interest</list>
+			<description>This is a Kepler Object of Interest from the Q1-Q12 dataset. It has been flagged as a possible transit event but has not been confirmed to be a planet yet.</description>
+			<istransiting>1</istransiting>
+		</planet>
+	</star>
+</system>

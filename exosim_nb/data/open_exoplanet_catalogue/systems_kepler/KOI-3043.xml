@@ -1,0 +1,37 @@
+<system>
+	<name>KOI-3043</name>
+	<rightascension>19 33 43</rightascension>
+	<declination>+46 41 31</declination>
+	<distance>1025.31</distance>
+	<star>
+		<name>KOI-3043</name>
+		<temperature errorminus="81.00" errorplus="81.00">5976.00</temperature>
+		<radius errorminus="0.3000" errorplus="0.3000">0.9200</radius>
+		<mass errorminus="0.0600" errorplus="0.0600">1.0270</mass>
+		<age errorminus="2.4000" errorplus="2.4000">0.3000</age>
+		<planet>
+			<name>KOI-3043 b</name>
+			<name>KOI-3043 01</name>
+			<radius errorminus="0.04283" errorplus="0.04283">0.08202</radius>
+			<period errorminus="2.4000000e-05" errorplus="2.4000000e-05">3.089423000000</period>
+			<transittime errorminus="0.0048000" errorplus="0.0048000">2454967.2078000</transittime>
+			<semimajoraxis>0.0420000</semimajoraxis>
+			<temperature>1236.0</temperature>
+			<list>Kepler Objects of Interest</list>
+			<description>This is a Kepler Object of Interest from the Q1-Q12 dataset. It has been flagged as a possible transit event but has not been confirmed to be a planet yet.</description>
+			<istransiting>1</istransiting>
+		</planet>
+		<planet>
+			<name>KOI-3043 c</name>
+			<name>KOI-3043 02</name>
+			<radius errorminus="0.08475" errorplus="0.08475">0.09933</radius>
+			<period errorminus="9.3000000e-05" errorplus="9.3000000e-05">7.292762000000</period>
+			<transittime errorminus="0.0073000" errorplus="0.0073000">2454968.6475000</transittime>
+			<semimajoraxis errorminus="6.30e-07" errorplus="6.30e-07">0.0742574</semimajoraxis>
+			<temperature errorminus="152.0" errorplus="152.0">929.0</temperature>
+			<list>Kepler Objects of Interest</list>
+			<description>This is a Kepler Object of Interest from the Q1-Q12 dataset. It has been flagged as a possible transit event but has not been confirmed to be a planet yet.</description>
+			<istransiting>1</istransiting>
+		</planet>
+	</star>
+</system>

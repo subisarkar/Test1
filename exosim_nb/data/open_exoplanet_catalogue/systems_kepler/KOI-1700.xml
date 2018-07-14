@@ -1,0 +1,28 @@
+<system>
+	<name>KOI-1700</name>
+	<rightascension>19 48 31</rightascension>
+	<declination>+42 46 05</declination>
+	<distance>1288.03</distance>
+	<star>
+		<magJ errorminus="0.023" errorplus="0.023">12.927</magJ>
+		<magH errorminus="0.021" errorplus="0.021">12.427</magH>
+		<magK errorminus="0.023" errorplus="0.023">12.380</magK>
+		<name>KOI-1700</name>
+		<temperature errorminus="75.00" errorplus="75.00">4996.00</temperature>
+		<radius errorminus="0.2700" errorplus="0.2700">1.9500</radius>
+		<mass errorminus="0.0540" errorplus="0.0540">0.9170</mass>
+		<age errorminus="2.0000" errorplus="2.0000">13.9000</age>
+		<planet>
+			<name>KOI-1700 b</name>
+			<name>KOI-1700 01</name>
+			<radius errorminus="0.06288" errorplus="0.06288">0.33718</radius>
+			<period errorminus="8.5000000e-05" errorplus="8.5000000e-05">8.037617000000</period>
+			<transittime errorminus="0.0039000" errorplus="0.0039000">2454972.3535000</transittime>
+			<semimajoraxis>0.0760000</semimajoraxis>
+			<temperature>1117.0</temperature>
+			<list>Kepler Objects of Interest</list>
+			<description>This is a Kepler Object of Interest from the Q1-Q12 dataset. It has been flagged as a possible transit event but has not been confirmed to be a planet yet.</description>
+			<istransiting>1</istransiting>
+		</planet>
+	</star>
+</system>

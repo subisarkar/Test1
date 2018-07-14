@@ -1,0 +1,40 @@
+<system>
+	<name>KOI-0555</name>
+	<rightascension>19 32 29</rightascension>
+	<declination>+40 56 05</declination>
+	<distance>750.63</distance>
+	<star>
+		<magJ errorminus="0.023" errorplus="0.023">13.410</magJ>
+		<magH errorminus="0.025" errorplus="0.025">12.977</magH>
+		<magK errorminus="0.029" errorplus="0.029">12.931</magK>
+		<name>KOI-0555</name>
+		<temperature errorminus="44.00" errorplus="44.00">5245.00</temperature>
+		<radius errorminus="0.0380" errorplus="0.0380">0.9030</radius>
+		<mass errorminus="0.0170" errorplus="0.0170">0.8540</mass>
+		<age errorminus="2.2000" errorplus="2.2000">12.3000</age>
+		<planet>
+			<name>KOI-0555 b</name>
+			<name>KOI-0555 01</name>
+			<radius errorminus="0.00638" errorplus="0.00638">0.12849</radius>
+			<period errorminus="3.8000000e-05" errorplus="3.8000000e-05">3.701730000000</period>
+			<transittime errorminus="0.0031000" errorplus="0.0031000">2455005.4494000</transittime>
+			<semimajoraxis>0.0440000</semimajoraxis>
+			<temperature>1048.0</temperature>
+			<list>Kepler Objects of Interest</list>
+			<description>This is a Kepler Object of Interest from the Q1-Q12 dataset. It has been flagged as a possible transit event but has not been confirmed to be a planet yet.</description>
+			<istransiting>1</istransiting>
+		</planet>
+		<planet>
+			<name>KOI-0555 c</name>
+			<name>KOI-0555 02</name>
+			<radius errorminus="0.01094" errorplus="0.01094">0.24423</radius>
+			<period errorminus="1.4000000e-03" errorplus="1.4000000e-03">86.492600000000</period>
+			<transittime errorminus="0.0066000" errorplus="0.0066000">2455014.8966000</transittime>
+			<semimajoraxis>0.3630000</semimajoraxis>
+			<temperature>365.0</temperature>
+			<list>Kepler Objects of Interest</list>
+			<description>This is a Kepler Object of Interest from the Q1-Q12 dataset. It has been flagged as a possible transit event but has not been confirmed to be a planet yet.</description>
+			<istransiting>1</istransiting>
+		</planet>
+	</star>
+</system>

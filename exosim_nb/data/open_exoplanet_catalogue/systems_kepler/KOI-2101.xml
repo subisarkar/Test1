@@ -1,0 +1,28 @@
+<system>
+	<name>KOI-2101</name>
+	<rightascension>19 38 50</rightascension>
+	<declination>+45 58 10</declination>
+	<distance>358.37</distance>
+	<star>
+		<magJ errorminus="0.025" errorplus="0.025">13.175</magJ>
+		<magH errorminus="0.020" errorplus="0.020">12.561</magH>
+		<magK errorminus="0.023" errorplus="0.023">12.384</magK>
+		<name>KOI-2101</name>
+		<temperature errorminus="64.00" errorplus="64.00">4286.00</temperature>
+		<radius errorminus="0.0110" errorplus="0.0110">0.5600</radius>
+		<mass errorminus="0.0140" errorplus="0.0140">0.5890</mass>
+		<age errorminus="3.7000" errorplus="3.7000">14.0000</age>
+		<planet>
+			<name>KOI-2101 b</name>
+			<name>KOI-2101 01</name>
+			<radius errorminus="0.04010" errorplus="0.04010">0.10662</radius>
+			<period errorminus="2.2000000e-05" errorplus="2.2000000e-05">2.892219000000</period>
+			<transittime errorminus="0.0023000" errorplus="0.0023000">2454965.8773000</transittime>
+			<semimajoraxis>0.0330000</semimajoraxis>
+			<temperature>779.0</temperature>
+			<list>Kepler Objects of Interest</list>
+			<description>This is a Kepler Object of Interest from the Q1-Q12 dataset. It has been flagged as a possible transit event but has not been confirmed to be a planet yet.</description>
+			<istransiting>1</istransiting>
+		</planet>
+	</star>
+</system>

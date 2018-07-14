@@ -1,0 +1,40 @@
+<system>
+	<name>KOI-1692</name>
+	<rightascension>19 38 41</rightascension>
+	<declination>+42 04 32</declination>
+	<distance>315.43</distance>
+	<star>
+		<magJ errorminus="0.021" errorplus="0.021">11.242</magJ>
+		<magH errorminus="0.017" errorplus="0.017">10.850</magH>
+		<magK errorminus="0.012" errorplus="0.012">10.778</magK>
+		<name>KOI-1692</name>
+		<temperature errorminus="50.00" errorplus="50.00">5501.00</temperature>
+		<radius errorminus="0.0430" errorplus="0.0430">0.9510</radius>
+		<mass errorminus="0.0210" errorplus="0.0210">1.0240</mass>
+		<age errorminus="1.9000" errorplus="1.9000">1.9000</age>
+		<planet>
+			<name>KOI-1692 b</name>
+			<name>KOI-1692 01</name>
+			<radius errorminus="0.01276" errorplus="0.01276">0.24150</radius>
+			<period errorminus="1.1000000e-05" errorplus="1.1000000e-05">5.960400000000</period>
+			<transittime errorminus="0.0007000" errorplus="0.0007000">2454970.2639500</transittime>
+			<semimajoraxis>0.0650000</semimajoraxis>
+			<temperature>928.0</temperature>
+			<list>Kepler Objects of Interest</list>
+			<description>This is a Kepler Object of Interest from the Q1-Q12 dataset. It has been flagged as a possible transit event but has not been confirmed to be a planet yet.</description>
+			<istransiting>1</istransiting>
+		</planet>
+		<planet>
+			<name>KOI-1692 c</name>
+			<name>KOI-1692 02</name>
+			<radius errorminus="0.00456" errorplus="0.00456">0.07655</radius>
+			<period errorminus="2.8000000e-05" errorplus="2.8000000e-05">2.461098000000</period>
+			<transittime errorminus="0.0036000" errorplus="0.0036000">2454966.3133000</transittime>
+			<semimajoraxis>0.0360000</semimajoraxis>
+			<temperature>1247.0</temperature>
+			<list>Kepler Objects of Interest</list>
+			<description>This is a Kepler Object of Interest from the Q1-Q12 dataset. It has been flagged as a possible transit event but has not been confirmed to be a planet yet.</description>
+			<istransiting>1</istransiting>
+		</planet>
+	</star>
+</system>

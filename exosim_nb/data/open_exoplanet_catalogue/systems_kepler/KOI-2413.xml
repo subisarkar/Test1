@@ -1,0 +1,40 @@
+<system>
+	<name>KOI-2413</name>
+	<rightascension>19 25 22</rightascension>
+	<declination>+38 21 47</declination>
+	<distance>497.03</distance>
+	<star>
+		<magJ errorminus="0.023" errorplus="0.023">13.367</magJ>
+		<magH errorminus="0.024" errorplus="0.024">12.807</magH>
+		<magK errorminus="0.030" errorplus="0.030">12.674</magK>
+		<name>KOI-2413</name>
+		<temperature errorminus="61.00" errorplus="61.00">4701.00</temperature>
+		<radius errorminus="0.0160" errorplus="0.0160">0.6450</radius>
+		<mass errorminus="0.0170" errorplus="0.0170">0.6690</mass>
+		<age errorminus="3.8000" errorplus="3.8000">13.9000</age>
+		<planet>
+			<name>KOI-2413 b</name>
+			<name>KOI-2413 01</name>
+			<radius errorminus="0.03463" errorplus="0.03463">0.12029</radius>
+			<period errorminus="2.4000000e-04" errorplus="2.4000000e-04">12.904830000000</period>
+			<transittime errorminus="0.0068000" errorplus="0.0068000">2454977.3100000</transittime>
+			<semimajoraxis>0.0940000</semimajoraxis>
+			<temperature>543.0</temperature>
+			<list>Kepler Objects of Interest</list>
+			<description>This is a Kepler Object of Interest from the Q1-Q12 dataset. It has been flagged as a possible transit event but has not been confirmed to be a planet yet.</description>
+			<istransiting>1</istransiting>
+		</planet>
+		<planet>
+			<name>KOI-2413 c</name>
+			<name>KOI-2413 02</name>
+			<radius errorminus="0.03281" errorplus="0.03281">0.11482</radius>
+			<period errorminus="9.7000000e-04" errorplus="9.7000000e-04">31.200130000000</period>
+			<transittime errorminus="0.0120000" errorplus="0.0120000">2454973.0830000</transittime>
+			<semimajoraxis>0.1700000</semimajoraxis>
+			<temperature>404.0</temperature>
+			<list>Kepler Objects of Interest</list>
+			<description>This is a Kepler Object of Interest from the Q1-Q12 dataset. It has been flagged as a possible transit event but has not been confirmed to be a planet yet.</description>
+			<istransiting>1</istransiting>
+		</planet>
+	</star>
+</system>

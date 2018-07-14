@@ -1,0 +1,28 @@
+<system>
+	<name>KOI-1877</name>
+	<rightascension>18 57 43</rightascension>
+	<declination>+47 38 30</declination>
+	<distance>816.00</distance>
+	<star>
+		<magJ errorminus="0.022" errorplus="0.022">11.899</magJ>
+		<magH errorminus="0.018" errorplus="0.018">11.381</magH>
+		<magK errorminus="0.022" errorplus="0.022">11.274</magK>
+		<name>KOI-1877</name>
+		<temperature errorminus="74.00" errorplus="74.00">4916.00</temperature>
+		<radius errorminus="0.4100" errorplus="0.4100">2.1000</radius>
+		<mass errorminus="0.0660" errorplus="0.0660">0.9180</mass>
+		<age errorminus="2.3000" errorplus="2.3000">14.0000</age>
+		<planet>
+			<name>KOI-1877 b</name>
+			<name>KOI-1877 01</name>
+			<radius errorminus="0.08840" errorplus="0.08840">0.34538</radius>
+			<period errorminus="1.5000000e-04" errorplus="1.5000000e-04">20.160200000000</period>
+			<transittime errorminus="0.0028000" errorplus="0.0028000">2454977.3452000</transittime>
+			<semimajoraxis>0.1410000</semimajoraxis>
+			<temperature>837.0</temperature>
+			<list>Kepler Objects of Interest</list>
+			<description>This is a Kepler Object of Interest from the Q1-Q12 dataset. It has been flagged as a possible transit event but has not been confirmed to be a planet yet.</description>
+			<istransiting>1</istransiting>
+		</planet>
+	</star>
+</system>

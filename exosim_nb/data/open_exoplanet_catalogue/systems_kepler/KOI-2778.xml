@@ -1,0 +1,24 @@
+<system>
+	<name>KOI-2778</name>
+	<rightascension>19 48 04</rightascension>
+	<declination>+43 25 57</declination>
+	<distance>1077.49</distance>
+	<star>
+		<name>KOI-2778</name>
+		<temperature errorminus="200.00" errorplus="200.00">5214.00</temperature>
+		<radius errorminus="0.3000" errorplus="0.3000">0.9800</radius>
+		<mass errorminus="0.3000" errorplus="0.3000">0.9900</mass>
+		<planet>
+			<name>KOI-2778 b</name>
+			<name>KOI-2778 01</name>
+			<radius errorminus="0.08384" errorplus="0.08384">0.17224</radius>
+			<period errorminus="1.1000000e-05" errorplus="1.1000000e-05">2.215710000000</period>
+			<transittime errorminus="0.0037000" errorplus="0.0037000">2454964.8219000</transittime>
+			<semimajoraxis>0.0330000</semimajoraxis>
+			<temperature>1255.0</temperature>
+			<list>Kepler Objects of Interest</list>
+			<description>This is a Kepler Object of Interest from the Q1-Q12 dataset. It has been flagged as a possible transit event but has not been confirmed to be a planet yet.</description>
+			<istransiting>1</istransiting>
+		</planet>
+	</star>
+</system>

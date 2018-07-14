@@ -1,0 +1,28 @@
+<system>
+	<name>KOI-1872</name>
+	<rightascension>19 13 15</rightascension>
+	<declination>+46 46 17</declination>
+	<distance>1208.80</distance>
+	<star>
+		<magJ errorminus="0.028" errorplus="0.028">14.457</magJ>
+		<magH errorminus="0.027" errorplus="0.027">14.043</magH>
+		<magK errorminus="0.04" errorplus="0.04">14.04</magK>
+		<name>KOI-1872</name>
+		<temperature errorminus="87.00" errorplus="87.00">5512.00</temperature>
+		<radius errorminus="0.3400" errorplus="0.3400">0.8000</radius>
+		<mass errorminus="0.0620" errorplus="0.0620">0.8990</mass>
+		<age errorminus="3.8000" errorplus="3.8000">0.8000</age>
+		<planet>
+			<name>KOI-1872 b</name>
+			<name>KOI-1872 01</name>
+			<radius errorminus="0.37363" errorplus="0.37363">0.62880</radius>
+			<period errorminus="2.0000000e-04" errorplus="2.0000000e-04">30.523090000000</period>
+			<transittime errorminus="0.0025000" errorplus="0.0025000">2454979.8504000</transittime>
+			<semimajoraxis>0.1840000</semimajoraxis>
+			<temperature>506.0</temperature>
+			<list>Kepler Objects of Interest</list>
+			<description>This is a Kepler Object of Interest from the Q1-Q12 dataset. It has been flagged as a possible transit event but has not been confirmed to be a planet yet.</description>
+			<istransiting>1</istransiting>
+		</planet>
+	</star>
+</system>

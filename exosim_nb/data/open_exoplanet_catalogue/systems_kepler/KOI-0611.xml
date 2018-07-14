@@ -1,0 +1,28 @@
+<system>
+	<name>KOI-0611</name>
+	<rightascension>19 53 10</rightascension>
+	<declination>+41 41 01</declination>
+	<distance>948.23</distance>
+	<star>
+		<magJ errorminus="0.021" errorplus="0.021">12.979</magJ>
+		<magH errorminus="0.024" errorplus="0.024">12.700</magH>
+		<magK errorminus="0.022" errorplus="0.022">12.708</magK>
+		<name>KOI-0611</name>
+		<temperature errorminus="102.00" errorplus="102.00">6358.00</temperature>
+		<radius errorminus="0.1300" errorplus="0.1300">1.0900</radius>
+		<mass errorminus="0.0260" errorplus="0.0260">1.1580</mass>
+		<age errorminus="0.4500" errorplus="0.4500">0.4200</age>
+		<planet>
+			<name>KOI-0611 b</name>
+			<name>KOI-0611 01</name>
+			<radius errorminus="0.29162" errorplus="0.29162">1.11179</radius>
+			<period errorminus="1.5000000e-06" errorplus="1.5000000e-06">3.251658000000</period>
+			<transittime errorminus="0.0001400" errorplus="0.0001400">2455004.0598500</transittime>
+			<semimajoraxis>0.0450000</semimajoraxis>
+			<temperature>1381.0</temperature>
+			<list>Kepler Objects of Interest</list>
+			<description>This is a Kepler Object of Interest from the Q1-Q12 dataset. It has been flagged as a possible transit event but has not been confirmed to be a planet yet.</description>
+			<istransiting>1</istransiting>
+		</planet>
+	</star>
+</system>

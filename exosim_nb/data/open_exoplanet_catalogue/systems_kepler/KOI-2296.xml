@@ -1,0 +1,28 @@
+<system>
+	<name>KOI-2296</name>
+	<rightascension>19 06 41</rightascension>
+	<declination>+49 24 22</declination>
+	<distance>973.13</distance>
+	<star>
+		<magJ errorminus="0.026" errorplus="0.026">13.350</magJ>
+		<magH errorminus="0.05" errorplus="0.05">13.04</magH>
+		<magK errorminus="0.03" errorplus="0.03">12.97</magK>
+		<name>KOI-2296</name>
+		<temperature errorminus="106.00" errorplus="106.00">5952.00</temperature>
+		<radius errorminus="0.5400" errorplus="0.5400">1.0000</radius>
+		<mass errorminus="0.1300" errorplus="0.1300">0.9900</mass>
+		<age errorminus="2.5000" errorplus="2.5000">4.1000</age>
+		<planet>
+			<name>KOI-2296 b</name>
+			<name>KOI-2296 01</name>
+			<radius errorminus="0.10936" errorplus="0.10936">0.20049</radius>
+			<period errorminus="3.7000000e-03" errorplus="3.7000000e-03">106.249000000000</period>
+			<transittime errorminus="0.0120000" errorplus="0.0120000">2454968.7410000</transittime>
+			<semimajoraxis>0.4390000</semimajoraxis>
+			<temperature>397.0</temperature>
+			<list>Kepler Objects of Interest</list>
+			<description>This is a Kepler Object of Interest from the Q1-Q12 dataset. It has been flagged as a possible transit event but has not been confirmed to be a planet yet.</description>
+			<istransiting>1</istransiting>
+		</planet>
+	</star>
+</system>

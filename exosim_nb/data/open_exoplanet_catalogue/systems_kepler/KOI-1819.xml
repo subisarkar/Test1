@@ -1,0 +1,28 @@
+<system>
+	<name>KOI-1819</name>
+	<rightascension>19 41 15</rightascension>
+	<declination>+46 14 14</declination>
+	<distance>416.66</distance>
+	<star>
+		<magJ errorminus="0.024" errorplus="0.024">12.331</magJ>
+		<magH errorminus="0.019" errorplus="0.019">11.962</magH>
+		<magK errorminus="0.019" errorplus="0.019">11.904</magK>
+		<name>KOI-1819</name>
+		<temperature errorminus="64.00" errorplus="64.00">5486.00</temperature>
+		<radius errorminus="0.2200" errorplus="0.2200">0.7900</radius>
+		<mass errorminus="0.0360" errorplus="0.0360">0.8940</mass>
+		<age errorminus="3.8000" errorplus="3.8000">0.5000</age>
+		<planet>
+			<name>KOI-1819 b</name>
+			<name>KOI-1819 01</name>
+			<radius errorminus="0.07199" errorplus="0.07199">0.18044</radius>
+			<period errorminus="5.0000000e-05" errorplus="5.0000000e-05">12.057086000000</period>
+			<transittime errorminus="0.0015000" errorplus="0.0015000">2454968.4129000</transittime>
+			<semimajoraxis>0.0990000</semimajoraxis>
+			<temperature>683.0</temperature>
+			<list>Kepler Objects of Interest</list>
+			<description>This is a Kepler Object of Interest from the Q1-Q12 dataset. It has been flagged as a possible transit event but has not been confirmed to be a planet yet.</description>
+			<istransiting>1</istransiting>
+		</planet>
+	</star>
+</system>

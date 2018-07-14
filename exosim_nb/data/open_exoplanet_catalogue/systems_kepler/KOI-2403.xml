@@ -1,0 +1,25 @@
+<system>
+	<name>KOI-2403</name>
+	<rightascension>19 06 30</rightascension>
+	<declination>+37 32 14</declination>
+	<distance>540.56</distance>
+	<star>
+		<name>KOI-2403</name>
+		<temperature errorminus="74.00" errorplus="74.00">6292.00</temperature>
+		<radius errorminus="0.4400" errorplus="0.4400">1.0800</radius>
+		<mass errorminus="0.1200" errorplus="0.1200">1.1300</mass>
+		<age errorminus="0.7900" errorplus="0.7900">1.1100</age>
+		<planet>
+			<name>KOI-2403 b</name>
+			<name>KOI-2403 01</name>
+			<radius errorminus="0.06288" errorplus="0.06288">0.10389</radius>
+			<period errorminus="9.4000000e-05" errorplus="9.4000000e-05">13.323565000000</period>
+			<transittime errorminus="0.0049000" errorplus="0.0049000">2454967.0318000</transittime>
+			<semimajoraxis>0.1140000</semimajoraxis>
+			<temperature>856.0</temperature>
+			<list>Kepler Objects of Interest</list>
+			<description>This is a Kepler Object of Interest from the Q1-Q12 dataset. It has been flagged as a possible transit event but has not been confirmed to be a planet yet.</description>
+			<istransiting>1</istransiting>
+		</planet>
+	</star>
+</system>

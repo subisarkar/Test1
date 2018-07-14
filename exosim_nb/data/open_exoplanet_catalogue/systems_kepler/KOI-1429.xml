@@ -1,0 +1,28 @@
+<system>
+	<name>KOI-1429</name>
+	<rightascension>19 29 24</rightascension>
+	<declination>+48 30 39</declination>
+	<distance>1263.19</distance>
+	<star>
+		<magJ errorminus="0.04" errorplus="0.04">14.33</magJ>
+		<magH errorminus="0.05" errorplus="0.05">13.91</magH>
+		<magK errorminus="0.05" errorplus="0.05">13.90</magK>
+		<name>KOI-1429</name>
+		<temperature errorminus="105.00" errorplus="105.00">5803.00</temperature>
+		<radius errorminus="0.4900" errorplus="0.4900">0.8700</radius>
+		<mass errorminus="0.1100" errorplus="0.1100">0.9800</mass>
+		<age errorminus="3.3000" errorplus="3.3000">0.5000</age>
+		<planet>
+			<name>KOI-1429 b</name>
+			<name>KOI-1429 01</name>
+			<radius errorminus="0.24605" errorplus="0.24605">0.43743</radius>
+			<period errorminus="4.2000000e-03" errorplus="4.2000000e-03">205.917200000000</period>
+			<transittime errorminus="0.0055000" errorplus="0.0055000">2455085.7420000</transittime>
+			<semimajoraxis>0.6780000</semimajoraxis>
+			<temperature>290.0</temperature>
+			<list>Kepler Objects of Interest</list>
+			<description>This is a Kepler Object of Interest from the Q1-Q12 dataset. It has been flagged as a possible transit event but has not been confirmed to be a planet yet.</description>
+			<istransiting>1</istransiting>
+		</planet>
+	</star>
+</system>

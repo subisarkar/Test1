@@ -1,0 +1,25 @@
+<system>
+	<name>KOI-2472</name>
+	<rightascension>19 11 10</rightascension>
+	<declination>+45 58 48</declination>
+	<distance>1581.68</distance>
+	<star>
+		<name>KOI-2472</name>
+		<temperature errorminus="144.00" errorplus="144.00">6059.00</temperature>
+		<radius errorminus="0.4600" errorplus="0.4600">0.9600</radius>
+		<mass errorminus="0.1200" errorplus="0.1200">1.0500</mass>
+		<age errorminus="2.2000" errorplus="2.2000">0.3000</age>
+		<planet>
+			<name>KOI-2472 b</name>
+			<name>KOI-2472 01</name>
+			<radius errorminus="0.10024" errorplus="0.10024">0.17315</radius>
+			<period errorminus="2.5000000e-05" errorplus="2.5000000e-05">2.607550000000</period>
+			<transittime errorminus="0.0028000" errorplus="0.0028000">2454964.8330000</transittime>
+			<semimajoraxis>0.0380000</semimajoraxis>
+			<temperature>1341.0</temperature>
+			<list>Kepler Objects of Interest</list>
+			<description>This is a Kepler Object of Interest from the Q1-Q12 dataset. It has been flagged as a possible transit event but has not been confirmed to be a planet yet.</description>
+			<istransiting>1</istransiting>
+		</planet>
+	</star>
+</system>

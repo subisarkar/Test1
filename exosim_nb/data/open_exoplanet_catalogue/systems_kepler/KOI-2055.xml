@@ -1,0 +1,64 @@
+<system>
+	<name>KOI-2055</name>
+	<rightascension>19 36 36</rightascension>
+	<declination>+38 13 58</declination>
+	<distance>769.88</distance>
+	<star>
+		<magJ errorminus="0.025" errorplus="0.025">13.332</magJ>
+		<magH errorminus="0.027" errorplus="0.027">12.957</magH>
+		<magK errorminus="0.03" errorplus="0.03">12.92</magK>
+		<name>KOI-2055</name>
+		<temperature errorminus="83.00" errorplus="83.00">5747.00</temperature>
+		<radius errorminus="0.2700" errorplus="0.2700">0.8600</radius>
+		<mass errorminus="0.0470" errorplus="0.0470">0.9640</mass>
+		<age errorminus="3.7000" errorplus="3.7000">0.4000</age>
+		<planet>
+			<name>KOI-2055 b</name>
+			<name>KOI-2055 01</name>
+			<radius errorminus="0.06379" errorplus="0.06379">0.19228</radius>
+			<period errorminus="8.0000000e-05" errorplus="8.0000000e-05">8.678902000000</period>
+			<transittime errorminus="0.0033000" errorplus="0.0033000">2454966.0362000</transittime>
+			<semimajoraxis>0.0820000</semimajoraxis>
+			<temperature>819.0</temperature>
+			<list>Kepler Objects of Interest</list>
+			<description>This is a Kepler Object of Interest from the Q1-Q12 dataset. It has been flagged as a possible transit event but has not been confirmed to be a planet yet.</description>
+			<istransiting>1</istransiting>
+		</planet>
+		<planet>
+			<name>KOI-2055 c</name>
+			<name>KOI-2055 02</name>
+			<radius errorminus="0.08749" errorplus="0.08749">0.12476</radius>
+			<period errorminus="1.3140000e-05" errorplus="1.3140000e-05">4.025811860000</period>
+			<transittime errorminus="0.0021700" errorplus="0.0021700">2454968.4262900</transittime>
+			<semimajoraxis errorminus="1.04e-07" errorplus="1.04e-07">0.0480134</semimajoraxis>
+			<temperature errorminus="293.0" errorplus="293.0">1055.0</temperature>
+			<list>Kepler Objects of Interest</list>
+			<description>This is a Kepler Object of Interest from the Q1-Q12 dataset. It has been flagged as a possible transit event but has not been confirmed to be a planet yet.</description>
+			<istransiting>1</istransiting>
+		</planet>
+		<planet>
+			<name>KOI-2055 d</name>
+			<name>KOI-2055 03</name>
+			<radius errorminus="0.10936" errorplus="0.10936">0.10024</radius>
+			<period errorminus="1.0990000e-05" errorplus="1.0990000e-05">2.504779300000</period>
+			<transittime errorminus="0.0024600" errorplus="0.0024600">2454966.6272700</transittime>
+			<semimajoraxis errorminus="1.02e-07" errorplus="1.02e-07">0.0349924</semimajoraxis>
+			<temperature errorminus="344.0" errorplus="344.0">1236.0</temperature>
+			<list>Kepler Objects of Interest</list>
+			<description>This is a Kepler Object of Interest from the Q1-Q12 dataset. It has been flagged as a possible transit event but has not been confirmed to be a planet yet.</description>
+			<istransiting>1</istransiting>
+		</planet>
+		<planet>
+			<name>KOI-2055 e</name>
+			<name>KOI-2055 04</name>
+			<radius errorminus="0.19137" errorplus="0.19137">0.10024</radius>
+			<period errorminus="7.9000000e-05" errorplus="7.9000000e-05">6.130641000000</period>
+			<transittime errorminus="0.0073000" errorplus="0.0073000">2454964.8691000</transittime>
+			<semimajoraxis errorminus="5.50e-07" errorplus="5.50e-07">0.0647665</semimajoraxis>
+			<temperature errorminus="149.0" errorplus="149.0">922.0</temperature>
+			<list>Kepler Objects of Interest</list>
+			<description>This is a Kepler Object of Interest from the Q1-Q12 dataset. It has been flagged as a possible transit event but has not been confirmed to be a planet yet.</description>
+			<istransiting>1</istransiting>
+		</planet>
+	</star>
+</system>

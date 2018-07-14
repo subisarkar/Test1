@@ -1,0 +1,27 @@
+<system>
+	<name>KOI-4152</name>
+	<rightascension>19 25 32</rightascension>
+	<declination>+42 42 32</declination>
+	<distance>1008.36</distance>
+	<star>
+		<magJ errorminus="0.019" errorplus="0.019">12.059</magJ>
+		<magH errorminus="0.017" errorplus="0.017">11.914</magH>
+		<magK errorminus="0.016" errorplus="0.016">11.888</magK>
+		<name>KOI-4152</name>
+		<temperature errorminus="314.00" errorplus="314.00">6955.00</temperature>
+		<radius errorminus="1.2510" errorplus="1.2510">1.5710</radius>
+		<metallicity errorminus="0.4400" errorplus="0.4400">-0.0800</metallicity>
+		<planet>
+			<name>KOI-4152 b</name>
+			<name>KOI-4152 01</name>
+			<radius errorminus="0.07819" errorplus="0.07819">0.34502</radius>
+			<period errorminus="1.8830000e-04" errorplus="1.8830000e-04">64.190607500000</period>
+			<transittime errorminus="0.0024300" errorplus="0.0024300">2455024.6198700</transittime>
+			<semimajoraxis errorminus="6.87e-07" errorplus="6.87e-07">0.3511250</semimajoraxis>
+			<temperature errorminus="260.0" errorplus="260.0">649.0</temperature>
+			<list>Kepler Objects of Interest</list>
+			<description>This is a Kepler Object of Interest from the Q1-Q12 dataset. It has been flagged as a possible transit event but has not been confirmed to be a planet yet.</description>
+			<istransiting>1</istransiting>
+		</planet>
+	</star>
+</system>

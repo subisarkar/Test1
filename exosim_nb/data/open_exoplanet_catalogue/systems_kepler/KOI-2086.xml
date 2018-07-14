@@ -1,0 +1,52 @@
+<system>
+	<name>KOI-2086</name>
+	<rightascension>19 15 50</rightascension>
+	<declination>+42 15 54</declination>
+	<distance>1173.65</distance>
+	<star>
+		<magJ errorminus="0.023" errorplus="0.023">12.804</magJ>
+		<magH errorminus="0.018" errorplus="0.018">12.569</magH>
+		<magK errorminus="0.018" errorplus="0.018">12.516</magK>
+		<name>KOI-2086</name>
+		<temperature errorminus="103.00" errorplus="103.00">6180.00</temperature>
+		<radius errorminus="0.7600" errorplus="0.7600">1.4700</radius>
+		<mass errorminus="0.1900" errorplus="0.1900">1.1200</mass>
+		<age errorminus="1.2000" errorplus="1.2000">5.0000</age>
+		<planet>
+			<name>KOI-2086 b</name>
+			<name>KOI-2086 01</name>
+			<radius errorminus="0.10936" errorplus="0.10936">0.20049</radius>
+			<period errorminus="9.3000000e-05" errorplus="9.3000000e-05">7.131618000000</period>
+			<transittime errorminus="0.0047000" errorplus="0.0047000">2454969.0364000</transittime>
+			<semimajoraxis>0.0750000</semimajoraxis>
+			<temperature>1205.0</temperature>
+			<list>Kepler Objects of Interest</list>
+			<description>This is a Kepler Object of Interest from the Q1-Q12 dataset. It has been flagged as a possible transit event but has not been confirmed to be a planet yet.</description>
+			<istransiting>1</istransiting>
+		</planet>
+		<planet>
+			<name>KOI-2086 c</name>
+			<name>KOI-2086 02</name>
+			<radius errorminus="0.11847" errorplus="0.11847">0.21871</radius>
+			<period errorminus="1.1000000e-04" errorplus="1.1000000e-04">8.919350000000</period>
+			<transittime errorminus="0.0047000" errorplus="0.0047000">2454973.0651000</transittime>
+			<semimajoraxis>0.0870000</semimajoraxis>
+			<temperature>1119.0</temperature>
+			<list>Kepler Objects of Interest</list>
+			<description>This is a Kepler Object of Interest from the Q1-Q12 dataset. It has been flagged as a possible transit event but has not been confirmed to be a planet yet.</description>
+			<istransiting>1</istransiting>
+		</planet>
+		<planet>
+			<name>KOI-2086 d</name>
+			<name>KOI-2086 03</name>
+			<radius errorminus="0.11847" errorplus="0.11847">0.22783</radius>
+			<period errorminus="2.0000000e-04" errorplus="2.0000000e-04">11.901620000000</period>
+			<transittime errorminus="0.0063000" errorplus="0.0063000">2454966.2463000</transittime>
+			<semimajoraxis>0.1060000</semimajoraxis>
+			<temperature>1014.0</temperature>
+			<list>Kepler Objects of Interest</list>
+			<description>This is a Kepler Object of Interest from the Q1-Q12 dataset. It has been flagged as a possible transit event but has not been confirmed to be a planet yet.</description>
+			<istransiting>1</istransiting>
+		</planet>
+	</star>
+</system>

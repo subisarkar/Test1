@@ -1,0 +1,40 @@
+<system>
+	<name>KOI-0543</name>
+	<rightascension>19 44 36</rightascension>
+	<declination>+50 05 44</declination>
+	<distance>627.40</distance>
+	<star>
+		<magJ errorminus="0.023" errorplus="0.023">13.364</magJ>
+		<magH errorminus="0.024" errorplus="0.024">12.948</magH>
+		<magK errorminus="0.03" errorplus="0.03">12.88</magK>
+		<name>KOI-0543</name>
+		<temperature errorminus="71.00" errorplus="71.00">5325.00</temperature>
+		<radius errorminus="0.1900" errorplus="0.1900">0.7500</radius>
+		<mass errorminus="0.0320" errorplus="0.0320">0.8530</mass>
+		<age errorminus="4.0000" errorplus="4.0000">0.5000</age>
+		<planet>
+			<name>KOI-0543 b</name>
+			<name>KOI-0543 01</name>
+			<radius errorminus="0.05741" errorplus="0.05741">0.20869</radius>
+			<period errorminus="1.7000000e-05" errorplus="1.7000000e-05">4.302163000000</period>
+			<transittime errorminus="0.0013000" errorplus="0.0013000">2455006.4366000</transittime>
+			<semimajoraxis>0.0490000</semimajoraxis>
+			<temperature>918.0</temperature>
+			<list>Kepler Objects of Interest</list>
+			<description>This is a Kepler Object of Interest from the Q1-Q12 dataset. It has been flagged as a possible transit event but has not been confirmed to be a planet yet.</description>
+			<istransiting>1</istransiting>
+		</planet>
+		<planet>
+			<name>KOI-0543 c</name>
+			<name>KOI-0543 02</name>
+			<radius errorminus="0.03554" errorplus="0.03554">0.12941</radius>
+			<period errorminus="2.7000000e-05" errorplus="2.7000000e-05">3.137852000000</period>
+			<transittime errorminus="0.0027000" errorplus="0.0027000">2454966.5547000</transittime>
+			<semimajoraxis>0.0400000</semimajoraxis>
+			<temperature>1016.0</temperature>
+			<list>Kepler Objects of Interest</list>
+			<description>This is a Kepler Object of Interest from the Q1-Q12 dataset. It has been flagged as a possible transit event but has not been confirmed to be a planet yet.</description>
+			<istransiting>1</istransiting>
+		</planet>
+	</star>
+</system>

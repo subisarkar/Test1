@@ -1,0 +1,36 @@
+<system>
+	<name>KOI-3429</name>
+	<rightascension>19 44 47</rightascension>
+	<declination>+45 38 03</declination>
+	<distance>1376.69</distance>
+	<star>
+		<name>KOI-3429</name>
+		<temperature errorminus="212.00" errorplus="212.00">5878.00</temperature>
+		<radius errorminus="0.5760" errorplus="0.5760">0.9980</radius>
+		<metallicity errorminus="0.3000" errorplus="0.3000">-0.0200</metallicity>
+		<planet>
+			<name>KOI-3429 b</name>
+			<name>KOI-3429 01</name>
+			<radius errorminus="0.18226" errorplus="0.18226">0.16221</radius>
+			<period errorminus="1.3730000e-04" errorplus="1.3730000e-04">15.827810200000</period>
+			<transittime errorminus="0.0076600" errorplus="0.0076600">2454977.4203800</transittime>
+			<semimajoraxis errorminus="7.15e-07" errorplus="7.15e-07">0.1236130</semimajoraxis>
+			<temperature errorminus="214.0" errorplus="214.0">737.0</temperature>
+			<list>Kepler Objects of Interest</list>
+			<description>This is a Kepler Object of Interest from the Q1-Q12 dataset. It has been flagged as a possible transit event but has not been confirmed to be a planet yet.</description>
+			<istransiting>1</istransiting>
+		</planet>
+		<planet>
+			<name>KOI-3429 c</name>
+			<name>KOI-3429 02</name>
+			<radius errorminus="0.27339" errorplus="0.27339">0.14945</radius>
+			<period errorminus="6.7600000e-05" errorplus="6.7600000e-05">8.741964720000</period>
+			<transittime errorminus="0.0065900" errorplus="0.0065900">2454968.4209700</transittime>
+			<semimajoraxis errorminus="4.29e-07" errorplus="4.29e-07">0.0832128</semimajoraxis>
+			<temperature errorminus="261.0" errorplus="261.0">898.0</temperature>
+			<list>Kepler Objects of Interest</list>
+			<description>This is a Kepler Object of Interest from the Q1-Q12 dataset. It has been flagged as a possible transit event but has not been confirmed to be a planet yet.</description>
+			<istransiting>1</istransiting>
+		</planet>
+	</star>
+</system>

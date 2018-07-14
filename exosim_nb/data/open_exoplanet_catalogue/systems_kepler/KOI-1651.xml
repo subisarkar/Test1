@@ -1,0 +1,28 @@
+<system>
+	<name>KOI-1651</name>
+	<rightascension>18 58 27</rightascension>
+	<declination>+49 11 26</declination>
+	<distance>1024.67</distance>
+	<star>
+		<magJ errorminus="0.027" errorplus="0.027">13.597</magJ>
+		<magH errorminus="0.021" errorplus="0.021">13.184</magH>
+		<magK errorminus="0.04" errorplus="0.04">13.19</magK>
+		<name>KOI-1651</name>
+		<temperature errorminus="84.00" errorplus="84.00">6034.00</temperature>
+		<radius errorminus="0.4000" errorplus="0.4000">0.9400</radius>
+		<mass errorminus="0.0820" errorplus="0.0820">1.0450</mass>
+		<age errorminus="2.0000" errorplus="2.0000">0.3000</age>
+		<planet>
+			<name>KOI-1651 b</name>
+			<name>KOI-1651 01</name>
+			<radius errorminus="0.10936" errorplus="0.10936">0.24605</radius>
+			<period errorminus="1.4000000e-03" errorplus="1.4000000e-03">51.300200000000</period>
+			<transittime errorminus="0.0094000" errorplus="0.0094000">2454986.5343000</transittime>
+			<semimajoraxis>0.2740000</semimajoraxis>
+			<temperature>494.0</temperature>
+			<list>Kepler Objects of Interest</list>
+			<description>This is a Kepler Object of Interest from the Q1-Q12 dataset. It has been flagged as a possible transit event but has not been confirmed to be a planet yet.</description>
+			<istransiting>1</istransiting>
+		</planet>
+	</star>
+</system>

@@ -1,0 +1,28 @@
+<system>
+	<name>KOI-1914</name>
+	<rightascension>19 20 59</rightascension>
+	<declination>+44 26 06</declination>
+	<distance>1320.38</distance>
+	<star>
+		<magJ errorminus="0.025" errorplus="0.025">12.881</magJ>
+		<magH errorminus="0.019" errorplus="0.019">12.370</magH>
+		<magK errorminus="0.019" errorplus="0.019">12.289</magK>
+		<name>KOI-1914</name>
+		<temperature errorminus="90.00" errorplus="90.00">4889.00</temperature>
+		<radius errorminus="0.4500" errorplus="0.4500">2.1400</radius>
+		<mass errorminus="0.0580" errorplus="0.0580">0.9180</mass>
+		<age errorminus="2.1000" errorplus="2.1000">14.0000</age>
+		<planet>
+			<name>KOI-1914 b</name>
+			<name>KOI-1914 01</name>
+			<radius errorminus="0.16403" errorplus="0.16403">0.57412</radius>
+			<period errorminus="1.5000000e-04" errorplus="1.5000000e-04">18.930940000000</period>
+			<transittime errorminus="0.0029000" errorplus="0.0029000">2454976.2431000</transittime>
+			<semimajoraxis>0.1350000</semimajoraxis>
+			<temperature>859.0</temperature>
+			<list>Kepler Objects of Interest</list>
+			<description>This is a Kepler Object of Interest from the Q1-Q12 dataset. It has been flagged as a possible transit event but has not been confirmed to be a planet yet.</description>
+			<istransiting>1</istransiting>
+		</planet>
+	</star>
+</system>

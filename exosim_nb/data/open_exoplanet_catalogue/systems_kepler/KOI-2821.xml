@@ -1,0 +1,24 @@
+<system>
+	<name>KOI-2821</name>
+	<rightascension>19 11 23</rightascension>
+	<declination>+39 21 30</declination>
+	<distance>1119.52</distance>
+	<star>
+		<name>KOI-2821</name>
+		<temperature errorminus="200.00" errorplus="200.00">5426.00</temperature>
+		<radius errorminus="0.3000" errorplus="0.3000">0.9800</radius>
+		<mass errorminus="0.3000" errorplus="0.3000">1.0200</mass>
+		<planet>
+			<name>KOI-2821 b</name>
+			<name>KOI-2821 01</name>
+			<radius errorminus="0.23694" errorplus="0.23694">0.41920</radius>
+			<period errorminus="1.2000000e-03" errorplus="1.2000000e-03">79.245900000000</period>
+			<transittime errorminus="0.0120000" errorplus="0.0120000">2454994.5610000</transittime>
+			<semimajoraxis>0.3630000</semimajoraxis>
+			<temperature>392.0</temperature>
+			<list>Kepler Objects of Interest</list>
+			<description>This is a Kepler Object of Interest from the Q1-Q12 dataset. It has been flagged as a possible transit event but has not been confirmed to be a planet yet.</description>
+			<istransiting>1</istransiting>
+		</planet>
+	</star>
+</system>

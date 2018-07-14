@@ -1,0 +1,29 @@
+<system>
+	<name>KOI-2754</name>
+	<rightascension>18 54 58</rightascension>
+	<declination>+48 22 24</declination>
+	<distance>262.38</distance>
+	<star>
+		<magB errorminus="0.30" errorplus="0.30">12.94</magB>
+		<magV errorminus="0.22" errorplus="0.22">12.34</magV>
+		<magJ errorminus="0.022" errorplus="0.022">11.026</magJ>
+		<magH errorminus="0.019" errorplus="0.019">10.697</magH>
+		<magK errorminus="0.014" errorplus="0.014">10.627</magK>
+		<name>KOI-2754</name>
+		<temperature>5516.00</temperature>
+		<radius>0.8860</radius>
+		<mass>0.8550</mass>
+		<planet>
+			<name>KOI-2754 b</name>
+			<name>KOI-2754 01</name>
+			<radius>0.06561</radius>
+			<period errorminus="3.7000000e-06" errorplus="3.7000000e-06">1.341560900000</period>
+			<transittime errorminus="0.0016000" errorplus="0.0016000">2454965.7353000</transittime>
+			<semimajoraxis>0.0230000</semimajoraxis>
+			<temperature>1510.0</temperature>
+			<list>Kepler Objects of Interest</list>
+			<description>This is a Kepler Object of Interest from the Q1-Q12 dataset. It has been flagged as a possible transit event but has not been confirmed to be a planet yet.</description>
+			<istransiting>1</istransiting>
+		</planet>
+	</star>
+</system>

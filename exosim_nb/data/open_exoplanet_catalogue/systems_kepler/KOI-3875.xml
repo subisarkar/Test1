@@ -1,0 +1,27 @@
+<system>
+	<name>KOI-3875</name>
+	<rightascension>19 20 35</rightascension>
+	<declination>+50 14 21</declination>
+	<distance>963.50</distance>
+	<star>
+		<magJ errorminus="0.027" errorplus="0.027">12.309</magJ>
+		<magH errorminus="0.03" errorplus="0.03">12.02</magH>
+		<magK errorminus="0.024" errorplus="0.024">11.954</magK>
+		<name>KOI-3875</name>
+		<temperature errorminus="203.00" errorplus="203.00">6022.00</temperature>
+		<radius errorminus="0.5820" errorplus="0.5820">1.5140</radius>
+		<metallicity errorminus="0.3400" errorplus="0.3400">-0.6200</metallicity>
+		<planet>
+			<name>KOI-3875 b</name>
+			<name>KOI-3875 01</name>
+			<radius errorminus="0.06352" errorplus="0.06352">0.43105</radius>
+			<period errorminus="7.3500000e-06" errorplus="7.3500000e-06">8.870420147000</period>
+			<transittime errorminus="0.0006200" errorplus="0.0006200">2454970.4812100</transittime>
+			<semimajoraxis errorminus="4.46e-08" errorplus="4.46e-08">0.0806759</semimajoraxis>
+			<temperature errorminus="225.0" errorplus="225.0">1151.0</temperature>
+			<list>Kepler Objects of Interest</list>
+			<description>This is a Kepler Object of Interest from the Q1-Q12 dataset. It has been flagged as a possible transit event but has not been confirmed to be a planet yet.</description>
+			<istransiting>1</istransiting>
+		</planet>
+	</star>
+</system>

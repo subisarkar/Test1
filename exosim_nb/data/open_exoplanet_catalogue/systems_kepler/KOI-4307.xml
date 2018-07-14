@@ -1,0 +1,24 @@
+<system>
+	<name>KOI-4307</name>
+	<rightascension>19 39 47</rightascension>
+	<declination>+38 36 18</declination>
+	<distance>874.74</distance>
+	<star>
+		<name>KOI-4307</name>
+		<temperature errorminus="211.00" errorplus="211.00">6175.00</temperature>
+		<radius errorminus="0.5180" errorplus="0.5180">0.9740</radius>
+		<metallicity errorminus="0.3000" errorplus="0.3000">-0.4200</metallicity>
+		<planet>
+			<name>KOI-4307 b</name>
+			<name>KOI-4307 01</name>
+			<radius errorminus="1.02977" errorplus="1.02977">0.37363</radius>
+			<period errorminus="4.2750000e-03" errorplus="4.2750000e-03">160.855246000000</period>
+			<transittime errorminus="0.0220000" errorplus="0.0220000">2454977.5182000</transittime>
+			<semimajoraxis errorminus="1.01e-05" errorplus="1.01e-05">0.5697620</semimajoraxis>
+			<temperature errorminus="95.5" errorplus="95.5">356.2</temperature>
+			<list>Kepler Objects of Interest</list>
+			<description>This is a Kepler Object of Interest from the Q1-Q12 dataset. It has been flagged as a possible transit event but has not been confirmed to be a planet yet.</description>
+			<istransiting>1</istransiting>
+		</planet>
+	</star>
+</system>

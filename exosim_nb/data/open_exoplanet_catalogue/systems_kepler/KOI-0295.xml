@@ -1,0 +1,39 @@
+<system>
+	<name>KOI-0295</name>
+	<rightascension>18 58 57</rightascension>
+	<declination>+49 35 54</declination>
+	<distance>359.06</distance>
+	<star>
+		<magJ errorminus="0.024" errorplus="0.024">11.260</magJ>
+		<magH errorminus="0.015" errorplus="0.015">10.984</magH>
+		<magK errorminus="0.019" errorplus="0.019">10.951</magK>
+		<name>KOI-0295</name>
+		<temperature>5936.00</temperature>
+		<radius>1.0350</radius>
+		<mass>1.0100</mass>
+		<planet>
+			<name>KOI-0295 b</name>
+			<name>KOI-0295 01</name>
+			<radius>0.20595</radius>
+			<period errorminus="1.3000000e-05" errorplus="1.3000000e-05">5.317435000000</period>
+			<transittime errorminus="0.0009900" errorplus="0.0009900">2455004.8763000</transittime>
+			<semimajoraxis>0.0600000</semimajoraxis>
+			<temperature>1088.0</temperature>
+			<list>Kepler Objects of Interest</list>
+			<description>This is a Kepler Object of Interest from the Q1-Q12 dataset. It has been flagged as a possible transit event but has not been confirmed to be a planet yet.</description>
+			<istransiting>1</istransiting>
+		</planet>
+		<planet>
+			<name>KOI-0295 c</name>
+			<name>KOI-0295 02</name>
+			<radius>0.14854</radius>
+			<period errorminus="7.5000000e-05" errorplus="7.5000000e-05">10.105745000000</period>
+			<transittime errorminus="0.0036000" errorplus="0.0036000">2454968.5088000</transittime>
+			<semimajoraxis>0.0920000</semimajoraxis>
+			<temperature>878.0</temperature>
+			<list>Kepler Objects of Interest</list>
+			<description>This is a Kepler Object of Interest from the Q1-Q12 dataset. It has been flagged as a possible transit event but has not been confirmed to be a planet yet.</description>
+			<istransiting>1</istransiting>
+		</planet>
+	</star>
+</system>

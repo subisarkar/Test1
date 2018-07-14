@@ -1,0 +1,28 @@
+<system>
+	<name>KOI-1944</name>
+	<rightascension>19 21 18</rightascension>
+	<declination>+37 43 23</declination>
+	<distance>1644.60</distance>
+	<star>
+		<magJ errorminus="0.025" errorplus="0.025">12.911</magJ>
+		<magH errorminus="0.026" errorplus="0.026">12.609</magH>
+		<magK errorminus="0.024" errorplus="0.024">12.528</magK>
+		<name>KOI-1944</name>
+		<temperature errorminus="138.00" errorplus="138.00">6286.00</temperature>
+		<radius errorminus="0.6000" errorplus="0.6000">1.9700</radius>
+		<mass errorminus="0.1700" errorplus="0.1700">1.3500</mass>
+		<age errorminus="1.1000" errorplus="1.1000">3.1000</age>
+		<planet>
+			<name>KOI-1944 b</name>
+			<name>KOI-1944 01</name>
+			<radius errorminus="0.17315" errorplus="0.17315">0.54678</radius>
+			<period errorminus="1.0000000e-04" errorplus="1.0000000e-04">12.184118000000</period>
+			<transittime errorminus="0.0031000" errorplus="0.0031000">2454972.0601000</transittime>
+			<semimajoraxis>0.1150000</semimajoraxis>
+			<temperature>1146.0</temperature>
+			<list>Kepler Objects of Interest</list>
+			<description>This is a Kepler Object of Interest from the Q1-Q12 dataset. It has been flagged as a possible transit event but has not been confirmed to be a planet yet.</description>
+			<istransiting>1</istransiting>
+		</planet>
+	</star>
+</system>

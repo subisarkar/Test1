@@ -1,0 +1,27 @@
+<system>
+	<name>KOI-2640</name>
+	<rightascension>19 27 14</rightascension>
+	<declination>+45 26 07</declination>
+	<distance>1447.97</distance>
+	<star>
+		<magJ errorminus="0.021" errorplus="0.021">11.609</magJ>
+		<magH errorminus="0.017" errorplus="0.017">11.077</magH>
+		<magK errorminus="0.016" errorplus="0.016">10.987</magK>
+		<name>KOI-2640</name>
+		<temperature errorminus="200.00" errorplus="200.00">4860.00</temperature>
+		<radius errorminus="0.3000" errorplus="0.3000">4.1100</radius>
+		<mass errorminus="0.3000" errorplus="0.3000">1.4000</mass>
+		<planet>
+			<name>KOI-2640 b</name>
+			<name>KOI-2640 01</name>
+			<radius errorminus="0.06926" errorplus="0.06926">0.85298</radius>
+			<period errorminus="1.4000000e-03" errorplus="1.4000000e-03">33.180900000000</period>
+			<transittime errorminus="0.0160000" errorplus="0.0160000">2454969.4820000</transittime>
+			<semimajoraxis>0.2260000</semimajoraxis>
+			<temperature>914.0</temperature>
+			<list>Kepler Objects of Interest</list>
+			<description>This is a Kepler Object of Interest from the Q1-Q12 dataset. It has been flagged as a possible transit event but has not been confirmed to be a planet yet.</description>
+			<istransiting>1</istransiting>
+		</planet>
+	</star>
+</system>

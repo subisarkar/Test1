@@ -1,0 +1,25 @@
+<system>
+	<name>KOI-3095</name>
+	<rightascension>19 30 17</rightascension>
+	<declination>+46 22 00</declination>
+	<distance>1137.57</distance>
+	<star>
+		<name>KOI-3095</name>
+		<temperature errorminus="103.00" errorplus="103.00">5959.00</temperature>
+		<radius errorminus="0.5900" errorplus="0.5900">0.9200</radius>
+		<mass errorminus="0.1400" errorplus="0.1400">1.0200</mass>
+		<age errorminus="2.7000" errorplus="2.7000">0.3000</age>
+		<planet>
+			<name>KOI-3095 b</name>
+			<name>KOI-3095 01</name>
+			<radius errorminus="0.08384" errorplus="0.08384">0.10298</radius>
+			<period errorminus="2.2000000e-05" errorplus="2.2000000e-05">3.423896000000</period>
+			<transittime errorminus="0.0043000" errorplus="0.0043000">2454965.8824000</transittime>
+			<semimajoraxis>0.0450000</semimajoraxis>
+			<temperature>1188.0</temperature>
+			<list>Kepler Objects of Interest</list>
+			<description>This is a Kepler Object of Interest from the Q1-Q12 dataset. It has been flagged as a possible transit event but has not been confirmed to be a planet yet.</description>
+			<istransiting>1</istransiting>
+		</planet>
+	</star>
+</system>

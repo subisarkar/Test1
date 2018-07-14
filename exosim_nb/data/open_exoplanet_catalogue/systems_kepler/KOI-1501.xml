@@ -1,0 +1,28 @@
+<system>
+	<name>KOI-1501</name>
+	<rightascension>19 20 29</rightascension>
+	<declination>+43 05 08</declination>
+	<distance>783.19</distance>
+	<star>
+		<magJ errorminus="0.028" errorplus="0.028">14.169</magJ>
+		<magH errorminus="0.03" errorplus="0.03">13.61</magH>
+		<magK errorminus="0.03" errorplus="0.03">13.48</magK>
+		<name>KOI-1501</name>
+		<temperature errorminus="69.00" errorplus="69.00">4819.00</temperature>
+		<radius errorminus="0.6000" errorplus="0.6000">0.6800</radius>
+		<mass errorminus="0.0790" errorplus="0.0790">0.6940</mass>
+		<age errorminus="4.1000" errorplus="4.1000">13.8000</age>
+		<planet>
+			<name>KOI-1501 b</name>
+			<name>KOI-1501 01</name>
+			<radius errorminus="0.11847" errorplus="0.11847">0.12758</radius>
+			<period errorminus="2.6000000e-05" errorplus="2.6000000e-05">2.617056000000</period>
+			<transittime errorminus="0.0030000" errorplus="0.0030000">2454967.0270000</transittime>
+			<semimajoraxis>0.0330000</semimajoraxis>
+			<temperature>962.0</temperature>
+			<list>Kepler Objects of Interest</list>
+			<description>This is a Kepler Object of Interest from the Q1-Q12 dataset. It has been flagged as a possible transit event but has not been confirmed to be a planet yet.</description>
+			<istransiting>1</istransiting>
+		</planet>
+	</star>
+</system>

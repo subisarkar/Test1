@@ -1,0 +1,42 @@
+<system>
+	<name>KOI-2672</name>
+	<rightascension>19 44 31</rightascension>
+	<declination>+48 58 38</declination>
+	<distance>263.40</distance>
+	<star>
+		<magB errorminus="0.17" errorplus="0.17">12.44</magB>
+		<magV errorminus="0.17" errorplus="0.17">12.26</magV>
+		<magJ errorminus="0.021" errorplus="0.021">10.672</magJ>
+		<magH errorminus="0.018" errorplus="0.018">10.356</magH>
+		<magK errorminus="0.017" errorplus="0.017">10.285</magK>
+		<name>KOI-2672</name>
+		<temperature errorminus="62.00" errorplus="62.00">5565.00</temperature>
+		<radius errorminus="0.4100" errorplus="0.4100">1.0400</radius>
+		<mass errorminus="0.0810" errorplus="0.0810">0.8540</mass>
+		<age errorminus="3.3000" errorplus="3.3000">14.0000</age>
+		<planet>
+			<name>KOI-2672 b</name>
+			<name>KOI-2672 01</name>
+			<radius errorminus="0.19137" errorplus="0.19137">0.48299</radius>
+			<period errorminus="1.8000000e-04" errorplus="1.8000000e-04">88.516580000000</period>
+			<transittime errorminus="0.0007800" errorplus="0.0007800">2455015.6525900</transittime>
+			<semimajoraxis>0.3690000</semimajoraxis>
+			<temperature>413.0</temperature>
+			<list>Kepler Objects of Interest</list>
+			<description>This is a Kepler Object of Interest from the Q1-Q12 dataset. It has been flagged as a possible transit event but has not been confirmed to be a planet yet.</description>
+			<istransiting>1</istransiting>
+		</planet>
+		<planet>
+			<name>KOI-2672 c</name>
+			<name>KOI-2672 02</name>
+			<radius errorminus="0.12758" errorplus="0.12758">0.31896</radius>
+			<period errorminus="1.3000000e-04" errorplus="1.3000000e-04">42.990660000000</period>
+			<transittime errorminus="0.0009800" errorplus="0.0009800">2454995.5117600</transittime>
+			<semimajoraxis>0.2280000</semimajoraxis>
+			<temperature>525.0</temperature>
+			<list>Kepler Objects of Interest</list>
+			<description>This is a Kepler Object of Interest from the Q1-Q12 dataset. It has been flagged as a possible transit event but has not been confirmed to be a planet yet.</description>
+			<istransiting>1</istransiting>
+		</planet>
+	</star>
+</system>

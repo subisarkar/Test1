@@ -1,0 +1,24 @@
+<system>
+	<name>KOI-4016</name>
+	<rightascension>18 53 22</rightascension>
+	<declination>+41 12 06</declination>
+	<distance>268.36</distance>
+	<star>
+		<name>KOI-4016</name>
+		<temperature errorminus="130.00" errorplus="130.00">4366.00</temperature>
+		<radius errorminus="0.0690" errorplus="0.0690">0.6390</radius>
+		<metallicity errorminus="0.3200" errorplus="0.3200">-0.1800</metallicity>
+		<planet>
+			<name>KOI-4016 b</name>
+			<name>KOI-4016 01</name>
+			<radius errorminus="0.10936" errorplus="0.10936">0.24696</radius>
+			<period errorminus="3.7510000e-04" errorplus="3.7510000e-04">125.413432500000</period>
+			<transittime errorminus="0.0025600" errorplus="0.0025600">2455028.6245200</transittime>
+			<semimajoraxis errorminus="8.37e-07" errorplus="8.37e-07">0.4196890</semimajoraxis>
+			<temperature errorminus="14.7" errorplus="14.7">237.7</temperature>
+			<list>Kepler Objects of Interest</list>
+			<description>This is a Kepler Object of Interest from the Q1-Q12 dataset. It has been flagged as a possible transit event but has not been confirmed to be a planet yet.</description>
+			<istransiting>1</istransiting>
+		</planet>
+	</star>
+</system>

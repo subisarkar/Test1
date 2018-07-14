@@ -1,0 +1,28 @@
+<system>
+	<name>KOI-1656</name>
+	<rightascension>19 34 30</rightascension>
+	<declination>+39 30 22</declination>
+	<distance>1314.36</distance>
+	<star>
+		<magJ errorminus="0.024" errorplus="0.024">13.872</magJ>
+		<magH errorminus="0.029" errorplus="0.029">13.547</magH>
+		<magK errorminus="0.05" errorplus="0.05">13.56</magK>
+		<name>KOI-1656</name>
+		<temperature errorminus="119.00" errorplus="119.00">6076.00</temperature>
+		<radius errorminus="0.4300" errorplus="0.4300">1.0400</radius>
+		<mass errorminus="0.1000" errorplus="0.1000">1.0400</mass>
+		<age errorminus="1.9000" errorplus="1.9000">2.9000</age>
+		<planet>
+			<name>KOI-1656 b</name>
+			<name>KOI-1656 01</name>
+			<radius errorminus="0.12758" errorplus="0.12758">0.20049</radius>
+			<period errorminus="2.1000000e-03" errorplus="2.1000000e-03">51.390000000000</period>
+			<transittime errorminus="0.0120000" errorplus="0.0120000">2454978.3200000</transittime>
+			<semimajoraxis>0.2740000</semimajoraxis>
+			<temperature>521.0</temperature>
+			<list>Kepler Objects of Interest</list>
+			<description>This is a Kepler Object of Interest from the Q1-Q12 dataset. It has been flagged as a possible transit event but has not been confirmed to be a planet yet.</description>
+			<istransiting>1</istransiting>
+		</planet>
+	</star>
+</system>

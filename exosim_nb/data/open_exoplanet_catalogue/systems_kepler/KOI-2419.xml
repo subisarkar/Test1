@@ -1,0 +1,28 @@
+<system>
+	<name>KOI-2419</name>
+	<rightascension>18 53 03</rightascension>
+	<declination>+41 42 41</declination>
+	<distance>1616.37</distance>
+	<star>
+		<magJ errorminus="0.028" errorplus="0.028">14.232</magJ>
+		<magH errorminus="0.03" errorplus="0.03">13.88</magH>
+		<magK errorminus="0.07" errorplus="0.07">13.91</magK>
+		<name>KOI-2419</name>
+		<temperature errorminus="105.00" errorplus="105.00">6144.00</temperature>
+		<radius errorminus="0.4800" errorplus="0.4800">1.1000</radius>
+		<mass errorminus="0.1300" errorplus="0.1300">1.0600</mass>
+		<age errorminus="1.4000" errorplus="1.4000">3.3000</age>
+		<planet>
+			<name>KOI-2419 b</name>
+			<name>KOI-2419 01</name>
+			<radius errorminus="0.14581" errorplus="0.14581">0.30073</radius>
+			<period errorminus="8.2000000e-04" errorplus="8.2000000e-04">9.956990000000</period>
+			<transittime errorminus="0.0100000" errorplus="0.0100000">2454969.5820000</transittime>
+			<semimajoraxis>0.0930000</semimajoraxis>
+			<temperature>934.0</temperature>
+			<list>Kepler Objects of Interest</list>
+			<description>This is a Kepler Object of Interest from the Q1-Q12 dataset. It has been flagged as a possible transit event but has not been confirmed to be a planet yet.</description>
+			<istransiting>1</istransiting>
+		</planet>
+	</star>
+</system>

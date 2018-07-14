@@ -1,0 +1,54 @@
+<system>
+	<name>KOI-0245</name>
+	<rightascension>18 56 14</rightascension>
+	<declination>+44 31 05</declination>
+	<distance>60.00</distance>
+	<star>
+		<magB errorminus="0.04" errorplus="0.04">10.45</magB>
+		<magV errorminus="0.03" errorplus="0.03">9.77</magV>
+		<magJ errorminus="0.018" errorplus="0.018">8.356</magJ>
+		<magH errorminus="0.024" errorplus="0.024">8.000</magH>
+		<magK errorminus="0.013" errorplus="0.013">7.942</magK>
+		<name>KOI-0245</name>
+		<temperature errorminus="44.00" errorplus="44.00">5288.00</temperature>
+		<radius errorminus="0.0280" errorplus="0.0280">0.7280</radius>
+		<mass errorminus="0.0200" errorplus="0.0200">0.7530</mass>
+		<age errorminus="3.6000" errorplus="3.6000">10.0000</age>
+		<planet>
+			<name>KOI-0245 b</name>
+			<name>KOI-0245 01</name>
+			<radius errorminus="0.00729" errorplus="0.00729">0.17679</radius>
+			<period errorminus="5.2000000e-05" errorplus="5.2000000e-05">39.792232000000</period>
+			<transittime errorminus="0.0004400" errorplus="0.0004400">2455008.2493500</transittime>
+			<semimajoraxis>0.2080000</semimajoraxis>
+			<temperature>436.0</temperature>
+			<list>Kepler Objects of Interest</list>
+			<description>This is a Kepler Object of Interest from the Q1-Q12 dataset. It has been flagged as a possible transit event but has not been confirmed to be a planet yet.</description>
+			<istransiting>1</istransiting>
+		</planet>
+		<planet>
+			<name>KOI-0245 c</name>
+			<name>KOI-0245 02</name>
+			<radius errorminus="0.00273" errorplus="0.00273">0.06835</radius>
+			<period errorminus="1.3000000e-04" errorplus="1.3000000e-04">21.302000000000</period>
+			<transittime errorminus="0.0021000" errorplus="0.0021000">2455024.8374000</transittime>
+			<semimajoraxis>0.1370000</semimajoraxis>
+			<temperature>538.0</temperature>
+			<list>Kepler Objects of Interest</list>
+			<description>This is a Kepler Object of Interest from the Q1-Q12 dataset. It has been flagged as a possible transit event but has not been confirmed to be a planet yet.</description>
+			<istransiting>1</istransiting>
+		</planet>
+		<planet>
+			<name>KOI-0245 d</name>
+			<name>KOI-0245 03</name>
+			<radius errorminus="0.00182" errorplus="0.00182">0.02825</radius>
+			<period errorminus="3.1000000e-04" errorplus="3.1000000e-04">13.367440000000</period>
+			<transittime errorminus="0.0082000" errorplus="0.0082000">2455017.0443000</transittime>
+			<semimajoraxis>0.1000000</semimajoraxis>
+			<temperature>629.0</temperature>
+			<list>Kepler Objects of Interest</list>
+			<description>This is a Kepler Object of Interest from the Q1-Q12 dataset. It has been flagged as a possible transit event but has not been confirmed to be a planet yet.</description>
+			<istransiting>1</istransiting>
+		</planet>
+	</star>
+</system>

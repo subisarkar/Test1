@@ -1,0 +1,24 @@
+<system>
+	<name>KOI-3482</name>
+	<rightascension>19 35 04</rightascension>
+	<declination>+42 49 45</declination>
+	<distance>1083.26</distance>
+	<star>
+		<name>KOI-3482</name>
+		<temperature errorminus="179.00" errorplus="179.00">6028.00</temperature>
+		<radius errorminus="0.4900" errorplus="0.4900">0.8440</radius>
+		<metallicity errorminus="0.3200" errorplus="0.3200">-0.5400</metallicity>
+		<planet>
+			<name>KOI-3482 b</name>
+			<name>KOI-3482 01</name>
+			<radius errorminus="0.20960" errorplus="0.20960">0.10845</radius>
+			<period errorminus="1.7720000e-04" errorplus="1.7720000e-04">15.331641900000</period>
+			<transittime errorminus="0.0091200" errorplus="0.0091200">2454975.5281100</transittime>
+			<semimajoraxis errorminus="8.95e-07" errorplus="8.95e-07">0.1162300</semimajoraxis>
+			<temperature errorminus="209.0" errorplus="209.0">717.0</temperature>
+			<list>Kepler Objects of Interest</list>
+			<description>This is a Kepler Object of Interest from the Q1-Q12 dataset. It has been flagged as a possible transit event but has not been confirmed to be a planet yet.</description>
+			<istransiting>1</istransiting>
+		</planet>
+	</star>
+</system>

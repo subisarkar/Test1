@@ -1,0 +1,25 @@
+<system>
+	<name>KOI-2319</name>
+	<rightascension>18 55 01</rightascension>
+	<declination>+45 20 06</declination>
+	<distance>826.21</distance>
+	<star>
+		<name>KOI-2319</name>
+		<temperature errorminus="89.00" errorplus="89.00">6488.00</temperature>
+		<radius errorminus="0.3300" errorplus="0.3300">1.2400</radius>
+		<mass errorminus="0.1000" errorplus="0.1000">1.1900</mass>
+		<age errorminus="0.6100" errorplus="0.6100">1.8800</age>
+		<planet>
+			<name>KOI-2319 b</name>
+			<name>KOI-2319 01</name>
+			<radius errorminus="0.08657" errorplus="0.08657">0.15674</radius>
+			<period errorminus="2.6000000e-04" errorplus="2.6000000e-04">21.103540000000</period>
+			<transittime errorminus="0.0048000" errorplus="0.0048000">2454977.6577000</transittime>
+			<semimajoraxis>0.1580000</semimajoraxis>
+			<temperature>800.0</temperature>
+			<list>Kepler Objects of Interest</list>
+			<description>This is a Kepler Object of Interest from the Q1-Q12 dataset. It has been flagged as a possible transit event but has not been confirmed to be a planet yet.</description>
+			<istransiting>1</istransiting>
+		</planet>
+	</star>
+</system>

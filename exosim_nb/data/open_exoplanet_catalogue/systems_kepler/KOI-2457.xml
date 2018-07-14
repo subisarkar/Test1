@@ -1,0 +1,28 @@
+<system>
+	<name>KOI-2457</name>
+	<rightascension>18 49 12</rightascension>
+	<declination>+46 30 58</declination>
+	<distance>735.63</distance>
+	<star>
+		<magJ errorminus="0.021" errorplus="0.021">11.503</magJ>
+		<magH errorminus="0.021" errorplus="0.021">11.351</magH>
+		<magK errorminus="0.011" errorplus="0.011">11.269</magK>
+		<name>KOI-2457</name>
+		<temperature errorminus="92.00" errorplus="92.00">6733.00</temperature>
+		<radius errorminus="0.8200" errorplus="0.8200">1.5900</radius>
+		<mass errorminus="0.2000" errorplus="0.2000">1.3400</mass>
+		<age errorminus="0.4900" errorplus="0.4900">2.1300</age>
+		<planet>
+			<name>KOI-2457 b</name>
+			<name>KOI-2457 01</name>
+			<radius errorminus="0.05377" errorplus="0.05377">0.10389</radius>
+			<period errorminus="7.4000000e-05" errorplus="7.4000000e-05">3.704297000000</period>
+			<transittime errorminus="0.0065000" errorplus="0.0065000">2454965.2111000</transittime>
+			<semimajoraxis>0.0520000</semimajoraxis>
+			<temperature>1641.0</temperature>
+			<list>Kepler Objects of Interest</list>
+			<description>This is a Kepler Object of Interest from the Q1-Q12 dataset. It has been flagged as a possible transit event but has not been confirmed to be a planet yet.</description>
+			<istransiting>1</istransiting>
+		</planet>
+	</star>
+</system>

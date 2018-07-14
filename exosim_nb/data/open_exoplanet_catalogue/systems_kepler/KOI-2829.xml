@@ -1,0 +1,25 @@
+<system>
+	<name>KOI-2829</name>
+	<rightascension>19 17 27</rightascension>
+	<declination>+41 31 59</declination>
+	<distance>608.69</distance>
+	<star>
+		<name>KOI-2829</name>
+		<temperature errorminus="75.00" errorplus="75.00">6194.00</temperature>
+		<radius errorminus="0.4700" errorplus="0.4700">1.2800</radius>
+		<mass errorminus="0.1200" errorplus="0.1200">1.1000</mass>
+		<age errorminus="1.0000" errorplus="1.0000">4.3000</age>
+		<planet>
+			<name>KOI-2829 b</name>
+			<name>KOI-2829 01</name>
+			<radius errorminus="0.10024" errorplus="0.10024">0.18226</radius>
+			<period errorminus="3.0000000e-05" errorplus="3.0000000e-05">10.613405000000</period>
+			<transittime errorminus="0.0021000" errorplus="0.0021000">2454968.6912000</transittime>
+			<semimajoraxis>0.0980000</semimajoraxis>
+			<temperature>988.0</temperature>
+			<list>Kepler Objects of Interest</list>
+			<description>This is a Kepler Object of Interest from the Q1-Q12 dataset. It has been flagged as a possible transit event but has not been confirmed to be a planet yet.</description>
+			<istransiting>1</istransiting>
+		</planet>
+	</star>
+</system>

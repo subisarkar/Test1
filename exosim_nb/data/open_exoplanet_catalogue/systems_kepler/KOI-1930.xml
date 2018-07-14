@@ -1,0 +1,66 @@
+<system>
+	<name>KOI-1930</name>
+	<rightascension>18 51 54</rightascension>
+	<declination>+40 47 03</declination>
+	<distance>470.42</distance>
+	<star>
+		<magB errorminus="0.27" errorplus="0.27">12.88</magB>
+		<magV errorminus="0.19" errorplus="0.19">12.19</magV>
+		<magJ errorminus="0.03" errorplus="0.03">11.10</magJ>
+		<magH errorminus="0.03" errorplus="0.03">10.84</magH>
+		<magK errorminus="0.021" errorplus="0.021">10.756</magK>
+		<name>KOI-1930</name>
+		<temperature errorminus="57.00" errorplus="57.00">5897.00</temperature>
+		<radius errorminus="0.2000" errorplus="0.2000">1.5100</radius>
+		<mass errorminus="0.0720" errorplus="0.0720">1.1010</mass>
+		<age errorminus="1.2000" errorplus="1.2000">6.5000</age>
+		<planet>
+			<name>KOI-1930 b</name>
+			<name>KOI-1930 01</name>
+			<radius errorminus="0.02643" errorplus="0.02643">0.20140</radius>
+			<period errorminus="1.4000000e-04" errorplus="1.4000000e-04">13.726860000000</period>
+			<transittime errorminus="0.0037000" errorplus="0.0037000">2454971.7478000</transittime>
+			<semimajoraxis>0.1160000</semimajoraxis>
+			<temperature>938.0</temperature>
+			<list>Kepler Objects of Interest</list>
+			<description>This is a Kepler Object of Interest from the Q1-Q12 dataset. It has been flagged as a possible transit event but has not been confirmed to be a planet yet.</description>
+			<istransiting>1</istransiting>
+		</planet>
+		<planet>
+			<name>KOI-1930 c</name>
+			<name>KOI-1930 02</name>
+			<radius errorminus="0.02552" errorplus="0.02552">0.19502</radius>
+			<period errorminus="3.6000000e-04" errorplus="3.6000000e-04">24.310580000000</period>
+			<transittime errorminus="0.0055000" errorplus="0.0055000">2454970.0438000</transittime>
+			<semimajoraxis>0.1700000</semimajoraxis>
+			<temperature>775.0</temperature>
+			<list>Kepler Objects of Interest</list>
+			<description>This is a Kepler Object of Interest from the Q1-Q12 dataset. It has been flagged as a possible transit event but has not been confirmed to be a planet yet.</description>
+			<istransiting>1</istransiting>
+		</planet>
+		<planet>
+			<name>KOI-1930 d</name>
+			<name>KOI-1930 03</name>
+			<radius errorminus="0.02916" errorplus="0.02916">0.22418</radius>
+			<period errorminus="7.6000000e-04" errorplus="7.6000000e-04">44.431500000000</period>
+			<transittime errorminus="0.0060000" errorplus="0.0060000">2454976.5344000</transittime>
+			<semimajoraxis>0.2540000</semimajoraxis>
+			<temperature>634.0</temperature>
+			<list>Kepler Objects of Interest</list>
+			<description>This is a Kepler Object of Interest from the Q1-Q12 dataset. It has been flagged as a possible transit event but has not been confirmed to be a planet yet.</description>
+			<istransiting>1</istransiting>
+		</planet>
+		<planet>
+			<name>KOI-1930 e</name>
+			<name>KOI-1930 04</name>
+			<radius errorminus="0.01640" errorplus="0.01640">0.12394</radius>
+			<period errorminus="2.1000000e-04" errorplus="2.1000000e-04">9.341310000000</period>
+			<transittime errorminus="0.0080000" errorplus="0.0080000">2454965.3931000</transittime>
+			<semimajoraxis>0.0900000</semimajoraxis>
+			<temperature>1065.0</temperature>
+			<list>Kepler Objects of Interest</list>
+			<description>This is a Kepler Object of Interest from the Q1-Q12 dataset. It has been flagged as a possible transit event but has not been confirmed to be a planet yet.</description>
+			<istransiting>1</istransiting>
+		</planet>
+	</star>
+</system>

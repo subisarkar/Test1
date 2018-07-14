@@ -1,0 +1,40 @@
+<system>
+	<name>KOI-1106</name>
+	<rightascension>19 30 51</rightascension>
+	<declination>+38 21 29</declination>
+	<distance>1223.28</distance>
+	<star>
+		<magJ errorminus="0.025" errorplus="0.025">13.684</magJ>
+		<magH errorminus="0.024" errorplus="0.024">13.394</magH>
+		<magK errorminus="0.04" errorplus="0.04">13.39</magK>
+		<name>KOI-1106</name>
+		<temperature errorminus="107.00" errorplus="107.00">6215.00</temperature>
+		<radius errorminus="0.5300" errorplus="0.5300">1.0200</radius>
+		<mass errorminus="0.1300" errorplus="0.1300">1.1000</mass>
+		<age errorminus="1.2000" errorplus="1.2000">0.3000</age>
+		<planet>
+			<name>KOI-1106 b</name>
+			<name>KOI-1106 01</name>
+			<radius errorminus="0.11847" errorplus="0.11847">0.22783</radius>
+			<period errorminus="4.8000000e-05" errorplus="4.8000000e-05">7.425992000000</period>
+			<transittime errorminus="0.0030000" errorplus="0.0030000">2454972.9072000</transittime>
+			<semimajoraxis>0.0770000</semimajoraxis>
+			<temperature>996.0</temperature>
+			<list>Kepler Objects of Interest</list>
+			<description>This is a Kepler Object of Interest from the Q1-Q12 dataset. It has been flagged as a possible transit event but has not been confirmed to be a planet yet.</description>
+			<istransiting>1</istransiting>
+		</planet>
+		<planet>
+			<name>KOI-1106 c</name>
+			<name>KOI-1106 02</name>
+			<radius errorminus="0.10024" errorplus="0.10024">0.20049</radius>
+			<period errorminus="2.0000000e-04" errorplus="2.0000000e-04">15.984670000000</period>
+			<transittime errorminus="0.0059000" errorplus="0.0059000">2454970.6611000</transittime>
+			<semimajoraxis>0.1280000</semimajoraxis>
+			<temperature>773.0</temperature>
+			<list>Kepler Objects of Interest</list>
+			<description>This is a Kepler Object of Interest from the Q1-Q12 dataset. It has been flagged as a possible transit event but has not been confirmed to be a planet yet.</description>
+			<istransiting>1</istransiting>
+		</planet>
+	</star>
+</system>

@@ -1,0 +1,25 @@
+<system>
+	<name>KOI-2488</name>
+	<rightascension>19 25 53</rightascension>
+	<declination>+44 41 00</declination>
+	<distance>928.30</distance>
+	<star>
+		<name>KOI-2488</name>
+		<temperature errorminus="99.00" errorplus="99.00">6438.00</temperature>
+		<radius errorminus="0.1400" errorplus="0.1400">1.3000</radius>
+		<mass errorminus="0.0410" errorplus="0.0410">1.1810</mass>
+		<age errorminus="0.2800" errorplus="0.2800">2.7300</age>
+		<planet>
+			<name>KOI-2488 b</name>
+			<name>KOI-2488 01</name>
+			<radius errorminus="0.01458" errorplus="0.01458">0.12485</radius>
+			<period errorminus="2.7000000e-04" errorplus="2.7000000e-04">12.413010000000</period>
+			<transittime errorminus="0.0082000" errorplus="0.0082000">2454973.3473000</transittime>
+			<semimajoraxis>0.1110000</semimajoraxis>
+			<temperature>973.0</temperature>
+			<list>Kepler Objects of Interest</list>
+			<description>This is a Kepler Object of Interest from the Q1-Q12 dataset. It has been flagged as a possible transit event but has not been confirmed to be a planet yet.</description>
+			<istransiting>1</istransiting>
+		</planet>
+	</star>
+</system>

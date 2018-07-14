@@ -1,0 +1,30 @@
+<system>
+	<name>KOI-1928</name>
+	<rightascension>18 55 14</rightascension>
+	<declination>+41 02 28</declination>
+	<distance>620.18</distance>
+	<star>
+		<magB>14.300</magB>
+		<magR>13.500</magR>
+		<magJ errorminus="0.025" errorplus="0.025">12.532</magJ>
+		<magH errorminus="0.032" errorplus="0.032">12.225</magH>
+		<magK errorminus="0.022" errorplus="0.022">12.163</magK>
+		<name>KOI-1928</name>
+		<temperature errorminus="99.00" errorplus="99.00">6000.00</temperature>
+		<radius errorminus="0.4000" errorplus="0.4000">0.9700</radius>
+		<mass errorminus="0.0870" errorplus="0.0870">1.0230</mass>
+		<age errorminus="2.2000" errorplus="2.2000">1.9000</age>
+		<planet>
+			<name>KOI-1928 b</name>
+			<name>KOI-1928 01</name>
+			<radius errorminus="0.10024" errorplus="0.10024">0.25516</radius>
+			<period errorminus="7.3000000e-04" errorplus="7.3000000e-04">63.038140000000</period>
+			<transittime errorminus="0.0047000" errorplus="0.0047000">2455002.1195000</transittime>
+			<semimajoraxis>0.3130000</semimajoraxis>
+			<temperature>465.0</temperature>
+			<list>Kepler Objects of Interest</list>
+			<description>This is a Kepler Object of Interest from the Q1-Q12 dataset. It has been flagged as a possible transit event but has not been confirmed to be a planet yet.</description>
+			<istransiting>1</istransiting>
+		</planet>
+	</star>
+</system>

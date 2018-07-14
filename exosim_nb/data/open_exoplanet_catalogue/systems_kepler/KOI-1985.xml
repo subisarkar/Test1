@@ -1,0 +1,28 @@
+<system>
+	<name>KOI-1985</name>
+	<rightascension>18 43 42</rightascension>
+	<declination>+44 05 16</declination>
+	<distance>320.84</distance>
+	<star>
+		<magJ errorminus="0.025" errorplus="0.025">12.184</magJ>
+		<magH errorminus="0.023" errorplus="0.023">11.723</magH>
+		<magK errorminus="0.016" errorplus="0.016">11.576</magK>
+		<name>KOI-1985</name>
+		<temperature errorminus="72.00" errorplus="72.00">4926.00</temperature>
+		<radius errorminus="0.8000" errorplus="0.8000">0.7100</radius>
+		<mass errorminus="0.1300" errorplus="0.1300">0.7200</mass>
+		<age errorminus="3.5000" errorplus="3.5000">14.0000</age>
+		<planet>
+			<name>KOI-1985 b</name>
+			<name>KOI-1985 01</name>
+			<radius errorminus="0.17315" errorplus="0.17315">0.14581</radius>
+			<period errorminus="2.0000000e-05" errorplus="2.0000000e-05">5.756239000000</period>
+			<transittime errorminus="0.0012000" errorplus="0.0012000">2454966.9029000</transittime>
+			<semimajoraxis>0.0560000</semimajoraxis>
+			<temperature>772.0</temperature>
+			<list>Kepler Objects of Interest</list>
+			<description>This is a Kepler Object of Interest from the Q1-Q12 dataset. It has been flagged as a possible transit event but has not been confirmed to be a planet yet.</description>
+			<istransiting>1</istransiting>
+		</planet>
+	</star>
+</system>

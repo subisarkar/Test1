@@ -1,0 +1,25 @@
+<system>
+	<name>KOI-2789</name>
+	<rightascension>19 27 21</rightascension>
+	<declination>+45 10 45</declination>
+	<distance>1065.53</distance>
+	<star>
+		<name>KOI-2789</name>
+		<temperature errorminus="96.00" errorplus="96.00">6215.00</temperature>
+		<radius errorminus="0.5300" errorplus="0.5300">1.0300</radius>
+		<mass errorminus="0.1400" errorplus="0.1400">1.1100</mass>
+		<age errorminus="1.2000" errorplus="1.2000">0.4000</age>
+		<planet>
+			<name>KOI-2789 b</name>
+			<name>KOI-2789 01</name>
+			<radius errorminus="0.10024" errorplus="0.10024">0.15492</radius>
+			<period errorminus="1.6000000e-05" errorplus="1.6000000e-05">3.401648000000</period>
+			<transittime errorminus="0.0032000" errorplus="0.0032000">2454965.0615000</transittime>
+			<semimajoraxis>0.0460000</semimajoraxis>
+			<temperature>1295.0</temperature>
+			<list>Kepler Objects of Interest</list>
+			<description>This is a Kepler Object of Interest from the Q1-Q12 dataset. It has been flagged as a possible transit event but has not been confirmed to be a planet yet.</description>
+			<istransiting>1</istransiting>
+		</planet>
+	</star>
+</system>

@@ -1,0 +1,27 @@
+<system>
+	<name>KOI-1420</name>
+	<rightascension>19 20 27</rightascension>
+	<declination>+48 34 40</declination>
+	<distance>833.29</distance>
+	<star>
+		<magJ errorminus="0.06" errorplus="0.06">14.16</magJ>
+		<magH errorminus="0.06" errorplus="0.06">13.68</magH>
+		<magK errorminus="0.05" errorplus="0.05">13.49</magK>
+		<name>KOI-1420</name>
+		<temperature errorminus="200.00" errorplus="200.00">4682.00</temperature>
+		<radius errorminus="0.3000" errorplus="0.3000">0.7700</radius>
+		<mass errorminus="0.3000" errorplus="0.3000">0.8000</mass>
+		<planet>
+			<name>KOI-1420 b</name>
+			<name>KOI-1420 01</name>
+			<radius errorminus="0.16403" errorplus="0.16403">0.41009</radius>
+			<period errorminus="7.1000000e-05" errorplus="7.1000000e-05">13.351585000000</period>
+			<transittime errorminus="0.0013000" errorplus="0.0013000">2455196.0848000</transittime>
+			<semimajoraxis>0.1020000</semimajoraxis>
+			<temperature>568.0</temperature>
+			<list>Kepler Objects of Interest</list>
+			<description>This is a Kepler Object of Interest from the Q1-Q12 dataset. It has been flagged as a possible transit event but has not been confirmed to be a planet yet.</description>
+			<istransiting>1</istransiting>
+		</planet>
+	</star>
+</system>

@@ -1,0 +1,25 @@
+<system>
+	<name>KOI-2898</name>
+	<rightascension>19 10 08</rightascension>
+	<declination>+48 43 40</declination>
+	<distance>1585.01</distance>
+	<star>
+		<name>KOI-2898</name>
+		<temperature errorminus="105.00" errorplus="105.00">6119.00</temperature>
+		<radius errorminus="0.4500" errorplus="0.4500">0.9800</radius>
+		<mass errorminus="0.1100" errorplus="0.1100">1.0800</mass>
+		<age errorminus="1.8000" errorplus="1.8000">0.3000</age>
+		<planet>
+			<name>KOI-2898 b</name>
+			<name>KOI-2898 01</name>
+			<radius errorminus="0.13670" errorplus="0.13670">0.21871</radius>
+			<period errorminus="2.1000000e-04" errorplus="2.1000000e-04">25.384130000000</period>
+			<transittime errorminus="0.0057000" errorplus="0.0057000">2454970.7756000</transittime>
+			<semimajoraxis>0.1730000</semimajoraxis>
+			<temperature>643.0</temperature>
+			<list>Kepler Objects of Interest</list>
+			<description>This is a Kepler Object of Interest from the Q1-Q12 dataset. It has been flagged as a possible transit event but has not been confirmed to be a planet yet.</description>
+			<istransiting>1</istransiting>
+		</planet>
+	</star>
+</system>

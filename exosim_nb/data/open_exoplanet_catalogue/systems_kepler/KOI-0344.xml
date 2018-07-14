@@ -1,0 +1,28 @@
+<system>
+	<name>KOI-0344</name>
+	<rightascension>18 53 21</rightascension>
+	<declination>+48 32 56</declination>
+	<distance>648.11</distance>
+	<star>
+		<magJ errorminus="0.025" errorplus="0.025">12.303</magJ>
+		<magH errorminus="0.019" errorplus="0.019">11.939</magH>
+		<magK errorminus="0.020" errorplus="0.020">11.900</magK>
+		<name>KOI-0344</name>
+		<temperature errorminus="81.00" errorplus="81.00">5984.00</temperature>
+		<radius errorminus="0.4800" errorplus="0.4800">1.1200</radius>
+		<mass errorminus="0.1200" errorplus="0.1200">1.0000</mass>
+		<age errorminus="1.7000" errorplus="1.7000">6.2000</age>
+		<planet>
+			<name>KOI-0344 b</name>
+			<name>KOI-0344 01</name>
+			<radius errorminus="0.14581" errorplus="0.14581">0.34630</radius>
+			<period errorminus="1.5000000e-04" errorplus="1.5000000e-04">39.309240000000</period>
+			<transittime errorminus="0.0012000" errorplus="0.0012000">2455004.3355000</transittime>
+			<semimajoraxis>0.2260000</semimajoraxis>
+			<temperature>588.0</temperature>
+			<list>Kepler Objects of Interest</list>
+			<description>This is a Kepler Object of Interest from the Q1-Q12 dataset. It has been flagged as a possible transit event but has not been confirmed to be a planet yet.</description>
+			<istransiting>1</istransiting>
+		</planet>
+	</star>
+</system>

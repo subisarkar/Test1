@@ -1,0 +1,25 @@
+<system>
+	<name>KOI-2869</name>
+	<rightascension>19 45 10</rightascension>
+	<declination>+43 24 11</declination>
+	<distance>922.18</distance>
+	<star>
+		<name>KOI-2869</name>
+		<temperature errorminus="104.00" errorplus="104.00">6260.00</temperature>
+		<radius errorminus="0.4800" errorplus="0.4800">1.2400</radius>
+		<mass errorminus="0.1300" errorplus="0.1300">1.1200</mass>
+		<age errorminus="0.8100" errorplus="0.8100">3.4900</age>
+		<planet>
+			<name>KOI-2869 b</name>
+			<name>KOI-2869 01</name>
+			<radius errorminus="0.06288" errorplus="0.06288">0.11118</radius>
+			<period errorminus="2.0000000e-05" errorplus="2.0000000e-05">3.300426000000</period>
+			<transittime errorminus="0.0044000" errorplus="0.0044000">2454966.5617000</transittime>
+			<semimajoraxis>0.0450000</semimajoraxis>
+			<temperature>1450.0</temperature>
+			<list>Kepler Objects of Interest</list>
+			<description>This is a Kepler Object of Interest from the Q1-Q12 dataset. It has been flagged as a possible transit event but has not been confirmed to be a planet yet.</description>
+			<istransiting>1</istransiting>
+		</planet>
+	</star>
+</system>

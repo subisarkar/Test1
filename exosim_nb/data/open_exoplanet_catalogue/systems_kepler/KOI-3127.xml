@@ -1,0 +1,25 @@
+<system>
+	<name>KOI-3127</name>
+	<rightascension>19 50 50</rightascension>
+	<declination>+46 46 04</declination>
+	<distance>1432.46</distance>
+	<star>
+		<name>KOI-3127</name>
+		<temperature errorminus="122.00" errorplus="122.00">6227.00</temperature>
+		<radius errorminus="0.4000" errorplus="0.4000">1.1300</radius>
+		<mass errorminus="0.1100" errorplus="0.1100">1.1000</mass>
+		<age errorminus="0.9500" errorplus="0.9500">2.5900</age>
+		<planet>
+			<name>KOI-3127 b</name>
+			<name>KOI-3127 01</name>
+			<radius errorminus="0.07473" errorplus="0.07473">0.13305</radius>
+			<period errorminus="1.7000000e-04" errorplus="1.7000000e-04">9.705420000000</period>
+			<transittime errorminus="0.0120000" errorplus="0.0120000">2454973.3750000</transittime>
+			<semimajoraxis>0.0920000</semimajoraxis>
+			<temperature>962.0</temperature>
+			<list>Kepler Objects of Interest</list>
+			<description>This is a Kepler Object of Interest from the Q1-Q12 dataset. It has been flagged as a possible transit event but has not been confirmed to be a planet yet.</description>
+			<istransiting>1</istransiting>
+		</planet>
+	</star>
+</system>

@@ -1,0 +1,28 @@
+<system>
+	<name>KOI-2444</name>
+	<rightascension>19 38 18</rightascension>
+	<declination>+38 27 25</declination>
+	<distance>1180.53</distance>
+	<star>
+		<magJ errorminus="0.03" errorplus="0.03">14.30</magJ>
+		<magH errorminus="0.04" errorplus="0.04">13.82</magH>
+		<magK errorminus="0.05" errorplus="0.05">13.76</magK>
+		<name>KOI-2444</name>
+		<temperature errorminus="129.00" errorplus="129.00">5540.00</temperature>
+		<radius errorminus="0.4400" errorplus="0.4400">0.8200</radius>
+		<mass errorminus="0.0900" errorplus="0.0900">0.8940</mass>
+		<age errorminus="4.1000" errorplus="4.1000">2.9000</age>
+		<planet>
+			<name>KOI-2444 b</name>
+			<name>KOI-2444 01</name>
+			<radius errorminus="0.13670" errorplus="0.13670">0.21871</radius>
+			<period errorminus="3.3000000e-04" errorplus="3.3000000e-04">18.552690000000</period>
+			<transittime errorminus="0.0065000" errorplus="0.0065000">2454968.5086000</transittime>
+			<semimajoraxis>0.1320000</semimajoraxis>
+			<temperature>610.0</temperature>
+			<list>Kepler Objects of Interest</list>
+			<description>This is a Kepler Object of Interest from the Q1-Q12 dataset. It has been flagged as a possible transit event but has not been confirmed to be a planet yet.</description>
+			<istransiting>1</istransiting>
+		</planet>
+	</star>
+</system>

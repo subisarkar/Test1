@@ -1,0 +1,40 @@
+<system>
+	<name>KOI-1986</name>
+	<rightascension>19 55 53</rightascension>
+	<declination>+44 07 56</declination>
+	<distance>1452.24</distance>
+	<star>
+		<magJ errorminus="0.027" errorplus="0.027">13.376</magJ>
+		<magH errorminus="0.03" errorplus="0.03">12.92</magH>
+		<magK errorminus="0.022" errorplus="0.022">12.782</magK>
+		<name>KOI-1986</name>
+		<temperature errorminus="95.00" errorplus="95.00">5251.00</temperature>
+		<radius errorminus="0.1900" errorplus="0.1900">1.6800</radius>
+		<mass errorminus="0.0610" errorplus="0.0610">0.9120</mass>
+		<age errorminus="2.2000" errorplus="2.2000">14.0000</age>
+		<planet>
+			<name>KOI-1986 b</name>
+			<name>KOI-1986 01</name>
+			<radius errorminus="0.12758" errorplus="0.12758">0.69259</radius>
+			<period errorminus="1.9000000e-03" errorplus="1.9000000e-03">148.456900000000</period>
+			<transittime errorminus="0.0043000" errorplus="0.0043000">2454984.3912000</transittime>
+			<semimajoraxis>0.5320000</semimajoraxis>
+			<temperature>411.0</temperature>
+			<list>Kepler Objects of Interest</list>
+			<description>This is a Kepler Object of Interest from the Q1-Q12 dataset. It has been flagged as a possible transit event but has not been confirmed to be a planet yet.</description>
+			<istransiting>1</istransiting>
+		</planet>
+		<planet>
+			<name>KOI-1986 c</name>
+			<name>KOI-1986 02</name>
+			<radius errorminus="0.10024" errorplus="0.10024">0.10936</radius>
+			<period errorminus="3.4520000e-05" errorplus="3.4520000e-05">7.127616150000</period>
+			<transittime errorminus="0.0035600" errorplus="0.0035600">2454969.0136800</transittime>
+			<semimajoraxis errorminus="2.20e-07" errorplus="2.20e-07">0.0679967</semimajoraxis>
+			<temperature errorminus="232.0" errorplus="232.0">805.0</temperature>
+			<list>Kepler Objects of Interest</list>
+			<description>This is a Kepler Object of Interest from the Q1-Q12 dataset. It has been flagged as a possible transit event but has not been confirmed to be a planet yet.</description>
+			<istransiting>1</istransiting>
+		</planet>
+	</star>
+</system>

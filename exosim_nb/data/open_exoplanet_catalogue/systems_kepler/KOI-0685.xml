@@ -1,0 +1,28 @@
+<system>
+	<name>KOI-0685</name>
+	<rightascension>19 41 54</rightascension>
+	<declination>+43 29 35</declination>
+	<distance>1272.96</distance>
+	<star>
+		<magJ errorminus="0.021" errorplus="0.021">12.921</magJ>
+		<magH errorminus="0.024" errorplus="0.024">12.725</magH>
+		<magK errorminus="0.023" errorplus="0.023">12.574</magK>
+		<name>KOI-0685</name>
+		<temperature errorminus="145.00" errorplus="145.00">6344.00</temperature>
+		<radius errorminus="0.4700" errorplus="0.4700">1.5200</radius>
+		<mass errorminus="0.1400" errorplus="0.1400">1.2200</mass>
+		<age errorminus="0.8200" errorplus="0.8200">3.5800</age>
+		<planet>
+			<name>KOI-0685 b</name>
+			<name>KOI-0685 01</name>
+			<radius errorminus="0.08019" errorplus="0.08019">0.25516</radius>
+			<period errorminus="1.6000000e-05" errorplus="1.6000000e-05">3.173905000000</period>
+			<transittime errorminus="0.0015000" errorplus="0.0015000">2455003.9252000</transittime>
+			<semimajoraxis>0.0450000</semimajoraxis>
+			<temperature>1625.0</temperature>
+			<list>Kepler Objects of Interest</list>
+			<description>This is a Kepler Object of Interest from the Q1-Q12 dataset. It has been flagged as a possible transit event but has not been confirmed to be a planet yet.</description>
+			<istransiting>1</istransiting>
+		</planet>
+	</star>
+</system>

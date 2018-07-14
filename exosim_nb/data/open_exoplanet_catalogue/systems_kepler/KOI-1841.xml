@@ -1,0 +1,28 @@
+<system>
+	<name>KOI-1841</name>
+	<rightascension>19 20 39</rightascension>
+	<declination>+49 55 25</declination>
+	<distance>328.75</distance>
+	<star>
+		<magJ errorminus="0.029" errorplus="0.029">11.845</magJ>
+		<magH errorminus="0.03" errorplus="0.03">11.43</magH>
+		<magK errorminus="0.020" errorplus="0.020">11.303</magK>
+		<name>KOI-1841</name>
+		<temperature errorminus="68.00" errorplus="68.00">5226.00</temperature>
+		<radius errorminus="0.4800" errorplus="0.4800">0.8100</radius>
+		<mass errorminus="0.0790" errorplus="0.0790">0.7770</mass>
+		<age errorminus="3.7000" errorplus="3.7000">13.8000</age>
+		<planet>
+			<name>KOI-1841 b</name>
+			<name>KOI-1841 01</name>
+			<radius errorminus="0.13670" errorplus="0.13670">0.21871</radius>
+			<period errorminus="3.0000000e-04" errorplus="3.0000000e-04">49.608050000000</period>
+			<transittime errorminus="0.0022000" errorplus="0.0022000">2454971.4127000</transittime>
+			<semimajoraxis>0.2430000</semimajoraxis>
+			<temperature>421.0</temperature>
+			<list>Kepler Objects of Interest</list>
+			<description>This is a Kepler Object of Interest from the Q1-Q12 dataset. It has been flagged as a possible transit event but has not been confirmed to be a planet yet.</description>
+			<istransiting>1</istransiting>
+		</planet>
+	</star>
+</system>

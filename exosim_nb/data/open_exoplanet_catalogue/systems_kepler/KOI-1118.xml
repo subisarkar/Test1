@@ -1,0 +1,28 @@
+<system>
+	<name>KOI-1118</name>
+	<rightascension>19 26 36</rightascension>
+	<declination>+38 01 41</declination>
+	<distance>937.59</distance>
+	<star>
+		<magJ errorminus="0.025" errorplus="0.025">12.761</magJ>
+		<magH errorminus="0.028" errorplus="0.028">12.484</magH>
+		<magK>12.429</magK>
+		<name>KOI-1118</name>
+		<temperature errorminus="104.00" errorplus="104.00">6317.00</temperature>
+		<radius errorminus="0.4700" errorplus="0.4700">1.1900</radius>
+		<mass errorminus="0.1300" errorplus="0.1300">1.1300</mass>
+		<age errorminus="0.8400" errorplus="0.8400">2.5900</age>
+		<planet>
+			<name>KOI-1118 b</name>
+			<name>KOI-1118 01</name>
+			<radius errorminus="0.11847" errorplus="0.11847">0.24605</radius>
+			<period errorminus="8.7000000e-05" errorplus="8.7000000e-05">7.373009000000</period>
+			<transittime errorminus="0.0044000" errorplus="0.0044000">2454970.6051000</transittime>
+			<semimajoraxis>0.0770000</semimajoraxis>
+			<temperature>1096.0</temperature>
+			<list>Kepler Objects of Interest</list>
+			<description>This is a Kepler Object of Interest from the Q1-Q12 dataset. It has been flagged as a possible transit event but has not been confirmed to be a planet yet.</description>
+			<istransiting>1</istransiting>
+		</planet>
+	</star>
+</system>

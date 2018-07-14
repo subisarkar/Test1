@@ -1,0 +1,27 @@
+<system>
+	<name>KOI-1758</name>
+	<rightascension>19 41 44</rightascension>
+	<declination>+42 09 58</declination>
+	<distance>787.43</distance>
+	<star>
+		<magJ errorminus="0.03" errorplus="0.03">14.65</magJ>
+		<magH errorminus="0.04" errorplus="0.04">14.27</magH>
+		<magK errorminus="0.06" errorplus="0.06">14.22</magK>
+		<name>KOI-1758</name>
+		<temperature errorminus="200.00" errorplus="200.00">5410.00</temperature>
+		<radius errorminus="0.3000" errorplus="0.3000">0.5100</radius>
+		<mass errorminus="0.3000" errorplus="0.3000">0.9000</mass>
+		<planet>
+			<name>KOI-1758 b</name>
+			<name>KOI-1758 01</name>
+			<radius errorminus="0.10024" errorplus="0.10024">0.13670</radius>
+			<period errorminus="5.3000000e-05" errorplus="5.3000000e-05">5.597163000000</period>
+			<transittime errorminus="0.0040000" errorplus="0.0040000">2454964.8757000</transittime>
+			<semimajoraxis>0.0600000</semimajoraxis>
+			<temperature>693.0</temperature>
+			<list>Kepler Objects of Interest</list>
+			<description>This is a Kepler Object of Interest from the Q1-Q12 dataset. It has been flagged as a possible transit event but has not been confirmed to be a planet yet.</description>
+			<istransiting>1</istransiting>
+		</planet>
+	</star>
+</system>

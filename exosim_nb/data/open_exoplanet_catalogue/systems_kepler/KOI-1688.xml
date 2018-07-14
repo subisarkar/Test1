@@ -1,0 +1,28 @@
+<system>
+	<name>KOI-1688</name>
+	<rightascension>19 53 55</rightascension>
+	<declination>+41 36 55</declination>
+	<distance>852.66</distance>
+	<star>
+		<magJ errorminus="0.024" errorplus="0.024">13.271</magJ>
+		<magH errorminus="0.024" errorplus="0.024">12.890</magH>
+		<magK errorminus="0.024" errorplus="0.024">12.849</magK>
+		<name>KOI-1688</name>
+		<temperature errorminus="97.00" errorplus="97.00">5822.00</temperature>
+		<radius errorminus="0.4500" errorplus="0.4500">0.9200</radius>
+		<mass errorminus="0.0960" errorplus="0.0960">0.9650</mass>
+		<age errorminus="3.0000" errorplus="3.0000">3.0000</age>
+		<planet>
+			<name>KOI-1688 b</name>
+			<name>KOI-1688 01</name>
+			<radius errorminus="0.05103" errorplus="0.05103">0.10207</radius>
+			<period errorminus="1.2000000e-05" errorplus="1.2000000e-05">0.921056000000</period>
+			<transittime errorminus="0.0025000" errorplus="0.0025000">2454965.0227000</transittime>
+			<semimajoraxis>0.0180000</semimajoraxis>
+			<temperature>1831.0</temperature>
+			<list>Kepler Objects of Interest</list>
+			<description>This is a Kepler Object of Interest from the Q1-Q12 dataset. It has been flagged as a possible transit event but has not been confirmed to be a planet yet.</description>
+			<istransiting>1</istransiting>
+		</planet>
+	</star>
+</system>

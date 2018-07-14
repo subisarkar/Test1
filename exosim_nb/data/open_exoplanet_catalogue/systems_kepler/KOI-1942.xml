@@ -1,0 +1,28 @@
+<system>
+	<name>KOI-1942</name>
+	<rightascension>19 04 01</rightascension>
+	<declination>+38 00 34</declination>
+	<distance>797.85</distance>
+	<star>
+		<magJ errorminus="0.028" errorplus="0.028">13.990</magJ>
+		<magH errorminus="0.03" errorplus="0.03">13.56</magH>
+		<magK errorminus="0.03" errorplus="0.03">13.44</magK>
+		<name>KOI-1942</name>
+		<temperature errorminus="89.00" errorplus="89.00">5214.00</temperature>
+		<radius errorminus="0.1200" errorplus="0.1200">0.7200</radius>
+		<mass errorminus="0.0300" errorplus="0.0300">0.8240</mass>
+		<age errorminus="3.8000" errorplus="3.8000">0.6000</age>
+		<planet>
+			<name>KOI-1942 b</name>
+			<name>KOI-1942 01</name>
+			<radius errorminus="0.04465" errorplus="0.04465">0.25972</radius>
+			<period errorminus="9.7000000e-05" errorplus="9.7000000e-05">10.849813000000</period>
+			<transittime errorminus="0.0034000" errorplus="0.0034000">2454969.7413000</transittime>
+			<semimajoraxis>0.0900000</semimajoraxis>
+			<temperature>651.0</temperature>
+			<list>Kepler Objects of Interest</list>
+			<description>This is a Kepler Object of Interest from the Q1-Q12 dataset. It has been flagged as a possible transit event but has not been confirmed to be a planet yet.</description>
+			<istransiting>1</istransiting>
+		</planet>
+	</star>
+</system>

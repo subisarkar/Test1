@@ -1,0 +1,27 @@
+<system>
+	<name>KOI-2417</name>
+	<rightascension>19 36 01</rightascension>
+	<declination>+46 18 38</declination>
+	<distance>775.20</distance>
+	<star>
+		<magJ errorminus="0.026" errorplus="0.026">14.117</magJ>
+		<magH errorminus="0.031" errorplus="0.031">13.529</magH>
+		<magK errorminus="0.036" errorplus="0.036">13.434</magK>
+		<name>KOI-2417</name>
+		<temperature>4300.00</temperature>
+		<radius>0.7080</radius>
+		<mass>0.6540</mass>
+		<planet>
+			<name>KOI-2417 b</name>
+			<name>KOI-2417 01</name>
+			<radius>0.26975</radius>
+			<period errorminus="2.5000000e-03" errorplus="2.5000000e-03">47.708700000000</period>
+			<transittime errorminus="0.0250000" errorplus="0.0250000">2454979.2880000</transittime>
+			<semimajoraxis>0.2240000</semimajoraxis>
+			<temperature>337.0</temperature>
+			<list>Kepler Objects of Interest</list>
+			<description>This is a Kepler Object of Interest from the Q1-Q12 dataset. It has been flagged as a possible transit event but has not been confirmed to be a planet yet.</description>
+			<istransiting>1</istransiting>
+		</planet>
+	</star>
+</system>

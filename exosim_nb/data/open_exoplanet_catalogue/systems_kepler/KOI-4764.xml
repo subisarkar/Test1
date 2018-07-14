@@ -1,0 +1,24 @@
+<system>
+	<name>KOI-4764</name>
+	<rightascension>19 28 44</rightascension>
+	<declination>+41 19 40</declination>
+	<distance>1022.71</distance>
+	<star>
+		<name>KOI-4764</name>
+		<temperature errorminus="193.00" errorplus="193.00">5268.00</temperature>
+		<radius errorminus="0.2780" errorplus="0.2780">0.7520</radius>
+		<metallicity errorminus="0.3800" errorplus="0.3800">-0.1800</metallicity>
+		<planet>
+			<name>KOI-4764 b</name>
+			<name>KOI-4764 01</name>
+			<radius errorminus="0.13670" errorplus="0.13670">0.16403</radius>
+			<period errorminus="3.3980000e-04" errorplus="3.3980000e-04">31.420198000000</period>
+			<transittime errorminus="0.0088500" errorplus="0.0088500">2454965.7470900</transittime>
+			<semimajoraxis errorminus="1.32e-06" errorplus="1.32e-06">0.1830830</semimajoraxis>
+			<temperature errorminus="88.8" errorplus="88.8">471.0</temperature>
+			<list>Kepler Objects of Interest</list>
+			<description>This is a Kepler Object of Interest from the Q1-Q12 dataset. It has been flagged as a possible transit event but has not been confirmed to be a planet yet.</description>
+			<istransiting>1</istransiting>
+		</planet>
+	</star>
+</system>

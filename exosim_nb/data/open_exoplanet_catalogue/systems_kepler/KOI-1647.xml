@@ -1,0 +1,52 @@
+<system>
+	<name>KOI-1647</name>
+	<rightascension>19 53 10</rightascension>
+	<declination>+48 46 31</declination>
+	<distance>859.06</distance>
+	<star>
+		<magJ errorminus="0.023" errorplus="0.023">12.868</magJ>
+		<magH errorminus="0.016" errorplus="0.016">12.551</magH>
+		<magK errorminus="0.03" errorplus="0.03">12.52</magK>
+		<name>KOI-1647</name>
+		<temperature errorminus="126.00" errorplus="126.00">5880.00</temperature>
+		<radius errorminus="0.5000" errorplus="0.5000">1.0800</radius>
+		<mass errorminus="0.1200" errorplus="0.1200">0.9600</mass>
+		<age errorminus="2.6000" errorplus="2.6000">7.4000</age>
+		<planet>
+			<name>KOI-1647 b</name>
+			<name>KOI-1647 01</name>
+			<radius errorminus="0.08384" errorplus="0.08384">0.17953</radius>
+			<period errorminus="2.9000000e-04" errorplus="2.9000000e-04">14.970150000000</period>
+			<transittime errorminus="0.0063000" errorplus="0.0063000">2454967.5068000</transittime>
+			<semimajoraxis>0.1170000</semimajoraxis>
+			<temperature>787.0</temperature>
+			<list>Kepler Objects of Interest</list>
+			<description>This is a Kepler Object of Interest from the Q1-Q12 dataset. It has been flagged as a possible transit event but has not been confirmed to be a planet yet.</description>
+			<istransiting>1</istransiting>
+		</planet>
+		<planet>
+			<name>KOI-1647 c</name>
+			<name>KOI-1647 02</name>
+			<radius errorminus="0.08384" errorplus="0.08384">0.17862</radius>
+			<period errorminus="1.1000000e-03" errorplus="1.1000000e-03">32.275700000000</period>
+			<transittime errorminus="0.0098000" errorplus="0.0098000">2454982.0758000</transittime>
+			<semimajoraxis>0.1960000</semimajoraxis>
+			<temperature>608.0</temperature>
+			<list>Kepler Objects of Interest</list>
+			<description>This is a Kepler Object of Interest from the Q1-Q12 dataset. It has been flagged as a possible transit event but has not been confirmed to be a planet yet.</description>
+			<istransiting>1</istransiting>
+		</planet>
+		<planet>
+			<name>KOI-1647 d</name>
+			<name>KOI-1647 03</name>
+			<radius errorminus="0.04648" errorplus="0.04648">0.09933</radius>
+			<period errorminus="2.4000000e-04" errorplus="2.4000000e-04">6.330910000000</period>
+			<transittime errorminus="0.0120000" errorplus="0.0120000">2454966.8340000</transittime>
+			<semimajoraxis>0.0660000</semimajoraxis>
+			<temperature>1048.0</temperature>
+			<list>Kepler Objects of Interest</list>
+			<description>This is a Kepler Object of Interest from the Q1-Q12 dataset. It has been flagged as a possible transit event but has not been confirmed to be a planet yet.</description>
+			<istransiting>1</istransiting>
+		</planet>
+	</star>
+</system>

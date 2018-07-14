@@ -1,0 +1,28 @@
+<system>
+	<name>KOI-1784</name>
+	<rightascension>19 50 35</rightascension>
+	<declination>+47 10 02</declination>
+	<distance>538.26</distance>
+	<star>
+		<magJ errorminus="0.025" errorplus="0.025">12.482</magJ>
+		<magH errorminus="0.020" errorplus="0.020">12.160</magH>
+		<magK errorminus="0.021" errorplus="0.021">12.101</magK>
+		<name>KOI-1784</name>
+		<temperature errorminus="94.00" errorplus="94.00">5853.00</temperature>
+		<radius errorminus="0.4900" errorplus="0.4900">0.8900</radius>
+		<mass errorminus="0.1200" errorplus="0.1200">0.9900</mass>
+		<age errorminus="3.2000" errorplus="3.2000">0.3000</age>
+		<planet>
+			<name>KOI-1784 b</name>
+			<name>KOI-1784 01</name>
+			<radius errorminus="0.27339" errorplus="0.27339">0.47388</radius>
+			<period errorminus="4.8000000e-06" errorplus="4.8000000e-06">5.007409900000</period>
+			<transittime errorminus="0.0003000" errorplus="0.0003000">2454968.0236300</transittime>
+			<semimajoraxis>0.0570000</semimajoraxis>
+			<temperature>1017.0</temperature>
+			<list>Kepler Objects of Interest</list>
+			<description>This is a Kepler Object of Interest from the Q1-Q12 dataset. It has been flagged as a possible transit event but has not been confirmed to be a planet yet.</description>
+			<istransiting>1</istransiting>
+		</planet>
+	</star>
+</system>

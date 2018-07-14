@@ -1,0 +1,24 @@
+<system>
+	<name>KOI-4759</name>
+	<rightascension>19 11 05</rightascension>
+	<declination>+43 44 02</declination>
+	<distance>1264.48</distance>
+	<star>
+		<name>KOI-4759</name>
+		<temperature errorminus="192.00" errorplus="192.00">6018.00</temperature>
+		<radius errorminus="0.4890" errorplus="0.4890">1.0480</radius>
+		<metallicity errorminus="0.3000" errorplus="0.3000">-0.2400</metallicity>
+		<planet>
+			<name>KOI-4759 b</name>
+			<name>KOI-4759 01</name>
+			<radius errorminus="0.10024" errorplus="0.10024">0.14034</radius>
+			<period errorminus="1.9820000e-04" errorplus="1.9820000e-04">17.767203100000</period>
+			<transittime errorminus="0.0087300" errorplus="0.0087300">2454979.6496100</transittime>
+			<semimajoraxis errorminus="9.78e-07" errorplus="9.78e-07">0.1315280</semimajoraxis>
+			<temperature errorminus="176.0" errorplus="176.0">749.0</temperature>
+			<list>Kepler Objects of Interest</list>
+			<description>This is a Kepler Object of Interest from the Q1-Q12 dataset. It has been flagged as a possible transit event but has not been confirmed to be a planet yet.</description>
+			<istransiting>1</istransiting>
+		</planet>
+	</star>
+</system>

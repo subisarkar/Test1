@@ -1,0 +1,28 @@
+<system>
+	<name>KOI-0586</name>
+	<rightascension>18 51 08</rightascension>
+	<declination>+46 14 41</declination>
+	<distance>904.41</distance>
+	<star>
+		<magJ errorminus="0.027" errorplus="0.027">13.483</magJ>
+		<magH errorminus="0.027" errorplus="0.027">13.140</magH>
+		<magK errorminus="0.04" errorplus="0.04">13.07</magK>
+		<name>KOI-0586</name>
+		<temperature errorminus="90.00" errorplus="90.00">5938.00</temperature>
+		<radius errorminus="0.4000" errorplus="0.4000">0.9100</radius>
+		<mass errorminus="0.0860" errorplus="0.0860">1.0170</mass>
+		<age errorminus="2.7000" errorplus="2.7000">0.3000</age>
+		<planet>
+			<name>KOI-0586 b</name>
+			<name>KOI-0586 01</name>
+			<radius errorminus="0.09113" errorplus="0.09113">0.20960</radius>
+			<period errorminus="1.4000000e-04" errorplus="1.4000000e-04">15.779550000000</period>
+			<transittime errorminus="0.0031000" errorplus="0.0031000">2455008.9736000</transittime>
+			<semimajoraxis>0.1240000</semimajoraxis>
+			<temperature>710.0</temperature>
+			<list>Kepler Objects of Interest</list>
+			<description>This is a Kepler Object of Interest from the Q1-Q12 dataset. It has been flagged as a possible transit event but has not been confirmed to be a planet yet.</description>
+			<istransiting>1</istransiting>
+		</planet>
+	</star>
+</system>

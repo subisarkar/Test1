@@ -1,0 +1,25 @@
+<system>
+	<name>KOI-2317</name>
+	<rightascension>19 53 42</rightascension>
+	<declination>+47 56 48</declination>
+	<distance>904.14</distance>
+	<star>
+		<name>KOI-2317</name>
+		<temperature errorminus="122.00" errorplus="122.00">5817.00</temperature>
+		<radius errorminus="0.4900" errorplus="0.4900">1.1000</radius>
+		<mass errorminus="0.1200" errorplus="0.1200">0.9400</mass>
+		<age errorminus="2.8000" errorplus="2.8000">8.9000</age>
+		<planet>
+			<name>KOI-2317 b</name>
+			<name>KOI-2317 01</name>
+			<radius errorminus="0.05012" errorplus="0.05012">0.11209</radius>
+			<period errorminus="8.0000000e-05" errorplus="8.0000000e-05">3.788753000000</period>
+			<transittime errorminus="0.0065000" errorplus="0.0065000">2454967.6123000</transittime>
+			<semimajoraxis>0.0470000</semimajoraxis>
+			<temperature>1242.0</temperature>
+			<list>Kepler Objects of Interest</list>
+			<description>This is a Kepler Object of Interest from the Q1-Q12 dataset. It has been flagged as a possible transit event but has not been confirmed to be a planet yet.</description>
+			<istransiting>1</istransiting>
+		</planet>
+	</star>
+</system>

@@ -1,0 +1,27 @@
+<system>
+	<name>KOI-1950</name>
+	<rightascension>19 27 48</rightascension>
+	<declination>+38 15 06</declination>
+	<distance>1056.68</distance>
+	<star>
+		<magJ errorminus="0.04" errorplus="0.04">14.59</magJ>
+		<magH errorminus="0.04" errorplus="0.04">14.05</magH>
+		<magK errorminus="0.07" errorplus="0.07">14.05</magK>
+		<name>KOI-1950</name>
+		<temperature errorminus="200.00" errorplus="200.00">5186.00</temperature>
+		<radius errorminus="0.3000" errorplus="0.3000">0.7400</radius>
+		<mass errorminus="0.3000" errorplus="0.3000">0.9300</mass>
+		<planet>
+			<name>KOI-1950 b</name>
+			<name>KOI-1950 01</name>
+			<radius errorminus="0.13670" errorplus="0.13670">0.30073</radius>
+			<period errorminus="1.8000000e-03" errorplus="1.8000000e-03">66.415900000000</period>
+			<transittime errorminus="0.0110000" errorplus="0.0110000">2455021.1360000</transittime>
+			<semimajoraxis>0.3130000</semimajoraxis>
+			<temperature>352.0</temperature>
+			<list>Kepler Objects of Interest</list>
+			<description>This is a Kepler Object of Interest from the Q1-Q12 dataset. It has been flagged as a possible transit event but has not been confirmed to be a planet yet.</description>
+			<istransiting>1</istransiting>
+		</planet>
+	</star>
+</system>

@@ -1,0 +1,25 @@
+<system>
+	<name>KOI-3125</name>
+	<rightascension>19 24 41</rightascension>
+	<declination>+44 55 16</declination>
+	<distance>725.69</distance>
+	<star>
+		<name>KOI-3125</name>
+		<temperature errorminus="91.00" errorplus="91.00">6640.00</temperature>
+		<radius errorminus="0.7000" errorplus="0.7000">1.2600</radius>
+		<mass errorminus="0.1700" errorplus="0.1700">1.2500</mass>
+		<age errorminus="0.4500" errorplus="0.4500">1.0300</age>
+		<planet>
+			<name>KOI-3125 b</name>
+			<name>KOI-3125 01</name>
+			<radius errorminus="0.05103" errorplus="0.05103">0.07746</radius>
+			<period errorminus="3.4000000e-05" errorplus="3.4000000e-05">4.453434000000</period>
+			<transittime errorminus="0.0049000" errorplus="0.0049000">2454966.0925000</transittime>
+			<semimajoraxis>0.0570000</semimajoraxis>
+			<temperature>1378.0</temperature>
+			<list>Kepler Objects of Interest</list>
+			<description>This is a Kepler Object of Interest from the Q1-Q12 dataset. It has been flagged as a possible transit event but has not been confirmed to be a planet yet.</description>
+			<istransiting>1</istransiting>
+		</planet>
+	</star>
+</system>

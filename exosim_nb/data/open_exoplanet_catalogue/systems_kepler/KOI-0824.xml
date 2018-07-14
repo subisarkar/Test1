@@ -1,0 +1,28 @@
+<system>
+	<name>KOI-0824</name>
+	<rightascension>18 53 00</rightascension>
+	<declination>+40 21 29</declination>
+	<distance>1160.94</distance>
+	<star>
+		<magJ errorminus="0.04" errorplus="0.04">14.88</magJ>
+		<magH errorminus="0.05" errorplus="0.05">14.36</magH>
+		<magK errorminus="0.07" errorplus="0.07">14.18</magK>
+		<name>KOI-0824</name>
+		<temperature errorminus="75.00" errorplus="75.00">4981.00</temperature>
+		<radius errorminus="0.3500" errorplus="0.3500">0.7200</radius>
+		<mass errorminus="0.0640" errorplus="0.0640">0.7260</mass>
+		<age errorminus="3.8000" errorplus="3.8000">14.0000</age>
+		<planet>
+			<name>KOI-0824 b</name>
+			<name>KOI-0824 01</name>
+			<radius errorminus="0.42831" errorplus="0.42831">0.87485</radius>
+			<period errorminus="2.6000000e-05" errorplus="2.6000000e-05">15.375871000000</period>
+			<transittime errorminus="0.0007200" errorplus="0.0007200">2455006.6070800</transittime>
+			<semimajoraxis>0.1090000</semimajoraxis>
+			<temperature>565.0</temperature>
+			<list>Kepler Objects of Interest</list>
+			<description>This is a Kepler Object of Interest from the Q1-Q12 dataset. It has been flagged as a possible transit event but has not been confirmed to be a planet yet.</description>
+			<istransiting>1</istransiting>
+		</planet>
+	</star>
+</system>

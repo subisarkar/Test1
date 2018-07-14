@@ -1,0 +1,79 @@
+<system>
+	<name>KOI-3158</name>
+	<rightascension>19 19 00</rightascension>
+	<declination>+41 38 04</declination>
+	<distance>28.08</distance>
+	<star>
+		<magB>9.67</magB>
+		<magV>8.86</magV>
+		<magR>8.18</magR>
+		<magI>7.66</magI>
+		<magJ errorminus="0.026" errorplus="0.026">7.244</magJ>
+		<magH errorminus="0.047" errorplus="0.047">6.772</magH>
+		<magK errorminus="0.020" errorplus="0.020">6.703</magK>
+		<name>KOI-3158</name>
+		<temperature errorminus="187.00" errorplus="187.00">5032.00</temperature>
+		<radius errorminus="0.0620" errorplus="0.0620">0.5930</radius>
+		<metallicity errorminus="0.3200" errorplus="0.3200">-0.9600</metallicity>
+		<planet>
+			<name>KOI-3158 b</name>
+			<name>KOI-3158 01</name>
+			<radius errorminus="0.00706" errorplus="0.00706">0.02773</radius>
+			<period errorminus="6.9950000e-06" errorplus="6.9950000e-06">3.600107716000</period>
+			<transittime errorminus="0.0011100" errorplus="0.0011100">2454966.2605500</transittime>
+			<semimajoraxis errorminus="5.07e-08" errorplus="5.07e-08">0.0391691</semimajoraxis>
+			<temperature errorminus="55.4" errorplus="55.4">863.8</temperature>
+			<list>Kepler Objects of Interest</list>
+			<description>This is a Kepler Object of Interest from the Q1-Q12 dataset. It has been flagged as a possible transit event but has not been confirmed to be a planet yet.</description>
+			<istransiting>1</istransiting>
+		</planet>
+		<planet>
+			<name>KOI-3158 c</name>
+			<name>KOI-3158 02</name>
+			<radius errorminus="0.00637" errorplus="0.00637">0.04287</radius>
+			<period errorminus="5.9740000e-06" errorplus="5.9740000e-06">4.545879729000</period>
+			<transittime errorminus="0.0007840" errorplus="0.0007840">2454964.5226430</transittime>
+			<semimajoraxis errorminus="4.01e-08" errorplus="4.01e-08">0.0457593</semimajoraxis>
+			<temperature errorminus="51.3" errorplus="51.3">799.1</temperature>
+			<list>Kepler Objects of Interest</list>
+			<description>This is a Kepler Object of Interest from the Q1-Q12 dataset. It has been flagged as a possible transit event but has not been confirmed to be a planet yet.</description>
+			<istransiting>1</istransiting>
+		</planet>
+		<planet>
+			<name>KOI-3158 d</name>
+			<name>KOI-3158 03</name>
+			<radius errorminus="0.00717" errorplus="0.00717">0.03737</radius>
+			<period errorminus="8.5790000e-06" errorplus="8.5790000e-06">6.189392330000</period>
+			<transittime errorminus="0.0009110" errorplus="0.0009110">2454967.7867650</transittime>
+			<semimajoraxis errorminus="5.19e-08" errorplus="5.19e-08">0.0562124</semimajoraxis>
+			<temperature errorminus="46.2" errorplus="46.2">721.0</temperature>
+			<list>Kepler Objects of Interest</list>
+			<description>This is a Kepler Object of Interest from the Q1-Q12 dataset. It has been flagged as a possible transit event but has not been confirmed to be a planet yet.</description>
+			<istransiting>1</istransiting>
+		</planet>
+		<planet>
+			<name>KOI-3158 e</name>
+			<name>KOI-3158 04</name>
+			<radius errorminus="0.01622" errorplus="0.01622">0.03837</radius>
+			<period errorminus="1.2930000e-05" errorplus="1.2930000e-05">7.743549570000</period>
+			<transittime errorminus="0.0011300" errorplus="0.0011300">2454968.0892000</transittime>
+			<semimajoraxis errorminus="7.27e-08" errorplus="7.27e-08">0.0652670</semimajoraxis>
+			<temperature errorminus="42.9" errorplus="42.9">669.1</temperature>
+			<list>Kepler Objects of Interest</list>
+			<description>This is a Kepler Object of Interest from the Q1-Q12 dataset. It has been flagged as a possible transit event but has not been confirmed to be a planet yet.</description>
+			<istransiting>1</istransiting>
+		</planet>
+		<planet>
+			<name>KOI-3158 f</name>
+			<name>KOI-3158 05</name>
+			<radius errorminus="0.00831" errorplus="0.00831">0.04626</radius>
+			<period errorminus="1.0570000e-05" errorplus="1.0570000e-05">9.740483790000</period>
+			<transittime errorminus="0.0007580" errorplus="0.0007580">2454967.8789390</transittime>
+			<semimajoraxis errorminus="5.50e-08" errorplus="5.50e-08">0.0760537</semimajoraxis>
+			<temperature errorminus="39.8" errorplus="39.8">619.9</temperature>
+			<list>Kepler Objects of Interest</list>
+			<description>This is a Kepler Object of Interest from the Q1-Q12 dataset. It has been flagged as a possible transit event but has not been confirmed to be a planet yet.</description>
+			<istransiting>1</istransiting>
+		</planet>
+	</star>
+</system>

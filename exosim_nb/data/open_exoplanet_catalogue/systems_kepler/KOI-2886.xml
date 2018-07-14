@@ -1,0 +1,24 @@
+<system>
+	<name>KOI-2886</name>
+	<rightascension>19 34 40</rightascension>
+	<declination>+41 24 36</declination>
+	<distance>1046.03</distance>
+	<star>
+		<name>KOI-2886</name>
+		<temperature errorminus="200.00" errorplus="200.00">5068.00</temperature>
+		<radius errorminus="0.3000" errorplus="0.3000">0.7900</radius>
+		<mass errorminus="0.3000" errorplus="0.3000">0.9200</mass>
+		<planet>
+			<name>KOI-2886 b</name>
+			<name>KOI-2886 01</name>
+			<radius errorminus="0.06197" errorplus="0.06197">0.12211</radius>
+			<period errorminus="2.7000000e-06" errorplus="2.7000000e-06">0.881839400000</period>
+			<transittime errorminus="0.0019000" errorplus="0.0019000">2454964.6905000</transittime>
+			<semimajoraxis>0.0180000</semimajoraxis>
+			<temperature>1482.0</temperature>
+			<list>Kepler Objects of Interest</list>
+			<description>This is a Kepler Object of Interest from the Q1-Q12 dataset. It has been flagged as a possible transit event but has not been confirmed to be a planet yet.</description>
+			<istransiting>1</istransiting>
+		</planet>
+	</star>
+</system>

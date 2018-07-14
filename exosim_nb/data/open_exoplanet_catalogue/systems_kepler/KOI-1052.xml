@@ -1,0 +1,64 @@
+<system>
+	<name>KOI-1052</name>
+	<rightascension>19 22 02</rightascension>
+	<declination>+41 14 41</declination>
+	<distance>1717.02</distance>
+	<star>
+		<magJ errorminus="0.028" errorplus="0.028">14.252</magJ>
+		<magH errorminus="0.03" errorplus="0.03">13.94</magH>
+		<magK errorminus="0.05" errorplus="0.05">13.90</magK>
+		<name>KOI-1052</name>
+		<temperature errorminus="122.00" errorplus="122.00">6315.00</temperature>
+		<radius errorminus="0.3900" errorplus="0.3900">1.0700</radius>
+		<mass errorminus="0.1100" errorplus="0.1100">1.1500</mass>
+		<age errorminus="0.9600" errorplus="0.9600">0.2800</age>
+		<planet>
+			<name>KOI-1052 b</name>
+			<name>KOI-1052 01</name>
+			<radius errorminus="0.08293" errorplus="0.08293">0.22783</radius>
+			<period errorminus="1.6000000e-04" errorplus="1.6000000e-04">17.028850000000</period>
+			<transittime errorminus="0.0045000" errorplus="0.0045000">2454976.3398000</transittime>
+			<semimajoraxis>0.1360000</semimajoraxis>
+			<temperature>781.0</temperature>
+			<list>Kepler Objects of Interest</list>
+			<description>This is a Kepler Object of Interest from the Q1-Q12 dataset. It has been flagged as a possible transit event but has not been confirmed to be a planet yet.</description>
+			<istransiting>1</istransiting>
+		</planet>
+		<planet>
+			<name>KOI-1052 c</name>
+			<name>KOI-1052 02</name>
+			<radius errorminus="0.05377" errorplus="0.05377">0.14763</radius>
+			<period errorminus="9.7000000e-05" errorplus="9.7000000e-05">6.846113000000</period>
+			<transittime errorminus="0.0065000" errorplus="0.0065000">2454965.1747000</transittime>
+			<semimajoraxis>0.0740000</semimajoraxis>
+			<temperature>1058.0</temperature>
+			<list>Kepler Objects of Interest</list>
+			<description>This is a Kepler Object of Interest from the Q1-Q12 dataset. It has been flagged as a possible transit event but has not been confirmed to be a planet yet.</description>
+			<istransiting>1</istransiting>
+		</planet>
+		<planet>
+			<name>KOI-1052 d</name>
+			<name>KOI-1052 03</name>
+			<radius errorminus="0.08384" errorplus="0.08384">0.22874</radius>
+			<period errorminus="1.6000000e-03" errorplus="1.6000000e-03">67.829900000000</period>
+			<transittime errorminus="0.0120000" errorplus="0.0120000">2454958.9040000</transittime>
+			<semimajoraxis>0.3410000</semimajoraxis>
+			<temperature>493.0</temperature>
+			<list>Kepler Objects of Interest</list>
+			<description>This is a Kepler Object of Interest from the Q1-Q12 dataset. It has been flagged as a possible transit event but has not been confirmed to be a planet yet.</description>
+			<istransiting>1</istransiting>
+		</planet>
+		<planet>
+			<name>KOI-1052 e</name>
+			<name>KOI-1052 04</name>
+			<radius errorminus="0.08657" errorplus="0.08657">0.23420</radius>
+			<period errorminus="8.2000000e-04" errorplus="8.2000000e-04">43.130420000000</period>
+			<transittime errorminus="0.0093000" errorplus="0.0093000">2454999.2751000</transittime>
+			<semimajoraxis>0.2520000</semimajoraxis>
+			<temperature>573.0</temperature>
+			<list>Kepler Objects of Interest</list>
+			<description>This is a Kepler Object of Interest from the Q1-Q12 dataset. It has been flagged as a possible transit event but has not been confirmed to be a planet yet.</description>
+			<istransiting>1</istransiting>
+		</planet>
+	</star>
+</system>

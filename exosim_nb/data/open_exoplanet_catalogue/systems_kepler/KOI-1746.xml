@@ -1,0 +1,30 @@
+<system>
+	<name>KOI-1746</name>
+	<rightascension>20 03 43</rightascension>
+	<declination>+44 01 43</declination>
+	<distance>1090.22</distance>
+	<star>
+		<magB>15.89</magB>
+		<magV>15.16</magV>
+		<magJ errorminus="0.026" errorplus="0.026">13.735</magJ>
+		<magH errorminus="0.027" errorplus="0.027">13.341</magH>
+		<magK errorminus="0.03" errorplus="0.03">13.29</magK>
+		<name>KOI-1746</name>
+		<temperature errorminus="104.00" errorplus="104.00">5973.00</temperature>
+		<radius errorminus="0.3300" errorplus="0.3300">0.9300</radius>
+		<mass errorminus="0.0700" errorplus="0.0700">1.0250</mass>
+		<age errorminus="2.6000" errorplus="2.6000">0.4000</age>
+		<planet>
+			<name>KOI-1746 b</name>
+			<name>KOI-1746 01</name>
+			<radius errorminus="0.07564" errorplus="0.07564">0.16950</radius>
+			<period errorminus="1.9000000e-04" errorplus="1.9000000e-04">11.791740000000</period>
+			<transittime errorminus="0.0060000" errorplus="0.0060000">2454967.5391000</transittime>
+			<semimajoraxis>0.1020000</semimajoraxis>
+			<temperature>793.0</temperature>
+			<list>Kepler Objects of Interest</list>
+			<description>This is a Kepler Object of Interest from the Q1-Q12 dataset. It has been flagged as a possible transit event but has not been confirmed to be a planet yet.</description>
+			<istransiting>1</istransiting>
+		</planet>
+	</star>
+</system>

@@ -1,0 +1,28 @@
+<system>
+	<name>KOI-2122</name>
+	<rightascension>19 26 35</rightascension>
+	<declination>+39 23 47</declination>
+	<distance>714.88</distance>
+	<star>
+		<magJ errorminus="0.021" errorplus="0.021">13.055</magJ>
+		<magH errorminus="0.019" errorplus="0.019">12.718</magH>
+		<magK errorminus="0.028" errorplus="0.028">12.707</magK>
+		<name>KOI-2122</name>
+		<temperature errorminus="86.00" errorplus="86.00">5779.00</temperature>
+		<radius errorminus="0.3200" errorplus="0.3200">0.8800</radius>
+		<mass errorminus="0.0540" errorplus="0.0540">0.9620</mass>
+		<age errorminus="3.5000" errorplus="3.5000">1.8000</age>
+		<planet>
+			<name>KOI-2122 b</name>
+			<name>KOI-2122 01</name>
+			<radius errorminus="0.05650" errorplus="0.05650">0.15219</radius>
+			<period errorminus="7.7000000e-04" errorplus="7.7000000e-04">37.646170000000</period>
+			<transittime errorminus="0.0074000" errorplus="0.0074000">2454994.4644000</transittime>
+			<semimajoraxis>0.2170000</semimajoraxis>
+			<temperature>515.0</temperature>
+			<list>Kepler Objects of Interest</list>
+			<description>This is a Kepler Object of Interest from the Q1-Q12 dataset. It has been flagged as a possible transit event but has not been confirmed to be a planet yet.</description>
+			<istransiting>1</istransiting>
+		</planet>
+	</star>
+</system>

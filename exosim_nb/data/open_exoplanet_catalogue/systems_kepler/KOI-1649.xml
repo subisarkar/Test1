@@ -1,0 +1,25 @@
+<system>
+	<name>KOI-1649</name>
+	<rightascension>18 56 31</rightascension>
+	<declination>+49 08 33</declination>
+	<distance>268.24</distance>
+	<star>
+		<name>KOI-1649</name>
+		<temperature errorminus="200.00" errorplus="200.00">3969.00</temperature>
+		<radius errorminus="0.0260" errorplus="0.0260">0.5130</radius>
+		<mass errorminus="0.0360" errorplus="0.0360">0.5340</mass>
+		<age errorminus="3.6000" errorplus="3.6000">13.9000</age>
+		<planet>
+			<name>KOI-1649 b</name>
+			<name>KOI-1649 01</name>
+			<radius errorminus="0.03645" errorplus="0.03645">0.09660</radius>
+			<period errorminus="4.7000000e-05" errorplus="4.7000000e-05">4.043539000000</period>
+			<transittime errorminus="0.0036000" errorplus="0.0036000">2454964.6312000</transittime>
+			<semimajoraxis>0.0400000</semimajoraxis>
+			<temperature>627.0</temperature>
+			<list>Kepler Objects of Interest</list>
+			<description>This is a Kepler Object of Interest from the Q1-Q12 dataset. It has been flagged as a possible transit event but has not been confirmed to be a planet yet.</description>
+			<istransiting>1</istransiting>
+		</planet>
+	</star>
+</system>

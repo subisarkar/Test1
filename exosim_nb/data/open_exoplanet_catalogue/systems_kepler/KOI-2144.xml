@@ -1,0 +1,28 @@
+<system>
+	<name>KOI-2144</name>
+	<rightascension>19 59 51</rightascension>
+	<declination>+44 09 39</declination>
+	<distance>1479.79</distance>
+	<star>
+		<magJ errorminus="0.025" errorplus="0.025">13.505</magJ>
+		<magH errorminus="0.024" errorplus="0.024">13.076</magH>
+		<magK errorminus="0.03" errorplus="0.03">13.04</magK>
+		<name>KOI-2144</name>
+		<temperature errorminus="96.00" errorplus="96.00">5409.00</temperature>
+		<radius errorminus="0.1900" errorplus="0.1900">1.5400</radius>
+		<mass errorminus="0.0590" errorplus="0.0590">0.9090</mass>
+		<age errorminus="2.1000" errorplus="2.1000">13.9000</age>
+		<planet>
+			<name>KOI-2144 b</name>
+			<name>KOI-2144 01</name>
+			<radius errorminus="0.06106" errorplus="0.06106">0.39368</radius>
+			<period errorminus="7.4000000e-04" errorplus="7.4000000e-04">38.669520000000</period>
+			<transittime errorminus="0.0070000" errorplus="0.0070000">2454990.6314000</transittime>
+			<semimajoraxis>0.2170000</semimajoraxis>
+			<temperature>636.0</temperature>
+			<list>Kepler Objects of Interest</list>
+			<description>This is a Kepler Object of Interest from the Q1-Q12 dataset. It has been flagged as a possible transit event but has not been confirmed to be a planet yet.</description>
+			<istransiting>1</istransiting>
+		</planet>
+	</star>
+</system>

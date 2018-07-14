@@ -1,0 +1,24 @@
+<system>
+	<name>KOI-3605</name>
+	<rightascension>19 43 21</rightascension>
+	<declination>+41 25 38</declination>
+	<distance>419.38</distance>
+	<star>
+		<name>KOI-3605</name>
+		<temperature errorminus="160.00" errorplus="160.00">5126.00</temperature>
+		<radius errorminus="0.1410" errorplus="0.1410">0.6960</radius>
+		<metallicity errorminus="0.3800" errorplus="0.3800">-0.5400</metallicity>
+		<planet>
+			<name>KOI-3605 b</name>
+			<name>KOI-3605 01</name>
+			<radius errorminus="0.17315" errorplus="0.17315">2.12151</radius>
+			<period errorminus="4.3880000e-05" errorplus="4.3880000e-05">178.268005570000</period>
+			<transittime errorminus="0.0001910" errorplus="0.0001910">2455088.3513520</transittime>
+			<semimajoraxis errorminus="8.90e-08" errorplus="8.90e-08">0.5421910</semimajoraxis>
+			<temperature errorminus="27.2" errorplus="27.2">256.2</temperature>
+			<list>Kepler Objects of Interest</list>
+			<description>This is a Kepler Object of Interest from the Q1-Q12 dataset. It has been flagged as a possible transit event but has not been confirmed to be a planet yet.</description>
+			<istransiting>1</istransiting>
+		</planet>
+	</star>
+</system>

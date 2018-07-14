@@ -1,0 +1,28 @@
+<system>
+	<name>KOI-1192</name>
+	<rightascension>19 24 07</rightascension>
+	<declination>+38 42 14</declination>
+	<distance>752.96</distance>
+	<star>
+		<magJ errorminus="0.022" errorplus="0.022">12.918</magJ>
+		<magH errorminus="0.022" errorplus="0.022">12.546</magH>
+		<magK errorminus="0.024" errorplus="0.024">12.472</magK>
+		<name>KOI-1192</name>
+		<temperature errorminus="91.00" errorplus="91.00">5575.00</temperature>
+		<radius errorminus="0.4200" errorplus="0.4200">1.0300</radius>
+		<mass errorminus="0.0780" errorplus="0.0780">0.8570</mass>
+		<age errorminus="3.3000" errorplus="3.3000">13.6000</age>
+		<planet>
+			<name>KOI-1192 b</name>
+			<name>KOI-1192 01</name>
+			<radius errorminus="1.82261" errorplus="1.82261">4.37425</radius>
+			<period>2015.635290000000</period>
+			<transittime errorminus="0.0024000" errorplus="0.0024000">2455009.1111000</transittime>
+			<semimajoraxis>2.9690000</semimajoraxis>
+			<temperature>145.0</temperature>
+			<list>Kepler Objects of Interest</list>
+			<description>This is a Kepler Object of Interest from the Q1-Q12 dataset. It has been flagged as a possible transit event but has not been confirmed to be a planet yet.</description>
+			<istransiting>1</istransiting>
+		</planet>
+	</star>
+</system>

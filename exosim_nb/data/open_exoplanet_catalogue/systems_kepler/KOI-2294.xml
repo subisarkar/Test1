@@ -1,0 +1,28 @@
+<system>
+	<name>KOI-2294</name>
+	<rightascension>19 08 36</rightascension>
+	<declination>+42 25 17</declination>
+	<distance>1077.40</distance>
+	<star>
+		<magJ errorminus="0.021" errorplus="0.021">13.728</magJ>
+		<magH errorminus="0.022" errorplus="0.022">13.415</magH>
+		<magK errorminus="0.03" errorplus="0.03">13.33</magK>
+		<name>KOI-2294</name>
+		<temperature errorminus="109.00" errorplus="109.00">5969.00</temperature>
+		<radius errorminus="0.4200" errorplus="0.4200">0.9400</radius>
+		<mass errorminus="0.0940" errorplus="0.0940">1.0180</mass>
+		<age errorminus="2.6000" errorplus="2.6000">1.4000</age>
+		<planet>
+			<name>KOI-2294 b</name>
+			<name>KOI-2294 01</name>
+			<radius errorminus="0.13670" errorplus="0.13670">0.21871</radius>
+			<period errorminus="3.5000000e-03" errorplus="3.5000000e-03">131.485100000000</period>
+			<transittime errorminus="0.0093000" errorplus="0.0093000">2455010.4875000</transittime>
+			<semimajoraxis>0.5090000</semimajoraxis>
+			<temperature>358.0</temperature>
+			<list>Kepler Objects of Interest</list>
+			<description>This is a Kepler Object of Interest from the Q1-Q12 dataset. It has been flagged as a possible transit event but has not been confirmed to be a planet yet.</description>
+			<istransiting>1</istransiting>
+		</planet>
+	</star>
+</system>

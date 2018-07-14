@@ -1,0 +1,28 @@
+<system>
+	<name>KOI-1308</name>
+	<rightascension>19 01 41</rightascension>
+	<declination>+47 50 04</declination>
+	<distance>693.49</distance>
+	<star>
+		<magJ errorminus="0.027" errorplus="0.027">12.852</magJ>
+		<magH errorminus="0.03" errorplus="0.03">12.53</magH>
+		<magK errorminus="0.027" errorplus="0.027">12.462</magK>
+		<name>KOI-1308</name>
+		<temperature errorminus="80.00" errorplus="80.00">5956.00</temperature>
+		<radius errorminus="0.3200" errorplus="0.3200">0.9300</radius>
+		<mass errorminus="0.0560" errorplus="0.0560">1.0180</mass>
+		<age errorminus="2.5000" errorplus="2.5000">1.0000</age>
+		<planet>
+			<name>KOI-1308 b</name>
+			<name>KOI-1308 01</name>
+			<radius errorminus="0.06744" errorplus="0.06744">0.19684</radius>
+			<period errorminus="2.9000000e-04" errorplus="2.9000000e-04">23.584610000000</period>
+			<transittime errorminus="0.0043000" errorplus="0.0043000">2454978.9554000</transittime>
+			<semimajoraxis>0.1620000</semimajoraxis>
+			<temperature>630.0</temperature>
+			<list>Kepler Objects of Interest</list>
+			<description>This is a Kepler Object of Interest from the Q1-Q12 dataset. It has been flagged as a possible transit event but has not been confirmed to be a planet yet.</description>
+			<istransiting>1</istransiting>
+		</planet>
+	</star>
+</system>

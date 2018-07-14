@@ -1,0 +1,25 @@
+<system>
+	<name>KOI-2437</name>
+	<rightascension>19 51 37</rightascension>
+	<declination>+40 09 46</declination>
+	<distance>1221.88</distance>
+	<star>
+		<name>KOI-2437</name>
+		<temperature errorminus="150.00" errorplus="150.00">6225.00</temperature>
+		<radius errorminus="0.4700" errorplus="0.4700">1.0600</radius>
+		<mass errorminus="0.1400" errorplus="0.1400">1.1000</mass>
+		<age errorminus="1.4000" errorplus="1.4000">1.4000</age>
+		<planet>
+			<name>KOI-2437 b</name>
+			<name>KOI-2437 01</name>
+			<radius errorminus="0.05468" errorplus="0.05468">0.12120</radius>
+			<period errorminus="8.6000000e-05" errorplus="8.6000000e-05">4.147653000000</period>
+			<transittime errorminus="0.0070000" errorplus="0.0070000">2454968.5501000</transittime>
+			<semimajoraxis>0.0520000</semimajoraxis>
+			<temperature>1242.0</temperature>
+			<list>Kepler Objects of Interest</list>
+			<description>This is a Kepler Object of Interest from the Q1-Q12 dataset. It has been flagged as a possible transit event but has not been confirmed to be a planet yet.</description>
+			<istransiting>1</istransiting>
+		</planet>
+	</star>
+</system>

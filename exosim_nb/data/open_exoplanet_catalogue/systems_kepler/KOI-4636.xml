@@ -1,0 +1,24 @@
+<system>
+	<name>KOI-4636</name>
+	<rightascension>19 31 56</rightascension>
+	<declination>+46 30 23</declination>
+	<distance>1325.10</distance>
+	<star>
+		<name>KOI-4636</name>
+		<temperature errorminus="195.00" errorplus="195.00">5623.00</temperature>
+		<radius errorminus="0.5590" errorplus="0.5590">0.9810</radius>
+		<metallicity errorminus="0.4000" errorplus="0.4000">0.4600</metallicity>
+		<planet>
+			<name>KOI-4636 b</name>
+			<name>KOI-4636 01</name>
+			<radius errorminus="0.41009" errorplus="0.41009">0.30620</radius>
+			<period errorminus="1.4760000e-03" errorplus="1.4760000e-03">122.735480000000</period>
+			<transittime errorminus="0.0107000" errorplus="0.0107000">2455004.0976000</transittime>
+			<semimajoraxis errorminus="3.97e-06" errorplus="3.97e-06">0.4948310</semimajoraxis>
+			<temperature errorminus="100.0" errorplus="100.0">349.0</temperature>
+			<list>Kepler Objects of Interest</list>
+			<description>This is a Kepler Object of Interest from the Q1-Q12 dataset. It has been flagged as a possible transit event but has not been confirmed to be a planet yet.</description>
+			<istransiting>1</istransiting>
+		</planet>
+	</star>
+</system>

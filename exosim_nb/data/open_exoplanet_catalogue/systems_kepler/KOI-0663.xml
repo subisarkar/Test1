@@ -1,0 +1,40 @@
+<system>
+	<name>KOI-0663</name>
+	<rightascension>19 01 08</rightascension>
+	<declination>+41 51 40</declination>
+	<distance>176.57</distance>
+	<star>
+		<magJ errorminus="0.022" errorplus="0.022">11.608</magJ>
+		<magH errorminus="0.020" errorplus="0.020">10.962</magH>
+		<magK errorminus="0.021" errorplus="0.021">10.833</magK>
+		<name>KOI-0663</name>
+		<temperature errorminus="61.00" errorplus="61.00">4303.00</temperature>
+		<radius errorminus="0.0110" errorplus="0.0110">0.5620</radius>
+		<mass errorminus="0.0140" errorplus="0.0140">0.5920</mass>
+		<age errorminus="3.7000" errorplus="3.7000">13.9000</age>
+		<planet>
+			<name>KOI-0663 b</name>
+			<name>KOI-0663 01</name>
+			<radius errorminus="0.00638" errorplus="0.00638">0.13578</radius>
+			<period errorminus="5.5000000e-06" errorplus="5.5000000e-06">2.755628100000</period>
+			<transittime errorminus="0.0005700" errorplus="0.0005700">2455003.8457500</transittime>
+			<semimajoraxis>0.0320000</semimajoraxis>
+			<temperature>795.0</temperature>
+			<list>Kepler Objects of Interest</list>
+			<description>This is a Kepler Object of Interest from the Q1-Q12 dataset. It has been flagged as a possible transit event but has not been confirmed to be a planet yet.</description>
+			<istransiting>1</istransiting>
+		</planet>
+		<planet>
+			<name>KOI-0663 c</name>
+			<name>KOI-0663 02</name>
+			<radius errorminus="0.00820" errorplus="0.00820">0.16859</radius>
+			<period errorminus="8.0000000e-05" errorplus="8.0000000e-05">20.306591000000</period>
+			<transittime errorminus="0.0013000" errorplus="0.0013000">2455005.6561000</transittime>
+			<semimajoraxis>0.1220000</semimajoraxis>
+			<temperature>407.0</temperature>
+			<list>Kepler Objects of Interest</list>
+			<description>This is a Kepler Object of Interest from the Q1-Q12 dataset. It has been flagged as a possible transit event but has not been confirmed to be a planet yet.</description>
+			<istransiting>1</istransiting>
+		</planet>
+	</star>
+</system>

@@ -1,0 +1,28 @@
+<system>
+	<name>KOI-2033</name>
+	<rightascension>19 26 57</rightascension>
+	<declination>+37 41 20</declination>
+	<distance>361.99</distance>
+	<star>
+		<magJ errorminus="0.022" errorplus="0.022">12.330</magJ>
+		<magH errorminus="0.021" errorplus="0.021">11.888</magH>
+		<magK errorminus="0.020" errorplus="0.020">11.817</magK>
+		<name>KOI-2033</name>
+		<temperature errorminus="63.00" errorplus="63.00">5176.00</temperature>
+		<radius errorminus="0.2400" errorplus="0.2400">0.7100</radius>
+		<mass errorminus="0.0400" errorplus="0.0400">0.8140</mass>
+		<age errorminus="3.8000" errorplus="3.8000">0.9000</age>
+		<planet>
+			<name>KOI-2033 b</name>
+			<name>KOI-2033 01</name>
+			<radius errorminus="0.05468" errorplus="0.05468">0.13761</radius>
+			<period errorminus="1.6000000e-04" errorplus="1.6000000e-04">16.540910000000</period>
+			<transittime errorminus="0.0036000" errorplus="0.0036000">2454966.9492000</transittime>
+			<semimajoraxis>0.1190000</semimajoraxis>
+			<temperature>560.0</temperature>
+			<list>Kepler Objects of Interest</list>
+			<description>This is a Kepler Object of Interest from the Q1-Q12 dataset. It has been flagged as a possible transit event but has not been confirmed to be a planet yet.</description>
+			<istransiting>1</istransiting>
+		</planet>
+	</star>
+</system>

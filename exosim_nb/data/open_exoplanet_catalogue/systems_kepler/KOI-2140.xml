@@ -1,0 +1,28 @@
+<system>
+	<name>KOI-2140</name>
+	<rightascension>19 27 44</rightascension>
+	<declination>+44 06 55</declination>
+	<distance>1058.26</distance>
+	<star>
+		<magJ errorminus="0.025" errorplus="0.025">13.974</magJ>
+		<magH errorminus="0.027" errorplus="0.027">13.646</magH>
+		<magK errorminus="0.05" errorplus="0.05">13.48</magK>
+		<name>KOI-2140</name>
+		<temperature errorminus="98.00" errorplus="98.00">5713.00</temperature>
+		<radius errorminus="0.3100" errorplus="0.3100">0.8500</radius>
+		<mass errorminus="0.0600" errorplus="0.0600">0.9550</mass>
+		<age errorminus="3.8000" errorplus="3.8000">0.5000</age>
+		<planet>
+			<name>KOI-2140 b</name>
+			<name>KOI-2140 01</name>
+			<radius errorminus="0.08566" errorplus="0.08566">0.23056</radius>
+			<period errorminus="7.6000000e-04" errorplus="7.6000000e-04">41.698100000000</period>
+			<transittime errorminus="0.0075000" errorplus="0.0075000">2454967.2426000</transittime>
+			<semimajoraxis>0.2320000</semimajoraxis>
+			<temperature>482.0</temperature>
+			<list>Kepler Objects of Interest</list>
+			<description>This is a Kepler Object of Interest from the Q1-Q12 dataset. It has been flagged as a possible transit event but has not been confirmed to be a planet yet.</description>
+			<istransiting>1</istransiting>
+		</planet>
+	</star>
+</system>

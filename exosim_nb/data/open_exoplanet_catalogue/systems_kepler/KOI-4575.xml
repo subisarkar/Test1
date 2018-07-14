@@ -1,0 +1,24 @@
+<system>
+	<name>KOI-4575</name>
+	<rightascension>19 31 44</rightascension>
+	<declination>+46 45 10</declination>
+	<distance>1008.18</distance>
+	<star>
+		<name>KOI-4575</name>
+		<temperature errorminus="236.00" errorplus="236.00">6582.00</temperature>
+		<radius errorminus="0.8470" errorplus="0.8470">1.5980</radius>
+		<metallicity errorminus="0.3400" errorplus="0.3400">-0.2200</metallicity>
+		<planet>
+			<name>KOI-4575 b</name>
+			<name>KOI-4575 01</name>
+			<radius errorminus="0.07281" errorplus="0.07281">0.17980</radius>
+			<period errorminus="3.8660000e-03" errorplus="3.8660000e-03">201.338020000000</period>
+			<transittime errorminus="0.0138000" errorplus="0.0138000">2455007.6495000</transittime>
+			<semimajoraxis errorminus="9.30e-06" errorplus="9.30e-06">0.7267170</semimajoraxis>
+			<temperature errorminus="115.0" errorplus="115.0">431.0</temperature>
+			<list>Kepler Objects of Interest</list>
+			<description>This is a Kepler Object of Interest from the Q1-Q12 dataset. It has been flagged as a possible transit event but has not been confirmed to be a planet yet.</description>
+			<istransiting>1</istransiting>
+		</planet>
+	</star>
+</system>

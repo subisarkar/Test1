@@ -1,0 +1,28 @@
+<system>
+	<name>KOI-1115</name>
+	<rightascension>19 25 41</rightascension>
+	<declination>+38 12 59</declination>
+	<distance>836.78</distance>
+	<star>
+		<magJ errorminus="0.022" errorplus="0.022">12.739</magJ>
+		<magH errorminus="0.022" errorplus="0.022">12.339</magH>
+		<magK errorminus="0.026" errorplus="0.026">12.299</magK>
+		<name>KOI-1115</name>
+		<temperature errorminus="96.00" errorplus="96.00">5685.00</temperature>
+		<radius errorminus="0.4300" errorplus="0.4300">1.2300</radius>
+		<mass errorminus="0.1100" errorplus="0.1100">0.9100</mass>
+		<age errorminus="2.8000" errorplus="2.8000">12.5000</age>
+		<planet>
+			<name>KOI-1115 b</name>
+			<name>KOI-1115 01</name>
+			<radius errorminus="0.06835" errorplus="0.06835">0.19411</radius>
+			<period errorminus="1.9000000e-04" errorplus="1.9000000e-04">12.991780000000</period>
+			<transittime errorminus="0.0055000" errorplus="0.0055000">2454969.3237000</transittime>
+			<semimajoraxis>0.1050000</semimajoraxis>
+			<temperature>857.0</temperature>
+			<list>Kepler Objects of Interest</list>
+			<description>This is a Kepler Object of Interest from the Q1-Q12 dataset. It has been flagged as a possible transit event but has not been confirmed to be a planet yet.</description>
+			<istransiting>1</istransiting>
+		</planet>
+	</star>
+</system>

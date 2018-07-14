@@ -1,0 +1,28 @@
+<system>
+	<name>KOI-1423</name>
+	<rightascension>18 57 00</rightascension>
+	<declination>+48 48 34</declination>
+	<distance>1135.72</distance>
+	<star>
+		<magJ errorminus="0.03" errorplus="0.03">14.46</magJ>
+		<magH errorminus="0.04" errorplus="0.04">14.04</magH>
+		<magK errorminus="0.04" errorplus="0.04">13.93</magK>
+		<name>KOI-1423</name>
+		<temperature errorminus="77.00" errorplus="77.00">5503.00</temperature>
+		<radius errorminus="0.2600" errorplus="0.2600">0.7900</radius>
+		<mass errorminus="0.0410" errorplus="0.0410">0.8980</mass>
+		<age errorminus="3.9000" errorplus="3.9000">0.5000</age>
+		<planet>
+			<name>KOI-1423 b</name>
+			<name>KOI-1423 01</name>
+			<radius errorminus="0.15492" errorplus="0.15492">0.47388</radius>
+			<period errorminus="1.0000000e-03" errorplus="1.0000000e-03">124.419490000000</period>
+			<transittime errorminus="0.0026000" errorplus="0.0026000">2454983.5960000</transittime>
+			<semimajoraxis>0.4710000</semimajoraxis>
+			<temperature>315.0</temperature>
+			<list>Kepler Objects of Interest</list>
+			<description>This is a Kepler Object of Interest from the Q1-Q12 dataset. It has been flagged as a possible transit event but has not been confirmed to be a planet yet.</description>
+			<istransiting>1</istransiting>
+		</planet>
+	</star>
+</system>

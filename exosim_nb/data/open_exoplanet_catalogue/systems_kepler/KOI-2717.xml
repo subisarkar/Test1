@@ -1,0 +1,25 @@
+<system>
+	<name>KOI-2717</name>
+	<rightascension>19 31 29</rightascension>
+	<declination>+46 05 55</declination>
+	<distance>572.10</distance>
+	<star>
+		<name>KOI-2717</name>
+		<temperature errorminus="85.00" errorplus="85.00">6432.00</temperature>
+		<radius errorminus="0.2500" errorplus="0.2500">1.3500</radius>
+		<mass errorminus="0.0720" errorplus="0.0720">1.1880</mass>
+		<age errorminus="0.4600" errorplus="0.4600">3.0100</age>
+		<planet>
+			<name>KOI-2717 b</name>
+			<name>KOI-2717 01</name>
+			<radius errorminus="0.04283" errorplus="0.04283">0.16221</radius>
+			<period errorminus="1.0000000e-06" errorplus="1.0000000e-06">0.929907600000</period>
+			<transittime errorminus="0.0007000" errorplus="0.0007000">2454965.2493400</transittime>
+			<semimajoraxis>0.0200000</semimajoraxis>
+			<temperature>2329.0</temperature>
+			<list>Kepler Objects of Interest</list>
+			<description>This is a Kepler Object of Interest from the Q1-Q12 dataset. It has been flagged as a possible transit event but has not been confirmed to be a planet yet.</description>
+			<istransiting>1</istransiting>
+		</planet>
+	</star>
+</system>

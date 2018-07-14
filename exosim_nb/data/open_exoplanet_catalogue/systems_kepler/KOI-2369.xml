@@ -1,0 +1,40 @@
+<system>
+	<name>KOI-2369</name>
+	<rightascension>19 02 52</rightascension>
+	<declination>+40 51 25</declination>
+	<distance>1724.46</distance>
+	<star>
+		<magJ errorminus="0.029" errorplus="0.029">14.753</magJ>
+		<magH errorminus="0.04" errorplus="0.04">14.32</magH>
+		<magK errorminus="0.07" errorplus="0.07">14.32</magK>
+		<name>KOI-2369</name>
+		<temperature errorminus="112.00" errorplus="112.00">6054.00</temperature>
+		<radius errorminus="0.4600" errorplus="0.4600">0.9500</radius>
+		<mass errorminus="0.1100" errorplus="0.1100">1.0500</mass>
+		<age errorminus="2.1000" errorplus="2.1000">0.4000</age>
+		<planet>
+			<name>KOI-2369 b</name>
+			<name>KOI-2369 01</name>
+			<radius errorminus="0.10024" errorplus="0.10024">0.20960</radius>
+			<period errorminus="1.7000000e-04" errorplus="1.7000000e-04">11.018320000000</period>
+			<transittime errorminus="0.0059000" errorplus="0.0059000">2454972.8833000</transittime>
+			<semimajoraxis>0.0990000</semimajoraxis>
+			<temperature>829.0</temperature>
+			<list>Kepler Objects of Interest</list>
+			<description>This is a Kepler Object of Interest from the Q1-Q12 dataset. It has been flagged as a possible transit event but has not been confirmed to be a planet yet.</description>
+			<istransiting>1</istransiting>
+		</planet>
+		<planet>
+			<name>KOI-2369 c</name>
+			<name>KOI-2369 02</name>
+			<radius errorminus="0.08019" errorplus="0.08019">0.16130</radius>
+			<period errorminus="1.6000000e-04" errorplus="1.6000000e-04">6.314510000000</period>
+			<transittime errorminus="0.0084000" errorplus="0.0084000">2455006.2943000</transittime>
+			<semimajoraxis>0.0680000</semimajoraxis>
+			<temperature>1000.0</temperature>
+			<list>Kepler Objects of Interest</list>
+			<description>This is a Kepler Object of Interest from the Q1-Q12 dataset. It has been flagged as a possible transit event but has not been confirmed to be a planet yet.</description>
+			<istransiting>1</istransiting>
+		</planet>
+	</star>
+</system>

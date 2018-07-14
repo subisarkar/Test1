@@ -1,0 +1,27 @@
+<system>
+	<name>KOI-2215</name>
+	<rightascension>19 45 01</rightascension>
+	<declination>+42 31 48</declination>
+	<distance>386.87</distance>
+	<star>
+		<magJ errorminus="0.025" errorplus="0.025">12.670</magJ>
+		<magH errorminus="0.027" errorplus="0.027">12.363</magH>
+		<magK errorminus="0.021" errorplus="0.021">12.291</magK>
+		<name>KOI-2215</name>
+		<temperature>5647.00</temperature>
+		<radius>0.9030</radius>
+		<mass>0.8880</mass>
+		<planet>
+			<name>KOI-2215 b</name>
+			<name>KOI-2215 01</name>
+			<radius>0.07382</radius>
+			<period errorminus="1.4000000e-03" errorplus="1.4000000e-03">22.040600000000</period>
+			<transittime errorminus="0.0250000" errorplus="0.0250000">2454967.2930000</transittime>
+			<semimajoraxis>0.1480000</semimajoraxis>
+			<temperature>615.0</temperature>
+			<list>Kepler Objects of Interest</list>
+			<description>This is a Kepler Object of Interest from the Q1-Q12 dataset. It has been flagged as a possible transit event but has not been confirmed to be a planet yet.</description>
+			<istransiting>1</istransiting>
+		</planet>
+	</star>
+</system>

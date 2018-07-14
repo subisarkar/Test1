@@ -1,0 +1,32 @@
+<system>
+	<name>KOI-0830</name>
+	<rightascension>19 22 19</rightascension>
+	<declination>+40 34 38</declination>
+	<distance>627.71</distance>
+	<star>
+		<magB errorminus="0.046" errorplus="0.046">16.584</magB>
+		<magV errorminus="0.016" errorplus="0.016">15.405</magV>
+		<magR errorminus="0.037" errorplus="0.037">15.101</magR>
+		<magI errorminus="0.07" errorplus="0.07">14.84</magI>
+		<magJ errorminus="0.024" errorplus="0.024">13.767</magJ>
+		<magH errorminus="0.023" errorplus="0.023">13.295</magH>
+		<magK errorminus="0.03" errorplus="0.03">13.23</magK>
+		<name>KOI-0830</name>
+		<temperature errorminus="78.00" errorplus="78.00">4988.00</temperature>
+		<radius errorminus="0.0230" errorplus="0.0230">0.6740</radius>
+		<mass errorminus="0.0210" errorplus="0.0210">0.7680</mass>
+		<age errorminus="3.7000" errorplus="3.7000">0.9000</age>
+		<planet>
+			<name>KOI-0830 b</name>
+			<name>KOI-0830 01</name>
+			<radius errorminus="0.03007" errorplus="0.03007">0.89034</radius>
+			<period errorminus="5.3000000e-07" errorplus="5.3000000e-07">3.525632470000</period>
+			<transittime errorminus="0.0000460" errorplus="0.0000460">2455003.0472680</transittime>
+			<semimajoraxis>0.0420000</semimajoraxis>
+			<temperature>881.0</temperature>
+			<list>Kepler Objects of Interest</list>
+			<description>This is a Kepler Object of Interest from the Q1-Q12 dataset. It has been flagged as a possible transit event but has not been confirmed to be a planet yet.</description>
+			<istransiting>1</istransiting>
+		</planet>
+	</star>
+</system>

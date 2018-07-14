@@ -1,0 +1,40 @@
+<system>
+	<name>KOI-2173</name>
+	<rightascension>19 49 10</rightascension>
+	<declination>+49 58 53</declination>
+	<distance>186.72</distance>
+	<star>
+		<magJ errorminus="0.024" errorplus="0.024">11.243</magJ>
+		<magH errorminus="0.017" errorplus="0.017">10.752</magH>
+		<magK errorminus="0.014" errorplus="0.014">10.674</magK>
+		<name>KOI-2173</name>
+		<temperature errorminus="69.00" errorplus="69.00">4739.00</temperature>
+		<radius errorminus="0.0170" errorplus="0.0170">0.6540</radius>
+		<mass errorminus="0.0180" errorplus="0.0180">0.6770</mass>
+		<age errorminus="3.7000" errorplus="3.7000">13.8000</age>
+		<planet>
+			<name>KOI-2173 b</name>
+			<name>KOI-2173 01</name>
+			<radius errorminus="0.01367" errorplus="0.01367">0.10024</radius>
+			<period errorminus="5.0000000e-04" errorplus="5.0000000e-04">37.815260000000</period>
+			<transittime errorminus="0.0050000" errorplus="0.0050000">2454974.1054000</transittime>
+			<semimajoraxis>0.1940000</semimajoraxis>
+			<temperature>384.0</temperature>
+			<list>Kepler Objects of Interest</list>
+			<description>This is a Kepler Object of Interest from the Q1-Q12 dataset. It has been flagged as a possible transit event but has not been confirmed to be a planet yet.</description>
+			<istransiting>1</istransiting>
+		</planet>
+		<planet>
+			<name>KOI-2173 c</name>
+			<name>KOI-2173 02</name>
+			<radius errorminus="0.01367" errorplus="0.01367">0.09842</radius>
+			<period errorminus="1.0000000e-03" errorplus="1.0000000e-03">53.578200000000</period>
+			<transittime errorminus="0.0066000" errorplus="0.0066000">2455004.1865000</transittime>
+			<semimajoraxis>0.2440000</semimajoraxis>
+			<temperature>342.0</temperature>
+			<list>Kepler Objects of Interest</list>
+			<description>This is a Kepler Object of Interest from the Q1-Q12 dataset. It has been flagged as a possible transit event but has not been confirmed to be a planet yet.</description>
+			<istransiting>1</istransiting>
+		</planet>
+	</star>
+</system>

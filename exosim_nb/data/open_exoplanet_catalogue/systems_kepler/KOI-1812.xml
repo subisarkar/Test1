@@ -1,0 +1,28 @@
+<system>
+	<name>KOI-1812</name>
+	<rightascension>19 20 30</rightascension>
+	<declination>+41 36 03</declination>
+	<distance>814.48</distance>
+	<star>
+		<magJ errorminus="0.028" errorplus="0.028">12.670</magJ>
+		<magH errorminus="0.03" errorplus="0.03">12.39</magH>
+		<magK errorminus="0.03" errorplus="0.03">12.32</magK>
+		<name>KOI-1812</name>
+		<temperature errorminus="91.00" errorplus="91.00">6285.00</temperature>
+		<radius errorminus="0.4100" errorplus="0.4100">1.0900</radius>
+		<mass errorminus="0.1100" errorplus="0.1100">1.1200</mass>
+		<age errorminus="0.8100" errorplus="0.8100">1.2900</age>
+		<planet>
+			<name>KOI-1812 b</name>
+			<name>KOI-1812 01</name>
+			<radius errorminus="0.16403" errorplus="0.16403">0.43743</radius>
+			<period errorminus="8.3000000e-07" errorplus="8.3000000e-07">0.805263040000</period>
+			<transittime errorminus="0.0001100" errorplus="0.0001100">2454965.0993300</transittime>
+			<semimajoraxis>0.0180000</semimajoraxis>
+			<temperature>2154.0</temperature>
+			<list>Kepler Objects of Interest</list>
+			<description>This is a Kepler Object of Interest from the Q1-Q12 dataset. It has been flagged as a possible transit event but has not been confirmed to be a planet yet.</description>
+			<istransiting>1</istransiting>
+		</planet>
+	</star>
+</system>

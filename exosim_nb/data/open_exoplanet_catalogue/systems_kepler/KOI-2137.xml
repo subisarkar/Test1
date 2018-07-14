@@ -1,0 +1,28 @@
+<system>
+	<name>KOI-2137</name>
+	<rightascension>19 56 56</rightascension>
+	<declination>+45 50 04</declination>
+	<distance>850.65</distance>
+	<star>
+		<magJ errorminus="0.027" errorplus="0.027">12.438</magJ>
+		<magH errorminus="0.03" errorplus="0.03">12.04</magH>
+		<magK errorminus="0.019" errorplus="0.019">11.944</magK>
+		<name>KOI-2137</name>
+		<temperature errorminus="80.00" errorplus="80.00">5469.00</temperature>
+		<radius errorminus="0.1700" errorplus="0.1700">1.5000</radius>
+		<mass errorminus="0.0520" errorplus="0.0520">0.9070</mass>
+		<age errorminus="1.9000" errorplus="1.9000">13.9000</age>
+		<planet>
+			<name>KOI-2137 b</name>
+			<name>KOI-2137 01</name>
+			<radius errorminus="0.06744" errorplus="0.06744">0.25608</radius>
+			<period errorminus="1.7000000e-04" errorplus="1.7000000e-04">14.974410000000</period>
+			<transittime errorminus="0.0044000" errorplus="0.0044000">2454974.5007000</transittime>
+			<semimajoraxis>0.1150000</semimajoraxis>
+			<temperature>871.0</temperature>
+			<list>Kepler Objects of Interest</list>
+			<description>This is a Kepler Object of Interest from the Q1-Q12 dataset. It has been flagged as a possible transit event but has not been confirmed to be a planet yet.</description>
+			<istransiting>1</istransiting>
+		</planet>
+	</star>
+</system>

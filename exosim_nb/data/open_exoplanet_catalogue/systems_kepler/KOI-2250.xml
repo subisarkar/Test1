@@ -1,0 +1,39 @@
+<system>
+	<name>KOI-2250</name>
+	<rightascension>19 00 52</rightascension>
+	<declination>+41 16 56</declination>
+	<distance>882.20</distance>
+	<star>
+		<magJ errorminus="0.03" errorplus="0.03">14.01</magJ>
+		<magH errorminus="0.04" errorplus="0.04">13.48</magH>
+		<magK errorminus="0.04" errorplus="0.04">13.39</magK>
+		<name>KOI-2250</name>
+		<temperature errorminus="200.00" errorplus="200.00">4749.00</temperature>
+		<radius errorminus="0.3000" errorplus="0.3000">0.8700</radius>
+		<mass errorminus="0.3000" errorplus="0.3000">0.8500</mass>
+		<planet>
+			<name>KOI-2250 b</name>
+			<name>KOI-2250 01</name>
+			<radius errorminus="0.10024" errorplus="0.10024">0.26428</radius>
+			<period errorminus="1.7000000e-05" errorplus="1.7000000e-05">2.935346000000</period>
+			<transittime errorminus="0.0022000" errorplus="0.0022000">2454969.1858000</transittime>
+			<semimajoraxis>0.0380000</semimajoraxis>
+			<temperature>1003.0</temperature>
+			<list>Kepler Objects of Interest</list>
+			<description>This is a Kepler Object of Interest from the Q1-Q12 dataset. It has been flagged as a possible transit event but has not been confirmed to be a planet yet.</description>
+			<istransiting>1</istransiting>
+		</planet>
+		<planet>
+			<name>KOI-2250 c</name>
+			<name>KOI-2250 02</name>
+			<radius errorminus="0.06543" errorplus="0.06543">0.16859</radius>
+			<period errorminus="3.7030000e-06" errorplus="3.7030000e-06">0.626289323000</period>
+			<transittime errorminus="0.0006020" errorplus="0.0006020">2454964.9032780</transittime>
+			<semimajoraxis errorminus="5.22e-08" errorplus="5.22e-08">0.0132479</semimajoraxis>
+			<temperature errorminus="182.0" errorplus="182.0">1711.0</temperature>
+			<list>Kepler Objects of Interest</list>
+			<description>This is a Kepler Object of Interest from the Q1-Q12 dataset. It has been flagged as a possible transit event but has not been confirmed to be a planet yet.</description>
+			<istransiting>1</istransiting>
+		</planet>
+	</star>
+</system>

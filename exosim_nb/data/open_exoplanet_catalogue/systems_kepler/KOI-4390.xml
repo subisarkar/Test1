@@ -1,0 +1,24 @@
+<system>
+	<name>KOI-4390</name>
+	<rightascension>20 03 41</rightascension>
+	<declination>+44 14 58</declination>
+	<distance>6881.26</distance>
+	<star>
+		<name>KOI-4390</name>
+		<temperature errorminus="207.00" errorplus="207.00">5234.00</temperature>
+		<radius errorminus="1.4720" errorplus="1.4720">3.7390</radius>
+		<metallicity errorminus="0.3400" errorplus="0.3400">-0.3600</metallicity>
+		<planet>
+			<name>KOI-4390 b</name>
+			<name>KOI-4390 01</name>
+			<radius errorminus="1.00243" errorplus="1.00243">1.08445</radius>
+			<period errorminus="7.4530000e-06" errorplus="7.4530000e-06">1.636678706000</period>
+			<transittime errorminus="0.0016000" errorplus="0.0016000">2454964.6469300</transittime>
+			<semimajoraxis errorminus="9.21e-08" errorplus="9.21e-08">0.0303512</semimajoraxis>
+			<temperature errorminus="515.0" errorplus="515.0">2563.0</temperature>
+			<list>Kepler Objects of Interest</list>
+			<description>This is a Kepler Object of Interest from the Q1-Q12 dataset. It has been flagged as a possible transit event but has not been confirmed to be a planet yet.</description>
+			<istransiting>1</istransiting>
+		</planet>
+	</star>
+</system>

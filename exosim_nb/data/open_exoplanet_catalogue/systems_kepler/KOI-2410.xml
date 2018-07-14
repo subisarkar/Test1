@@ -1,0 +1,40 @@
+<system>
+	<name>KOI-2410</name>
+	<rightascension>19 02 58</rightascension>
+	<declination>+44 51 28</declination>
+	<distance>1246.18</distance>
+	<star>
+		<magJ errorminus="0.029" errorplus="0.029">14.017</magJ>
+		<magH errorminus="0.04" errorplus="0.04">13.67</magH>
+		<magK errorminus="0.04" errorplus="0.04">13.55</magK>
+		<name>KOI-2410</name>
+		<temperature errorminus="90.00" errorplus="90.00">6034.00</temperature>
+		<radius errorminus="0.3300" errorplus="0.3300">0.9500</radius>
+		<mass errorminus="0.0690" errorplus="0.0690">1.0480</mass>
+		<age errorminus="2.3000" errorplus="2.3000">0.3000</age>
+		<planet>
+			<name>KOI-2410 b</name>
+			<name>KOI-2410 01</name>
+			<radius errorminus="0.08566" errorplus="0.08566">0.23967</radius>
+			<period errorminus="1.1000000e-02" errorplus="1.1000000e-02">186.654000000000</period>
+			<transittime errorminus="0.0220000" errorplus="0.0220000">2455020.3800000</transittime>
+			<semimajoraxis>0.6490000</semimajoraxis>
+			<temperature>322.0</temperature>
+			<list>Kepler Objects of Interest</list>
+			<description>This is a Kepler Object of Interest from the Q1-Q12 dataset. It has been flagged as a possible transit event but has not been confirmed to be a planet yet.</description>
+			<istransiting>1</istransiting>
+		</planet>
+		<planet>
+			<name>KOI-2410 c</name>
+			<name>KOI-2410 02</name>
+			<radius errorminus="0.08749" errorplus="0.08749">0.24423</radius>
+			<period errorminus="5.4000000e-03" errorplus="5.4000000e-03">86.593200000000</period>
+			<transittime errorminus="0.0160000" errorplus="0.0160000">2455034.0040000</transittime>
+			<semimajoraxis>0.3890000</semimajoraxis>
+			<temperature>415.0</temperature>
+			<list>Kepler Objects of Interest</list>
+			<description>This is a Kepler Object of Interest from the Q1-Q12 dataset. It has been flagged as a possible transit event but has not been confirmed to be a planet yet.</description>
+			<istransiting>1</istransiting>
+		</planet>
+	</star>
+</system>

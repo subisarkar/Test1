@@ -1,0 +1,40 @@
+<system>
+	<name>KOI-1751</name>
+	<rightascension>19 54 25</rightascension>
+	<declination>+46 27 13</declination>
+	<distance>573.38</distance>
+	<star>
+		<magJ errorminus="0.029" errorplus="0.029">13.063</magJ>
+		<magH errorminus="0.04" errorplus="0.04">12.63</magH>
+		<magK errorminus="0.024" errorplus="0.024">12.519</magK>
+		<name>KOI-1751</name>
+		<temperature errorminus="113.00" errorplus="113.00">5145.00</temperature>
+		<radius errorminus="0.7000" errorplus="0.7000">0.7900</radius>
+		<mass errorminus="0.1400" errorplus="0.1400">0.7600</mass>
+		<age errorminus="3.4000" errorplus="3.4000">13.9000</age>
+		<planet>
+			<name>KOI-1751 b</name>
+			<name>KOI-1751 01</name>
+			<radius errorminus="0.22783" errorplus="0.22783">0.26428</radius>
+			<period errorminus="3.2000000e-05" errorplus="3.2000000e-05">8.689298000000</period>
+			<transittime errorminus="0.0012000" errorplus="0.0012000">2454966.6614000</transittime>
+			<semimajoraxis>0.0760000</semimajoraxis>
+			<temperature>729.0</temperature>
+			<list>Kepler Objects of Interest</list>
+			<description>This is a Kepler Object of Interest from the Q1-Q12 dataset. It has been flagged as a possible transit event but has not been confirmed to be a planet yet.</description>
+			<istransiting>1</istransiting>
+		</planet>
+		<planet>
+			<name>KOI-1751 c</name>
+			<name>KOI-1751 02</name>
+			<radius errorminus="0.25516" errorplus="0.25516">0.28250</radius>
+			<period errorminus="1.3000000e-04" errorplus="1.3000000e-04">20.994330000000</period>
+			<transittime errorminus="0.0020000" errorplus="0.0020000">2454965.1084000</transittime>
+			<semimajoraxis>0.1360000</semimajoraxis>
+			<temperature>545.0</temperature>
+			<list>Kepler Objects of Interest</list>
+			<description>This is a Kepler Object of Interest from the Q1-Q12 dataset. It has been flagged as a possible transit event but has not been confirmed to be a planet yet.</description>
+			<istransiting>1</istransiting>
+		</planet>
+	</star>
+</system>

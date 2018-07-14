@@ -1,0 +1,27 @@
+<system>
+	<name>KOI-2084</name>
+	<rightascension>19 39 21</rightascension>
+	<declination>+39 05 09</declination>
+	<distance>1033.30</distance>
+	<star>
+		<magJ errorminus="0.025" errorplus="0.025">13.679</magJ>
+		<magH errorminus="0.023" errorplus="0.023">13.212</magH>
+		<magK errorminus="0.03" errorplus="0.03">13.13</magK>
+		<name>KOI-2084</name>
+		<temperature errorminus="200.00" errorplus="200.00">5029.00</temperature>
+		<radius errorminus="0.3000" errorplus="0.3000">1.1200</radius>
+		<mass errorminus="0.3000" errorplus="0.3000">0.9900</mass>
+		<planet>
+			<name>KOI-2084 b</name>
+			<name>KOI-2084 01</name>
+			<radius errorminus="0.11847" errorplus="0.11847">0.31896</radius>
+			<period errorminus="3.3000000e-05" errorplus="3.3000000e-05">4.195803000000</period>
+			<transittime errorminus="0.0032000" errorplus="0.0032000">2454968.1716000</transittime>
+			<semimajoraxis>0.0510000</semimajoraxis>
+			<temperature>1039.0</temperature>
+			<list>Kepler Objects of Interest</list>
+			<description>This is a Kepler Object of Interest from the Q1-Q12 dataset. It has been flagged as a possible transit event but has not been confirmed to be a planet yet.</description>
+			<istransiting>1</istransiting>
+		</planet>
+	</star>
+</system>

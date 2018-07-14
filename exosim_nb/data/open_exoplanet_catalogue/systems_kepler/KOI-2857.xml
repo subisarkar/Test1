@@ -1,0 +1,37 @@
+<system>
+	<name>KOI-2857</name>
+	<rightascension>18 58 15</rightascension>
+	<declination>+41 46 42</declination>
+	<distance>872.90</distance>
+	<star>
+		<name>KOI-2857</name>
+		<temperature errorminus="122.00" errorplus="122.00">6234.00</temperature>
+		<radius errorminus="0.4300" errorplus="0.4300">1.2100</radius>
+		<mass errorminus="0.1100" errorplus="0.1100">1.1000</mass>
+		<age errorminus="0.7200" errorplus="0.7200">3.5300</age>
+		<planet>
+			<name>KOI-2857 b</name>
+			<name>KOI-2857 01</name>
+			<radius errorminus="0.08293" errorplus="0.08293">0.17679</radius>
+			<period errorminus="1.7000000e-04" errorplus="1.7000000e-04">20.264270000000</period>
+			<transittime errorminus="0.0054000" errorplus="0.0054000">2454968.2796000</transittime>
+			<semimajoraxis>0.1500000</semimajoraxis>
+			<temperature>781.0</temperature>
+			<list>Kepler Objects of Interest</list>
+			<description>This is a Kepler Object of Interest from the Q1-Q12 dataset. It has been flagged as a possible transit event but has not been confirmed to be a planet yet.</description>
+			<istransiting>1</istransiting>
+		</planet>
+		<planet>
+			<name>KOI-2857 c</name>
+			<name>KOI-2857 02</name>
+			<radius errorminus="0.05559" errorplus="0.05559">0.10115</radius>
+			<period errorminus="8.1000000e-05" errorplus="8.1000000e-05">7.441406000000</period>
+			<transittime errorminus="0.0073000" errorplus="0.0073000">2454970.7464000</transittime>
+			<semimajoraxis>0.0770000</semimajoraxis>
+			<temperature>1090.0</temperature>
+			<list>Kepler Objects of Interest</list>
+			<description>This is a Kepler Object of Interest from the Q1-Q12 dataset. It has been flagged as a possible transit event but has not been confirmed to be a planet yet.</description>
+			<istransiting>1</istransiting>
+		</planet>
+	</star>
+</system>

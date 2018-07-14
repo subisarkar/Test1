@@ -1,0 +1,28 @@
+<system>
+	<name>KOI-3136</name>
+	<rightascension>19 23 33</rightascension>
+	<declination>+42 27 34</declination>
+	<distance>853.17</distance>
+	<star>
+		<magJ errorminus="0.027" errorplus="0.027">14.223</magJ>
+		<magH errorminus="0.028" errorplus="0.028">13.649</magH>
+		<magK errorminus="0.04" errorplus="0.04">13.56</magK>
+		<name>KOI-3136</name>
+		<temperature errorminus="71.00" errorplus="71.00">4988.00</temperature>
+		<radius errorminus="0.0220" errorplus="0.0220">0.7230</radius>
+		<mass errorminus="0.0190" errorplus="0.0190">0.7280</mass>
+		<age errorminus="3.7000" errorplus="3.7000">13.9000</age>
+		<planet>
+			<name>KOI-3136 b</name>
+			<name>KOI-3136 01</name>
+			<radius errorminus="0.04374" errorplus="0.04374">0.09751</radius>
+			<period errorminus="1.5000000e-05" errorplus="1.5000000e-05">2.391612000000</period>
+			<transittime errorminus="0.0042000" errorplus="0.0042000">2454966.0801000</transittime>
+			<semimajoraxis>0.0320000</semimajoraxis>
+			<temperature>1046.0</temperature>
+			<list>Kepler Objects of Interest</list>
+			<description>This is a Kepler Object of Interest from the Q1-Q12 dataset. It has been flagged as a possible transit event but has not been confirmed to be a planet yet.</description>
+			<istransiting>1</istransiting>
+		</planet>
+	</star>
+</system>

@@ -1,0 +1,30 @@
+<system>
+	<name>KOI-0010</name>
+	<rightascension>18 45 09</rightascension>
+	<declination>+42 27 03</declination>
+	<distance>986.47</distance>
+	<star>
+		<magB>14.3</magB>
+		<magR>13.3</magR>
+		<magJ errorminus="0.023" errorplus="0.023">12.576</magJ>
+		<magH errorminus="0.018" errorplus="0.018">12.324</magH>
+		<magK errorminus="0.016" errorplus="0.016">12.293</magK>
+		<name>KOI-0010</name>
+		<temperature errorminus="112.00" errorplus="112.00">6025.00</temperature>
+		<radius errorminus="0.2100" errorplus="0.2100">1.5600</radius>
+		<mass errorminus="0.0920" errorplus="0.0920">1.1400</mass>
+		<age errorminus="1.4000" errorplus="1.4000">5.4000</age>
+		<planet>
+			<name>KOI-0010 b</name>
+			<name>KOI-0010 01</name>
+			<radius errorminus="0.19137" errorplus="0.19137">1.44897</radius>
+			<period errorminus="7.3000000e-07" errorplus="7.3000000e-07">3.522499130000</period>
+			<transittime errorminus="0.0000720" errorplus="0.0000720">2454954.1185950</transittime>
+			<semimajoraxis>0.0470000</semimajoraxis>
+			<temperature>1532.0</temperature>
+			<list>Kepler Objects of Interest</list>
+			<description>This is a Kepler Object of Interest from the Q1-Q12 dataset. It has been flagged as a possible transit event but has not been confirmed to be a planet yet.</description>
+			<istransiting>1</istransiting>
+		</planet>
+	</star>
+</system>

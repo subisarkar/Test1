@@ -1,0 +1,28 @@
+<system>
+	<name>KOI-2143</name>
+	<rightascension>19 28 20</rightascension>
+	<declination>+49 14 14</declination>
+	<distance>556.88</distance>
+	<star>
+		<magJ errorminus="0.025" errorplus="0.025">12.867</magJ>
+		<magH errorminus="0.021" errorplus="0.021">12.512</magH>
+		<magK errorminus="0.026" errorplus="0.026">12.463</magK>
+		<name>KOI-2143</name>
+		<temperature errorminus="73.00" errorplus="73.00">5549.00</temperature>
+		<radius errorminus="0.2100" errorplus="0.2100">0.8100</radius>
+		<mass errorminus="0.0340" errorplus="0.0340">0.9110</mass>
+		<age errorminus="4.0000" errorplus="4.0000">0.6000</age>
+		<planet>
+			<name>KOI-2143 b</name>
+			<name>KOI-2143 01</name>
+			<radius errorminus="0.02825" errorplus="0.02825">0.10389</radius>
+			<period errorminus="5.6000000e-05" errorplus="5.6000000e-05">4.790278000000</period>
+			<transittime errorminus="0.0041000" errorplus="0.0041000">2454967.9541000</transittime>
+			<semimajoraxis>0.0540000</semimajoraxis>
+			<temperature>946.0</temperature>
+			<list>Kepler Objects of Interest</list>
+			<description>This is a Kepler Object of Interest from the Q1-Q12 dataset. It has been flagged as a possible transit event but has not been confirmed to be a planet yet.</description>
+			<istransiting>1</istransiting>
+		</planet>
+	</star>
+</system>

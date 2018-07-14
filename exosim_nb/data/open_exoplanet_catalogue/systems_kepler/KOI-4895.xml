@@ -1,0 +1,24 @@
+<system>
+	<name>KOI-4895</name>
+	<rightascension>19 42 03</rightascension>
+	<declination>+51 12 13</declination>
+	<distance>982.10</distance>
+	<star>
+		<name>KOI-4895</name>
+		<temperature errorminus="168.00" errorplus="168.00">5861.00</temperature>
+		<radius errorminus="0.4840" errorplus="0.4840">0.9580</radius>
+		<metallicity errorminus="0.3000" errorplus="0.3000">-0.2400</metallicity>
+		<planet>
+			<name>KOI-4895 b</name>
+			<name>KOI-4895 01</name>
+			<radius errorminus="0.09113" errorplus="0.09113">0.13032</radius>
+			<period errorminus="1.2590000e-04" errorplus="1.2590000e-04">12.460148800000</period>
+			<transittime errorminus="0.0080500" errorplus="0.0080500">2454972.2546600</transittime>
+			<semimajoraxis errorminus="6.88e-07" errorplus="6.88e-07">0.1020840</semimajoraxis>
+			<temperature errorminus="201.0" errorplus="201.0">792.0</temperature>
+			<list>Kepler Objects of Interest</list>
+			<description>This is a Kepler Object of Interest from the Q1-Q12 dataset. It has been flagged as a possible transit event but has not been confirmed to be a planet yet.</description>
+			<istransiting>1</istransiting>
+		</planet>
+	</star>
+</system>

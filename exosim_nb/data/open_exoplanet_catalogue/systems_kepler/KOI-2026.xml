@@ -1,0 +1,28 @@
+<system>
+	<name>KOI-2026</name>
+	<rightascension>19 44 55</rightascension>
+	<declination>+50 16 30</declination>
+	<distance>813.95</distance>
+	<star>
+		<magJ errorminus="0.020" errorplus="0.020">12.210</magJ>
+		<magH errorminus="0.019" errorplus="0.019">11.980</magH>
+		<magK errorminus="0.019" errorplus="0.019">11.934</magK>
+		<name>KOI-2026</name>
+		<temperature errorminus="93.00" errorplus="93.00">6424.00</temperature>
+		<radius errorminus="0.3400" errorplus="0.3400">1.3000</radius>
+		<mass errorminus="0.1000" errorplus="0.1000">1.1800</mass>
+		<age errorminus="0.6800" errorplus="0.6800">2.8100</age>
+		<planet>
+			<name>KOI-2026 b</name>
+			<name>KOI-2026 01</name>
+			<radius errorminus="0.04648" errorplus="0.04648">0.17679</radius>
+			<period errorminus="1.4000000e-05" errorplus="1.4000000e-05">2.758006000000</period>
+			<transittime errorminus="0.0015000" errorplus="0.0015000">2454964.8750000</transittime>
+			<semimajoraxis>0.0410000</semimajoraxis>
+			<temperature>1595.0</temperature>
+			<list>Kepler Objects of Interest</list>
+			<description>This is a Kepler Object of Interest from the Q1-Q12 dataset. It has been flagged as a possible transit event but has not been confirmed to be a planet yet.</description>
+			<istransiting>1</istransiting>
+		</planet>
+	</star>
+</system>

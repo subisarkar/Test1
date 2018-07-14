@@ -1,0 +1,28 @@
+<system>
+	<name>KOI-1988</name>
+	<rightascension>19 53 18</rightascension>
+	<declination>+45 18 55</declination>
+	<distance>298.52</distance>
+	<star>
+		<magJ errorminus="0.023" errorplus="0.023">12.424</magJ>
+		<magH errorminus="0.019" errorplus="0.019">11.863</magH>
+		<magK errorminus="0.019" errorplus="0.019">11.753</magK>
+		<name>KOI-1988</name>
+		<temperature errorminus="74.00" errorplus="74.00">4674.00</temperature>
+		<radius errorminus="1.0000" errorplus="1.0000">0.6000</radius>
+		<mass errorminus="0.1100" errorplus="0.1100">0.6700</mass>
+		<age errorminus="3.8000" errorplus="3.8000">13.7000</age>
+		<planet>
+			<name>KOI-1988 b</name>
+			<name>KOI-1988 01</name>
+			<radius errorminus="0.16403" errorplus="0.16403">0.10024</radius>
+			<period errorminus="4.6000000e-06" errorplus="4.6000000e-06">0.934891800000</period>
+			<transittime errorminus="0.0007200" errorplus="0.0007200">2454964.5786500</transittime>
+			<semimajoraxis>0.0160000</semimajoraxis>
+			<temperature>1305.0</temperature>
+			<list>Kepler Objects of Interest</list>
+			<description>This is a Kepler Object of Interest from the Q1-Q12 dataset. It has been flagged as a possible transit event but has not been confirmed to be a planet yet.</description>
+			<istransiting>1</istransiting>
+		</planet>
+	</star>
+</system>

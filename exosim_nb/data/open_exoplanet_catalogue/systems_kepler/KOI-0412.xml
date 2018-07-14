@@ -1,0 +1,28 @@
+<system>
+	<name>KOI-0412</name>
+	<rightascension>18 53 01</rightascension>
+	<declination>+40 59 25</declination>
+	<distance>942.99</distance>
+	<star>
+		<magJ errorminus="0.03" errorplus="0.03">13.07</magJ>
+		<magH errorminus="0.04" errorplus="0.04">12.78</magH>
+		<magK errorminus="0.04" errorplus="0.04">12.78</magK>
+		<name>KOI-0412</name>
+		<temperature errorminus="95.00" errorplus="95.00">5781.00</temperature>
+		<radius errorminus="0.4300" errorplus="0.4300">1.1600</radius>
+		<mass errorminus="0.1100" errorplus="0.1100">0.9300</mass>
+		<age errorminus="2.8000" errorplus="2.8000">10.2000</age>
+		<planet>
+			<name>KOI-0412 b</name>
+			<name>KOI-0412 01</name>
+			<radius errorminus="0.22783" errorplus="0.22783">0.60146</radius>
+			<period errorminus="3.3000000e-06" errorplus="3.3000000e-06">4.147019800000</period>
+			<transittime errorminus="0.0002500" errorplus="0.0002500">2455003.3252400</transittime>
+			<semimajoraxis>0.0490000</semimajoraxis>
+			<temperature>1238.0</temperature>
+			<list>Kepler Objects of Interest</list>
+			<description>This is a Kepler Object of Interest from the Q1-Q12 dataset. It has been flagged as a possible transit event but has not been confirmed to be a planet yet.</description>
+			<istransiting>1</istransiting>
+		</planet>
+	</star>
+</system>

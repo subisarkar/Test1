@@ -1,0 +1,24 @@
+<system>
+	<name>KOI-2959</name>
+	<rightascension>19 49 05</rightascension>
+	<declination>+43 05 55</declination>
+	<distance>664.73</distance>
+	<star>
+		<name>KOI-2959</name>
+		<temperature errorminus="200.00" errorplus="200.00">4319.00</temperature>
+		<radius errorminus="0.3000" errorplus="0.3000">0.7400</radius>
+		<mass errorminus="0.3000" errorplus="0.3000">0.6800</mass>
+		<planet>
+			<name>KOI-2959 b</name>
+			<name>KOI-2959 01</name>
+			<radius errorminus="0.12758" errorplus="0.12758">0.20049</radius>
+			<period errorminus="1.4000000e-04" errorplus="1.4000000e-04">16.156090000000</period>
+			<transittime errorminus="0.0069000" errorplus="0.0069000">2454973.2152000</transittime>
+			<semimajoraxis>0.1100000</semimajoraxis>
+			<temperature>495.0</temperature>
+			<list>Kepler Objects of Interest</list>
+			<description>This is a Kepler Object of Interest from the Q1-Q12 dataset. It has been flagged as a possible transit event but has not been confirmed to be a planet yet.</description>
+			<istransiting>1</istransiting>
+		</planet>
+	</star>
+</system>

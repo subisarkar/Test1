@@ -1,0 +1,25 @@
+<system>
+	<name>KOI-2708</name>
+	<rightascension>19 13 44</rightascension>
+	<declination>+40 22 51</declination>
+	<distance>747.48</distance>
+	<star>
+		<name>KOI-2708</name>
+		<temperature errorminus="82.00" errorplus="82.00">4735.00</temperature>
+		<radius errorminus="0.0190" errorplus="0.0190">0.6530</radius>
+		<mass errorminus="0.0210" errorplus="0.0210">0.6770</mass>
+		<age errorminus="3.8000" errorplus="3.8000">13.4000</age>
+		<planet>
+			<name>KOI-2708 b</name>
+			<name>KOI-2708 01</name>
+			<radius errorminus="0.03645" errorplus="0.03645">0.13852</radius>
+			<period errorminus="1.4000000e-06" errorplus="1.4000000e-06">0.868386500000</period>
+			<transittime errorminus="0.0008900" errorplus="0.0008900">2454965.0664500</transittime>
+			<semimajoraxis>0.0160000</semimajoraxis>
+			<temperature>1334.0</temperature>
+			<list>Kepler Objects of Interest</list>
+			<description>This is a Kepler Object of Interest from the Q1-Q12 dataset. It has been flagged as a possible transit event but has not been confirmed to be a planet yet.</description>
+			<istransiting>1</istransiting>
+		</planet>
+	</star>
+</system>

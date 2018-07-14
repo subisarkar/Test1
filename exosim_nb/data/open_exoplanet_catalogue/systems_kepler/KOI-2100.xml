@@ -1,0 +1,28 @@
+<system>
+	<name>KOI-2100</name>
+	<rightascension>19 33 02</rightascension>
+	<declination>+41 21 54</declination>
+	<distance>914.88</distance>
+	<star>
+		<magJ errorminus="0.028" errorplus="0.028">13.332</magJ>
+		<magH errorminus="0.03" errorplus="0.03">12.95</magH>
+		<magK errorminus="0.04" errorplus="0.04">12.90</magK>
+		<name>KOI-2100</name>
+		<temperature errorminus="110.00" errorplus="110.00">5983.00</temperature>
+		<radius errorminus="0.4500" errorplus="0.4500">0.9300</radius>
+		<mass errorminus="0.1000" errorplus="0.1000">1.0300</mass>
+		<age errorminus="2.4000" errorplus="2.4000">0.5000</age>
+		<planet>
+			<name>KOI-2100 b</name>
+			<name>KOI-2100 01</name>
+			<radius errorminus="0.07473" errorplus="0.07473">0.11756</radius>
+			<period errorminus="1.7000000e-05" errorplus="1.7000000e-05">4.271024000000</period>
+			<transittime errorminus="0.0026000" errorplus="0.0026000">2454966.1398000</transittime>
+			<semimajoraxis>0.0520000</semimajoraxis>
+			<temperature>1115.0</temperature>
+			<list>Kepler Objects of Interest</list>
+			<description>This is a Kepler Object of Interest from the Q1-Q12 dataset. It has been flagged as a possible transit event but has not been confirmed to be a planet yet.</description>
+			<istransiting>1</istransiting>
+		</planet>
+	</star>
+</system>

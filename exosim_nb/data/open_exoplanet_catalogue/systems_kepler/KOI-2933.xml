@@ -1,0 +1,25 @@
+<system>
+	<name>KOI-2933</name>
+	<rightascension>19 42 42</rightascension>
+	<declination>+51 15 28</declination>
+	<distance>655.41</distance>
+	<star>
+		<name>KOI-2933</name>
+		<temperature errorminus="68.00" errorplus="68.00">4611.00</temperature>
+		<radius errorminus="0.0160" errorplus="0.0160">0.6250</radius>
+		<mass errorminus="0.0170" errorplus="0.0170">0.6520</mass>
+		<age errorminus="3.9000" errorplus="3.9000">13.8000</age>
+		<planet>
+			<name>KOI-2933 b</name>
+			<name>KOI-2933 01</name>
+			<radius errorminus="1.27582" errorplus="1.27582">2.55165</radius>
+			<period errorminus="7.3000000e-04" errorplus="7.3000000e-04">119.084060000000</period>
+			<transittime errorminus="0.0043000" errorplus="0.0043000">2454996.5574000</transittime>
+			<semimajoraxis>0.4110000</semimajoraxis>
+			<temperature>251.0</temperature>
+			<list>Kepler Objects of Interest</list>
+			<description>This is a Kepler Object of Interest from the Q1-Q12 dataset. It has been flagged as a possible transit event but has not been confirmed to be a planet yet.</description>
+			<istransiting>1</istransiting>
+		</planet>
+	</star>
+</system>

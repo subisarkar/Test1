@@ -1,0 +1,25 @@
+<system>
+	<name>KOI-2989</name>
+	<rightascension>19 56 19</rightascension>
+	<declination>+42 01 05</declination>
+	<distance>897.14</distance>
+	<star>
+		<name>KOI-2989</name>
+		<temperature errorminus="83.00" errorplus="83.00">5379.00</temperature>
+		<radius errorminus="0.1800" errorplus="0.1800">0.7600</radius>
+		<mass errorminus="0.0360" errorplus="0.0360">0.8660</mass>
+		<age errorminus="4.0000" errorplus="4.0000">0.5000</age>
+		<planet>
+			<name>KOI-2989 b</name>
+			<name>KOI-2989 01</name>
+			<radius errorminus="0.06926" errorplus="0.06926">0.12849</radius>
+			<period errorminus="4.4000000e-05" errorplus="4.4000000e-05">6.331270000000</period>
+			<transittime errorminus="0.0049000" errorplus="0.0049000">2454970.1352000</transittime>
+			<semimajoraxis>0.0640000</semimajoraxis>
+			<temperature>819.0</temperature>
+			<list>Kepler Objects of Interest</list>
+			<description>This is a Kepler Object of Interest from the Q1-Q12 dataset. It has been flagged as a possible transit event but has not been confirmed to be a planet yet.</description>
+			<istransiting>1</istransiting>
+		</planet>
+	</star>
+</system>

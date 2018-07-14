@@ -1,0 +1,25 @@
+<system>
+	<name>KOI-2307</name>
+	<rightascension>18 48 35</rightascension>
+	<declination>+43 22 42</declination>
+	<distance>772.09</distance>
+	<star>
+		<name>KOI-2307</name>
+		<temperature errorminus="88.00" errorplus="88.00">5495.00</temperature>
+		<radius errorminus="0.4900" errorplus="0.4900">0.8100</radius>
+		<mass errorminus="0.1000" errorplus="0.1000">0.8800</mass>
+		<age errorminus="3.9000" errorplus="3.9000">3.4000</age>
+		<planet>
+			<name>KOI-2307 b</name>
+			<name>KOI-2307 01</name>
+			<radius errorminus="0.12758" errorplus="0.12758">0.17315</radius>
+			<period errorminus="2.7000000e-05" errorplus="2.7000000e-05">4.150316000000</period>
+			<transittime errorminus="0.0020000" errorplus="0.0020000">2454967.9328000</transittime>
+			<semimajoraxis>0.0480000</semimajoraxis>
+			<temperature>998.0</temperature>
+			<list>Kepler Objects of Interest</list>
+			<description>This is a Kepler Object of Interest from the Q1-Q12 dataset. It has been flagged as a possible transit event but has not been confirmed to be a planet yet.</description>
+			<istransiting>1</istransiting>
+		</planet>
+	</star>
+</system>

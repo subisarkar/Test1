@@ -1,0 +1,28 @@
+<system>
+	<name>KOI-2282</name>
+	<rightascension>18 47 19</rightascension>
+	<declination>+42 17 56</declination>
+	<distance>825.88</distance>
+	<star>
+		<magJ errorminus="0.021" errorplus="0.021">13.151</magJ>
+		<magH errorminus="0.023" errorplus="0.023">12.810</magH>
+		<magK errorminus="0.019" errorplus="0.019">12.762</magK>
+		<name>KOI-2282</name>
+		<temperature errorminus="72.00" errorplus="72.00">6059.00</temperature>
+		<radius errorminus="0.3400" errorplus="0.3400">0.9600</radius>
+		<mass errorminus="0.0650" errorplus="0.0650">1.0540</mass>
+		<age errorminus="2.2000" errorplus="2.2000">0.4000</age>
+		<planet>
+			<name>KOI-2282 b</name>
+			<name>KOI-2282 01</name>
+			<radius errorminus="0.04739" errorplus="0.04739">0.13032</radius>
+			<period errorminus="9.6000000e-05" errorplus="9.6000000e-05">6.892250000000</period>
+			<transittime errorminus="0.0050000" errorplus="0.0050000">2454965.4692000</transittime>
+			<semimajoraxis>0.0720000</semimajoraxis>
+			<temperature>974.0</temperature>
+			<list>Kepler Objects of Interest</list>
+			<description>This is a Kepler Object of Interest from the Q1-Q12 dataset. It has been flagged as a possible transit event but has not been confirmed to be a planet yet.</description>
+			<istransiting>1</istransiting>
+		</planet>
+	</star>
+</system>

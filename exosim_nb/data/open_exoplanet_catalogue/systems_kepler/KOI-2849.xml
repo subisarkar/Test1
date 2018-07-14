@@ -1,0 +1,25 @@
+<system>
+	<name>KOI-2849</name>
+	<rightascension>19 07 41</rightascension>
+	<declination>+47 03 13</declination>
+	<distance>592.83</distance>
+	<star>
+		<name>KOI-2849</name>
+		<temperature errorminus="115.00" errorplus="115.00">5299.00</temperature>
+		<radius errorminus="0.4000" errorplus="0.4000">0.7800</radius>
+		<mass errorminus="0.0800" errorplus="0.0800">0.8210</mass>
+		<age errorminus="3.9000" errorplus="3.9000">6.1000</age>
+		<planet>
+			<name>KOI-2849 b</name>
+			<name>KOI-2849 01</name>
+			<radius errorminus="0.05923" errorplus="0.05923">0.08840</radius>
+			<period errorminus="3.3000000e-05" errorplus="3.3000000e-05">5.959585000000</period>
+			<transittime errorminus="0.0037000" errorplus="0.0037000">2454968.0069000</transittime>
+			<semimajoraxis>0.0600000</semimajoraxis>
+			<temperature>841.0</temperature>
+			<list>Kepler Objects of Interest</list>
+			<description>This is a Kepler Object of Interest from the Q1-Q12 dataset. It has been flagged as a possible transit event but has not been confirmed to be a planet yet.</description>
+			<istransiting>1</istransiting>
+		</planet>
+	</star>
+</system>

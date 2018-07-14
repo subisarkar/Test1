@@ -1,0 +1,39 @@
+<system>
+	<name>KOI-1884</name>
+	<rightascension>19 43 36</rightascension>
+	<declination>+39 55 06</declination>
+	<distance>990.48</distance>
+	<star>
+		<magJ errorminus="0.04" errorplus="0.04">14.01</magJ>
+		<magH errorminus="0.06" errorplus="0.06">13.57</magH>
+		<magK errorminus="0.06" errorplus="0.06">13.49</magK>
+		<name>KOI-1884</name>
+		<temperature errorminus="200.00" errorplus="200.00">5077.00</temperature>
+		<radius errorminus="0.3000" errorplus="0.3000">0.9200</radius>
+		<mass errorminus="0.3000" errorplus="0.3000">0.9500</mass>
+		<planet>
+			<name>KOI-1884 b</name>
+			<name>KOI-1884 01</name>
+			<radius errorminus="0.15492" errorplus="0.15492">0.45565</radius>
+			<period errorminus="1.9000000e-04" errorplus="1.9000000e-04">23.120040000000</period>
+			<transittime errorminus="0.0037000" errorplus="0.0037000">2454982.5175000</transittime>
+			<semimajoraxis>0.1560000</semimajoraxis>
+			<temperature>545.0</temperature>
+			<list>Kepler Objects of Interest</list>
+			<description>This is a Kepler Object of Interest from the Q1-Q12 dataset. It has been flagged as a possible transit event but has not been confirmed to be a planet yet.</description>
+			<istransiting>1</istransiting>
+		</planet>
+		<planet>
+			<name>KOI-1884 c</name>
+			<name>KOI-1884 02</name>
+			<radius errorminus="0.07928" errorplus="0.07928">0.23967</radius>
+			<period errorminus="6.5000000e-05" errorplus="6.5000000e-05">4.775041000000</period>
+			<transittime errorminus="0.0034000" errorplus="0.0034000">2455188.4545000</transittime>
+			<semimajoraxis>0.0550000</semimajoraxis>
+			<temperature>918.0</temperature>
+			<list>Kepler Objects of Interest</list>
+			<description>This is a Kepler Object of Interest from the Q1-Q12 dataset. It has been flagged as a possible transit event but has not been confirmed to be a planet yet.</description>
+			<istransiting>1</istransiting>
+		</planet>
+	</star>
+</system>

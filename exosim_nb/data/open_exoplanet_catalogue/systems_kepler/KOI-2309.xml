@@ -1,0 +1,28 @@
+<system>
+	<name>KOI-2309</name>
+	<rightascension>19 25 07</rightascension>
+	<declination>+46 57 57</declination>
+	<distance>1426.19</distance>
+	<star>
+		<magJ errorminus="0.024" errorplus="0.024">13.866</magJ>
+		<magH errorminus="0.022" errorplus="0.022">13.554</magH>
+		<magK errorminus="0.03" errorplus="0.03">13.49</magK>
+		<name>KOI-2309</name>
+		<temperature errorminus="105.00" errorplus="105.00">6322.00</temperature>
+		<radius errorminus="0.1800" errorplus="0.1800">1.0800</radius>
+		<mass errorminus="0.0500" errorplus="0.0500">1.1440</mass>
+		<age errorminus="0.5000" errorplus="0.5000">0.5000</age>
+		<planet>
+			<name>KOI-2309 b</name>
+			<name>KOI-2309 01</name>
+			<radius errorminus="0.10024" errorplus="0.10024">0.25516</radius>
+			<period errorminus="4.7000000e-04" errorplus="4.7000000e-04">53.599230000000</period>
+			<transittime errorminus="0.0061000" errorplus="0.0061000">2454980.4282000</transittime>
+			<semimajoraxis>0.2910000</semimajoraxis>
+			<temperature>536.0</temperature>
+			<list>Kepler Objects of Interest</list>
+			<description>This is a Kepler Object of Interest from the Q1-Q12 dataset. It has been flagged as a possible transit event but has not been confirmed to be a planet yet.</description>
+			<istransiting>1</istransiting>
+		</planet>
+	</star>
+</system>

@@ -1,0 +1,24 @@
+<system>
+	<name>KOI-3583</name>
+	<rightascension>19 56 52</rightascension>
+	<declination>+40 12 44</declination>
+	<distance>1243.22</distance>
+	<star>
+		<name>KOI-3583</name>
+		<temperature errorminus="351.00" errorplus="351.00">7591.00</temperature>
+		<radius errorminus="1.2040" errorplus="1.2040">2.0170</radius>
+		<metallicity errorminus="0.5000" errorplus="0.5000">-0.0800</metallicity>
+		<planet>
+			<name>KOI-3583 b</name>
+			<name>KOI-3583 01</name>
+			<radius errorminus="0.30984" errorplus="0.30984">6.33264</radius>
+			<period errorminus="3.5780000e-05" errorplus="3.5780000e-05">210.306637440000</period>
+			<transittime errorminus="0.0001110" errorplus="0.0001110">2455118.1264930</transittime>
+			<semimajoraxis errorminus="9.31e-08" errorplus="9.31e-08">0.8204830</semimajoraxis>
+			<temperature errorminus="159.0" errorplus="159.0">525.0</temperature>
+			<list>Kepler Objects of Interest</list>
+			<description>This is a Kepler Object of Interest from the Q1-Q12 dataset. It has been flagged as a possible transit event but has not been confirmed to be a planet yet.</description>
+			<istransiting>1</istransiting>
+		</planet>
+	</star>
+</system>

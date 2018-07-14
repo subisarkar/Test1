@@ -1,0 +1,24 @@
+<system>
+	<name>KOI-3472</name>
+	<rightascension>19 42 33</rightascension>
+	<declination>+46 07 57</declination>
+	<distance>1046.18</distance>
+	<star>
+		<name>KOI-3472</name>
+		<temperature errorminus="228.00" errorplus="228.00">6277.00</temperature>
+		<radius errorminus="0.6210" errorplus="0.6210">1.0310</radius>
+		<metallicity errorminus="0.3400" errorplus="0.3400">-0.1800</metallicity>
+		<planet>
+			<name>KOI-3472 b</name>
+			<name>KOI-3472 01</name>
+			<radius errorminus="0.16403" errorplus="0.16403">0.11118</radius>
+			<period errorminus="6.2230000e-05" errorplus="6.2230000e-05">10.430062680000</period>
+			<transittime errorminus="0.0046700" errorplus="0.0046700">2454966.2951600</transittime>
+			<semimajoraxis errorminus="3.83e-07" errorplus="3.83e-07">0.0961747</semimajoraxis>
+			<temperature errorminus="275.0" errorplus="275.0">907.0</temperature>
+			<list>Kepler Objects of Interest</list>
+			<description>This is a Kepler Object of Interest from the Q1-Q12 dataset. It has been flagged as a possible transit event but has not been confirmed to be a planet yet.</description>
+			<istransiting>1</istransiting>
+		</planet>
+	</star>
+</system>

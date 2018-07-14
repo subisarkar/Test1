@@ -1,0 +1,24 @@
+<system>
+	<name>KOI-2586</name>
+	<rightascension>19 20 42</rightascension>
+	<declination>+46 41 54</declination>
+	<distance>1210.75</distance>
+	<star>
+		<name>KOI-2586</name>
+		<temperature errorminus="200.00" errorplus="200.00">5599.00</temperature>
+		<radius errorminus="0.3000" errorplus="0.3000">0.8900</radius>
+		<mass errorminus="0.3000" errorplus="0.3000">1.0400</mass>
+		<planet>
+			<name>KOI-2586 b</name>
+			<name>KOI-2586 01</name>
+			<radius errorminus="0.04830" errorplus="0.04830">0.13670</radius>
+			<period errorminus="2.6000000e-05" errorplus="2.6000000e-05">2.131925000000</period>
+			<transittime errorminus="0.0040000" errorplus="0.0040000">2454966.6585000</transittime>
+			<semimajoraxis>0.0330000</semimajoraxis>
+			<temperature>1283.0</temperature>
+			<list>Kepler Objects of Interest</list>
+			<description>This is a Kepler Object of Interest from the Q1-Q12 dataset. It has been flagged as a possible transit event but has not been confirmed to be a planet yet.</description>
+			<istransiting>1</istransiting>
+		</planet>
+	</star>
+</system>

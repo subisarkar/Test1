@@ -1,0 +1,25 @@
+<system>
+	<name>KOI-2654</name>
+	<rightascension>19 49 21</rightascension>
+	<declination>+46 20 50</declination>
+	<distance>1452.14</distance>
+	<star>
+		<name>KOI-2654</name>
+		<temperature errorminus="119.00" errorplus="119.00">5835.00</temperature>
+		<radius errorminus="0.4500" errorplus="0.4500">0.8800</radius>
+		<mass errorminus="0.1100" errorplus="0.1100">0.9900</mass>
+		<age errorminus="3.2000" errorplus="3.2000">0.4000</age>
+		<planet>
+			<name>KOI-2654 b</name>
+			<name>KOI-2654 01</name>
+			<radius errorminus="0.08202" errorplus="0.08202">0.16039</radius>
+			<period errorminus="4.4000000e-04" errorplus="4.4000000e-04">13.563150000000</period>
+			<transittime errorminus="0.0110000" errorplus="0.0110000">2454973.6520000</transittime>
+			<semimajoraxis>0.1110000</semimajoraxis>
+			<temperature>725.0</temperature>
+			<list>Kepler Objects of Interest</list>
+			<description>This is a Kepler Object of Interest from the Q1-Q12 dataset. It has been flagged as a possible transit event but has not been confirmed to be a planet yet.</description>
+			<istransiting>1</istransiting>
+		</planet>
+	</star>
+</system>

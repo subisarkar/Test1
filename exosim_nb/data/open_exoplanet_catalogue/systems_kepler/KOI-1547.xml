@@ -1,0 +1,27 @@
+<system>
+	<name>KOI-1547</name>
+	<rightascension>19 36 48</rightascension>
+	<declination>+40 27 21</declination>
+	<distance>1346.40</distance>
+	<star>
+		<magJ errorminus="0.03" errorplus="0.03">14.50</magJ>
+		<magH errorminus="0.03" errorplus="0.03">14.16</magH>
+		<magK errorminus="0.07" errorplus="0.07">14.13</magK>
+		<name>KOI-1547</name>
+		<temperature errorminus="200.00" errorplus="200.00">5901.00</temperature>
+		<radius errorminus="0.3000" errorplus="0.3000">0.8400</radius>
+		<mass errorminus="0.3000" errorplus="0.3000">1.0600</mass>
+		<planet>
+			<name>KOI-1547 b</name>
+			<name>KOI-1547 01</name>
+			<radius errorminus="0.36452" errorplus="0.36452">1.02977</radius>
+			<period errorminus="3.5000000e-05" errorplus="3.5000000e-05">30.693946000000</period>
+			<transittime errorminus="0.0002700" errorplus="0.0002700">2455198.6645900</transittime>
+			<semimajoraxis>0.1960000</semimajoraxis>
+			<temperature>540.0</temperature>
+			<list>Kepler Objects of Interest</list>
+			<description>This is a Kepler Object of Interest from the Q1-Q12 dataset. It has been flagged as a possible transit event but has not been confirmed to be a planet yet.</description>
+			<istransiting>1</istransiting>
+		</planet>
+	</star>
+</system>

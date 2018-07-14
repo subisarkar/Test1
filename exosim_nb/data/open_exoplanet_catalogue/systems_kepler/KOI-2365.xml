@@ -1,0 +1,28 @@
+<system>
+	<name>KOI-2365</name>
+	<rightascension>19 31 14</rightascension>
+	<declination>+49 34 45</declination>
+	<distance>897.74</distance>
+	<star>
+		<magJ errorminus="0.020" errorplus="0.020">12.743</magJ>
+		<magH errorminus="0.023" errorplus="0.023">12.486</magH>
+		<magK errorminus="0.03" errorplus="0.03">12.39</magK>
+		<name>KOI-2365</name>
+		<temperature errorminus="89.00" errorplus="89.00">6242.00</temperature>
+		<radius errorminus="0.4000" errorplus="0.4000">1.1600</radius>
+		<mass errorminus="0.1000" errorplus="0.1000">1.1000</mass>
+		<age errorminus="0.9700" errorplus="0.9700">2.8400</age>
+		<planet>
+			<name>KOI-2365 b</name>
+			<name>KOI-2365 01</name>
+			<radius errorminus="0.08019" errorplus="0.08019">0.23056</radius>
+			<period errorminus="2.4000000e-04" errorplus="2.4000000e-04">35.968260000000</period>
+			<transittime errorminus="0.0045000" errorplus="0.0045000">2454971.6682000</transittime>
+			<semimajoraxis>0.2200000</semimajoraxis>
+			<temperature>631.0</temperature>
+			<list>Kepler Objects of Interest</list>
+			<description>This is a Kepler Object of Interest from the Q1-Q12 dataset. It has been flagged as a possible transit event but has not been confirmed to be a planet yet.</description>
+			<istransiting>1</istransiting>
+		</planet>
+	</star>
+</system>

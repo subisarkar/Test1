@@ -1,0 +1,27 @@
+<system>
+	<name>KOI-1637</name>
+	<rightascension>19 56 12</rightascension>
+	<declination>+47 56 57</declination>
+	<distance>630.86</distance>
+	<star>
+		<magJ errorminus="0.04" errorplus="0.04">14.55</magJ>
+		<magH errorminus="0.04" errorplus="0.04">14.08</magH>
+		<magK errorminus="0.05" errorplus="0.05">14.01</magK>
+		<name>KOI-1637</name>
+		<temperature errorminus="200.00" errorplus="200.00">4894.00</temperature>
+		<radius errorminus="0.3000" errorplus="0.3000">0.5500</radius>
+		<mass errorminus="0.3000" errorplus="0.3000">0.8000</mass>
+		<planet>
+			<name>KOI-1637 b</name>
+			<name>KOI-1637 01</name>
+			<radius errorminus="0.07199" errorplus="0.07199">0.13032</radius>
+			<period errorminus="4.3000000e-05" errorplus="4.3000000e-05">2.970439000000</period>
+			<transittime errorminus="0.0043000" errorplus="0.0043000">2454966.3861000</transittime>
+			<semimajoraxis>0.0380000</semimajoraxis>
+			<temperature>818.0</temperature>
+			<list>Kepler Objects of Interest</list>
+			<description>This is a Kepler Object of Interest from the Q1-Q12 dataset. It has been flagged as a possible transit event but has not been confirmed to be a planet yet.</description>
+			<istransiting>1</istransiting>
+		</planet>
+	</star>
+</system>

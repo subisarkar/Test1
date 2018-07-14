@@ -1,0 +1,24 @@
+<system>
+	<name>KOI-2208</name>
+	<rightascension>19 22 10</rightascension>
+	<declination>+47 43 33</declination>
+	<distance>327.60</distance>
+	<star>
+		<name>KOI-2208</name>
+		<temperature>5692.00</temperature>
+		<radius>0.9090</radius>
+		<mass>0.8980</mass>
+		<planet>
+			<name>KOI-2208 b</name>
+			<name>KOI-2208 01</name>
+			<radius>0.06653</radius>
+			<period errorminus="2.3000000e-05" errorplus="2.3000000e-05">2.344547000000</period>
+			<transittime errorminus="0.0028000" errorplus="0.0028000">2454965.8677000</transittime>
+			<semimajoraxis>0.0330000</semimajoraxis>
+			<temperature>1318.0</temperature>
+			<list>Kepler Objects of Interest</list>
+			<description>This is a Kepler Object of Interest from the Q1-Q12 dataset. It has been flagged as a possible transit event but has not been confirmed to be a planet yet.</description>
+			<istransiting>1</istransiting>
+		</planet>
+	</star>
+</system>

@@ -1,0 +1,40 @@
+<system>
+	<name>KOI-2183</name>
+	<rightascension>19 28 41</rightascension>
+	<declination>+40 54 58</declination>
+	<distance>1108.56</distance>
+	<star>
+		<magJ errorminus="0.026" errorplus="0.026">13.977</magJ>
+		<magH errorminus="0.03" errorplus="0.03">13.65</magH>
+		<magK errorminus="0.05" errorplus="0.05">13.55</magK>
+		<name>KOI-2183</name>
+		<temperature errorminus="97.00" errorplus="97.00">5836.00</temperature>
+		<radius errorminus="0.3900" errorplus="0.3900">0.8800</radius>
+		<mass errorminus="0.0830" errorplus="0.0830">0.9880</mass>
+		<age errorminus="3.2000" errorplus="3.2000">0.4000</age>
+		<planet>
+			<name>KOI-2183 b</name>
+			<name>KOI-2183 01</name>
+			<radius errorminus="0.07655" errorplus="0.07655">0.17132</radius>
+			<period errorminus="3.7000000e-04" errorplus="3.7000000e-04">19.023390000000</period>
+			<transittime errorminus="0.0071000" errorplus="0.0071000">2454972.6484000</transittime>
+			<semimajoraxis>0.1390000</semimajoraxis>
+			<temperature>648.0</temperature>
+			<list>Kepler Objects of Interest</list>
+			<description>This is a Kepler Object of Interest from the Q1-Q12 dataset. It has been flagged as a possible transit event but has not been confirmed to be a planet yet.</description>
+			<istransiting>1</istransiting>
+		</planet>
+		<planet>
+			<name>KOI-2183 c</name>
+			<name>KOI-2183 02</name>
+			<radius errorminus="0.05103" errorplus="0.05103">0.11574</radius>
+			<period errorminus="8.1000000e-05" errorplus="8.1000000e-05">4.579497000000</period>
+			<transittime errorminus="0.0061000" errorplus="0.0061000">2454968.1005000</transittime>
+			<semimajoraxis>0.0540000</semimajoraxis>
+			<temperature>1040.0</temperature>
+			<list>Kepler Objects of Interest</list>
+			<description>This is a Kepler Object of Interest from the Q1-Q12 dataset. It has been flagged as a possible transit event but has not been confirmed to be a planet yet.</description>
+			<istransiting>1</istransiting>
+		</planet>
+	</star>
+</system>

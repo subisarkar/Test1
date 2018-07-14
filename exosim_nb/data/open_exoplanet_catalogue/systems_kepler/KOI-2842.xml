@@ -1,0 +1,51 @@
+<system>
+	<name>KOI-2842</name>
+	<rightascension>18 49 00</rightascension>
+	<declination>+44 55 15</declination>
+	<distance>699.56</distance>
+	<star>
+		<magJ errorminus="0.021" errorplus="0.021">13.591</magJ>
+		<magH errorminus="0.026" errorplus="0.026">13.075</magH>
+		<magK errorminus="0.024" errorplus="0.024">12.827</magK>
+		<name>KOI-2842</name>
+		<temperature errorminus="200.00" errorplus="200.00">3553.00</temperature>
+		<radius errorminus="0.3000" errorplus="0.3000">0.9200</radius>
+		<mass errorminus="0.3000" errorplus="0.3000">0.5600</mass>
+		<planet>
+			<name>KOI-2842 b</name>
+			<name>KOI-2842 01</name>
+			<radius errorminus="1.36695" errorplus="1.36695">2.27826</radius>
+			<period errorminus="3.3000000e-06" errorplus="3.3000000e-06">1.565408800000</period>
+			<transittime errorminus="0.0019000" errorplus="0.0019000">2454965.9135000</transittime>
+			<semimajoraxis>0.0220000</semimajoraxis>
+			<temperature>1015.0</temperature>
+			<list>Kepler Objects of Interest</list>
+			<description>This is a Kepler Object of Interest from the Q1-Q12 dataset. It has been flagged as a possible transit event but has not been confirmed to be a planet yet.</description>
+			<istransiting>1</istransiting>
+		</planet>
+		<planet>
+			<name>KOI-2842 c</name>
+			<name>KOI-2842 02</name>
+			<radius errorminus="1.36695" errorplus="1.36695">2.36939</radius>
+			<period errorminus="2.2000000e-05" errorplus="2.2000000e-05">5.148921000000</period>
+			<transittime errorminus="0.0042000" errorplus="0.0042000">2454966.3196000</transittime>
+			<semimajoraxis>0.0480000</semimajoraxis>
+			<temperature>687.0</temperature>
+			<list>Kepler Objects of Interest</list>
+			<description>This is a Kepler Object of Interest from the Q1-Q12 dataset. It has been flagged as a possible transit event but has not been confirmed to be a planet yet.</description>
+			<istransiting>1</istransiting>
+		</planet>
+		<planet>
+			<name>KOI-2842 d</name>
+			<name>KOI-2842 03</name>
+			<radius errorminus="0.05304" errorplus="0.05304">0.21807</radius>
+			<period errorminus="5.4900000e-06" errorplus="5.4900000e-06">3.036179250000</period>
+			<transittime errorminus="0.0009450" errorplus="0.0009450">2454967.0695730</transittime>
+			<semimajoraxis errorminus="3.86e-08" errorplus="3.86e-08">0.0319926</semimajoraxis>
+			<temperature errorminus="48.1" errorplus="48.1">583.6</temperature>
+			<list>Kepler Objects of Interest</list>
+			<description>This is a Kepler Object of Interest from the Q1-Q12 dataset. It has been flagged as a possible transit event but has not been confirmed to be a planet yet.</description>
+			<istransiting>1</istransiting>
+		</planet>
+	</star>
+</system>

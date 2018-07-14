@@ -1,0 +1,40 @@
+<system>
+	<name>KOI-0431</name>
+	<rightascension>18 49 50</rightascension>
+	<declination>+48 15 25</declination>
+	<distance>641.57</distance>
+	<star>
+		<magJ errorminus="0.023" errorplus="0.023">12.945</magJ>
+		<magH errorminus="0.017" errorplus="0.017">12.483</magH>
+		<magK errorminus="0.023" errorplus="0.023">12.418</magK>
+		<name>KOI-0431</name>
+		<temperature errorminus="85.00" errorplus="85.00">5416.00</temperature>
+		<radius errorminus="0.5300" errorplus="0.5300">0.9100</radius>
+		<mass errorminus="0.1000" errorplus="0.1000">0.8200</mass>
+		<age errorminus="3.6000" errorplus="3.6000">13.8000</age>
+		<planet>
+			<name>KOI-0431 b</name>
+			<name>KOI-0431 01</name>
+			<radius errorminus="0.17315" errorplus="0.17315">0.29162</radius>
+			<period errorminus="7.7000000e-05" errorplus="7.7000000e-05">18.870214000000</period>
+			<transittime errorminus="0.0014000" errorplus="0.0014000">2455011.7105000</transittime>
+			<semimajoraxis>0.1300000</semimajoraxis>
+			<temperature>632.0</temperature>
+			<list>Kepler Objects of Interest</list>
+			<description>This is a Kepler Object of Interest from the Q1-Q12 dataset. It has been flagged as a possible transit event but has not been confirmed to be a planet yet.</description>
+			<istransiting>1</istransiting>
+		</planet>
+		<planet>
+			<name>KOI-0431 c</name>
+			<name>KOI-0431 02</name>
+			<radius errorminus="0.15492" errorplus="0.15492">0.25516</radius>
+			<period errorminus="4.1000000e-04" errorplus="4.1000000e-04">46.901910000000</period>
+			<transittime errorminus="0.0032000" errorplus="0.0032000">2454987.3080000</transittime>
+			<semimajoraxis>0.2380000</semimajoraxis>
+			<temperature>467.0</temperature>
+			<list>Kepler Objects of Interest</list>
+			<description>This is a Kepler Object of Interest from the Q1-Q12 dataset. It has been flagged as a possible transit event but has not been confirmed to be a planet yet.</description>
+			<istransiting>1</istransiting>
+		</planet>
+	</star>
+</system>

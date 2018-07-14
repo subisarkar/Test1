@@ -1,0 +1,40 @@
+<system>
+	<name>KOI-0221</name>
+	<rightascension>19 03 43</rightascension>
+	<declination>+39 05 53</declination>
+	<distance>623.82</distance>
+	<star>
+		<magJ errorminus="0.024" errorplus="0.024">13.314</magJ>
+		<magH errorminus="0.025" errorplus="0.025">12.859</magH>
+		<magK errorminus="0.024" errorplus="0.024">12.810</magK>
+		<name>KOI-0221</name>
+		<temperature errorminus="69.00" errorplus="69.00">5379.00</temperature>
+		<radius errorminus="0.2400" errorplus="0.2400">0.7600</radius>
+		<mass errorminus="0.0450" errorplus="0.0450">0.8650</mass>
+		<age errorminus="3.9000" errorplus="3.9000">0.6000</age>
+		<planet>
+			<name>KOI-0221 b</name>
+			<name>KOI-0221 01</name>
+			<radius errorminus="0.13670" errorplus="0.13670">0.43743</radius>
+			<period errorminus="1.5000000e-06" errorplus="1.5000000e-06">3.413035100000</period>
+			<transittime errorminus="0.0001800" errorplus="0.0001800">2454965.4423700</transittime>
+			<semimajoraxis>0.0420000</semimajoraxis>
+			<temperature>1011.0</temperature>
+			<list>Kepler Objects of Interest</list>
+			<description>This is a Kepler Object of Interest from the Q1-Q12 dataset. It has been flagged as a possible transit event but has not been confirmed to be a planet yet.</description>
+			<istransiting>1</istransiting>
+		</planet>
+		<planet>
+			<name>KOI-0221 c</name>
+			<name>KOI-0221 02</name>
+			<radius errorminus="0.02187" errorplus="0.02187">0.06744</radius>
+			<period errorminus="1.4000000e-04" errorplus="1.4000000e-04">5.896860000000</period>
+			<transittime errorminus="0.0100000" errorplus="0.0100000">2454967.0060000</transittime>
+			<semimajoraxis>0.0610000</semimajoraxis>
+			<temperature>839.0</temperature>
+			<list>Kepler Objects of Interest</list>
+			<description>This is a Kepler Object of Interest from the Q1-Q12 dataset. It has been flagged as a possible transit event but has not been confirmed to be a planet yet.</description>
+			<istransiting>1</istransiting>
+		</planet>
+	</star>
+</system>

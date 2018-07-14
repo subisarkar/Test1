@@ -1,0 +1,25 @@
+<system>
+	<name>KOI-3146</name>
+	<rightascension>19 01 23</rightascension>
+	<declination>+48 18 44</declination>
+	<distance>850.69</distance>
+	<star>
+		<name>KOI-3146</name>
+		<temperature errorminus="88.00" errorplus="88.00">5900.00</temperature>
+		<radius errorminus="0.3800" errorplus="0.3800">1.0800</radius>
+		<mass errorminus="0.0790" errorplus="0.0790">0.9690</mass>
+		<age errorminus="2.4000" errorplus="2.4000">7.1000</age>
+		<planet>
+			<name>KOI-3146 b</name>
+			<name>KOI-3146 01</name>
+			<radius errorminus="0.07199" errorplus="0.07199">0.11938</radius>
+			<period errorminus="7.6000000e-04" errorplus="7.6000000e-04">39.859250000000</period>
+			<transittime errorminus="0.0130000" errorplus="0.0130000">2454987.7720000</transittime>
+			<semimajoraxis>0.2260000</semimajoraxis>
+			<temperature>570.0</temperature>
+			<list>Kepler Objects of Interest</list>
+			<description>This is a Kepler Object of Interest from the Q1-Q12 dataset. It has been flagged as a possible transit event but has not been confirmed to be a planet yet.</description>
+			<istransiting>1</istransiting>
+		</planet>
+	</star>
+</system>

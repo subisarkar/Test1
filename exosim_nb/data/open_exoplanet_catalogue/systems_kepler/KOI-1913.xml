@@ -1,0 +1,28 @@
+<system>
+	<name>KOI-1913</name>
+	<rightascension>19 17 11</rightascension>
+	<declination>+46 27 28</declination>
+	<distance>449.75</distance>
+	<star>
+		<magJ errorminus="0.021" errorplus="0.021">12.064</magJ>
+		<magH errorminus="0.022" errorplus="0.022">11.755</magH>
+		<magK errorminus="0.016" errorplus="0.016">11.664</magK>
+		<name>KOI-1913</name>
+		<temperature errorminus="107.00" errorplus="107.00">5517.00</temperature>
+		<radius errorminus="0.4000" errorplus="0.4000">0.9500</radius>
+		<mass errorminus="0.0590" errorplus="0.0590">0.8440</mass>
+		<age errorminus="3.6000" errorplus="3.6000">12.7000</age>
+		<planet>
+			<name>KOI-1913 b</name>
+			<name>KOI-1913 01</name>
+			<radius errorminus="0.05103" errorplus="0.05103">0.12211</radius>
+			<period errorminus="3.7000000e-05" errorplus="3.7000000e-05">5.508576000000</period>
+			<transittime errorminus="0.0024000" errorplus="0.0024000">2454965.2983000</transittime>
+			<semimajoraxis>0.0580000</semimajoraxis>
+			<temperature>986.0</temperature>
+			<list>Kepler Objects of Interest</list>
+			<description>This is a Kepler Object of Interest from the Q1-Q12 dataset. It has been flagged as a possible transit event but has not been confirmed to be a planet yet.</description>
+			<istransiting>1</istransiting>
+		</planet>
+	</star>
+</system>

@@ -1,0 +1,52 @@
+<system>
+	<name>KOI-1922</name>
+	<rightascension>19 38 27</rightascension>
+	<declination>+45 59 04</declination>
+	<distance>1383.18</distance>
+	<star>
+		<magJ errorminus="0.027" errorplus="0.027">14.179</magJ>
+		<magH errorminus="0.04" errorplus="0.04">13.84</magH>
+		<magK errorminus="0.05" errorplus="0.05">13.73</magK>
+		<name>KOI-1922</name>
+		<temperature errorminus="118.00" errorplus="118.00">6050.00</temperature>
+		<radius errorminus="0.3500" errorplus="0.3500">0.9500</radius>
+		<mass errorminus="0.0840" errorplus="0.0840">1.0560</mass>
+		<age errorminus="2.3000" errorplus="2.3000">0.3000</age>
+		<planet>
+			<name>KOI-1922 b</name>
+			<name>KOI-1922 01</name>
+			<radius errorminus="0.06926" errorplus="0.06926">0.18591</radius>
+			<period errorminus="1.3000000e-05" errorplus="1.3000000e-05">1.954541000000</period>
+			<transittime errorminus="0.0018000" errorplus="0.0018000">2454965.2937000</transittime>
+			<semimajoraxis>0.0310000</semimajoraxis>
+			<temperature>1481.0</temperature>
+			<list>Kepler Objects of Interest</list>
+			<description>This is a Kepler Object of Interest from the Q1-Q12 dataset. It has been flagged as a possible transit event but has not been confirmed to be a planet yet.</description>
+			<istransiting>1</istransiting>
+		</planet>
+		<planet>
+			<name>KOI-1922 c</name>
+			<name>KOI-1922 02</name>
+			<radius errorminus="0.04010" errorplus="0.04010">0.09660</radius>
+			<period errorminus="1.1000000e-03" errorplus="1.1000000e-03">15.095200000000</period>
+			<transittime errorminus="0.0280000" errorplus="0.0280000">2454972.4740000</transittime>
+			<semimajoraxis>0.1220000</semimajoraxis>
+			<temperature>747.0</temperature>
+			<list>Kepler Objects of Interest</list>
+			<description>This is a Kepler Object of Interest from the Q1-Q12 dataset. It has been flagged as a possible transit event but has not been confirmed to be a planet yet.</description>
+			<istransiting>1</istransiting>
+		</planet>
+		<planet>
+			<name>KOI-1922 d</name>
+			<name>KOI-1922 03</name>
+			<radius errorminus="0.05395" errorplus="0.05395">0.34229</radius>
+			<period errorminus="6.2250000e-04" errorplus="6.2250000e-04">105.654822700000</period>
+			<transittime errorminus="0.0048200" errorplus="0.0048200">2455063.1021000</transittime>
+			<semimajoraxis errorminus="1.74e-06" errorplus="1.74e-06">0.4426070</semimajoraxis>
+			<temperature errorminus="102.0" errorplus="102.0">392.0</temperature>
+			<list>Kepler Objects of Interest</list>
+			<description>This is a Kepler Object of Interest from the Q1-Q12 dataset. It has been flagged as a possible transit event but has not been confirmed to be a planet yet.</description>
+			<istransiting>1</istransiting>
+		</planet>
+	</star>
+</system>

@@ -1,0 +1,28 @@
+<system>
+	<name>KOI-0460</name>
+	<rightascension>19 46 32</rightascension>
+	<declination>+43 48 10</declination>
+	<distance>894.70</distance>
+	<star>
+		<magJ errorminus="0.025" errorplus="0.025">13.429</magJ>
+		<magH errorminus="0.025" errorplus="0.025">13.031</magH>
+		<magK errorminus="0.027" errorplus="0.027">12.977</magK>
+		<name>KOI-0460</name>
+		<temperature errorminus="110.00" errorplus="110.00">5517.00</temperature>
+		<radius errorminus="0.5700" errorplus="0.5700">0.9800</radius>
+		<mass errorminus="0.1400" errorplus="0.1400">0.8400</mass>
+		<age errorminus="3.8000" errorplus="3.8000">13.8000</age>
+		<planet>
+			<name>KOI-0460 b</name>
+			<name>KOI-0460 01</name>
+			<radius errorminus="0.19137" errorplus="0.19137">0.33718</radius>
+			<period errorminus="6.3000000e-05" errorplus="6.3000000e-05">17.587568000000</period>
+			<transittime errorminus="0.0012000" errorplus="0.0012000">2455009.0749000</transittime>
+			<semimajoraxis>0.1250000</semimajoraxis>
+			<temperature>683.0</temperature>
+			<list>Kepler Objects of Interest</list>
+			<description>This is a Kepler Object of Interest from the Q1-Q12 dataset. It has been flagged as a possible transit event but has not been confirmed to be a planet yet.</description>
+			<istransiting>1</istransiting>
+		</planet>
+	</star>
+</system>

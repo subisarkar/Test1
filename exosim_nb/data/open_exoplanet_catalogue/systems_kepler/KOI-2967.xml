@@ -1,0 +1,24 @@
+<system>
+	<name>KOI-2967</name>
+	<rightascension>19 48 47</rightascension>
+	<declination>+41 13 35</declination>
+	<distance>1115.44</distance>
+	<star>
+		<name>KOI-2967</name>
+		<temperature errorminus="200.00" errorplus="200.00">5427.00</temperature>
+		<radius errorminus="0.3000" errorplus="0.3000">0.8800</radius>
+		<mass errorminus="0.3000" errorplus="0.3000">1.0000</mass>
+		<planet>
+			<name>KOI-2967 b</name>
+			<name>KOI-2967 01</name>
+			<radius errorminus="0.11847" errorplus="0.11847">0.20049</radius>
+			<period errorminus="5.0000000e-04" errorplus="5.0000000e-04">37.303040000000</period>
+			<transittime errorminus="0.0100000" errorplus="0.0100000">2454966.3150000</transittime>
+			<semimajoraxis>0.2190000</semimajoraxis>
+			<temperature>480.0</temperature>
+			<list>Kepler Objects of Interest</list>
+			<description>This is a Kepler Object of Interest from the Q1-Q12 dataset. It has been flagged as a possible transit event but has not been confirmed to be a planet yet.</description>
+			<istransiting>1</istransiting>
+		</planet>
+	</star>
+</system>

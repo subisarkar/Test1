@@ -1,0 +1,30 @@
+<system>
+	<name>KOI-2276</name>
+	<rightascension>19 39 50</rightascension>
+	<declination>+38 35 29</declination>
+	<distance>804.76</distance>
+	<star>
+		<magB errorminus="0.09" errorplus="0.09">11.85</magB>
+		<magV errorminus="0.12" errorplus="0.12">11.65</magV>
+		<magJ errorminus="0.021" errorplus="0.021">10.753</magJ>
+		<magH errorminus="0.020" errorplus="0.020">10.587</magH>
+		<magK errorminus="0.017" errorplus="0.017">10.547</magK>
+		<name>KOI-2276</name>
+		<temperature errorminus="145.00" errorplus="145.00">7222.00</temperature>
+		<radius errorminus="0.9400" errorplus="0.9400">2.2300</radius>
+		<mass errorminus="0.2200" errorplus="0.2200">1.6500</mass>
+		<age errorminus="0.2700" errorplus="0.2700">1.4600</age>
+		<planet>
+			<name>KOI-2276 b</name>
+			<name>KOI-2276 01</name>
+			<radius errorminus="0.11847" errorplus="0.11847">0.28250</radius>
+			<period errorminus="7.7000000e-06" errorplus="7.7000000e-06">1.442595300000</period>
+			<transittime errorminus="0.0013000" errorplus="0.0013000">2454967.0707000</transittime>
+			<semimajoraxis>0.0300000</semimajoraxis>
+			<temperature>2745.0</temperature>
+			<list>Kepler Objects of Interest</list>
+			<description>This is a Kepler Object of Interest from the Q1-Q12 dataset. It has been flagged as a possible transit event but has not been confirmed to be a planet yet.</description>
+			<istransiting>1</istransiting>
+		</planet>
+	</star>
+</system>

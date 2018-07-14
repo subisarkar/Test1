@@ -1,0 +1,27 @@
+<system>
+	<name>KOI-3527</name>
+	<rightascension>18 48 00</rightascension>
+	<declination>+44 57 38</declination>
+	<distance>553.06</distance>
+	<star>
+		<magJ errorminus="0.024" errorplus="0.024">12.888</magJ>
+		<magH errorminus="0.03" errorplus="0.03">12.53</magH>
+		<magK errorminus="0.028" errorplus="0.028">12.474</magK>
+		<name>KOI-3527</name>
+		<temperature errorminus="161.00" errorplus="161.00">5668.00</temperature>
+		<radius errorminus="0.4380" errorplus="0.4380">0.7850</radius>
+		<metallicity errorminus="0.3600" errorplus="0.3600">-0.3600</metallicity>
+		<planet>
+			<name>KOI-3527 b</name>
+			<name>KOI-3527 01</name>
+			<radius errorminus="0.11847" errorplus="0.11847">5.31016</radius>
+			<period errorminus="3.4910000e-06" errorplus="3.4910000e-06">76.819853672000</period>
+			<transittime errorminus="0.0000332" errorplus="0.0000332">2455021.1256305</transittime>
+			<semimajoraxis errorminus="1.02e-08" errorplus="1.02e-08">0.3354230</semimajoraxis>
+			<temperature errorminus="107.0" errorplus="107.0">383.0</temperature>
+			<list>Kepler Objects of Interest</list>
+			<description>This is a Kepler Object of Interest from the Q1-Q12 dataset. It has been flagged as a possible transit event but has not been confirmed to be a planet yet.</description>
+			<istransiting>1</istransiting>
+		</planet>
+	</star>
+</system>

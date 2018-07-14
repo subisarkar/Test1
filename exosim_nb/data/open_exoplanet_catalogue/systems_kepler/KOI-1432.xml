@@ -1,0 +1,64 @@
+<system>
+	<name>KOI-1432</name>
+	<rightascension>18 52 49</rightascension>
+	<declination>+48 34 49</declination>
+	<distance>1060.67</distance>
+	<star>
+		<magJ errorminus="0.028" errorplus="0.028">13.875</magJ>
+		<magH errorminus="0.027" errorplus="0.027">13.510</magH>
+		<magK errorminus="0.04" errorplus="0.04">13.44</magK>
+		<name>KOI-1432</name>
+		<temperature errorminus="96.00" errorplus="96.00">5885.00</temperature>
+		<radius errorminus="0.3400" errorplus="0.3400">0.9000</radius>
+		<mass errorminus="0.0680" errorplus="0.0680">1.0010</mass>
+		<age errorminus="3.0000" errorplus="3.0000">0.4000</age>
+		<planet>
+			<name>KOI-1432 b</name>
+			<name>KOI-1432 01</name>
+			<radius errorminus="0.06653" errorplus="0.06653">0.17224</radius>
+			<period errorminus="5.0000000e-05" errorplus="5.0000000e-05">6.885841000000</period>
+			<transittime errorminus="0.0033000" errorplus="0.0033000">2454971.4126000</transittime>
+			<semimajoraxis>0.0710000</semimajoraxis>
+			<temperature>922.0</temperature>
+			<list>Kepler Objects of Interest</list>
+			<description>This is a Kepler Object of Interest from the Q1-Q12 dataset. It has been flagged as a possible transit event but has not been confirmed to be a planet yet.</description>
+			<istransiting>1</istransiting>
+		</planet>
+		<planet>
+			<name>KOI-1432 c</name>
+			<name>KOI-1432 02</name>
+			<radius errorminus="0.05559" errorplus="0.05559">0.14307</radius>
+			<period errorminus="2.3000000e-04" errorplus="2.3000000e-04">15.054820000000</period>
+			<transittime errorminus="0.0072000" errorplus="0.0072000">2454977.5840000</transittime>
+			<semimajoraxis>0.1190000</semimajoraxis>
+			<temperature>712.0</temperature>
+			<list>Kepler Objects of Interest</list>
+			<description>This is a Kepler Object of Interest from the Q1-Q12 dataset. It has been flagged as a possible transit event but has not been confirmed to be a planet yet.</description>
+			<istransiting>1</istransiting>
+		</planet>
+		<planet>
+			<name>KOI-1432 d</name>
+			<name>KOI-1432 03</name>
+			<radius errorminus="0.04192" errorplus="0.04192">0.10845</radius>
+			<period errorminus="3.5000000e-05" errorplus="3.5000000e-05">2.927162000000</period>
+			<transittime errorminus="0.0044000" errorplus="0.0044000">2454966.8344000</transittime>
+			<semimajoraxis>0.0400000</semimajoraxis>
+			<temperature>1229.0</temperature>
+			<list>Kepler Objects of Interest</list>
+			<description>This is a Kepler Object of Interest from the Q1-Q12 dataset. It has been flagged as a possible transit event but has not been confirmed to be a planet yet.</description>
+			<istransiting>1</istransiting>
+		</planet>
+		<planet>
+			<name>KOI-1432 e</name>
+			<name>KOI-1432 04</name>
+			<radius errorminus="0.05741" errorplus="0.05741">0.14945</radius>
+			<period errorminus="8.8000000e-04" errorplus="8.8000000e-04">38.284370000000</period>
+			<transittime errorminus="0.0110000" errorplus="0.0110000">2454976.3170000</transittime>
+			<semimajoraxis>0.2230000</semimajoraxis>
+			<temperature>520.0</temperature>
+			<list>Kepler Objects of Interest</list>
+			<description>This is a Kepler Object of Interest from the Q1-Q12 dataset. It has been flagged as a possible transit event but has not been confirmed to be a planet yet.</description>
+			<istransiting>1</istransiting>
+		</planet>
+	</star>
+</system>

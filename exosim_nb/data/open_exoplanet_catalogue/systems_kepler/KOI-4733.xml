@@ -1,0 +1,24 @@
+<system>
+	<name>KOI-4733</name>
+	<rightascension>19 26 01</rightascension>
+	<declination>+45 22 12</declination>
+	<distance>1053.23</distance>
+	<star>
+		<name>KOI-4733</name>
+		<temperature errorminus="227.00" errorplus="227.00">5009.00</temperature>
+		<radius errorminus="0.1840" errorplus="0.1840">0.7870</radius>
+		<metallicity errorminus="0.2600" errorplus="0.2600">0.1800</metallicity>
+		<planet>
+			<name>KOI-4733 b</name>
+			<name>KOI-4733 01</name>
+			<radius errorminus="0.24605" errorplus="0.24605">0.13396</radius>
+			<period errorminus="5.8380000e-05" errorplus="5.8380000e-05">7.281070340000</period>
+			<transittime errorminus="0.0066200" errorplus="0.0066200">2454965.7664600</transittime>
+			<semimajoraxis errorminus="3.72e-07" errorplus="3.72e-07">0.0695254</semimajoraxis>
+			<temperature errorminus="93.2" errorplus="93.2">743.5</temperature>
+			<list>Kepler Objects of Interest</list>
+			<description>This is a Kepler Object of Interest from the Q1-Q12 dataset. It has been flagged as a possible transit event but has not been confirmed to be a planet yet.</description>
+			<istransiting>1</istransiting>
+		</planet>
+	</star>
+</system>

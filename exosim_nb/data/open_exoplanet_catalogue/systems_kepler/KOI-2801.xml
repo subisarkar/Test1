@@ -1,0 +1,30 @@
+<system>
+	<name>KOI-2801</name>
+	<rightascension>19 56 38</rightascension>
+	<declination>+41 08 37</declination>
+	<distance>373.05</distance>
+	<star>
+		<magB errorminus="0.07" errorplus="0.07">11.44</magB>
+		<magV errorminus="0.06" errorplus="0.06">10.79</magV>
+		<magJ errorminus="0.021" errorplus="0.021">9.771</magJ>
+		<magH errorminus="0.022" errorplus="0.022">9.526</magH>
+		<magK errorminus="0.018" errorplus="0.018">9.472</magK>
+		<name>KOI-2801</name>
+		<temperature errorminus="64.00" errorplus="64.00">6095.00</temperature>
+		<radius errorminus="0.5000" errorplus="0.5000">2.0700</radius>
+		<mass errorminus="0.1300" errorplus="0.1300">1.2300</mass>
+		<age errorminus="1.1000" errorplus="1.1000">4.5000</age>
+		<planet>
+			<name>KOI-2801 b</name>
+			<name>KOI-2801 01</name>
+			<radius errorminus="0.05741" errorplus="0.05741">0.14216</radius>
+			<period errorminus="5.3000000e-05" errorplus="5.3000000e-05">6.992042000000</period>
+			<transittime errorminus="0.0053000" errorplus="0.0053000">2454971.0521000</transittime>
+			<semimajoraxis>0.0770000</semimajoraxis>
+			<temperature>1395.0</temperature>
+			<list>Kepler Objects of Interest</list>
+			<description>This is a Kepler Object of Interest from the Q1-Q12 dataset. It has been flagged as a possible transit event but has not been confirmed to be a planet yet.</description>
+			<istransiting>1</istransiting>
+		</planet>
+	</star>
+</system>

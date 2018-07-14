@@ -1,0 +1,30 @@
+<system>
+	<name>KOI-2545</name>
+	<rightascension>18 58 22</rightascension>
+	<declination>+46 26 59</declination>
+	<distance>377.86</distance>
+	<star>
+		<magB errorminus="0.27" errorplus="0.27">12.73</magB>
+		<magV errorminus="0.22" errorplus="0.22">12.28</magV>
+		<magJ errorminus="0.021" errorplus="0.021">10.756</magJ>
+		<magH errorminus="0.018" errorplus="0.018">10.506</magH>
+		<magK errorminus="0.016" errorplus="0.016">10.454</magK>
+		<name>KOI-2545</name>
+		<temperature errorminus="137.00" errorplus="137.00">6321.00</temperature>
+		<radius errorminus="0.5900" errorplus="0.5900">1.2500</radius>
+		<mass errorminus="0.1600" errorplus="0.1600">1.1400</mass>
+		<age errorminus="0.9500" errorplus="0.9500">3.1200</age>
+		<planet>
+			<name>KOI-2545 b</name>
+			<name>KOI-2545 01</name>
+			<radius errorminus="0.03372" errorplus="0.03372">0.07108</radius>
+			<period errorminus="1.9000000e-04" errorplus="1.9000000e-04">6.981580000000</period>
+			<transittime errorminus="0.0098000" errorplus="0.0098000">2454965.7643000</transittime>
+			<semimajoraxis>0.0750000</semimajoraxis>
+			<temperature>1139.0</temperature>
+			<list>Kepler Objects of Interest</list>
+			<description>This is a Kepler Object of Interest from the Q1-Q12 dataset. It has been flagged as a possible transit event but has not been confirmed to be a planet yet.</description>
+			<istransiting>1</istransiting>
+		</planet>
+	</star>
+</system>

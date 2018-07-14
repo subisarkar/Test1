@@ -1,0 +1,28 @@
+<system>
+	<name>KOI-1854</name>
+	<rightascension>19 47 50</rightascension>
+	<declination>+46 23 38</declination>
+	<distance>716.16</distance>
+	<star>
+		<magJ errorminus="0.024" errorplus="0.024">12.247</magJ>
+		<magH errorminus="0.015" errorplus="0.015">11.914</magH>
+		<magK errorminus="0.018" errorplus="0.018">11.830</magK>
+		<name>KOI-1854</name>
+		<temperature errorminus="94.00" errorplus="94.00">5597.00</temperature>
+		<radius errorminus="0.3700" errorplus="0.3700">1.3300</radius>
+		<mass errorminus="0.0800" errorplus="0.0800">0.8980</mass>
+		<age errorminus="3.0000" errorplus="3.0000">13.8000</age>
+		<planet>
+			<name>KOI-1854 b</name>
+			<name>KOI-1854 01</name>
+			<radius errorminus="0.08293" errorplus="0.08293">0.28615</radius>
+			<period errorminus="3.5000000e-04" errorplus="3.5000000e-04">43.032520000000</period>
+			<transittime errorminus="0.0028000" errorplus="0.0028000">2454970.7012000</transittime>
+			<semimajoraxis>0.2320000</semimajoraxis>
+			<temperature>590.0</temperature>
+			<list>Kepler Objects of Interest</list>
+			<description>This is a Kepler Object of Interest from the Q1-Q12 dataset. It has been flagged as a possible transit event but has not been confirmed to be a planet yet.</description>
+			<istransiting>1</istransiting>
+		</planet>
+	</star>
+</system>

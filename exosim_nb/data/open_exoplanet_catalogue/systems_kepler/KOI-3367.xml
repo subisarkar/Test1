@@ -1,0 +1,24 @@
+<system>
+	<name>KOI-3367</name>
+	<rightascension>19 52 45</rightascension>
+	<declination>+48 23 46</declination>
+	<distance>1284.41</distance>
+	<star>
+		<name>KOI-3367</name>
+		<temperature errorminus="233.00" errorplus="233.00">6195.00</temperature>
+		<radius errorminus="0.5840" errorplus="0.5840">0.9660</radius>
+		<metallicity errorminus="0.3200" errorplus="0.3200">-0.3000</metallicity>
+		<planet>
+			<name>KOI-3367 b</name>
+			<name>KOI-3367 01</name>
+			<radius errorminus="0.28250" errorplus="0.28250">0.18135</radius>
+			<period errorminus="2.1380000e-04" errorplus="2.1380000e-04">25.373676500000</period>
+			<transittime errorminus="0.0064400" errorplus="0.0064400">2454984.8758500</transittime>
+			<semimajoraxis errorminus="9.51e-07" errorplus="9.51e-07">0.1692790</semimajoraxis>
+			<temperature errorminus="199.0" errorplus="199.0">653.0</temperature>
+			<list>Kepler Objects of Interest</list>
+			<description>This is a Kepler Object of Interest from the Q1-Q12 dataset. It has been flagged as a possible transit event but has not been confirmed to be a planet yet.</description>
+			<istransiting>1</istransiting>
+		</planet>
+	</star>
+</system>

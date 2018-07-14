@@ -1,0 +1,40 @@
+<system>
+	<name>KOI-1750</name>
+	<rightascension>19 33 12</rightascension>
+	<declination>+41 31 24</declination>
+	<distance>973.71</distance>
+	<star>
+		<magJ errorminus="0.023" errorplus="0.023">13.624</magJ>
+		<magH errorminus="0.026" errorplus="0.026">13.230</magH>
+		<magK errorminus="0.04" errorplus="0.04">13.19</magK>
+		<name>KOI-1750</name>
+		<temperature errorminus="99.00" errorplus="99.00">5800.00</temperature>
+		<radius errorminus="0.6800" errorplus="0.6800">0.9400</radius>
+		<mass errorminus="0.1800" errorplus="0.1800">0.9500</mass>
+		<age errorminus="3.2000" errorplus="3.2000">4.8000</age>
+		<planet>
+			<name>KOI-1750 b</name>
+			<name>KOI-1750 01</name>
+			<radius errorminus="0.08657" errorplus="0.08657">0.11938</radius>
+			<period errorminus="9.3000000e-05" errorplus="9.3000000e-05">7.768552000000</period>
+			<transittime errorminus="0.0055000" errorplus="0.0055000">2454971.0537000</transittime>
+			<semimajoraxis>0.0750000</semimajoraxis>
+			<temperature>906.0</temperature>
+			<list>Kepler Objects of Interest</list>
+			<description>This is a Kepler Object of Interest from the Q1-Q12 dataset. It has been flagged as a possible transit event but has not been confirmed to be a planet yet.</description>
+			<istransiting>1</istransiting>
+		</planet>
+		<planet>
+			<name>KOI-1750 c</name>
+			<name>KOI-1750 02</name>
+			<radius errorminus="0.04648" errorplus="0.04648">0.09386</radius>
+			<period errorminus="1.9000000e-05" errorplus="1.9000000e-05">2.537405000000</period>
+			<transittime errorminus="0.0033000" errorplus="0.0033000">2454965.3474000</transittime>
+			<semimajoraxis errorminus="1.80e-07" errorplus="1.80e-07">0.0357561</semimajoraxis>
+			<temperature errorminus="478.0" errorplus="478.0">1312.0</temperature>
+			<list>Kepler Objects of Interest</list>
+			<description>This is a Kepler Object of Interest from the Q1-Q12 dataset. It has been flagged as a possible transit event but has not been confirmed to be a planet yet.</description>
+			<istransiting>1</istransiting>
+		</planet>
+	</star>
+</system>

@@ -1,0 +1,25 @@
+<system>
+	<name>KOI-1639</name>
+	<rightascension>19 51 36</rightascension>
+	<declination>+48 05 40</declination>
+	<distance>703.17</distance>
+	<star>
+		<name>KOI-1639</name>
+		<temperature errorminus="88.00" errorplus="88.00">6266.00</temperature>
+		<radius errorminus="0.4200" errorplus="0.4200">1.0400</radius>
+		<mass errorminus="0.1100" errorplus="0.1100">1.1300</mass>
+		<age errorminus="0.9200" errorplus="0.9200">0.2500</age>
+		<planet>
+			<name>KOI-1639 c</name>
+			<name>KOI-1639 02</name>
+			<radius errorminus="0.05559" errorplus="0.05559">0.12394</radius>
+			<period errorminus="1.9000000e-04" errorplus="1.9000000e-04">9.982260000000</period>
+			<transittime errorminus="0.0064000" errorplus="0.0064000">2454966.4498000</transittime>
+			<semimajoraxis>0.0940000</semimajoraxis>
+			<temperature>920.0</temperature>
+			<list>Kepler Objects of Interest</list>
+			<description>This is a Kepler Object of Interest from the Q1-Q12 dataset. It has been flagged as a possible transit event but has not been confirmed to be a planet yet.</description>
+			<istransiting>1</istransiting>
+		</planet>
+	</star>
+</system>

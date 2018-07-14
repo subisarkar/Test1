@@ -1,0 +1,28 @@
+<system>
+	<name>KOI-2325</name>
+	<rightascension>19 30 03</rightascension>
+	<declination>+42 39 06</declination>
+	<distance>471.36</distance>
+	<star>
+		<magJ errorminus="0.021" errorplus="0.021">12.891</magJ>
+		<magH errorminus="0.020" errorplus="0.020">12.402</magH>
+		<magK errorminus="0.023" errorplus="0.023">12.348</magK>
+		<name>KOI-2325</name>
+		<temperature errorminus="75.00" errorplus="75.00">5006.00</temperature>
+		<radius errorminus="0.4900" errorplus="0.4900">0.7300</radius>
+		<mass errorminus="0.0750" errorplus="0.0750">0.7320</mass>
+		<age errorminus="4.2000" errorplus="4.2000">14.0000</age>
+		<planet>
+			<name>KOI-2325 b</name>
+			<name>KOI-2325 01</name>
+			<radius errorminus="0.08566" errorplus="0.08566">0.12211</radius>
+			<period errorminus="6.7000000e-06" errorplus="6.7000000e-06">1.025858600000</period>
+			<transittime errorminus="0.0007400" errorplus="0.0007400">2454964.6555100</transittime>
+			<semimajoraxis>0.0180000</semimajoraxis>
+			<temperature>1406.0</temperature>
+			<list>Kepler Objects of Interest</list>
+			<description>This is a Kepler Object of Interest from the Q1-Q12 dataset. It has been flagged as a possible transit event but has not been confirmed to be a planet yet.</description>
+			<istransiting>1</istransiting>
+		</planet>
+	</star>
+</system>

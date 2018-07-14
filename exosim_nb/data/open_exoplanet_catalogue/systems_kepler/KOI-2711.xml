@@ -1,0 +1,40 @@
+<system>
+	<name>KOI-2711</name>
+	<rightascension>19 23 46</rightascension>
+	<declination>+40 28 48</declination>
+	<distance>743.52</distance>
+	<star>
+		<magJ errorminus="0.022" errorplus="0.022">12.566</magJ>
+		<magH errorminus="0.023" errorplus="0.023">12.289</magH>
+		<magK errorminus="0.023" errorplus="0.023">12.296</magK>
+		<name>KOI-2711</name>
+		<temperature errorminus="92.00" errorplus="92.00">6062.00</temperature>
+		<radius errorminus="0.4500" errorplus="0.4500">1.1200</radius>
+		<mass errorminus="0.1100" errorplus="0.1100">1.0300</mass>
+		<age errorminus="1.7000" errorplus="1.7000">4.9000</age>
+		<planet>
+			<name>KOI-2711 b</name>
+			<name>KOI-2711 01</name>
+			<radius errorminus="0.07655" errorplus="0.07655">0.16039</radius>
+			<period errorminus="3.1000000e-05" errorplus="3.1000000e-05">9.024391000000</period>
+			<transittime errorminus="0.0025000" errorplus="0.0025000">2454966.5386000</transittime>
+			<semimajoraxis>0.0860000</semimajoraxis>
+			<temperature>965.0</temperature>
+			<list>Kepler Objects of Interest</list>
+			<description>This is a Kepler Object of Interest from the Q1-Q12 dataset. It has been flagged as a possible transit event but has not been confirmed to be a planet yet.</description>
+			<istransiting>1</istransiting>
+		</planet>
+		<planet>
+			<name>KOI-2711 c</name>
+			<name>KOI-2711 02</name>
+			<radius errorminus="0.07655" errorplus="0.07655">0.17041</radius>
+			<period errorminus="1.0000000e-04" errorplus="1.0000000e-04">17.340950000000</period>
+			<transittime errorminus="0.0043000" errorplus="0.0043000">2454971.9636000</transittime>
+			<semimajoraxis>0.1320000</semimajoraxis>
+			<temperature>779.0</temperature>
+			<list>Kepler Objects of Interest</list>
+			<description>This is a Kepler Object of Interest from the Q1-Q12 dataset. It has been flagged as a possible transit event but has not been confirmed to be a planet yet.</description>
+			<istransiting>1</istransiting>
+		</planet>
+	</star>
+</system>

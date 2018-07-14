@@ -1,0 +1,28 @@
+<system>
+	<name>KOI-1655</name>
+	<rightascension>18 58 55</rightascension>
+	<declination>+49 31 59</declination>
+	<distance>646.49</distance>
+	<star>
+		<magJ errorminus="0.024" errorplus="0.024">12.613</magJ>
+		<magH errorminus="0.016" errorplus="0.016">12.260</magH>
+		<magK errorminus="0.024" errorplus="0.024">12.188</magK>
+		<name>KOI-1655</name>
+		<temperature errorminus="87.00" errorplus="87.00">5885.00</temperature>
+		<radius errorminus="0.3800" errorplus="0.3800">0.9800</radius>
+		<mass errorminus="0.0770" errorplus="0.0770">0.9720</mass>
+		<age errorminus="2.5000" errorplus="2.5000">4.7000</age>
+		<planet>
+			<name>KOI-1655 b</name>
+			<name>KOI-1655 01</name>
+			<radius errorminus="0.05468" errorplus="0.05468">0.13943</radius>
+			<period errorminus="5.5000000e-06" errorplus="5.5000000e-06">0.938470400000</period>
+			<transittime errorminus="0.0007800" errorplus="0.0007800">2454968.5996400</transittime>
+			<semimajoraxis>0.0190000</semimajoraxis>
+			<temperature>1866.0</temperature>
+			<list>Kepler Objects of Interest</list>
+			<description>This is a Kepler Object of Interest from the Q1-Q12 dataset. It has been flagged as a possible transit event but has not been confirmed to be a planet yet.</description>
+			<istransiting>1</istransiting>
+		</planet>
+	</star>
+</system>

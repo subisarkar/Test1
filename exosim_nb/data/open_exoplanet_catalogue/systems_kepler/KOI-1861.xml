@@ -1,0 +1,28 @@
+<system>
+	<name>KOI-1861</name>
+	<rightascension>19 28 39</rightascension>
+	<declination>+38 44 20</declination>
+	<distance>781.79</distance>
+	<star>
+		<magJ errorminus="0.025" errorplus="0.025">12.863</magJ>
+		<magH errorminus="0.023" errorplus="0.023">12.592</magH>
+		<magK errorminus="0.026" errorplus="0.026">12.512</magK>
+		<name>KOI-1861</name>
+		<temperature errorminus="78.00" errorplus="78.00">6162.00</temperature>
+		<radius errorminus="0.3700" errorplus="0.3700">1.0000</radius>
+		<mass errorminus="0.0820" errorplus="0.0820">1.0910</mass>
+		<age errorminus="1.7000" errorplus="1.7000">0.3000</age>
+		<planet>
+			<name>KOI-1861 b</name>
+			<name>KOI-1861 01</name>
+			<radius errorminus="0.08475" errorplus="0.08475">0.22600</radius>
+			<period errorminus="1.4000000e-04" errorplus="1.4000000e-04">17.504390000000</period>
+			<transittime errorminus="0.0030000" errorplus="0.0030000">2454968.7478000</transittime>
+			<semimajoraxis>0.1360000</semimajoraxis>
+			<temperature>736.0</temperature>
+			<list>Kepler Objects of Interest</list>
+			<description>This is a Kepler Object of Interest from the Q1-Q12 dataset. It has been flagged as a possible transit event but has not been confirmed to be a planet yet.</description>
+			<istransiting>1</istransiting>
+		</planet>
+	</star>
+</system>

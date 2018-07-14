@@ -1,0 +1,25 @@
+<system>
+	<name>KOI-2451</name>
+	<rightascension>18 52 42</rightascension>
+	<declination>+41 59 23</declination>
+	<distance>725.93</distance>
+	<star>
+		<name>KOI-2451</name>
+		<temperature errorminus="122.00" errorplus="122.00">5311.00</temperature>
+		<radius errorminus="0.7300" errorplus="0.7300">0.8600</radius>
+		<mass errorminus="0.1800" errorplus="0.1800">0.8000</mass>
+		<age errorminus="3.7000" errorplus="3.7000">14.0000</age>
+		<planet>
+			<name>KOI-2451 b</name>
+			<name>KOI-2451 01</name>
+			<radius errorminus="0.16403" errorplus="0.16403">0.16403</radius>
+			<period errorminus="1.6000000e-04" errorplus="1.6000000e-04">13.375220000000</period>
+			<transittime errorminus="0.0044000" errorplus="0.0044000">2454975.3799000</transittime>
+			<semimajoraxis>0.1020000</semimajoraxis>
+			<temperature>679.0</temperature>
+			<list>Kepler Objects of Interest</list>
+			<description>This is a Kepler Object of Interest from the Q1-Q12 dataset. It has been flagged as a possible transit event but has not been confirmed to be a planet yet.</description>
+			<istransiting>1</istransiting>
+		</planet>
+	</star>
+</system>

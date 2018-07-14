@@ -1,0 +1,40 @@
+<system>
+	<name>KOI-2768</name>
+	<rightascension>19 05 35</rightascension>
+	<declination>+45 20 36</declination>
+	<distance>968.49</distance>
+	<star>
+		<magJ errorminus="0.027" errorplus="0.027">13.908</magJ>
+		<magH errorminus="0.032" errorplus="0.032">13.527</magH>
+		<magK errorminus="0.041" errorplus="0.041">13.477</magK>
+		<name>KOI-2768</name>
+		<temperature errorminus="110.00" errorplus="110.00">5612.00</temperature>
+		<radius errorminus="0.3200" errorplus="0.3200">0.8200</radius>
+		<mass errorminus="0.0640" errorplus="0.0640">0.9250</mass>
+		<age errorminus="4.0000" errorplus="4.0000">0.4000</age>
+		<planet>
+			<name>KOI-2768 b</name>
+			<name>KOI-2768 01</name>
+			<radius errorminus="0.07290" errorplus="0.07290">0.11847</radius>
+			<period errorminus="1.1000000e-04" errorplus="1.1000000e-04">11.829130000000</period>
+			<transittime errorminus="0.0062000" errorplus="0.0062000">2454970.6860000</transittime>
+			<semimajoraxis>0.0990000</semimajoraxis>
+			<temperature>712.0</temperature>
+			<list>Kepler Objects of Interest</list>
+			<description>This is a Kepler Object of Interest from the Q1-Q12 dataset. It has been flagged as a possible transit event but has not been confirmed to be a planet yet.</description>
+			<istransiting>1</istransiting>
+		</planet>
+		<planet>
+			<name>KOI-2768 c</name>
+			<name>KOI-2768 02</name>
+			<radius errorminus="0.07017" errorplus="0.07017">0.11665</radius>
+			<period errorminus="1.6000000e-04" errorplus="1.6000000e-04">14.751220000000</period>
+			<transittime errorminus="0.0078000" errorplus="0.0078000">2454970.1579000</transittime>
+			<semimajoraxis>0.1150000</semimajoraxis>
+			<temperature>660.0</temperature>
+			<list>Kepler Objects of Interest</list>
+			<description>This is a Kepler Object of Interest from the Q1-Q12 dataset. It has been flagged as a possible transit event but has not been confirmed to be a planet yet.</description>
+			<istransiting>1</istransiting>
+		</planet>
+	</star>
+</system>

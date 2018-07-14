@@ -1,0 +1,25 @@
+<system>
+	<name>KOI-2383</name>
+	<rightascension>19 09 37</rightascension>
+	<declination>+45 55 04</declination>
+	<distance>1215.53</distance>
+	<star>
+		<name>KOI-2383</name>
+		<temperature errorminus="125.00" errorplus="125.00">6002.00</temperature>
+		<radius errorminus="0.5900" errorplus="0.5900">0.9400</radius>
+		<mass errorminus="0.1500" errorplus="0.1500">1.0400</mass>
+		<age errorminus="2.3000" errorplus="2.3000">0.4000</age>
+		<planet>
+			<name>KOI-2383 b</name>
+			<name>KOI-2383 01</name>
+			<radius errorminus="0.07746" errorplus="0.07746">0.12120</radius>
+			<period errorminus="7.3000000e-05" errorplus="7.3000000e-05">4.370381000000</period>
+			<transittime errorminus="0.0057000" errorplus="0.0057000">2454964.9226000</transittime>
+			<semimajoraxis>0.0530000</semimajoraxis>
+			<temperature>1113.0</temperature>
+			<list>Kepler Objects of Interest</list>
+			<description>This is a Kepler Object of Interest from the Q1-Q12 dataset. It has been flagged as a possible transit event but has not been confirmed to be a planet yet.</description>
+			<istransiting>1</istransiting>
+		</planet>
+	</star>
+</system>

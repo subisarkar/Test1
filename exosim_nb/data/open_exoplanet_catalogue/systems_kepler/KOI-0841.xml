@@ -1,0 +1,52 @@
+<system>
+	<name>KOI-0841</name>
+	<rightascension>19 28 56</rightascension>
+	<declination>+41 05 09</declination>
+	<distance>1340.87</distance>
+	<star>
+		<magJ errorminus="0.036" errorplus="0.036">14.484</magJ>
+		<magH errorminus="0.03" errorplus="0.03">14.03</magH>
+		<magK errorminus="0.065" errorplus="0.065">14.118</magK>
+		<name>KOI-0841</name>
+		<temperature errorminus="60.00" errorplus="60.00">5399.00</temperature>
+		<radius errorminus="0.0410" errorplus="0.0410">0.9190</radius>
+		<mass errorminus="0.0200" errorplus="0.0200">0.9960</mass>
+		<age errorminus="2.1000" errorplus="2.1000">1.9000</age>
+		<planet>
+			<name>KOI-0841 b</name>
+			<name>KOI-0841 01</name>
+			<radius errorminus="0.02369" errorplus="0.02369">0.52127</radius>
+			<period errorminus="3.8000000e-05" errorplus="3.8000000e-05">15.335244000000</period>
+			<transittime errorminus="0.0011000" errorplus="0.0011000">2455007.0020000</transittime>
+			<semimajoraxis>0.1210000</semimajoraxis>
+			<temperature>656.0</temperature>
+			<list>Kepler Objects of Interest</list>
+			<description>This is a Kepler Object of Interest from the Q1-Q12 dataset. It has been flagged as a possible transit event but has not been confirmed to be a planet yet.</description>
+			<istransiting>1</istransiting>
+		</planet>
+		<planet>
+			<name>KOI-0841 c</name>
+			<name>KOI-0841 02</name>
+			<radius errorminus="0.03098" errorplus="0.03098">0.66890</radius>
+			<period errorminus="7.3000000e-05" errorplus="7.3000000e-05">31.330554000000</period>
+			<transittime errorminus="0.0012000" errorplus="0.0012000">2454986.4291000</transittime>
+			<semimajoraxis>0.1940000</semimajoraxis>
+			<temperature>518.0</temperature>
+			<list>Kepler Objects of Interest</list>
+			<description>This is a Kepler Object of Interest from the Q1-Q12 dataset. It has been flagged as a possible transit event but has not been confirmed to be a planet yet.</description>
+			<istransiting>1</istransiting>
+		</planet>
+		<planet>
+			<name>KOI-0841 d</name>
+			<name>KOI-0841 03</name>
+			<radius errorminus="0.01276" errorplus="0.01276">0.25516</radius>
+			<period errorminus="4.0000000e-05" errorplus="4.0000000e-05">6.546303000000</period>
+			<transittime errorminus="0.0028000" errorplus="0.0028000">2454966.8540000</transittime>
+			<semimajoraxis>0.0680000</semimajoraxis>
+			<temperature>876.0</temperature>
+			<list>Kepler Objects of Interest</list>
+			<description>This is a Kepler Object of Interest from the Q1-Q12 dataset. It has been flagged as a possible transit event but has not been confirmed to be a planet yet.</description>
+			<istransiting>1</istransiting>
+		</planet>
+	</star>
+</system>

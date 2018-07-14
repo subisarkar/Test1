@@ -1,0 +1,28 @@
+<system>
+	<name>KOI-0641</name>
+	<rightascension>19 57 11</rightascension>
+	<declination>+40 14 06</declination>
+	<distance>161.84</distance>
+	<star>
+		<magJ errorminus="0.03" errorplus="0.03">11.52</magJ>
+		<magH errorminus="0.03" errorplus="0.03">10.85</magH>
+		<magK errorminus="0.028" errorplus="0.028">10.698</magK>
+		<name>KOI-0641</name>
+		<temperature errorminus="56.00" errorplus="56.00">4106.00</temperature>
+		<radius errorminus="0.0480" errorplus="0.0480">0.5460</radius>
+		<mass errorminus="0.0270" errorplus="0.0270">0.5760</mass>
+		<age errorminus="5.3000" errorplus="5.3000">1.7000</age>
+		<planet>
+			<name>KOI-0641 b</name>
+			<name>KOI-0641 01</name>
+			<radius errorminus="0.07017" errorplus="0.07017">0.16677</radius>
+			<period errorminus="2.1000000e-04" errorplus="2.1000000e-04">14.851760000000</period>
+			<transittime errorminus="0.0047000" errorplus="0.0047000">2455011.0013000</transittime>
+			<semimajoraxis>0.0980000</semimajoraxis>
+			<temperature>428.0</temperature>
+			<list>Kepler Objects of Interest</list>
+			<description>This is a Kepler Object of Interest from the Q1-Q12 dataset. It has been flagged as a possible transit event but has not been confirmed to be a planet yet.</description>
+			<istransiting>1</istransiting>
+		</planet>
+	</star>
+</system>

@@ -1,0 +1,25 @@
+<system>
+	<name>KOI-3123</name>
+	<rightascension>20 04 11</rightascension>
+	<declination>+44 02 15</declination>
+	<distance>1305.15</distance>
+	<star>
+		<name>KOI-3123</name>
+		<temperature errorminus="115.00" errorplus="115.00">6176.00</temperature>
+		<radius errorminus="0.4000" errorplus="0.4000">1.0000</radius>
+		<mass errorminus="0.1100" errorplus="0.1100">1.0900</mass>
+		<age errorminus="1.5000" errorplus="1.5000">0.4000</age>
+		<planet>
+			<name>KOI-3123 b</name>
+			<name>KOI-3123 01</name>
+			<radius errorminus="0.10024" errorplus="0.10024">0.15492</radius>
+			<period errorminus="1.9000000e-04" errorplus="1.9000000e-04">15.231280000000</period>
+			<transittime errorminus="0.0085000" errorplus="0.0085000">2454976.7254000</transittime>
+			<semimajoraxis>0.1240000</semimajoraxis>
+			<temperature>775.0</temperature>
+			<list>Kepler Objects of Interest</list>
+			<description>This is a Kepler Object of Interest from the Q1-Q12 dataset. It has been flagged as a possible transit event but has not been confirmed to be a planet yet.</description>
+			<istransiting>1</istransiting>
+		</planet>
+	</star>
+</system>

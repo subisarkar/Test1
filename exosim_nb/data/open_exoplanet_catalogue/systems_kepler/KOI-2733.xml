@@ -1,0 +1,25 @@
+<system>
+	<name>KOI-2733</name>
+	<rightascension>19 18 12</rightascension>
+	<declination>+41 17 52</declination>
+	<distance>344.57</distance>
+	<star>
+		<name>KOI-2733</name>
+		<temperature errorminus="71.00" errorplus="71.00">4797.00</temperature>
+		<radius errorminus="1.3000" errorplus="1.3000">0.7000</radius>
+		<mass errorminus="0.1300" errorplus="0.1300">0.6900</mass>
+		<age errorminus="3.5000" errorplus="3.5000">14.0000</age>
+		<planet>
+			<name>KOI-2733 b</name>
+			<name>KOI-2733 01</name>
+			<radius errorminus="0.39186" errorplus="0.39186">0.20960</radius>
+			<period errorminus="2.8000000e-05" errorplus="2.8000000e-05">5.620047000000</period>
+			<transittime errorminus="0.0035000" errorplus="0.0035000">2454965.9542000</transittime>
+			<semimajoraxis>0.0550000</semimajoraxis>
+			<temperature>740.0</temperature>
+			<list>Kepler Objects of Interest</list>
+			<description>This is a Kepler Object of Interest from the Q1-Q12 dataset. It has been flagged as a possible transit event but has not been confirmed to be a planet yet.</description>
+			<istransiting>1</istransiting>
+		</planet>
+	</star>
+</system>

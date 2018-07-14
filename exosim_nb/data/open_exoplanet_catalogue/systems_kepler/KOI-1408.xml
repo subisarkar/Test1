@@ -1,0 +1,28 @@
+<system>
+	<name>KOI-1408</name>
+	<rightascension>19 21 10</rightascension>
+	<declination>+45 33 52</declination>
+	<distance>274.08</distance>
+	<star>
+		<magJ errorminus="0.025" errorplus="0.025">12.663</magJ>
+		<magH errorminus="0.023" errorplus="0.023">11.969</magH>
+		<magK errorminus="0.013" errorplus="0.013">11.809</magK>
+		<name>KOI-1408</name>
+		<temperature errorminus="67.00" errorplus="67.00">4166.00</temperature>
+		<radius errorminus="0.0100" errorplus="0.0100">0.5400</radius>
+		<mass errorminus="0.0130" errorplus="0.0130">0.5670</mass>
+		<age errorminus="3.5000" errorplus="3.5000">13.9000</age>
+		<planet>
+			<name>KOI-1408 b</name>
+			<name>KOI-1408 01</name>
+			<radius errorminus="0.01367" errorplus="0.01367">0.11391</radius>
+			<period errorminus="1.3000000e-04" errorplus="1.3000000e-04">14.533980000000</period>
+			<transittime errorminus="0.0034000" errorplus="0.0034000">2454978.4294000</transittime>
+			<semimajoraxis>0.0970000</semimajoraxis>
+			<temperature>434.0</temperature>
+			<list>Kepler Objects of Interest</list>
+			<description>This is a Kepler Object of Interest from the Q1-Q12 dataset. It has been flagged as a possible transit event but has not been confirmed to be a planet yet.</description>
+			<istransiting>1</istransiting>
+		</planet>
+	</star>
+</system>

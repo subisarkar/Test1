@@ -1,0 +1,42 @@
+<system>
+	<name>KOI-0102</name>
+	<rightascension>19 58 49</rightascension>
+	<declination>+44 26 08</declination>
+	<distance>404.76</distance>
+	<star>
+		<magB errorminus="0.43" errorplus="0.43">13.26</magB>
+		<magV errorminus="0.20" errorplus="0.20">11.95</magV>
+		<magJ errorminus="0.04" errorplus="0.04">11.40</magJ>
+		<magH errorminus="0.05" errorplus="0.05">11.12</magH>
+		<magK errorminus="0.04" errorplus="0.04">11.05</magK>
+		<name>KOI-0102</name>
+		<temperature errorminus="50.00" errorplus="50.00">5838.00</temperature>
+		<radius errorminus="0.0820" errorplus="0.0820">1.0790</radius>
+		<mass errorminus="0.0330" errorplus="0.0330">1.1120</mass>
+		<age errorminus="1.5000" errorplus="1.5000">2.5000</age>
+		<planet>
+			<name>KOI-0102 b</name>
+			<name>KOI-0102 01</name>
+			<radius errorminus="0.02552" errorplus="0.02552">0.33627</radius>
+			<period errorminus="1.3000000e-06" errorplus="1.3000000e-06">1.735136500000</period>
+			<transittime errorminus="0.0002000" errorplus="0.0002000">2454968.0591100</transittime>
+			<semimajoraxis>0.0290000</semimajoraxis>
+			<temperature>1571.0</temperature>
+			<list>Kepler Objects of Interest</list>
+			<description>This is a Kepler Object of Interest from the Q1-Q12 dataset. It has been flagged as a possible transit event but has not been confirmed to be a planet yet.</description>
+			<istransiting>1</istransiting>
+		</planet>
+		<planet>
+			<name>KOI-0102 c</name>
+			<name>KOI-0102 02</name>
+			<radius errorminus="0.00820" errorplus="0.00820">0.09933</radius>
+			<period errorminus="5.5000000e-05" errorplus="5.5000000e-05">4.068545000000</period>
+			<transittime errorminus="0.0045000" errorplus="0.0045000">2454965.2638000</transittime>
+			<semimajoraxis>0.0520000</semimajoraxis>
+			<temperature>1173.0</temperature>
+			<list>Kepler Objects of Interest</list>
+			<description>This is a Kepler Object of Interest from the Q1-Q12 dataset. It has been flagged as a possible transit event but has not been confirmed to be a planet yet.</description>
+			<istransiting>1</istransiting>
+		</planet>
+	</star>
+</system>

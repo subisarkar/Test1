@@ -1,0 +1,28 @@
+<system>
+	<name>KOI-2253</name>
+	<rightascension>19 37 03</rightascension>
+	<declination>+45 12 15</declination>
+	<distance>1055.68</distance>
+	<star>
+		<magJ errorminus="0.023" errorplus="0.023">13.473</magJ>
+		<magH errorminus="0.020" errorplus="0.020">13.183</magH>
+		<magK errorminus="0.03" errorplus="0.03">13.16</magK>
+		<name>KOI-2253</name>
+		<temperature errorminus="101.00" errorplus="101.00">6168.00</temperature>
+		<radius errorminus="0.5000" errorplus="0.5000">1.0000</radius>
+		<mass errorminus="0.1200" errorplus="0.1200">1.0900</mass>
+		<age errorminus="1.5000" errorplus="1.5000">0.5000</age>
+		<planet>
+			<name>KOI-2253 b</name>
+			<name>KOI-2253 01</name>
+			<radius errorminus="0.09113" errorplus="0.09113">0.18226</radius>
+			<period errorminus="3.7000000e-04" errorplus="3.7000000e-04">22.708010000000</period>
+			<transittime errorminus="0.0062000" errorplus="0.0062000">2454966.7199000</transittime>
+			<semimajoraxis>0.1610000</semimajoraxis>
+			<temperature>680.0</temperature>
+			<list>Kepler Objects of Interest</list>
+			<description>This is a Kepler Object of Interest from the Q1-Q12 dataset. It has been flagged as a possible transit event but has not been confirmed to be a planet yet.</description>
+			<istransiting>1</istransiting>
+		</planet>
+	</star>
+</system>

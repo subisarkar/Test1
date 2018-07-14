@@ -1,0 +1,36 @@
+<system>
+	<name>KOI-1650</name>
+	<rightascension>18 57 11</rightascension>
+	<declination>+49 09 31</declination>
+	<distance>961.22</distance>
+	<star>
+		<name>KOI-1650</name>
+		<temperature errorminus="200.00" errorplus="200.00">5426.00</temperature>
+		<radius errorminus="0.3000" errorplus="0.3000">0.8500</radius>
+		<mass errorminus="0.3000" errorplus="0.3000">1.0000</mass>
+		<planet>
+			<name>KOI-1650 b</name>
+			<name>KOI-1650 01</name>
+			<radius errorminus="0.07564" errorplus="0.07564">0.20322</radius>
+			<period errorminus="1.7000000e-04" errorplus="1.7000000e-04">6.532510000000</period>
+			<transittime errorminus="0.0110000" errorplus="0.0110000">2454968.9980000</transittime>
+			<semimajoraxis>0.0680000</semimajoraxis>
+			<temperature>844.0</temperature>
+			<list>Kepler Objects of Interest</list>
+			<description>This is a Kepler Object of Interest from the Q1-Q12 dataset. It has been flagged as a possible transit event but has not been confirmed to be a planet yet.</description>
+			<istransiting>1</istransiting>
+		</planet>
+		<planet>
+			<name>KOI-1650 c</name>
+			<name>KOI-1650 02</name>
+			<radius errorminus="0.03600" errorplus="0.03600">0.38530</radius>
+			<period errorminus="7.2970000e-04" errorplus="7.2970000e-04">100.827634600000</period>
+			<transittime errorminus="0.0063800" errorplus="0.0063800">2455049.3892800</transittime>
+			<semimajoraxis errorminus="2.05e-06" errorplus="2.05e-06">0.4248240</semimajoraxis>
+			<temperature errorminus="104.0" errorplus="104.0">363.0</temperature>
+			<list>Kepler Objects of Interest</list>
+			<description>This is a Kepler Object of Interest from the Q1-Q12 dataset. It has been flagged as a possible transit event but has not been confirmed to be a planet yet.</description>
+			<istransiting>1</istransiting>
+		</planet>
+	</star>
+</system>

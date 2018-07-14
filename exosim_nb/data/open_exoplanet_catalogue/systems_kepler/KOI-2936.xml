@@ -1,0 +1,25 @@
+<system>
+	<name>KOI-2936</name>
+	<rightascension>19 54 38</rightascension>
+	<declination>+48 14 55</declination>
+	<distance>705.04</distance>
+	<star>
+		<name>KOI-2936</name>
+		<temperature errorminus="73.00" errorplus="73.00">5697.00</temperature>
+		<radius errorminus="0.3000" errorplus="0.3000">0.8400</radius>
+		<mass errorminus="0.0520" errorplus="0.0520">0.9480</mass>
+		<age errorminus="3.6000" errorplus="3.6000">0.6000</age>
+		<planet>
+			<name>KOI-2936 b</name>
+			<name>KOI-2936 01</name>
+			<radius errorminus="0.05559" errorplus="0.05559">0.10024</radius>
+			<period errorminus="6.1000000e-05" errorplus="6.1000000e-05">6.480178000000</period>
+			<transittime errorminus="0.0065000" errorplus="0.0065000">2454965.8607000</transittime>
+			<semimajoraxis>0.0670000</semimajoraxis>
+			<temperature>891.0</temperature>
+			<list>Kepler Objects of Interest</list>
+			<description>This is a Kepler Object of Interest from the Q1-Q12 dataset. It has been flagged as a possible transit event but has not been confirmed to be a planet yet.</description>
+			<istransiting>1</istransiting>
+		</planet>
+	</star>
+</system>

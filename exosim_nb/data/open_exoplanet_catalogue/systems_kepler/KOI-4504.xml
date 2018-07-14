@@ -1,0 +1,39 @@
+<system>
+	<name>KOI-4504</name>
+	<rightascension>19 25 10</rightascension>
+	<declination>+41 54 46</declination>
+	<distance>1267.74</distance>
+	<star>
+		<magJ errorminus="0.03" errorplus="0.03">14.50</magJ>
+		<magH errorminus="0.04" errorplus="0.04">14.09</magH>
+		<magK errorminus="0.05" errorplus="0.05">13.99</magK>
+		<name>KOI-4504</name>
+		<temperature errorminus="225.00" errorplus="225.00">5487.00</temperature>
+		<radius errorminus="0.4850" errorplus="0.4850">0.8030</radius>
+		<metallicity errorminus="0.3600" errorplus="0.3600">-0.1600</metallicity>
+		<planet>
+			<name>KOI-4504 b</name>
+			<name>KOI-4504 01</name>
+			<radius errorminus="0.07436" errorplus="0.07436">0.14900</radius>
+			<period errorminus="2.5560000e-05" errorplus="2.5560000e-05">4.130407190000</period>
+			<transittime errorminus="0.0044500" errorplus="0.0044500">2454966.5074100</transittime>
+			<semimajoraxis errorminus="1.98e-07" errorplus="1.98e-07">0.0480289</semimajoraxis>
+			<temperature errorminus="302.0" errorplus="302.0">990.0</temperature>
+			<list>Kepler Objects of Interest</list>
+			<description>This is a Kepler Object of Interest from the Q1-Q12 dataset. It has been flagged as a possible transit event but has not been confirmed to be a planet yet.</description>
+			<istransiting>1</istransiting>
+		</planet>
+		<planet>
+			<name>KOI-4504 c</name>
+			<name>KOI-4504 02</name>
+			<radius errorminus="0.15492" errorplus="0.15492">0.15219</radius>
+			<period errorminus="6.9490000e-05" errorplus="6.9490000e-05">8.119257620000</period>
+			<transittime errorminus="0.0070400" errorplus="0.0070400">2454968.1920500</transittime>
+			<semimajoraxis errorminus="4.30e-07" errorplus="4.30e-07">0.0753677</semimajoraxis>
+			<temperature errorminus="241.0" errorplus="241.0">790.0</temperature>
+			<list>Kepler Objects of Interest</list>
+			<description>This is a Kepler Object of Interest from the Q1-Q12 dataset. It has been flagged as a possible transit event but has not been confirmed to be a planet yet.</description>
+			<istransiting>1</istransiting>
+		</planet>
+	</star>
+</system>

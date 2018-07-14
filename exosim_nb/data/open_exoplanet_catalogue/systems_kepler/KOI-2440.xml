@@ -1,0 +1,28 @@
+<system>
+	<name>KOI-2440</name>
+	<rightascension>18 51 59</rightascension>
+	<declination>+40 33 26</declination>
+	<distance>650.33</distance>
+	<star>
+		<magJ errorminus="0.027" errorplus="0.027">12.759</magJ>
+		<magH errorminus="0.03" errorplus="0.03">12.41</magH>
+		<magK errorminus="0.029" errorplus="0.029">12.361</magK>
+		<name>KOI-2440</name>
+		<temperature errorminus="76.00" errorplus="76.00">5656.00</temperature>
+		<radius errorminus="0.4600" errorplus="0.4600">0.9600</radius>
+		<mass errorminus="0.0970" errorplus="0.0970">0.8890</mass>
+		<age errorminus="3.6000" errorplus="3.6000">9.3000</age>
+		<planet>
+			<name>KOI-2440 b</name>
+			<name>KOI-2440 01</name>
+			<radius errorminus="0.05923" errorplus="0.05923">0.11756</radius>
+			<period errorminus="8.3000000e-05" errorplus="8.3000000e-05">4.866591000000</period>
+			<transittime errorminus="0.0059000" errorplus="0.0059000">2454967.0002000</transittime>
+			<semimajoraxis>0.0540000</semimajoraxis>
+			<temperature>1054.0</temperature>
+			<list>Kepler Objects of Interest</list>
+			<description>This is a Kepler Object of Interest from the Q1-Q12 dataset. It has been flagged as a possible transit event but has not been confirmed to be a planet yet.</description>
+			<istransiting>1</istransiting>
+		</planet>
+	</star>
+</system>

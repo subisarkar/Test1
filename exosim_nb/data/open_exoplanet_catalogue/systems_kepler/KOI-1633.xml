@@ -1,0 +1,28 @@
+<system>
+	<name>KOI-1633</name>
+	<rightascension>19 23 55</rightascension>
+	<declination>+45 58 23</declination>
+	<distance>784.36</distance>
+	<star>
+		<magJ errorminus="0.024" errorplus="0.024">13.838</magJ>
+		<magH errorminus="0.028" errorplus="0.028">13.387</magH>
+		<magK errorminus="0.029" errorplus="0.029">13.305</magK>
+		<name>KOI-1633</name>
+		<temperature errorminus="101.00" errorplus="101.00">5315.00</temperature>
+		<radius errorminus="0.2200" errorplus="0.2200">0.7500</radius>
+		<mass errorminus="0.0430" errorplus="0.0430">0.8500</mass>
+		<age errorminus="3.8000" errorplus="3.8000">0.6000</age>
+		<planet>
+			<name>KOI-1633 b</name>
+			<name>KOI-1633 01</name>
+			<radius errorminus="0.05377" errorplus="0.05377">0.15583</radius>
+			<period errorminus="7.5000000e-04" errorplus="7.5000000e-04">32.298610000000</period>
+			<transittime errorminus="0.0086000" errorplus="0.0086000">2454971.5000000</transittime>
+			<semimajoraxis>0.1880000</semimajoraxis>
+			<temperature>467.0</temperature>
+			<list>Kepler Objects of Interest</list>
+			<description>This is a Kepler Object of Interest from the Q1-Q12 dataset. It has been flagged as a possible transit event but has not been confirmed to be a planet yet.</description>
+			<istransiting>1</istransiting>
+		</planet>
+	</star>
+</system>

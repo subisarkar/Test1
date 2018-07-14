@@ -1,0 +1,28 @@
+<system>
+	<name>KOI-2099</name>
+	<rightascension>19 29 12</rightascension>
+	<declination>+38 16 01</declination>
+	<distance>1266.95</distance>
+	<star>
+		<magJ errorminus="0.024" errorplus="0.024">13.843</magJ>
+		<magH errorminus="0.026" errorplus="0.026">13.538</magH>
+		<magK errorminus="0.05" errorplus="0.05">13.54</magK>
+		<name>KOI-2099</name>
+		<temperature errorminus="115.00" errorplus="115.00">6158.00</temperature>
+		<radius errorminus="0.4300" errorplus="0.4300">0.9900</radius>
+		<mass errorminus="0.1200" errorplus="0.1200">1.0900</mass>
+		<age errorminus="1.6000" errorplus="1.6000">0.3000</age>
+		<planet>
+			<name>KOI-2099 b</name>
+			<name>KOI-2099 01</name>
+			<radius errorminus="0.10936" errorplus="0.10936">0.25516</radius>
+			<period errorminus="2.3000000e-03" errorplus="2.3000000e-03">78.097100000000</period>
+			<transittime errorminus="0.0110000" errorplus="0.0110000">2454972.5040000</transittime>
+			<semimajoraxis>0.3680000</semimajoraxis>
+			<temperature>446.0</temperature>
+			<list>Kepler Objects of Interest</list>
+			<description>This is a Kepler Object of Interest from the Q1-Q12 dataset. It has been flagged as a possible transit event but has not been confirmed to be a planet yet.</description>
+			<istransiting>1</istransiting>
+		</planet>
+	</star>
+</system>

@@ -1,0 +1,25 @@
+<system>
+	<name>KOI-2386</name>
+	<rightascension>19 39 45</rightascension>
+	<declination>+39 13 57</declination>
+	<distance>1007.19</distance>
+	<star>
+		<name>KOI-2386</name>
+		<temperature errorminus="82.00" errorplus="82.00">5870.00</temperature>
+		<radius errorminus="0.2700" errorplus="0.2700">0.8900</radius>
+		<mass errorminus="0.0490" errorplus="0.0490">1.0000</mass>
+		<age errorminus="2.9000" errorplus="2.9000">0.3000</age>
+		<planet>
+			<name>KOI-2386 b</name>
+			<name>KOI-2386 01</name>
+			<radius errorminus="0.06288" errorplus="0.06288">0.17679</radius>
+			<period errorminus="2.8000000e-04" errorplus="2.8000000e-04">16.269320000000</period>
+			<transittime errorminus="0.0062000" errorplus="0.0062000">2454978.1262000</transittime>
+			<semimajoraxis>0.1260000</semimajoraxis>
+			<temperature>689.0</temperature>
+			<list>Kepler Objects of Interest</list>
+			<description>This is a Kepler Object of Interest from the Q1-Q12 dataset. It has been flagged as a possible transit event but has not been confirmed to be a planet yet.</description>
+			<istransiting>1</istransiting>
+		</planet>
+	</star>
+</system>

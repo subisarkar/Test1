@@ -1,0 +1,24 @@
+<system>
+	<name>KOI-2682</name>
+	<rightascension>19 20 34</rightascension>
+	<declination>+37 44 28</declination>
+	<distance>5648.08</distance>
+	<star>
+		<name>KOI-2682</name>
+		<temperature>5780.00</temperature>
+		<radius>1.0000</radius>
+		<mass>1.0000</mass>
+		<planet>
+			<name>KOI-2682 b</name>
+			<name>KOI-2682 01</name>
+			<radius>3.64521</radius>
+			<period errorminus="1.6000000e-05" errorplus="1.6000000e-05">8.531613000000</period>
+			<transittime errorminus="0.0016000" errorplus="0.0016000">2454969.2776000</transittime>
+			<semimajoraxis>0.0820000</semimajoraxis>
+			<temperature>890.0</temperature>
+			<list>Kepler Objects of Interest</list>
+			<description>This is a Kepler Object of Interest from the Q1-Q12 dataset. It has been flagged as a possible transit event but has not been confirmed to be a planet yet.</description>
+			<istransiting>1</istransiting>
+		</planet>
+	</star>
+</system>

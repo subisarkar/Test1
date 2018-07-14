@@ -1,0 +1,52 @@
+<system>
+	<name>KOI-2707</name>
+	<rightascension>19 58 00</rightascension>
+	<declination>+40 40 14</declination>
+	<distance>682.42</distance>
+	<star>
+		<magJ errorminus="0.024" errorplus="0.024">13.175</magJ>
+		<magH errorminus="0.027" errorplus="0.027">12.779</magH>
+		<magK errorminus="0.025" errorplus="0.025">12.698</magK>
+		<name>KOI-2707</name>
+		<temperature errorminus="80.00" errorplus="80.00">5613.00</temperature>
+		<radius errorminus="0.3700" errorplus="0.3700">0.8200</radius>
+		<mass errorminus="0.0610" errorplus="0.0610">0.9270</mass>
+		<age errorminus="3.9000" errorplus="3.9000">0.5000</age>
+		<planet>
+			<name>KOI-2707 b</name>
+			<name>KOI-2707 01</name>
+			<radius errorminus="0.12758" errorplus="0.12758">0.25516</radius>
+			<period errorminus="3.5000000e-04" errorplus="3.5000000e-04">58.034380000000</period>
+			<transittime errorminus="0.0044000" errorplus="0.0044000">2454971.7345000</transittime>
+			<semimajoraxis>0.2860000</semimajoraxis>
+			<temperature>420.0</temperature>
+			<list>Kepler Objects of Interest</list>
+			<description>This is a Kepler Object of Interest from the Q1-Q12 dataset. It has been flagged as a possible transit event but has not been confirmed to be a planet yet.</description>
+			<istransiting>1</istransiting>
+		</planet>
+		<planet>
+			<name>KOI-2707 c</name>
+			<name>KOI-2707 02</name>
+			<radius errorminus="0.08384" errorplus="0.08384">0.12667</radius>
+			<period errorminus="1.4000000e-04" errorplus="1.4000000e-04">14.425160000000</period>
+			<transittime errorminus="0.0070000" errorplus="0.0070000">2454969.7569000</transittime>
+			<semimajoraxis>0.1130000</semimajoraxis>
+			<temperature>668.0</temperature>
+			<list>Kepler Objects of Interest</list>
+			<description>This is a Kepler Object of Interest from the Q1-Q12 dataset. It has been flagged as a possible transit event but has not been confirmed to be a planet yet.</description>
+			<istransiting>1</istransiting>
+		</planet>
+		<planet>
+			<name>KOI-2707 d</name>
+			<name>KOI-2707 03</name>
+			<radius errorminus="0.10024" errorplus="0.10024">0.21871</radius>
+			<period errorminus="1.7000000e-04" errorplus="1.7000000e-04">26.675680000000</period>
+			<transittime errorminus="0.0047000" errorplus="0.0047000">2454982.9988000</transittime>
+			<semimajoraxis>0.1700000</semimajoraxis>
+			<temperature>544.0</temperature>
+			<list>Kepler Objects of Interest</list>
+			<description>This is a Kepler Object of Interest from the Q1-Q12 dataset. It has been flagged as a possible transit event but has not been confirmed to be a planet yet.</description>
+			<istransiting>1</istransiting>
+		</planet>
+	</star>
+</system>

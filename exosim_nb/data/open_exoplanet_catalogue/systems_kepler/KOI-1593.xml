@@ -1,0 +1,40 @@
+<system>
+	<name>KOI-1593</name>
+	<rightascension>19 43 08</rightascension>
+	<declination>+40 26 22</declination>
+	<distance>1505.91</distance>
+	<star>
+		<magJ errorminus="0.04" errorplus="0.04">14.61</magJ>
+		<magH errorminus="0.07" errorplus="0.07">14.15</magH>
+		<magK errorminus="0.07" errorplus="0.07">14.19</magK>
+		<name>KOI-1593</name>
+		<temperature errorminus="130.00" errorplus="130.00">5876.00</temperature>
+		<radius errorminus="0.4000" errorplus="0.4000">0.8900</radius>
+		<mass errorminus="0.0900" errorplus="0.0900">0.9970</mass>
+		<age errorminus="3.0000" errorplus="3.0000">0.5000</age>
+		<planet>
+			<name>KOI-1593 b</name>
+			<name>KOI-1593 01</name>
+			<radius errorminus="0.09113" errorplus="0.09113">0.20049</radius>
+			<period errorminus="1.3000000e-04" errorplus="1.3000000e-04">9.694830000000</period>
+			<transittime errorminus="0.0053000" errorplus="0.0053000">2455015.4613000</transittime>
+			<semimajoraxis>0.0890000</semimajoraxis>
+			<temperature>821.0</temperature>
+			<list>Kepler Objects of Interest</list>
+			<description>This is a Kepler Object of Interest from the Q1-Q12 dataset. It has been flagged as a possible transit event but has not been confirmed to be a planet yet.</description>
+			<istransiting>1</istransiting>
+		</planet>
+		<planet>
+			<name>KOI-1593 c</name>
+			<name>KOI-1593 02</name>
+			<radius errorminus="0.08384" errorplus="0.08384">0.18135</radius>
+			<period errorminus="2.8000000e-04" errorplus="2.8000000e-04">15.382300000000</period>
+			<transittime errorminus="0.0082000" errorplus="0.0082000">2454972.0853000</transittime>
+			<semimajoraxis>0.1210000</semimajoraxis>
+			<temperature>705.0</temperature>
+			<list>Kepler Objects of Interest</list>
+			<description>This is a Kepler Object of Interest from the Q1-Q12 dataset. It has been flagged as a possible transit event but has not been confirmed to be a planet yet.</description>
+			<istransiting>1</istransiting>
+		</planet>
+	</star>
+</system>

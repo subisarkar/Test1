@@ -1,0 +1,27 @@
+<system>
+	<name>KOI-2469</name>
+	<rightascension>19 54 22</rightascension>
+	<declination>+41 26 09</declination>
+	<distance>548.71</distance>
+	<star>
+		<magJ errorminus="0.03" errorplus="0.03">13.48</magJ>
+		<magH errorminus="0.03" errorplus="0.03">12.94</magH>
+		<name>KOI-2469</name>
+		<temperature errorminus="71.00" errorplus="71.00">4835.00</temperature>
+		<radius errorminus="0.0190" errorplus="0.0190">0.6800</radius>
+		<mass errorminus="0.0190" errorplus="0.0190">0.6960</mass>
+		<age errorminus="3.8000" errorplus="3.8000">14.0000</age>
+		<planet>
+			<name>KOI-2469 b</name>
+			<name>KOI-2469 01</name>
+			<radius errorminus="0.08293" errorplus="0.08293">0.18317</radius>
+			<period errorminus="3.6000000e-03" errorplus="3.6000000e-03">131.189700000000</period>
+			<transittime errorminus="0.0093000" errorplus="0.0093000">2455005.3926000</transittime>
+			<semimajoraxis>0.4480000</semimajoraxis>
+			<temperature>263.0</temperature>
+			<list>Kepler Objects of Interest</list>
+			<description>This is a Kepler Object of Interest from the Q1-Q12 dataset. It has been flagged as a possible transit event but has not been confirmed to be a planet yet.</description>
+			<istransiting>1</istransiting>
+		</planet>
+	</star>
+</system>

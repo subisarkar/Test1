@@ -1,0 +1,36 @@
+<system>
+	<name>KOI-3681</name>
+	<rightascension>19 30 30</rightascension>
+	<declination>+37 51 36</declination>
+	<distance>681.00</distance>
+	<star>
+		<name>KOI-3681</name>
+		<temperature errorminus="225.00" errorplus="225.00">6382.00</temperature>
+		<radius errorminus="1.2100" errorplus="1.2100">2.2740</radius>
+		<metallicity errorminus="0.3000" errorplus="0.3000">-0.8400</metallicity>
+		<planet>
+			<name>KOI-3681 b</name>
+			<name>KOI-3681 01</name>
+			<radius errorminus="0.00301" errorplus="0.00301">2.01094</radius>
+			<period errorminus="7.1950000e-05" errorplus="7.1950000e-05">217.831829030000</period>
+			<transittime errorminus="0.0002610" errorplus="0.0002610">2455071.8200700</transittime>
+			<semimajoraxis errorminus="1.61e-07" errorplus="1.61e-07">0.7305300</semimajoraxis>
+			<temperature errorminus="133.0" errorplus="133.0">497.0</temperature>
+			<list>Kepler Objects of Interest</list>
+			<description>This is a Kepler Object of Interest from the Q1-Q12 dataset. It has been flagged as a possible transit event but has not been confirmed to be a planet yet.</description>
+			<istransiting>1</istransiting>
+		</planet>
+		<planet>
+			<name>KOI-3681 c</name>
+			<name>KOI-3681 02</name>
+			<radius errorminus="0.03554" errorplus="0.03554">0.19192</radius>
+			<period errorminus="4.0230000e-05" errorplus="4.0230000e-05">10.514160380000</period>
+			<transittime errorminus="0.0029800" errorplus="0.0029800">2454967.5692900</transittime>
+			<semimajoraxis errorminus="2.47e-07" errorplus="2.47e-07">0.0968443</semimajoraxis>
+			<temperature errorminus="366.0" errorplus="366.0">1364.0</temperature>
+			<list>Kepler Objects of Interest</list>
+			<description>This is a Kepler Object of Interest from the Q1-Q12 dataset. It has been flagged as a possible transit event but has not been confirmed to be a planet yet.</description>
+			<istransiting>1</istransiting>
+		</planet>
+	</star>
+</system>

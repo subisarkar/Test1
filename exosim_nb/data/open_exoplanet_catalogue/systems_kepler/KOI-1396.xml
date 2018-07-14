@@ -1,0 +1,40 @@
+<system>
+	<name>KOI-1396</name>
+	<rightascension>19 09 34</rightascension>
+	<declination>+46 03 33</declination>
+	<distance>1526.55</distance>
+	<star>
+		<magJ errorminus="0.03" errorplus="0.03">14.57</magJ>
+		<magH errorminus="0.03" errorplus="0.03">14.26</magH>
+		<magK errorminus="0.06" errorplus="0.06">14.17</magK>
+		<name>KOI-1396</name>
+		<temperature errorminus="130.00" errorplus="130.00">5870.00</temperature>
+		<radius errorminus="0.4200" errorplus="0.4200">0.8900</radius>
+		<mass errorminus="0.0980" errorplus="0.0980">0.9940</mass>
+		<age errorminus="2.9000" errorplus="2.9000">0.6000</age>
+		<planet>
+			<name>KOI-1396 b</name>
+			<name>KOI-1396 01</name>
+			<radius errorminus="0.11847" errorplus="0.11847">0.24605</radius>
+			<period errorminus="6.1000000e-05" errorplus="6.1000000e-05">6.626389000000</period>
+			<transittime errorminus="0.0031000" errorplus="0.0031000">2455016.9888000</transittime>
+			<semimajoraxis>0.0690000</semimajoraxis>
+			<temperature>932.0</temperature>
+			<list>Kepler Objects of Interest</list>
+			<description>This is a Kepler Object of Interest from the Q1-Q12 dataset. It has been flagged as a possible transit event but has not been confirmed to be a planet yet.</description>
+			<istransiting>1</istransiting>
+		</planet>
+		<planet>
+			<name>KOI-1396 c</name>
+			<name>KOI-1396 02</name>
+			<radius errorminus="0.07655" errorplus="0.07655">0.15857</radius>
+			<period errorminus="6.0000000e-05" errorplus="6.0000000e-05">3.701311000000</period>
+			<transittime errorminus="0.0050000" errorplus="0.0050000">2455013.2694000</transittime>
+			<semimajoraxis>0.0470000</semimajoraxis>
+			<temperature>1129.0</temperature>
+			<list>Kepler Objects of Interest</list>
+			<description>This is a Kepler Object of Interest from the Q1-Q12 dataset. It has been flagged as a possible transit event but has not been confirmed to be a planet yet.</description>
+			<istransiting>1</istransiting>
+		</planet>
+	</star>
+</system>
